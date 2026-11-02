@@ -1,0 +1,15 @@
+[   0.000] ========================================================================
+[   0.000] V0-03 BROADCAST underflow -> permanent crash
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x06 via=radio AES  payload=07
+[   0.000] response frames: []
+[   0.000] --> TC apid=0x01 via=radio AES  payload=-
+[   0.000] --> advance(60000 ms)
+[   0.000] --> TC apid=0x01 via=radio AES  payload=-
+[   0.000] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[   0.001] --> TC apid=0x01 via=radio AES  payload=-
+[   0.001] <-- TM apid=0x01 AES len=5
+[   0.001] recovered after power cycle
+[   0.001] ========================================================================
+[   0.001] POC OK
+[   0.001] ========================================================================

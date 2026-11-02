@@ -1,0 +1,62 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+name: Release firmware
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag to release (default: v1.0.0)"
+        default: "v1.0.0"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install PlatformIO
+        run: pip install --quiet platformio
+
+      - name: Build firmware (RP2040, pico_tinyusb)
+        working-directory: firmware
+        run: pio run
+
+      - name: Stage release assets
+        run: |
+          cp firmware/.pio/build/pico_tinyusb/firmware.uf2 firmware.uf2
+          md5sum firmware.uf2 | tee md5sum.txt
+          cat md5sum.txt
+
+      - name: Publish firmware.uf2 + md5sum.txt as Release assets
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
+          name: "v1.0.0 — FlatSat electr0sm0g Lab"
+          body: |
+            Vulnerable-by-design CubeSat pentest lab: 56 findings, 56 runnable PoCs,
+            bit-for-bit simulator, in-browser mission control. Independent security
+            research built on [PwnSat/FlatSat](https://github.com/Pwnsat/FlatSat) v1.0.3
+            (Electronic Cats) — unofficial, not endorsed. GPL-2.0-or-later.
+
+            **Assets**: `firmware.uf2` is the CI rebuild of the lab firmware
+            (RP2040, `pico_tinyusb` env) with its own `md5sum.txt`. The image actually
+            flashed and swept on the FlatSat 1 bench — final image `H`,
+            md5 `bfc145c93039177b7393147978cdd432` — is recorded in `evidence-hw/`;
+            CI rebuilds can differ bit-wise because library dependencies float
+            within their semver ranges (`platformio.ini`).
+          files: |
+            firmware.uf2
+            md5sum.txt
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

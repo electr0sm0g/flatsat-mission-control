@@ -1,0 +1,34 @@
+[   0.000] ========================================================================
+[   0.000] V-31 unauthorized payload snap + audit freeze
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x0C via=usb AES  payload=-
+[   0.001] <-- TM apid=0x0C AES len=27
+[   0.001] --> TC apid=0x23 via=radio AES  payload=00
+[   0.001] <-- TM apid=0x23 clear len=35
+[   0.001] snap IMG magic=b'IMG1' temp=25.04C bus=24.00V flags eclipse=0 safe=0 tag=b'PWN'
+[   0.001] --> TC apid=0x22 via=radio AES  payload=-
+[   0.002] <-- TM apid=0x22 clear len=8
+[   0.002] --> TC apid=0x0C via=usb AES  payload=-
+[   0.002] <-- TM apid=0x0C AES len=27
+[   0.002] audit trail: forward counter 0 -> 1, capture staged in covert queue (32 B)
+[   0.003] --> TC apid=0x23 via=radio AES  payload=0101
+[   0.003] <-- TM apid=0x23 clear len=5
+[   0.003] --> TC apid=0x23 via=radio AES  payload=00
+[   0.003] <-- TM apid=0x23 clear len=35
+[   0.003] --> TC apid=0x23 via=radio AES  payload=00
+[   0.003] <-- TM apid=0x23 clear len=35
+[   0.003] --> TC apid=0x23 via=radio AES  payload=00
+[   0.004] <-- TM apid=0x23 clear len=35
+[   0.004] --> TC apid=0x23 via=radio AES  payload=00
+[   0.004] <-- TM apid=0x23 clear len=35
+[   0.004] --> TC apid=0x23 via=radio AES  payload=00
+[   0.004] <-- TM apid=0x23 clear len=35
+[   0.004] --> TC apid=0x0C via=usb AES  payload=-
+[   0.005] <-- TM apid=0x0C AES len=27
+[   0.005] after freeze: 5 more captures, counter stuck at 1
+[   0.005] --> TC apid=0x23 via=radio AES  payload=02
+[   0.005] <-- TM apid=0x23 clear len=67
+[   0.005] drained 64 bytes from covert queue: b'IMG1\x88\x13'...
+[   0.005] ========================================================================
+[   0.005] POC OK
+[   0.005] ========================================================================

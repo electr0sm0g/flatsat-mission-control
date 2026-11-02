@@ -1,0 +1,90 @@
+[   0.000] ========================================================================
+[   0.000] V-17 forged software-bus MIDs
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.848] --> TC apid=0x0A via=usb AES  payload=00
+[   8.899] <-- TM apid=0x0A clear len=3
+[   8.950] --> TC apid=0x1D via=usb clear payload=0101
+[   9.001] <-- TM apid=0x1D clear len=4
+[   9.001] --> TC apid=0x11 via=usb clear payload=00
+[   9.457] <-- TM apid=0x11 clear len=9
+[   9.457] --> TC apid=0x15 via=usb clear payload=001005
+[   9.903] <-- TM apid=0x15 clear len=6
+[   9.903] --> TC apid=0x0D via=usb clear payload=01
+[  10.359] <-- TM apid=0x0D clear len=4
+[  10.400] --> TC apid=0x1D via=usb clear payload=03
+[  10.451] <-- TM apid=0x1D clear len=4
+[  10.451] <-- TM apid=0x09 clear len=9
+[  10.502] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.553] <-- TM apid=0x1D clear len=4
+[  10.553] --> TC apid=0x10 via=usb clear payload=00
+[  10.604] <-- TM apid=0x10 clear len=4
+[  10.604] --> TC apid=0x21 via=usb clear payload=00
+[  11.061] <-- TM apid=0x21 clear len=6
+[  11.061] --> TC apid=0x24 via=usb clear payload=0000
+[  11.102] <-- TM apid=0x24 clear len=8
+[  11.102] --> TC apid=0x24 via=usb clear payload=0100
+[  11.153] <-- TM apid=0x24 clear len=8
+[  11.153] --> TC apid=0x24 via=usb clear payload=0200
+[  11.204] <-- TM apid=0x24 clear len=8
+[  11.204] --> TC apid=0x24 via=usb clear payload=0300
+[  11.255] <-- TM apid=0x24 clear len=8
+[  11.255] --> TC apid=0x25 via=usb clear payload=0080
+[  11.306] <-- TM apid=0x25 clear len=4
+[  11.306] --> TC apid=0x1E via=usb clear payload=01
+[  11.814] <-- TM apid=0x1E clear len=5
+[  11.814] --> TC apid=0x1D via=usb clear payload=0b
+[  11.905] <-- TM apid=0x1D clear len=4
+[  11.905] --> TC apid=0x05 via=usb clear payload=12
+[  12.362] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.868] <-- TM apid=0x1F clear len=4
+[  12.868] --> TC apid=0x1F via=usb clear payload=05
+[  13.366] <-- TM apid=0x1F clear len=4
+[  13.366] --> TC apid=0x0A via=usb clear payload=01
+[  13.407] <-- TM apid=0x0A AES len=3
+[  21.485] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.953] <-- TM apid=0x0E AES len=18
+[  29.953] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.035] --> TC apid=0x1D via=radio AES  payload=0a0001
+[  30.086] <-- TM apid=0x1D clear len=4
+[  30.138] --> TC apid=0x1B via=radio AES  payload=0102410100000000
+[  30.599] <-- TM apid=0x1B clear len=8
+[  30.599] MID 0x102 published, ok=1
+[  30.599] --> advance(200 ms)
+[  30.846] <-- TM apid=0x27 clear len=4
+[  30.888] --> TC apid=0x1D via=radio AES  payload=00
+[  30.939] <-- TM apid=0x1D clear len=18
+[  30.991] --> TC apid=0x1B via=radio AES  payload=010300
+[  31.451] <-- TM apid=0x1B clear len=8
+[  31.493] --> TC apid=0x0C via=usb AES  payload=-
+[  31.548] <-- TM apid=0x0C AES len=27
+[  31.548] --> TC apid=0x1B via=radio AES  payload=010303
+[  32.006] <-- TM apid=0x1B clear len=8
+[  32.048] --> TC apid=0x1D via=radio AES  payload=00
+[  32.100] <-- TM apid=0x1D clear len=18
+[  32.151] --> TC apid=0x1B via=radio AES  payload=01040101
+[  32.611] <-- TM apid=0x1B clear len=8
+[  32.611] --> advance(200 ms)
+[  32.816] <-- TM apid=0x27 clear len=4
+[  32.858] --> TC apid=0x1D via=radio AES  payload=00
+[  32.899] <-- TM apid=0x1D clear len=18
+[  32.899] heater via MID 0x104: power 3.2 -> 5.6 W
+[  32.951] --> TC apid=0x1B via=radio AES  payload=010528
+[  33.410] <-- TM apid=0x1B clear len=8
+[  33.452] --> TC apid=0x1D via=radio AES  payload=00
+[  33.503] <-- TM apid=0x1D clear len=18
+[  33.555] --> TC apid=0x1B via=usb AES  payload=01060507
+[  34.015] <-- TM apid=0x1B clear len=8
+[  34.057] --> TC apid=0x0C via=usb AES  payload=-
+[  34.111] <-- TM apid=0x0C AES len=27
+[  34.111] --> TC apid=0x25 via=usb AES  payload=0401
+[  34.163] <-- TM apid=0x25 clear len=4
+[  34.163] SB auth enforced: 1
+[  34.163] --> TC apid=0x1B via=radio AES  payload=0102000000000000
+[  34.623] <-- TM apid=0x1B clear len=8
+[  34.665] --> TC apid=0x1B via=radio AES  payload=0102c0feee11010000000000
+[  35.123] <-- TM apid=0x1B clear len=8
+[  35.124] -- console tail: [TC - SPP] APID=0x01B SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01B SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x025 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01B SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01B SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  35.124] ========================================================================
+[  35.124] POC OK
+[  35.124] ========================================================================

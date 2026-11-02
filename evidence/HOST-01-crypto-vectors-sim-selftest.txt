@@ -1,0 +1,1 @@
+SELFTEST OK: FIPS-197 ECB, SP800-38A CTR, SP800-38B CMAC, secure-link, SDLS 43/64 null SAs, null-master-key OTAR

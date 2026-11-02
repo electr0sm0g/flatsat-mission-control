@@ -1,0 +1,27 @@
+[   0.000] ========================================================================
+[   0.000] V-18 unsigned OTA image install
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1F via=radio AES  payload=000000000012df655256554841434b4544494d41474532303236
+[   0.001] <-- TM apid=0x1F clear len=5
+[   0.001] --> TC apid=0x1F via=radio AES  payload=01
+[   0.001] <-- TM apid=0x1F clear len=4
+[   0.001] finalize ok, pending_boot=1, image hash=bf4efd96dd6f8bc7 (no trust anchor)
+[   0.001] --> TC apid=0x02 via=radio AES  payload=-
+[   0.001] <-- TM apid=0x02 clear len=4
+[   0.001] --> TC apid=0x1F via=usb AES  payload=03
+[   0.002] <-- TM apid=0x1F clear len=32
+[   0.002] post-reboot: booted_slot=1 active=0 boot_try=1
+[   0.002] --> TC apid=0x1F via=usb AES  payload=02
+[   0.002] <-- TM apid=0x1F clear len=4
+[   0.002] --> TC apid=0x1F via=usb AES  payload=03
+[   0.003] <-- TM apid=0x1F clear len=32
+[   0.003] --> TC apid=0x1F via=usb AES  payload=063a6e2336b350ecf00000000801
+[   0.003] <-- TM apid=0x1F clear len=4
+[   0.004] --> TC apid=0x1F via=radio AES  payload=000000000011dd9541545441434b45522d424c4f422d322121
+[   0.004] <-- TM apid=0x1F clear len=5
+[   0.004] --> TC apid=0x1F via=radio AES  payload=01
+[   0.004] <-- TM apid=0x1F clear len=4
+[   0.004] with sig_required: finalize ok=0 (0 = rejected)
+[   0.004] ========================================================================
+[   0.004] POC OK
+[   0.004] ========================================================================

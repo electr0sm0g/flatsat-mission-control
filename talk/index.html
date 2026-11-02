@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FlatSat electr0sm0g Lab — I built a vulnerable-by-design CubeSat lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <style>
+    :root { --bp: #6941C6; --bpl: #8B5CF6; --bm: #C9317C; --green: #10B981; }
+    .reveal { font-size: 34px; }
+    .reveal .slides { text-align: left; }
+    .reveal .slides section { height: 100%; }
+    .reveal h1, .reveal h2 { color: #fff; text-transform: none; letter-spacing: -0.5px; }
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.35em; color: var(--bpl); margin-bottom: 0.6em; }
+    .reveal .title-slide h1 { font-size: 2.4em; }
+    .reveal .accent { background: linear-gradient(90deg, var(--bp), var(--bm));
+      height: 4px; width: 55%; border-radius: 2px; margin: 0.5em 0 1em; }
+    .reveal .kpi { display: inline-block; background: #13101C; border: 1px solid #2A2535;
+      border-radius: 8px; padding: 0.5em 0.9em; margin: 0.15em 0.25em 0.15em 0; vertical-align: top; }
+    .reveal .kpi b { display: block; font-size: 1.7em; line-height: 1.15; }
+    .reveal .kpi span { color: #E0E3E8; font-size: 0.62em; }
+    .reveal .kpi.red b { color: #EF4444; } .reveal .kpi.orange b { color: #FB923C; }
+    .reveal .kpi.yellow b { color: #EAB308; } .reveal .kpi.green b { color: #22C55E; }
+    .reveal .kpi.purple b { color: var(--bpl); }
+    .reveal pre { width: 100%; box-sizing: border-box; font-size: 0.62em; line-height: 1.35;
+      background: #13101C; border: 1px solid #2A2535; border-radius: 8px; }
+    .reveal code { font-family: "DejaVu Sans Mono", monospace; }
+    .reveal .small { font-size: 0.72em; color: #E0E3E8; }
+    .reveal .cols { display: flex; gap: 0.6em; }
+    .reveal .cols > div { flex: 1; }
+    .reveal .tag { color: var(--green); font-weight: bold; }
+    .reveal .dim { color: #9CA3AF; }
+    .reveal .mermaid { background: #13101C; border: 1px solid #2A2535; border-radius: 8px;
+      padding: 14px; }
+    .reveal .mermaid .node rect, .reveal .mermaid .node circle { fill: #1A1625; stroke: #8B5CF6; }
+    .reveal .mermaid .edgePath path { stroke: #8B5CF6; }
+    .reveal .mermaid .nodeLabel, .reveal .mermaid .edgeLabel { color: #F0F2F5; }
+    .reveal .mermaid .messageText, .reveal .mermaid .noteText { color: #F0F2F5; }
+    .reveal .mermaid .actor { fill: #1A1625; stroke: #8B5CF6; }
+    .reveal .mermaid .actor-line { stroke: #8B5CF6; }
+    .reveal .mermaid .messageLine0, .reveal .mermaid .messageLine1 { stroke: #8B5CF6; fill: #8B5CF6; }
+    .reveal footer-note { display: none; }
+  </style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section class="title-slide">
+  <h1>FlatSat electr0sm0g Lab<br>a <span style="color:var(--bpl)">vulnerable-by-design</span> CubeSat lab</h1>
+  <div class="accent"></div>
+  <p class="small" style="font-size:0.9em">56 findings &middot; 56 executable PoCs &middot; real RP2040 firmware + bit-for-bit simulator<br>
+  Étienne Lacoche &mdash; Cybersecurity Researcher &middot; built on FlatSat v1.0 (Pwnsat/FlatSat) &middot; FlatSat 1 hardware (Electronic Cats &times; PwnSat)</p>
+</section>
+
+<section>
+  <h2>Why this lab exists</h2>
+  <div class="accent"></div>
+  <ul>
+    <li>Space-security training mostly stops at the <b>data link</b> — firmware memory, flash layout and the ground segment go untested.</li>
+    <li>No reproducible, hardware-backed CubeSat lab exists that you can <b>run in an hour</b> and trust.</li>
+    <li>The FlatSat 1 board (open hardware, CERN-OHL, DEF CON 34) finally makes that possible: RP2040 + 2&times; SX1262 LoRa + sensors, ~$60.</li>
+  </ul>
+  <p class="small dim">Goal: every finding is (1) real firmware, (2) mirrored bit-for-bit in a simulator, (3) proven by one executable PoC that runs on <b>both</b>.</p>
+</section>
+
+<section>
+  <h2>The 56 findings, 9 attack surfaces</h2>
+  <div class="accent"></div>
+  <p>
+    <span class="kpi purple"><b>56</b><span>findings, SPARTA v3.2 mapped</span></span>
+    <span class="kpi red"><b>4</b><span>critical</span></span>
+    <span class="kpi orange"><b>32</b><span>high</span></span>
+    <span class="kpi yellow"><b>17</b><span>medium</span></span>
+    <span class="kpi green"><b>3</b><span>low</span></span>
+  </p>
+  <p style="font-size:0.8em">
+    Recon &amp; leakage (9) &middot; Crypto &amp; link integrity (10) &middot; Spoofing &amp; command tampering (5)<br>
+    Memory corruption &amp; RCE (7) &middot; Ground segment &amp; downlink (4) &middot; Bus, sensors &amp; FDIR (5)<br>
+    Persistence (4) &middot; OTA &amp; protection downgrade (4) &middot; DoS &amp; impact (8)
+  </p>
+  <p class="small dim">Every finding: PoC + writeup + SPARTA row + 2 captured transcripts (sim + hardware).</p>
+</section>
+
+<section>
+  <h2>The hardware</h2>
+  <div class="accent"></div>
+  <p style="font-size:0.85em">
+    <b>FlatSat 1</b> — open-source satellite testbed by <b>Electronic Cats &times; PwnSat</b> (hardware CERN-OHL v1.2, firmware GPL-2.0-or-later):
+  </p>
+  <ul style="font-size:0.8em">
+    <li>RP2040 dual-core (Cortex-M0+), 4 MB flash, I2C/UART/SWD exposed</li>
+    <li>2&times; Semtech <b>SX1262</b> sub-GHz LoRa — dedicated uplink / downlink, license-free ISM bands</li>
+    <li>BME280 (environment) &middot; LIS2DH12 (IMU) &middot; GPS NMEA path</li>
+    <li>Launched Jan 2026 &middot; presented at DEF CON 34</li>
+  </ul>
+  <p class="small dim">This lab = offensive-security extension of the official <b>FlatSat v1.0</b> firmware (Pwnsat/FlatSat), same license, every source file SPDX-labelled.</p>
+</section>
+
+<section>
+  <h2>Board architecture (firmware)</h2>
+  <div class="accent"></div>
+  <div class="mermaid">
+graph TB
+    subgraph bench["Bench (USB harness)"]
+        P["PoC: poc/v*.py --usb"]
+    end
+    subgraph board["FlatSat 1 — RP2040, 4 MB flash"]
+        U["core0: USB RX / SPP parse<br/>0x26 LAB_STATUS · 0x27 LAB_CTRL"]
+        W["labTickWorkers()<br/>gated by bench epoch clock s_bench_ms"]
+        MM["mission model (battery, ADCS)"]
+        FD["FDIR + EWMA anomaly feed"]
+        SQ["schedule queue + radio workers"]
+        R1["SX1262 #1 uplink RX"]
+        R2["SX1262 #2 downlink TX"]
+        FL["flash: FDICT, TC journal, queue, ARWC"]
+    end
+    P -- "SPP over CDC" --> U
+    U -- "sub 6 FEED_START" --> W
+    R1 --> U
+    W --> MM
+    W --> FD
+    W --> SQ
+    W --> R2
+    W --> FL
+  </div>
+  <p class="small dim">Everything a PoC can touch from the wire rides on core0; the workers are the interesting part — and they are <b>time-gated</b>.</p>
+</section>
+
+<section>
+  <h2>The problem: testing time-dependent firmware</h2>
+  <div class="accent"></div>
+  <ul>
+    <li>The mission model, FDIR, scheduler and radio workers advance on the <b>mission clock</b>.</li>
+    <li>On the simulator that clock only moves inside <code>advance()</code> — explicit time windows.</li>
+    <li>On the board, real time moves 1:1 and the workers run whenever they feel like it.</li>
+  </ul>
+  <p class="small" style="font-size:0.8em">Different tick instants ⇒ different behaviour ⇒ <b>no parity</b>. The classic sim-vs-hardware lie: “passes on both” but not at the same instants.</p>
+  <p class="small tag">Fix: give the firmware the same window-only clock. →</p>
+</section>
+
+<section>
+  <h2>The bench parity trick: FEED windows</h2>
+  <div class="accent"></div>
+  <div class="mermaid">
+sequenceDiagram
+    participant P as PoC (bench)
+    participant L as 0x27 LAB_CTRL
+    participant B as bench clock s_bench_ms
+    participant W as model / FDIR / sched / radio
+    P->>L: FEED_START [u32 LE window_ms]
+    L->>B: open window (deadline = now + win_ms)
+    loop while open (1:1 with wall time)
+        B->>W: tick — the ONLY place workers advance
+    end
+    Note over B: self-terminates at deadline
+    P->>L: SYNC [gs_clock]
+    L->>B: close window — frozen between windows
+  </div>
+  <p class="small dim">60.0&times; cold-boot scale, re-arm between PoCs → every PoC starts from the same reference state. One PoC, two targets, same instants.</p>
+</section>
+
+<section>
+  <h2>One PoC, two targets — verified</h2>
+  <div class="accent"></div>
+  <pre><code>python3 poc/v114_memcpy_rce.py            # simulator
+python3 poc/v114_memcpy_rce.py --usb      # real FlatSat 1 over USB</code></pre>
+  <p>
+    <span class="kpi green"><b>56/56</b><span>POC OK — simulator</span></span>
+    <span class="kpi green"><b>56/56</b><span>POC OK — FlatSat 1 (USB)</span></span>
+    <span class="kpi purple"><b>112</b><span>committed transcripts</span></span>
+  </p>
+  <p class="small dim">Firmware reproducible to the byte: UF2 335872 B, md5 <code>bfc145c9…</code> — CI re-builds it on every push and publishes it as a Release artifact.</p>
+</section>
+
+<section>
+  <h2>Flagship: V-36 — full initial access</h2>
+  <div class="accent"></div>
+  <p style="font-size:0.85em">The security model's keystone is <b>sensor data</b>:</p>
+  <ol style="font-size:0.78em">
+    <li>Spoof GPS <b>9500 km away</b> (NMEA override, no checksum) → GS range gate locks out</li>
+    <li>Spoof <b>back</b> into the 35 km footprint — the plausibility gate (500 km/s) stops the instant hop, not the 60 s-spread one (158 km/s)</li>
+    <li>Answer the handshake: <code>challenge ^ 0xC0DEFACE</code> (static key, in the image)</li>
+    <li><code>SET_MISSION_MODE(PAYLOAD)</code> → <span class="tag">privileged control, unauthenticated uplink</span></li>
+  </ol>
+  <p class="small dim">Chain with V-28 (predictable challenge) → the handshake becomes <i>passive</i>. Full walkthrough: <code>docs/KILLCHAIN-V36.md</code>.</p>
+</section>
+
+<section>
+  <h2>Memory corruption → RCE (V-14)</h2>
+  <div class="accent"></div>
+  <p style="font-size:0.8em">A <code>MEMCPY</code> telecommand takes “all three” arguments <b>from the frame</b> — dst, src, len — bounded only by the address map.</p>
+  <pre><code># write-what-where: overwrite the vector table
+dst = VTOR + 3*4          # IRQ3 handler slot
+src = shellcode_in_sram
+len = 12</code></pre>
+  <ul style="font-size:0.8em">
+    <li>VTOR redirect → attacker code runs on the RP2040 (core context of the mission loop)</li>
+    <li>Same PoC, same result: simulator transcript and board transcript both end <span class="tag">POC OK</span></li>
+    <li>Fix: bounds at the frame layer + flash-locked code region (VTOR immutable)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Persistence: unsigned OTA → flash trojan (V-18 → V-20)</h2>
+  <div class="accent"></div>
+  <ul style="font-size:0.8em">
+    <li><b>V-18:</b> OTA image push verified with <b>CRC-16 only</b> — a checksum is not a signature</li>
+    <li><b>V-20:</b> the FDIR contingency dictionary is flash-resident and TC-writable → <b>executable trojan</b></li>
+    <li><b>V-19:</b> scheduled task queue replays <b>after any reboot</b> — it survives the reset you use to “clean up”</li>
+  </ul>
+  <p class="small" style="font-size:0.8em">Result: an attacker with one uplink owns the next boot — and the boot after that. Signed OTA + signed stores is the answer (docs/DEFENSE.md, groups 7–8).</p>
+</section>
+
+<section>
+  <h2>Impact: the crash PoCs are the finding</h2>
+  <div class="accent"></div>
+  <ul style="font-size:0.8em">
+    <li><b>v003</b> — BROADCAST 0xFFFD underflow → unbounded memcpy → worker crash</li>
+    <li><b>v015</b> — no watchdog: the vehicle hangs until a <b>physical power cycle</b></li>
+    <li><b>v135</b> — downlink saturation floods the TM path</li>
+  </ul>
+  <p class="small" style="font-size:0.8em">On the real board these <b>wedge the silicon</b> (DTR NAK'd, replug-only). That is not a test bug — it is the impact, captured on tape in <code>evidence-hw/</code>.</p>
+  <p class="small dim">The health gate in the hardware sweep stops a doomed run early instead of burning 10 min/PoC.</p>
+</section>
+
+<section>
+  <h2>Evidence you can audit</h2>
+  <div class="accent"></div>
+  <p style="font-size:0.85em">
+    <span class="kpi purple"><b>56</b><span>PoC, one per finding</span></span>
+    <span class="kpi purple"><b>56</b><span>writeups (EN)</span></span>
+    <span class="kpi purple"><b>112</b><span>transcripts, all POC OK</span></span>
+    <span class="kpi purple"><b>56</b><span>SPARTA v3.2 rows</span></span>
+  </p>
+  <ul style="font-size:0.78em">
+    <li><code>make check</code> = selftest + 56-PoC sweep + host crypto vectors + catalog gate (56&harr;56&harr;56&harr;112 drift-checked in CI)</li>
+    <li><code>FINDINGS.json</code> — machine-readable catalog, generated from the matrix</li>
+    <li><code>docs/VERIFICATION.md</code> — every claim in the README → evidence → command</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What you can do with it</h2>
+  <div class="accent"></div>
+  <ul style="font-size:0.82em">
+    <li><b>1 h</b> — run the lab, break it twice, understand the FEED trick (docs/CURRICULUM.md, track A)</li>
+    <li><b>half day</b> — one full kill chain, SPARTA-framed (track B)</li>
+    <li><b>1 week</b> — all 9 surfaces, sim → hardware, your own pass list (track C)</li>
+    <li><b>Blue team</b> — <code>docs/DEFENSE.md</code>: the countermeasures, group by group</li>
+    <li><b>Contribute</b> — add a finding end-to-end; the catalog gate is the contract</li>
+  </ul>
+</section>
+
+<section class="title-slide">
+  <h1 style="font-size:1.9em">Public. GPL-2.0-or-later.<br><span style="color:var(--bpl)">Train on it, audit it.</span></h1>
+  <div class="accent"></div>
+  <p style="font-size:0.95em">github.com/&lt;user&gt;/flatsat-mission-control<br>
+  <span class="small dim">firmware · simulator · 56 PoCs · 56 writeups · SPARTA v3.2 · hardware bring-up guide · CI + Release artifacts</span></p>
+  <p style="font-size:0.85em; margin-top:0.5em">Étienne Lacoche &middot; Cybersecurity Researcher &middot; etienne.lacoche@pm.me</p>
+  <p class="small" style="color:#EF4444; margin-top:1.2em">Intentionally vulnerable — and the radio talks ISM-band LoRa.<br>
+  <b>Never point it at a network you don't own.</b></p>
+</section>
+
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/zoom/zoom.js"></script>
+<script type="module">
+  import Mermaid from "https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/mermaid/mermaid.js";
+  import Reveal from "reveal.js";
+  const deck = new Reveal({
+    hash: true,
+    plugins: [Mermaid, RevealHighlight, RevealNotes, RevealZoom],
+    mermaid: { theme: "dark" },
+  });
+  deck.initialize();
+</script>
+</body>
+</html>

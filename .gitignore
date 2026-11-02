@@ -1,0 +1,25 @@
+# PlatformIO build artifacts
+firmware/.pio/
+*.o
+*.elf
+*.uf2
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Browser-demo CI artifacts (local npm install + test screenshot)
+tests/host/node_modules/
+tests/host/web-demo-verify.png
+
+# Runtime evidence is part of the deliverable (committed on purpose);
+# ad-hoc local runs may append transcripts:
+evidence/LOCAL-*.txt
+evidence-hw/LOCAL-*.txt

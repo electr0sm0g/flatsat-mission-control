@@ -1,0 +1,75 @@
+[   0.000] ========================================================================
+[   0.000] V-18 unsigned OTA image install
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.851] --> TC apid=0x0A via=usb AES  payload=00
+[   8.903] <-- TM apid=0x0A clear len=3
+[   8.955] --> TC apid=0x1D via=usb clear payload=0101
+[   9.007] <-- TM apid=0x1D clear len=4
+[   9.007] --> TC apid=0x11 via=usb clear payload=00
+[   9.468] <-- TM apid=0x11 clear len=9
+[   9.468] --> TC apid=0x15 via=usb clear payload=001005
+[   9.919] <-- TM apid=0x15 clear len=6
+[   9.919] --> TC apid=0x0D via=usb clear payload=01
+[  10.369] <-- TM apid=0x0D clear len=4
+[  10.410] --> TC apid=0x1D via=usb clear payload=03
+[  10.462] <-- TM apid=0x1D clear len=4
+[  10.462] <-- TM apid=0x09 clear len=9
+[  10.513] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.565] <-- TM apid=0x1D clear len=4
+[  10.565] --> TC apid=0x10 via=usb clear payload=00
+[  10.616] <-- TM apid=0x10 clear len=4
+[  10.617] --> TC apid=0x21 via=usb clear payload=00
+[  11.067] <-- TM apid=0x21 clear len=6
+[  11.067] --> TC apid=0x24 via=usb clear payload=0000
+[  11.119] <-- TM apid=0x24 clear len=8
+[  11.119] --> TC apid=0x24 via=usb clear payload=0100
+[  11.171] <-- TM apid=0x24 clear len=8
+[  11.171] --> TC apid=0x24 via=usb clear payload=0200
+[  11.212] <-- TM apid=0x24 clear len=8
+[  11.212] --> TC apid=0x24 via=usb clear payload=0300
+[  11.263] <-- TM apid=0x24 clear len=8
+[  11.263] --> TC apid=0x25 via=usb clear payload=0080
+[  11.315] <-- TM apid=0x25 clear len=4
+[  11.315] --> TC apid=0x1E via=usb clear payload=01
+[  11.826] <-- TM apid=0x1E clear len=5
+[  11.826] --> TC apid=0x1D via=usb clear payload=0b
+[  11.918] <-- TM apid=0x1D clear len=4
+[  11.918] --> TC apid=0x05 via=usb clear payload=12
+[  12.378] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.880] <-- TM apid=0x1F clear len=4
+[  12.880] --> TC apid=0x1F via=usb clear payload=05
+[  13.382] <-- TM apid=0x1F clear len=4
+[  13.382] --> TC apid=0x0A via=usb clear payload=01
+[  13.436] <-- TM apid=0x0A AES len=3
+[  21.524] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.991] <-- TM apid=0x0E AES len=18
+[  29.991] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.063] --> TC apid=0x1F via=radio AES  payload=000000000012df655256554841434b4544494d41474532303236
+[  30.522] <-- TM apid=0x1F clear len=5
+[  30.522] --> TC apid=0x1F via=radio AES  payload=01
+[  31.023] <-- TM apid=0x1F clear len=4
+[  31.065] finalize ok, pending_boot=1, image hash=bf4efd96dd6f8bc7 (no trust anchor)
+[  31.065] --> TC apid=0x02 via=radio AES  payload=-
+[  34.746] <-- TM apid=0x02 clear len=4
+[  40.602] --> REARM (bench parity: board rebooted mid-session)
+[  40.643] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  49.124] <-- TM apid=0x0E AES len=18
+[  49.145] --> TC apid=0x1F via=usb AES  payload=03
+[  49.599] <-- TM apid=0x1F clear len=32
+[  49.599] post-reboot: booted_slot=1 active=0 boot_try=1
+[  49.599] --> TC apid=0x1F via=usb AES  payload=02
+[  50.101] <-- TM apid=0x1F clear len=4
+[  50.101] --> TC apid=0x1F via=usb AES  payload=03
+[  50.555] <-- TM apid=0x1F clear len=32
+[  50.555] --> TC apid=0x1F via=usb AES  payload=063a6e2336b350ecf00000000801
+[  51.056] <-- TM apid=0x1F clear len=4
+[  51.057] --> TC apid=0x1F via=radio AES  payload=000000000011dd9541545441434b45522d424c4f422d322121
+[  51.507] <-- TM apid=0x1F clear len=5
+[  51.507] --> TC apid=0x1F via=radio AES  payload=01
+[  51.957] <-- TM apid=0x1F clear len=4
+[  51.957] with sig_required: finalize ok=0 (0 = rejected)
+[  51.957] -- console tail: [INFO] Radio 1 Configured Successfully! | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [WARN] GPS not detected on UART, using zero-coordinate fallback | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=45 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=32 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  51.957] ========================================================================
+[  51.957] POC OK
+[  51.957] ========================================================================

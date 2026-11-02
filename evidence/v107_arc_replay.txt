@@ -1,0 +1,59 @@
+[   0.000] ========================================================================
+[   0.000] V-07 replay window analysis
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x15 via=usb AES  payload=011005
+[   0.000] <-- TM apid=0x15 clear len=6
+[   0.000] --> TC apid=0x16 via=usb AES  payload=03
+[   0.001] <-- TM apid=0x16 clear len=3
+[   0.001] --> TC apid=0x16 via=usb AES  payload=03
+[   0.001] <-- TM apid=0x16 clear len=3
+[   0.002] <-- TM apid=0x09 AES len=14
+[   0.002] ARC delta  0: reject (SDLS ARC FAIL)
+[   0.002] --> TC apid=0x16 via=usb AES  payload=03
+[   0.002] <-- TM apid=0x16 clear len=3
+[   0.003] <-- TM apid=0x0C AES len=27
+[   0.003] ARC delta  1: ACCEPT
+[   0.003] --> TC apid=0x16 via=usb AES  payload=03
+[   0.003] <-- TM apid=0x16 clear len=3
+[   0.004] <-- TM apid=0x0C AES len=27
+[   0.004] ARC delta  2: ACCEPT
+[   0.004] --> TC apid=0x16 via=usb AES  payload=03
+[   0.004] <-- TM apid=0x16 clear len=3
+[   0.005] <-- TM apid=0x0C AES len=27
+[   0.005] ARC delta  3: ACCEPT
+[   0.005] --> TC apid=0x16 via=usb AES  payload=03
+[   0.006] <-- TM apid=0x16 clear len=3
+[   0.007] <-- TM apid=0x0C AES len=27
+[   0.007] ARC delta  4: ACCEPT
+[   0.007] --> TC apid=0x16 via=usb AES  payload=03
+[   0.007] <-- TM apid=0x16 clear len=3
+[   0.008] <-- TM apid=0x0C AES len=27
+[   0.008] ARC delta  5: ACCEPT
+[   0.008] --> TC apid=0x16 via=usb AES  payload=03
+[   0.008] <-- TM apid=0x16 clear len=3
+[   0.008] <-- TM apid=0x09 AES len=14
+[   0.008] ARC delta  6: reject (SDLS ARC FAIL)
+[   0.008] --> TC apid=0x16 via=usb AES  payload=03
+[   0.009] <-- TM apid=0x16 clear len=3
+[   0.009] <-- TM apid=0x09 AES len=14
+[   0.009] ARC delta  7: reject (SDLS ARC FAIL)
+[   0.009] --> TC apid=0x16 via=usb AES  payload=03
+[   0.009] <-- TM apid=0x16 clear len=3
+[   0.009] <-- TM apid=0x09 AES len=14
+[   0.009] ARC delta  8: reject (SDLS ARC FAIL)
+[   0.009] --> TC apid=0x16 via=usb AES  payload=03
+[   0.010] <-- TM apid=0x16 clear len=3
+[   0.010] <-- TM apid=0x09 AES len=14
+[   0.010] ARC delta  9: reject (SDLS ARC FAIL)
+[   0.010] --> TC apid=0x16 via=usb AES  payload=03
+[   0.010] <-- TM apid=0x16 clear len=3
+[   0.011] <-- TM apid=0x0C AES len=27
+[   0.011] <-- TM apid=0x09 AES len=14
+[   0.011] accept probability for a random ARC = W/2^16 = 7.629e-05; 16-bit counter wraps every 65536 commands (~32768 s at 2 cmd/s) and is VOLATILE: RESETC rewinds it -> a captured valid frame becomes replayable again after a reboot
+[   0.011] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[   0.012] --> TC apid=0x15 via=usb AES  payload=011005
+[   0.012] <-- TM apid=0x15 clear len=6
+[   0.013] <-- TM apid=0x0C AES len=27
+[   0.013] ========================================================================
+[   0.013] POC OK
+[   0.013] ========================================================================

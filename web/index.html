@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<!--
+FlatSat mission control — in-browser mission control + attack dashboard +
+56-finding educational index (v3: exhaustive frame decoding, glossary,
+guided help).
+
+Built artifact: web/dist/index.html (single page + worker.js). The embedded
+DEMO blob (sources, PoC catalog, evidence digests, writeups, APID attack
+surface, killchain stages, ground-station constants) is produced by
+tools/build_web_demo.py from the committed repo files — no fork, no port:
+the real simulator/flatsat_sim.py + poc/lib/fslab.py + the 56 unmodified
+PoCs run under Pyodide (CPython/WASM) in a Web Worker.
+
+Five views: OVERVIEW (orbit range scope + KPIs + attack surface + killchain),
+OPS (live mission control: state tiles, SPP frame stream, PoC console,
+verdict/parity bar), INDEX (the 56 writeups, step by step, with live proof).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#030209">
+<meta name="description" content="In-browser pentest mission control for the FlatSat electr0sm0g Lab vulnerable-by-design CubeSat: 56 findings, unmodified PoCs, CPython/WebAssembly.">
+<link rel="canonical" href="https://xenographic.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xenographic.org/">
+    <meta property="og:title" content="FlatSat electr0sm0g Lab — pentest mission control">
+    <meta property="og:description" content="56 findings, 56 runnable PoCs, in-browser mission control. Independent research on PwnSat x Electronic Cats' FlatSat.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/electr0sm0g/flatsat-mission-control/main/assets/social-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+<title>FLATSAT ELECTR0SM0G LAB — MISSION CONTROL</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23050308'/%3E%3Cpath d='M16 4 L28 26 L16 20 L4 26 Z' fill='%2345e3ff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+__CSS__
+</style>
+</head>
+<body>
+  <a class="skip" href="#views">Skip to mission control</a>
+<div id="boot" aria-hidden="true">
+  <div id="boot-inner">
+    <div id="boot-orbit">
+      <div class="b-ring"></div><div class="b-ring r2"></div>
+      <div class="b-sat"></div>
+      <div class="b-gs">◈</div>
+    </div>
+    <div class="b-title">FLATSAT <b>ELECTR0SM0G</b> MISSION CONTROL</div>
+    <div id="boot-log" role="log" aria-live="polite"></div>
+    <div id="boot-bar"><i></i></div>
+    <div class="b-note">CPython RUNS IN YOUR BROWSER — WEBASSEMBLY · NO SERVER · NO SIMULATION TRICKS</div>
+  </div>
+</div>
+<div id="topline" aria-hidden="true"></div>
+  <div id="app">
+
+  <header id="topbar">
+    <div class="brand">
+      <svg class="mark" width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <defs><linearGradient id="mg" x1="0" y1="0" x2="26" y2="26">
+          <stop offset="0" stop-color="#7fe0ff"/><stop offset="1" stop-color="#8b9cf5"/>
+        </linearGradient></defs>
+        <ellipse cx="13" cy="13" rx="11.4" ry="5.4" transform="rotate(-28 13 13)" stroke="url(#mg)" stroke-width="1.3" opacity=".8"/>
+        <circle cx="13" cy="13" r="3.1" fill="url(#mg)"/>
+        <circle cx="22.1" cy="8.4" r="1.7" fill="#7fe0ff"/>
+      </svg>
+      <span class="brand-name">FlatSat<b>electr0sm0g</b></span>
+      <span class="brand-sub">orbital security lab</span>
+    </div>
+    <nav id="views-nav" aria-label="views">
+      <button data-view="overview" class="on" title="attack dashboard — KPIs, families, APID surface, killchain [1]">OVERVIEW</button>
+      <button data-view="ops" title="live mission control — state tiles, decoded frame stream, PoC console [2]">OPS</button>
+      <button data-view="index" title="the 56 findings, readable and runnable [3]">INDEX · 56</button>
+      <span class="navsep"></span>
+      <button data-view="report" title="the full engagement report — 56 findings with impact, PoC steps and remediation [4]">REPORT</button>
+      <button data-view="repo" title="browse the repository itself — docs, evidence transcripts, firmware and runnable sources [5]">REPO</button>
+      <button id="btn-cmdk" aria-label="search — every view, finding, help and glossary" title="quick jump — every view, finding, help & glossary (Ctrl+K)"><span class="ck-kbd">⌘K</span><span class="ck-tap" aria-hidden="true">⌕</span></button>
+    </nav>
+    <div class="spacer"></div>
+    <div id="leds">
+      <span class="led off" id="led-sim"><i></i>SIM</span>
+      <span class="led off" id="led-link"><i></i>LINK</span>
+      <span class="led off" id="led-key"><i></i>KEY</span>
+      <span class="led off" id="led-state"><i></i>STATE</span>
+    </div>
+    <div id="engine" class="pill eng" title="python engine · CPython/WASM from the pinned CDN">ENGINE …</div>
+    <div id="selftest" class="pill" role="status" aria-label="self-test status">booting CPython/WASM…</div>
+  </header>
+
+  <div id="views" role="main">
+
+    <!-- ================= OVERVIEW ================= -->
+    <section id="view-overview" class="view on">
+      <div id="ov-start" class="panel">
+        <b>START HERE — 60 seconds to understand this console</b>
+        <div class="start-steps">
+          <span class="sstep"><i>1</i><span>open <b>INDEX</b> and click the card <b>V-36</b> — the flagship GPS-spoof chain</span></span>
+          <span class="sstep"><i>2</i><span>press <b>RUN LIVE</b> — the unmodified PoC runs here, in CPython compiled to WebAssembly</span></span>
+          <span class="sstep"><i>3</i><span>switch to <b>OPS</b> while it runs: every wire frame, decoded field by field</span></span>
+          <span class="snote" title="POC OK = this browser run reproduces the committed simulator transcript byte-for-byte (normalised md5); the same unmodified PoC also passed on the physical FlatSat 1 board (bench parity: evidence-hw/).">a <b>POC OK</b> verdict = byte-for-byte replay of the committed transcript (md5) — same PoC, also green on the real board · live at <b>xenographic.org</b>, no install</span>
+          <span class="sact">
+            <button id="ov-start-go" class="primary">TAKE ME TO V-36 ▸</button>
+            <button id="ov-start-x" title="hide this strip">✕</button>
+          </span>
+        </div>
+      </div>
+      <div id="ov-row1">
+        <section id="ov-why" class="panel">
+          <div class="colhead">WHAT THIS PROJECT IS — INSPIRED BY FLATSAT · VERIFIABLE END TO END
+            <span class="hright"><span class="dim">keys 1–5 switch views · ? help · G glossary</span></span>
+          </div>
+          <div id="ov-why-body">
+
+            <div id="why-hero">
+              <svg class="hero-mark" aria-hidden="true" viewBox="0 0 800 400" preserveAspectRatio="xMaxYMin slice">
+                <g fill="none" stroke-width="1">
+                  <path id="hero-orb-1" d="M 320 110 a 320 130 0 1 0 640 0 a 320 130 0 1 0 -640 0"
+                        stroke="rgba(76,201,240,.5)" transform="rotate(-16 640 110)"/>
+                  <path id="hero-orb-2" d="M 410 110 a 230 84 0 1 0 460 0 a 230 84 0 1 0 -460 0"
+                        stroke="rgba(167,139,250,.4)" transform="rotate(-16 640 110)"/>
+                  <circle r="4.5" fill="#4bc9f0" stroke="none">
+                    <animateMotion dur="30s" repeatCount="indefinite"><mpath href="#hero-orb-1"/></animateMotion>
+                  </circle>
+                  <circle r="3" fill="#a78bfa" stroke="none">
+                    <animateMotion dur="19s" repeatCount="indefinite" calcMode="linear"
+                                   keyPoints="1;0" keyTimes="0;1"><mpath href="#hero-orb-2"/></animateMotion>
+                  </circle>
+                  <path d="M28 380 l13 -20 h26 l13 20 z" stroke="rgba(76,201,240,.4)"/>
+                  <path d="M54 360 q70 -90 160 -130" stroke="rgba(76,201,240,.32)" stroke-dasharray="3 6">
+                    <animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1.6s" repeatCount="indefinite"/>
+                  </path>
+                </g>
+              </svg>
+              <div id="why-hero-main">
+                <div class="eyebrow">penetration test campaign · flatsat electr0sm0g lab · rp2040 + 2× sx1262 · 2026</div>
+                <h2>A vulnerable-by-design CubeSat laboratory,
+                  <span>built on the real <a class="ext" href="https://github.com/Pwnsat/FlatSat" target="_blank" rel="noopener"
+                     title="the upstream open-hardware platform this lab extends">FlatSat ↗</a></span></h2>
+                <p class="pitch"><b>One complete aerospace penetration test — 56 findings, 56 runnable
+                   proofs, one full engagement report — that you can re-run right here, in this tab.</b>
+                   Every PoC executes <b>unmodified</b>, in CPython compiled to WebAssembly, and every
+                   run is hash-checked against the committed simulator transcript (and the same PoC code also passed on the real board).</p>
+                <p>The target is the satellite testbed <b>FlatSat</b> —
+                   <a class="ext" href="https://github.com/Pwnsat/FlatSat" target="_blank"
+                      rel="noopener">PwnSat&nbsp;×&nbsp;Electronic&nbsp;Cats' open-hardware
+                      platform</a>, the first vulnerable-by-design CubeSat in the world — running its
+                   upstream firmware (v1.0.3) plus the lab modules this project adds. It compiles to a
+                   <code>.uf2</code> and flashes the very same board: the <b>112&thinsp;/&thinsp;112
+                   bench parity</b> beside this text is not a claim — it is committed, hashed evidence,
+                   and the panel below shows exactly what this repository adds on top of the upstream
+                   platform.</p>
+                <div class="pitch-chips">
+                   <a class="ext hl" href="https://github.com/electr0sm0g/flatsat-mission-control/releases/tag/v1.0.0"
+                      target="_blank" rel="noopener"
+                      title="GitHub release v1.0.0: flashable firmware.uf2 + md5sum.txt built by CI, plus generated release notes">★ release v1.0.0 ↗</a>
+
+                  <span>no hardware needed</span><span>no account · no server</span>
+                  <span>open source · GPL-2.0</span><span>CI re-verifies this page on every push to main</span>
+                </div>
+              </div>
+              <div id="why-hero-stats">
+                <ul class="spec">
+                  <li><span><i>FINDINGS</i>18 upstream + 38 lab</span><b>56</b></li>
+                  <li><span><i>PROOFS</i>simulator + real board</span><b>112&thinsp;/&thinsp;112</b></li>
+                  <li><span><i>HARDWARE</i>same board as upstream</span><b>RP2040</b></li>
+                  <li><span><i>LICENSE</i>no accounts · no backend</span><b>GPL-2.0</b></li>
+                  <li class="sevli"><span><i>SEVERITY MIX</i>as rated across the 56 writeups</span></li>
+                </ul>
+                <div id="why-sevbar" title="severity distribution across the 56 findings"></div>
+              </div>
+            </div>
+
+            <aside id="ov-kpis">
+              <div class="kpi"><div class="kv" id="kpi-v1">56</div><div class="kl">FINDINGS</div><div class="ks">vulnerable by design · SPARTA v3.2 (Aerospace)</div></div>
+              <div class="kpi"><div class="kv" id="kpi-v2">112/112</div><div class="kl">POC OK</div><div class="ks">56 simulator + 56 hardware runs · transcript hashes verified</div></div>
+              <div class="kpi"><div class="kv" id="kpi-v3">7</div><div class="kl">SPARTA TACTICS</div><div class="ks">7 of the matrix’s 9 tactics exercised</div></div>
+              <div class="kpi"><div class="kv" id="kpi-v4">—</div><div class="kl">APID SURFACE</div><div class="ks">attack surface as exercised by the 56 transcripts</div></div>
+              <div class="kpi"><div class="kv small" id="kpi-v5">—</div><div class="kl">FIRMWARE IMAGE H</div><div class="ks" id="kpi-s5">UF2 · 335,872 B · md5 verified in-repo</div></div>
+            </aside>
+
+            <div id="why-vs">
+              <div class="vs-c vs-head vs-l">FLATSAT v1.0 — THE UPSTREAM PLATFORM
+                <span>github.com/Pwnsat/FlatSat · the board, the firmware, the idea</span></div>
+              <div class="vs-c vs-head vs-r">FLATSAT ELECTR0SM0G LAB — THIS REPOSITORY
+                <span>what this engagement adds on top</span></div>
+              <div class="vs-c vs-l">Hardware, firmware and <b>8 attack demos</b>: KiCad/STEP CAD,
+                PlatformIO firmware, eight numbered attacks in USB/RF variants — 137 tracked files.</div>
+              <div class="vs-c vs-r">A complete <b>assessment campaign</b>: 56 findings, 56 unmodified
+                PoCs, threat model, SPARTA&nbsp;v3.2 mapping, engagement report — __TRACKED__ tracked files.</div>
+              <div class="vs-c vs-l">Every attack needs the <b>physical board</b>, a transceiver or USB
+                port, and an operator following a guide.</div>
+              <div class="vs-c vs-r">Every proof <b>runs in this browser</b> — Pyodide/WASM, zero setup —
+                or on the bench with one command: <code>python3 poc/…</code></div>
+              <div class="vs-c vs-l">No hashes, no CI: correct behavior is judged by eye on a serial console.</div>
+              <div class="vs-c vs-r"><b>112 md5-pinned transcripts</b> (56 simulator + 56 hardware); CI
+                re-verifies this very page headless on every push and fails on any drift.</div>
+              <div class="vs-c vs-l">Five Markdown files in-repo; the documentation lives in a GitHub wiki.</div>
+              <div class="vs-c vs-r"><b>__VER_DOCS__ versioned docs</b>: 56 per-finding writeups, killchain, defense
+                blue-team notes, realism note, curriculum — all browsable inside the console.</div>
+              <div class="vs-c vs-l">“Try the attack and see what happens.”</div>
+              <div class="vs-c vs-r">Finding → <b>impact → remediation</b> per finding, severity-rated;
+                a five-stage flagship killchain you can watch play out frame by frame.</div>
+              <div class="vs-c vs-foot">upstream figures measured on its public main branch, 2026-11 ·
+                lab figures computed live from the shipped catalog baked into this page</div>
+            </div>
+
+            <div class="wblock"><i>A</i><div>
+              <h3>THE PROJECT YOU ARE STANDING ON — FLATSAT v1.0</h3>
+              <p><a class="ext" href="https://github.com/Pwnsat/FlatSat" target="_blank" rel="noopener">FlatSat</a>
+                 is a physical, open-hardware “satellite on a desk”, created by
+                 <b>PwnSat</b> and <b>Electronic Cats</b> (with the first version made possible by
+                 <b>Alex Lynd</b>) to learn space hacking on real hardware in a legal, license-free
+                 ISM-band radio environment. It simulates real satellite subsystems — on-board computer,
+                 dual RF links, sensors, telemetry — over authentic aerospace protocols (CCSDS Space
+                 Packet Protocol), and ships deliberately breakable: an <code>.uf2</code> firmware that
+                 <i>wants</i> to be exploited, and eight documented attacks (<code>00–07</code>) to
+                 practise on it. Hardware is open under CERN-OHL v1.2, firmware under GPL-2.0-or-later;
+                 <i>PwnSat</i> and <i>Electronic Cats</i> are their authors' registered trademarks.</p>
+            </div></div>
+
+            <div class="wblock"><i>B</i><div>
+              <h3>UPSTREAM FLATSAT ↔ THIS LAB — EXACTLY WHAT CARRIES OVER</h3>
+              <table class="why-map">
+                <tr><th>FlatSat v1.0 (upstream)</th><th>This FlatSat electr0sm0g Lab</th><th>Where to verify</th></tr>
+                <tr><td>RP2040 on-board computer, 2× Semtech SX1262 LoRa (uplink/downlink), BME280, LIS2DH12, ISM band</td>
+                    <td>the same board — the lab bench is a real FlatSat (“FlatSat 1”), the simulator models the same chip set and buses</td>
+                    <td><code>docs/REALISM.md</code>, <code>docs/HARDWARE-USB-TEST.md</code></td></tr>
+                <tr><td>vulnerable-by-design firmware v1.0.3 + <code>platformio.ini</code></td>
+                    <td>that exact firmware <b>plus lab modules</b> (19 more lab APIDs 0x15–0x27, mission model, anomaly engine) — one PlatformIO build</td>
+                    <td><code>firmware/</code>, <code>docs/BUILD.md</code></td></tr>
+                <tr><td>8 attacks, scripts <code>00–07</code> (RF + USB variants)</td>
+                    <td>the 18 findings present upstream (V0-01…V0-18) plus <b>38 new ones</b> this lab introduced (V-01…V-38) — 56 PoCs in all</td>
+                    <td><code>docs/SPARTA_MAPPING.md</code>, <code>FINDINGS.json</code></td></tr>
+                <tr><td>CCSDS Space Packet Protocol framing, APID registry</td>
+                    <td>unchanged framing; every byte this page streams is that protocol, decoded field by field in OPS</td>
+                    <td><code>docs/DESIGN-RATIONALE.md</code>, REPO view sources</td></tr>
+              </table>
+            </div></div>
+
+            <div class="wblock"><i>C</i><div>
+              <h3>IT IS NOT A MODEL OF A FIRMWARE — IT FLASHES THE DEVICE</h3>
+              <div class="why-steps">
+                <div class="step"><b>1 · BUILD</b><code>pio run</code><span>PlatformIO, env <code>pico_tinyusb</code> — the upstream flow, unchanged</span></div>
+                <div class="step"><b>2 · FLASH</b><code>.uf2 → BOOTSEL</code><span>drag-and-drop onto the Pico exactly like the upstream wiki quick-start (final bench image H; kept hardware transcripts span images E–H as annotated in hw_pass.txt)</span></div>
+                <div class="step"><b>3 · ATTACK</b><code>python3 poc/… --usb</code><span>every PoC runs against the flashed board over USB, or over the simulator with no hardware at all</span></div>
+              </div>
+              <p>Image H actually flashed on the bench: md5 <b id="why-img">…</b>
+                 (335,872-byte UF2, digest anchored in <code>docs/BUILD.md</code> and re-checked by CI).
+                 The honest boundary: the <i>flight</i> FlatSat firmware upstream keeps its own course;
+                 this lab's build trades operational hardening for 56 teaching targets — that trade
+                 is the point, and it is documented finding by finding.</p>
+            </div></div>
+
+            <div class="wblock"><i>D</i><div>
+              <h3>WHAT IS REAL HERE — AND WHAT IS SIMULATED, HONESTLY</h3>
+              <div class="why-cols">
+                <div>
+                  <h4><span class="ok-dot"></span>REAL</h4>
+                  <ul>
+                    <li>The simulator, harness and all 56 PoCs are the <b>byte-identical files from the git repo</b>, executed as real CPython (compiled to WebAssembly — Pyodide, version-pinned) in a Web Worker. Nothing is canned or replayed.</li>
+                    <li>A <b>POC&nbsp;OK</b> verdict means the transcript made <i>on your machine, right now</i> hashes to the committed simulator transcript digest — the same one CI re-checks on every push to main.</li>
+                    <li>Every PoC was additionally executed against <b>the real flashed FlatSat 1 board</b>; both worlds' transcripts are committed — <code>evidence/</code> (simulator) and <code>evidence-hw/</code> (board).</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4><span class="sim-dot"></span>SIMULATED (BY DESIGN)</h4>
+                  <ul>
+                    <li>The RP2040 binary itself does not run in your browser. The Python simulator is a <b>bit-faithful twin</b> of the firmware's link and behaviour logic — same frames, APIDs, state machines, fault points (docs/REALISM.md maps them side by side).</li>
+                    <li>Orbit, eclipse, battery, attitude and the ground station are <b>mission models</b>, not physics: the bench has no ADCS or EPS — the lab says so out loud.</li>
+                    <li>Radio here is a wire tap, not RF: same bytes, no anechoic chamber claims.</li>
+                  </ul>
+                </div>
+              </div>
+            </div></div>
+
+            <div class="wblock"><i>E</i><div>
+              <h3>THE 56 FINDINGS</h3>
+              <p><span id="why-sev"></span> across <b id="why-fams">…</b> of the 9 tactic families of
+                 <a class="ext" href="https://sparta.aerospace.org/" target="_blank" rel="noopener"
+                    title="Space Attack Research and Tactic Analysis — the space-cyber threat matrix by The Aerospace Corporation">SPARTA</a>
+                 v3.2 (Space Attack Research and Tactic Analysis, The Aerospace Corporation),
+                 (reconnaissance → execution → initial access → defense evasion → persistence → lateral movement → exfiltration), touching
+                 <b id="why-apids">…</b>&nbsp;APIDs as the committed transcripts actually exercised them.
+                 In INDEX every finding is one card: full writeup (root cause → mechanism → walkthrough →
+                 impact → mitigations), one-click <b>RUN LIVE</b>, its raw bench transcript, its source.
+                 Every number on this page is read from the baked catalog at load — nothing is retyped.</p>
+            </div></div>
+
+            <div class="wblock"><i>F</i><div>
+              <h3>THE FLAGSHIP CHAIN — V-36, FIVE STAGES, ONE UPLINK</h3>
+              <div id="why-flow">
+                <div class="fstep"><b>1</b><span>enumerate the command surface over raw radio — <i>zero credentials</i></span></div>
+                <div class="farrow">▸</div>
+                <div class="fstep"><b>2</b><span>spoof the GPS fix — the vehicle believes it is inside the 35&nbsp;km range gate</span></div>
+                <div class="farrow">▸</div>
+                <div class="fstep"><b>3</b><span>walk the plausibility defense — the ~8,900&nbsp;km hop spread over 60&nbsp;s stays under the 500&nbsp;km/s gate</span></div>
+                <div class="farrow">▸</div>
+                <div class="fstep"><b>4</b><span>answer the GS handshake offline — the static-XOR “authentication” is derivable</span></div>
+                <div class="farrow">▸</div>
+                <div class="fstep arm"><b>5</b><span>payload ARMED — full privileged control from one unauthenticated session</span></div>
+              </div>
+              <p>Run V-36 from the start-here strip and watch the killchain pipeline below light its five
+                 stages exactly as the committed evidence anchors appear in the transcript.</p>
+            </div></div>
+
+            <div class="wblock"><i>G</i><div>
+              <h3>THE FIVE VIEWS</h3>
+              <div class="why-views">
+                <div class="vcard" data-goto="overview" title="open the OVERVIEW view now"><kbd>1</kbd><b>OVERVIEW</b><span>this briefing + the verified headline numbers, the 7 SPARTA families, the 42-APID attack surface, the live killchain</span></div>
+                <div class="vcard" data-goto="ops" title="open the OPS view now"><kbd>2</kbd><b>OPS</b><span>the live mission control: every frame decoded field by field, full spacecraft state, the PoC console, the hash verdict</span></div>
+                <div class="vcard" data-goto="index" title="open the INDEX · 56 view now"><kbd>3</kbd><b>INDEX · 56</b><span>every finding as a teach-up writeup, searchable, runnable in place, with its evidence and source one click away</span></div>
+                <div class="vcard" data-goto="report" title="open the REPORT view now"><kbd>4</kbd><b>REPORT</b><span>the engagement report as committed — impact, remediation, status per finding — plus the full __PDF_PAGES__-page PDF</span></div>
+                <div class="vcard" data-goto="repo" title="open the REPO view now"><kbd>5</kbd><b>REPO</b><span>the repository itself in-page: 12 docs, 114 evidence transcripts, the firmware sources, the runnable Python — byte-identical, md5 shown</span></div>
+              </div>
+            </div></div>
+
+            <div class="wblock"><i>H</i><div>
+              <h3>VERIFY IT OUTSIDE THE BROWSER</h3>
+              <p>Clone the repository, then: <code>make check</code> (catalog, digests, self-tests) ·
+                 <code>python3 poc/v136_gps_spoof_chain.py</code> (same transcript this page hashes
+                 against) · the CI job <code>web-demo</code> re-runs <b>this very page</b> headless on
+                 every push and fails if any verdict, hash, or frame count drifts. Ten verification
+                 rows, each with its command: <code>docs/VERIFICATION.md</code>.</p>
+              <p>Want it on real hardware: the <a class="ext hl" href="https://github.com/electr0sm0g/flatsat-mission-control/releases/tag/v1.0.0"
+                  target="_blank" rel="noopener">GitHub release <b>v1.0.0</b> ↗</a> publishes a flashable
+                  <code>firmware.uf2</code> with its <code>md5sum.txt</code>, built by CI from this exact
+                  tag (BOOTSEL the Pico, drop the file in, done). Note the honesty line: the CI rebuild
+                  can differ bit-wise from the image swept on the bench — that final image <b>H</b>,
+                  <code>md5 bfc145c9…</code>, is pinned in <code>evidence-hw/</code>, and the library
+                  dependencies float within their semver ranges in <code>platformio.ini</code>.</p>
+            </div></div>
+
+            <div class="wblock"><i>I</i><div>
+              <h3>WHAT IT IS NOT — AND WHO DESERVES THE CREDIT</h3>
+              <p>Not a product, not marketing, not flight-proven software: the working notebook of one
+                 research engagement, published whole — no accounts, no analytics, one static artifact
+                 you could archive on a USB stick (the only external calls: the pinned Pyodide CDN and Google Fonts, with system-font fallbacks).
+                 It stands on the shoulders of <a class="ext" href="https://github.com/Pwnsat/FlatSat"
+                 target="_blank" rel="noopener">FlatSat</a> by <b>PwnSat × Electronic Cats</b>
+                 (hardware CERN-OHL v1.2, firmware GPL-2.0-or-later — licenses respected, trademarks
+                 theirs). The threat taxonomy used across this site is <b>SPARTA</b> — Space Attack
+                 Research and Tactic Analysis, © <b>The Aerospace Corporation</b> (<a class="ext"
+                 href="https://sparta.aerospace.org/" target="_blank" rel="noopener">sparta.aerospace.org</a>),
+                 reproduced per its terms of use; this lab's own code is GPL-2.0-or-later ·
+                 <b>Étienne Lacoche — Cybersecurity Researcher</b>.</p>
+              <div id="why-next">
+                <span class="dim">START HERE:</span>
+                <button id="why-v36" class="primary">READ + RUN THE V-36 CHAIN ▸</button>
+                <button id="why-sweep" title="run all 56 unmodified PoCs in one session (~20 s)">RUN THE FULL SWEEP 56/56</button>
+                <button id="why-threat" title="docs/THREAT-MODEL.md — who the adversary is, byte-identical copy">READ THE THREAT MODEL</button>
+                <button id="why-report">OPEN THE ENGAGEMENT REPORT</button>
+              </div>
+            </div></div>
+          </div>
+        </section>
+      </div>
+
+      <section id="ov-heroes" class="panel">
+        <div class="colhead">HERO FINDINGS <span class="dim">the five that tell the story</span></div>
+        <div id="ov-heroes-grid"></div>
+      </section>
+
+      <div id="ov-row3">
+        <section id="ov-families" class="panel">
+          <div class="colhead">SPARTA FAMILIES <span class="dim">Space Attack Research and Tactic Analysis v3.2 · The Aerospace Corporation · click to open the index</span></div>
+          <div id="ov-families-grid"></div>
+        </section>
+        <section id="ov-apid" class="panel">
+          <div class="colhead">APID ATTACK SURFACE <span class="dim">from the 56 committed transcripts · ▲ TC uplink · ▼ TM downlink</span></div>
+          <div id="ov-apid-grid"></div>
+        </section>
+      </div>
+
+      <section id="ov-killchain" class="panel">
+        <div class="colhead">KILLCHAIN V-36 — GPS SPOOF → GS GATE BYPASS → PRIVILEGED CONTROL
+          <span class="dim">the flagship chain · 5 stages · evidence-anchored</span>
+          <span class="hright"><button id="btn-chain" class="primary">RUN THE CHAIN ▸ (v136 LIVE)</button></span>
+        </div>
+        <div id="ov-kc-stages"></div>
+        <div id="ov-kc-foot" class="dim">stages light up live as the committed evidence anchors appear in the v136 transcript</div>
+      </section>
+    </section>
+
+    <!-- ================= OPS ================= -->
+    <section id="view-ops" class="view">
+      <div class="view-hero ops-hero">
+        <div class="vh-title">
+          <h2>OPS — LIVE MISSION CONTROL<span>PoC stream with every wire frame decoded field by field, spacecraft state read live from the model, verdict bar hashing this run against the committed evidence</span></h2>
+        </div>
+        <div id="ops-tools">
+          <label for="pocsel">TARGET PoC</label>
+          <select id="pocsel"></select>
+          <button id="btn-run" class="primary" title="execute the selected PoC against the live simulator [r]">RUN ▸</button>
+          <button id="btn-sweep" title="Run all 56 PoCs sequentially in one worker session">SWEEP 56/56</button>
+          <div class="otsep"></div>
+          <span class="otlabel">PLAYBACK</span>
+          <div id="speed" title="playback speed of the transcript replay — the run itself always executes at full speed">
+            <button data-sp="1">1×</button><button data-sp="2">2×</button>
+            <button data-sp="4" class="on">4×</button><button data-sp="16">16×</button>
+            <button data-sp="max">MAX</button>
+          </div>
+          <button id="btn-pause" title="pause / resume playback">⏸</button>
+        </div>
+      </div>
+      <main id="grid">
+        <section id="statecol" aria-label="spacecraft state">
+          <div class="colhead">SPACECRAFT STATE <span class="dim">— live model introspection</span></div>
+          <div id="tiles"></div>
+        </section>
+
+        <section id="rightcol">
+          <div id="streamwrap">
+            <div class="colhead">UPLINK / DOWNLINK <span class="livechip">LIVE</span> <span class="dim">— SPP frame stream (real wire bytes)</span>
+              <span class="hright">
+                <label class="flt"><input type="checkbox" id="flt-tc" checked> TC</label>
+                <label class="flt"><input type="checkbox" id="flt-tm" checked> TM</label>
+                <span class="sf" role="group" aria-label="stream quick filter">
+                  <button id="sf-all" class="on">ALL</button><button id="sf-tc">▲TC</button>
+                  <button id="sf-tm">▼TM</button><button id="sf-err">ERR</button>
+                  <button id="sf-next" title="jump to the next error frame [n]">⤓ ERR</button>
+                </span>
+                <span id="framecount" class="dim">0 frames</span>
+              </span>
+            </div>
+            <div id="stream" aria-live="off"></div>
+            <div id="inspector"></div>
+          </div>
+
+          <div id="consolewrap">
+            <div class="colhead">PoC CONSOLE <span class="livechip">LIVE</span> <span class="dim">— live transcript of the unmodified PoC</span>
+              <span class="hright"><label class="flt"><input type="checkbox" id="autoscroll" checked> autoscroll</label></span>
+            </div>
+            <div id="console"></div>
+            <div id="verdict" aria-live="polite" title="A POC OK verdict means the transcript produced in this browser hashes (normalised md5) byte-identical to the committed simulator transcript — the same unmodified PoC also passed on the physical FlatSat 1 board (bench parity). Hover a verdict for details."><span class="dim">standby — select a PoC and RUN</span></div>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <!-- ================= INDEX ================= -->
+    <section id="view-index" class="view">
+      <div id="idx-catalog-view">
+        <div id="idx-intro">
+          <div class="eyebrow">vulnerability catalog · runnable proofs · simulator × hardware</div>
+          <h1>INDEX — 56 VULNERABILITIES, STEP BY STEP</h1>
+          <p>FlatSat V1.0 is <b>vulnerable by design</b> (Electronic Cats × PwnSat pentest lab). Every card below
+          is a real weakness that was <b>found, exploited, and verified twice</b> — once against this simulator,
+          once against the board (images E–H, per-run annotations in hw_pass.txt) — 112/112 PoC OK.</p>
+          <p>Each writeup follows the same path: <b>Summary → Root cause → Attack mechanism →
+          Exploitation walkthrough (step by step) → Impact → Mitigations → References</b>, mapped to
+          <b>SPARTA v3.2</b> — Space Attack Research and Tactic Analysis,
+          The Aerospace Corporation.
+          <b>Click a card</b> to read it; press <b>RUN LIVE</b> to execute the unmodified
+          PoC here, in the pane on the right, under CPython/WASM — the fresh transcript must hash to the
+          committed evidence for the verdict to pass.</p>
+        </div>
+        <div id="idx-controls">
+          <input id="idx-search" type="search" aria-label="search the 56 findings" placeholder="search 56 — id, title, keyword, sparta…   [ / ]" autocomplete="off">
+          <div id="idx-chips"></div>
+          <button id="btn-catalog" title="the whole catalog as a compact grouped grid — click any card to open its writeup">⊞ FULL GRID</button>
+        </div>
+        <div id="idx-cards"></div>
+      </div>
+
+      <div id="idx-detail" class="hidden">
+        <div id="idx-detail-head">
+          <button id="idx-back">← ALL 56</button>
+          <span id="idx-detail-id"></span>
+          <h2 id="idx-detail-title"></h2>
+          <span id="idx-detail-sev" class="sevchip"></span>
+          <div class="spacer"></div>
+          <button id="idx-share" title="copy a deep link to this finding">SHARE ⧉</button>
+          <button id="idx-src" title="open the unmodified PoC source (REPO view)">SRC</button>
+          <button id="idx-ev" title="open the committed bench evidence transcript (REPO view)">EVIDENCE</button>
+          <span id="idx-detail-meta" class="dim"></span>
+          <button id="idx-run" class="primary">RUN LIVE ▸</button>
+        </div>
+        <div id="idx-detail-split">
+          <div id="idx-doc-wrap">
+            <nav id="idx-toc" aria-label="sections"></nav>
+            <article id="idx-doc"></article>
+          </div>
+          <div id="idx-live">
+            <div id="idx-stages" class="hidden"></div>
+            <div id="idx-console-wrap">
+              <div class="colhead">LIVE PROOF <span class="livechip">LIVE</span> <span class="dim">— unmodified PoC · CPython/WASM</span></div>
+              <div id="idx-console"></div>
+              <div id="idx-verdict" class="verdictbox" title="A POC OK verdict means this browser run hashes (normalised md5) byte-identical to the committed simulator transcript — the same unmodified PoC also passed on the physical FlatSat 1 board."><span class="dim">standby — RUN LIVE to execute this PoC here</span></div>
+            </div>
+            <div id="idx-live-foot" class="dim">provenance: fresh transcript md5 vs committed evidence/<span class="hash"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REPORT — the engagement report (pentest-report.json) ==== -->
+    <section id="view-report" class="view">
+      <div id="report-wrap"></div>
+    </section>
+
+    <!-- ============ REPO — byte-identical repository browser ================ -->
+    <section id="view-repo" class="view">
+      <div class="view-hero">
+        <h2>REPO — THE COMMITTED REPOSITORY<span>every file byte-identical to git, opened in place: design docs, the committed bench evidence transcripts, the vulnerable-by-design firmware sources, the runnable Python</span></h2>
+      </div>
+      <div id="repo-main">
+        <aside id="repo-side">
+          <div id="repo-side-head">
+            <span>REPOSITORY <span class="dim">byte-identical copies</span></span>
+          </div>
+          <input id="repo-search" type="text" autocomplete="off" spellcheck="false"
+                 placeholder="filter files… (docs, evidence, firmware, talk)"
+                 aria-label="filter repository files">
+          <div id="repo-tree"></div>
+          <div id="repo-side-foot" class="dim">each file's md5 is shown in its header —
+            it matches the committed tree exactly</div>
+        </aside>
+        <section id="repo-file">
+          <div id="repo-file-head">
+            <span id="repo-path" class="dim">select a file on the left</span>
+            <div class="spacer"></div>
+            <span id="repo-info" class="dim"></span>
+            <a id="repo-download" class="hidden" download>DOWNLOAD</a>
+          </div>
+          <div id="repo-body"></div>
+        </section>
+      </div>
+    </section>
+
+  </div>
+
+  <footer id="prov">
+    <span id="prov-text">RUNNING UNMODIFIED — sources + digests appear here after boot</span>
+    <span class="prov-right">
+      <button class="foot-btn" id="btn-help" title="how to read this console + keyboard shortcuts">? HELP</button>
+      <button class="foot-btn" id="btn-glossary" title="plain-language definitions of every acronym used here">GLOSSARY</button>
+      GPL-2.0-or-later · Étienne Lacoche — Cybersecurity Researcher ·
+      <a class="mail" href="mailto:etienne.lacoche@pm.me">etienne.lacoche@pm.me</a>
+      <a class="soc" href="https://fr.linkedin.com/in/etiennelacoche" target="_blank" rel="noopener"
+         title="LinkedIn — Étienne Lacoche">
+        <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        LinkedIn</a>
+      <a class="soc" href="https://x.com/electr0sm0g" target="_blank" rel="noopener"
+         title="X — @electr0sm0g">
+        <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.59-6.64 7.59H.47l8.6-9.83L0 1.15h7.6l5.24 6.93 6.05-6.93zm-1.29 19.5h2.04L6.49 3.24H4.3l13.3 17.4z"/></svg>
+        X</a>
+    </span>
+  </footer>
+</div>
+
+<div id="catalog" class="hidden">
+  <div id="catalog-head">
+    <h2>FINDING CATALOG — 56 PoCs <span class="dim">SPARTA v3.2 · The Aerospace Corporation</span></h2>
+    <button id="catalog-close">✕ CLOSE</button>
+  </div>
+  <div id="catalog-body"></div>
+</div>
+
+<div id="sweep" class="hidden">
+  <div id="sweep-head">
+    <h2>FULL SWEEP <span id="sweep-count" class="dim">0 / 56</span></h2>
+    <div id="sweep-bar"><i id="sweep-fill"></i></div>
+    <span id="sweep-time" class="dim">—</span>
+    <button id="sweep-close" title="close this overlay — the sweep keeps running in the background, SWEEP button reopens it">✕</button>
+  </div>
+  <div id="sweep-grid"></div>
+  <div id="sweep-final"></div>
+  <div id="sweep-hint" class="dim">every PoC runs unmodified, in this same worker session · PASS = fresh transcript md5 equals the committed evidence</div>
+</div>
+
+<div id="diff" class="overlay hidden">
+  <div id="diff-head">
+    <div class="colhead">TRANSCRIPT COMPARISON <span class="dim" id="diff-sub"></span></div>
+    <button id="diff-close" title="close">✕</button>
+  </div>
+  <div id="diff-cols"></div>
+</div>
+
+<div id="cmdk" class="hidden" role="dialog" aria-label="quick jump">
+  <div id="cmdk-box">
+    <input id="cmdk-input" type="text" placeholder="jump to a view, an action, or any of the 56 findings…"
+           autocomplete="off" spellcheck="false" aria-label="search">
+    <div id="cmdk-list"></div>
+    <div id="cmdk-foot"><kbd>↑</kbd><kbd>↓</kbd> navigate&nbsp;&nbsp;<kbd>↵</kbd> open&nbsp;&nbsp;<kbd>esc</kbd> close</div>
+  </div>
+</div>
+
+<div id="glossary" class="overlay hidden">
+  <div class="ov-card">
+    <div class="ov-head">
+      <h2>MISSION GLOSSARY <span class="dim">— every acronym on this console, in plain language</span></h2>
+      <button class="ov-close" data-close="glossary">✕</button>
+    </div>
+    <div id="glossary-body" class="ov-body"></div>
+  </div>
+</div>
+
+<div id="helpov" class="overlay hidden">
+  <div class="ov-card">
+    <div class="ov-head">
+      <h2>HOW TO READ THIS CONSOLE</h2>
+      <button class="ov-close" data-close="helpov">✕</button>
+    </div>
+    <div id="help-body" class="ov-body"></div>
+  </div>
+</div>
+
+<script>
+window.DEMO = __BLOB_JSON__;
+</script>
+<script>
+__JS__
+</script>
+</body>
+</html>

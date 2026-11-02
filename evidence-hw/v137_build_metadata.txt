@@ -1,0 +1,82 @@
+[   0.000] ========================================================================
+[   0.000] V-37 build metadata -> software base
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.858] --> TC apid=0x0A via=usb AES  payload=00
+[   8.899] <-- TM apid=0x0A clear len=3
+[   8.951] --> TC apid=0x1D via=usb clear payload=0101
+[   9.002] <-- TM apid=0x1D clear len=4
+[   9.002] --> TC apid=0x11 via=usb clear payload=00
+[   9.464] <-- TM apid=0x11 clear len=9
+[   9.464] --> TC apid=0x15 via=usb clear payload=001005
+[   9.914] <-- TM apid=0x15 clear len=6
+[   9.914] --> TC apid=0x0D via=usb clear payload=01
+[  10.365] <-- TM apid=0x0D clear len=4
+[  10.416] --> TC apid=0x1D via=usb clear payload=03
+[  10.458] <-- TM apid=0x1D clear len=4
+[  10.458] <-- TM apid=0x09 clear len=9
+[  10.510] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.561] <-- TM apid=0x1D clear len=4
+[  10.561] --> TC apid=0x10 via=usb clear payload=00
+[  10.613] <-- TM apid=0x10 clear len=4
+[  10.613] --> TC apid=0x21 via=usb clear payload=00
+[  11.075] <-- TM apid=0x21 clear len=6
+[  11.075] --> TC apid=0x24 via=usb clear payload=0000
+[  11.116] <-- TM apid=0x24 clear len=8
+[  11.116] --> TC apid=0x24 via=usb clear payload=0100
+[  11.168] <-- TM apid=0x24 clear len=8
+[  11.168] --> TC apid=0x24 via=usb clear payload=0200
+[  11.220] <-- TM apid=0x24 clear len=8
+[  11.220] --> TC apid=0x24 via=usb clear payload=0300
+[  11.271] <-- TM apid=0x24 clear len=8
+[  11.271] --> TC apid=0x25 via=usb clear payload=0080
+[  11.313] <-- TM apid=0x25 clear len=4
+[  11.313] --> TC apid=0x1E via=usb clear payload=01
+[  11.824] <-- TM apid=0x1E clear len=5
+[  11.824] --> TC apid=0x1D via=usb clear payload=0b
+[  11.916] <-- TM apid=0x1D clear len=4
+[  11.916] --> TC apid=0x05 via=usb clear payload=12
+[  12.377] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.879] <-- TM apid=0x1F clear len=4
+[  12.879] --> TC apid=0x1F via=usb clear payload=05
+[  13.381] <-- TM apid=0x1F clear len=4
+[  13.381] --> TC apid=0x0A via=usb clear payload=01
+[  13.436] <-- TM apid=0x0A AES len=3
+[  21.523] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.002] <-- TM apid=0x0E AES len=18
+[  30.002] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.116] --> TC apid=0x03 via=radio AES  payload=-
+[  30.577] <-- TM apid=0x03 AES len=5
+[  30.577] version TM: 1.0.0 (SEND_FW)
+[  30.577] --> TC apid=0x07 via=radio AES  payload=-
+[  34.151] <-- TM apid=0x07 AES len=24
+[  34.153] <-- TM apid=0x07 AES len=24
+[  34.154] <-- TM apid=0x07 AES len=24
+[  34.155] <-- TM apid=0x07 AES len=24
+[  34.155] <-- TM apid=0x07 AES len=24
+[  34.156] <-- TM apid=0x07 AES len=24
+[  34.156] <-- TM apid=0x07 AES len=24
+[  34.157] <-- TM apid=0x07 AES len=24
+[  34.157] <-- TM apid=0x07 AES len=24
+[  34.158] <-- TM apid=0x07 AES len=24
+[  34.158] <-- TM apid=0x07 AES len=24
+[  34.159] <-- TM apid=0x07 AES len=24
+[  34.159] <-- TM apid=0x07 AES len=24
+[  34.160] <-- TM apid=0x07 AES len=24
+[  34.160] <-- TM apid=0x07 AES len=24
+[  34.161] <-- TM apid=0x07 AES len=23
+[  34.161] image bytes dumped: 256
+[  34.161] embedded build strings recovered: [b'2020 Follo', b'Whte Rabit']
+[  34.161] --> advance(31000 ms)
+[  65.202] <-- TM apid=0x27 clear len=4
+[  65.205] <-- TM apid=0x08 AES len=20
+[  65.206] <-- TM apid=0x01 AES len=8
+[  65.207] <-- TM apid=0x0E AES len=30
+[  65.208] <-- TM apid=0x08 AES len=20
+[  65.208] <-- TM apid=0x3FF AES len=14
+[  65.208] periodic artifacts: idle TM [b'HackTheWorld!'], sync tag [b'Pwnsat']
+[  65.208] => attacker maps the image to its open-source base and the lab fork, then pulls the matching bug catalogue (this report)
+[  65.209] -- console tail: [TC - SPP] APID=0x01F SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00A SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] Secure link enabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x003 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x007 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO
+[  65.209] ========================================================================
+[  65.209] POC OK
+[  65.209] ========================================================================

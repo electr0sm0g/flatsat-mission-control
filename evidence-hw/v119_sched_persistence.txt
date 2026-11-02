@@ -1,0 +1,89 @@
+[   0.000] ========================================================================
+[   0.000] V-19 flash-resident schedule persistence
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.851] --> TC apid=0x0A via=usb AES  payload=00
+[   8.903] <-- TM apid=0x0A clear len=3
+[   8.954] --> TC apid=0x1D via=usb clear payload=0101
+[   9.006] <-- TM apid=0x1D clear len=4
+[   9.006] --> TC apid=0x11 via=usb clear payload=00
+[   9.467] <-- TM apid=0x11 clear len=9
+[   9.467] --> TC apid=0x15 via=usb clear payload=001005
+[   9.917] <-- TM apid=0x15 clear len=6
+[   9.917] --> TC apid=0x0D via=usb clear payload=01
+[  10.366] <-- TM apid=0x0D clear len=4
+[  10.407] --> TC apid=0x1D via=usb clear payload=03
+[  10.459] <-- TM apid=0x1D clear len=4
+[  10.459] <-- TM apid=0x09 clear len=9
+[  10.510] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.562] <-- TM apid=0x1D clear len=4
+[  10.562] --> TC apid=0x10 via=usb clear payload=00
+[  10.613] <-- TM apid=0x10 clear len=4
+[  10.613] --> TC apid=0x21 via=usb clear payload=00
+[  11.074] <-- TM apid=0x21 clear len=6
+[  11.074] --> TC apid=0x24 via=usb clear payload=0000
+[  11.115] <-- TM apid=0x24 clear len=8
+[  11.115] --> TC apid=0x24 via=usb clear payload=0100
+[  11.167] <-- TM apid=0x24 clear len=8
+[  11.167] --> TC apid=0x24 via=usb clear payload=0200
+[  11.218] <-- TM apid=0x24 clear len=8
+[  11.218] --> TC apid=0x24 via=usb clear payload=0300
+[  11.270] <-- TM apid=0x24 clear len=8
+[  11.270] --> TC apid=0x25 via=usb clear payload=0080
+[  11.321] <-- TM apid=0x25 clear len=4
+[  11.321] --> TC apid=0x1E via=usb clear payload=01
+[  11.823] <-- TM apid=0x1E clear len=5
+[  11.823] --> TC apid=0x1D via=usb clear payload=0b
+[  11.925] <-- TM apid=0x1D clear len=4
+[  11.925] --> TC apid=0x05 via=usb clear payload=12
+[  12.387] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.875] <-- TM apid=0x1F clear len=4
+[  12.875] --> TC apid=0x1F via=usb clear payload=05
+[  13.387] <-- TM apid=0x1F clear len=4
+[  13.387] --> TC apid=0x0A via=usb clear payload=01
+[  13.431] <-- TM apid=0x0A AES len=3
+[  21.519] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.999] <-- TM apid=0x0E AES len=18
+[  29.999] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.072] --> TC apid=0x1E via=radio AES  payload=000000000200040201ff
+[  30.581] <-- TM apid=0x1E clear len=6
+[  30.581] schedule add ok=1 count=1 persists=1
+[  30.581] --> advance(2500 ms)
+[  33.141] <-- TM apid=0x27 clear len=4
+[  33.141] --> TC apid=0x0C via=usb AES  payload=-
+[  33.186] <-- TM apid=0x0C AES len=27
+[  33.186] task executing on schedule (t1=255)
+[  33.186] --> TC apid=0x02 via=usb AES  payload=-
+[  36.817] <-- TM apid=0x02 clear len=4
+[  42.723] --> REARM (bench parity: board rebooted mid-session)
+[  42.764] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  51.245] <-- TM apid=0x0E AES len=18
+[  51.266] --> TC apid=0x0C via=usb AES  payload=-
+[  51.320] <-- TM apid=0x0C AES len=27
+[  51.320] after RESETC: t1=10 (volatile state rewound)
+[  51.320] --> advance(2500 ms)
+[  53.881] <-- TM apid=0x27 clear len=4
+[  53.881] --> TC apid=0x0C via=usb AES  payload=-
+[  53.925] <-- TM apid=0x0C AES len=27
+[  53.925] planted task ALIVE after reboot (no image change, no flash write beyond the queue sector)
+[  53.925] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[  56.143] --> REARM (bench parity: post-POWERCYCLE)
+[  56.297] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  64.780] <-- TM apid=0x0E AES len=18
+[  64.780] --> advance(2500 ms)
+[  67.319] <-- TM apid=0x27 clear len=4
+[  67.320] --> TC apid=0x0C via=usb AES  payload=-
+[  67.364] <-- TM apid=0x0C AES len=27
+[  67.364] --> TC apid=0x1E via=usb AES  payload=02
+[  67.824] <-- TM apid=0x1E clear len=8
+[  67.825] queue dump: entries=1 first_apid=0x0004
+[  67.825] --> TC apid=0x1E via=usb AES  payload=01
+[  68.327] <-- TM apid=0x1E clear len=5
+[  68.327] --> advance(2500 ms)
+[  70.847] <-- TM apid=0x27 clear len=4
+[  70.847] --> TC apid=0x0C via=usb AES  payload=-
+[  70.878] <-- TM apid=0x0C clear len=27
+[  70.879] -- console tail: [INFO] Radio 0 Configured Successfully! | [INFO] Radio 1 Configured Successfully! | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [WARN] GPS not detected on UART, using zero-coordinate fallback | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01E SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01E SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  70.879] ========================================================================
+[  70.879] POC OK
+[  70.879] ========================================================================

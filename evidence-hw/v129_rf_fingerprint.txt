@@ -1,0 +1,205 @@
+[   0.000] ========================================================================
+[   0.000] V-29 per-TC RF fingerprint export
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.855] --> TC apid=0x0A via=usb AES  payload=00
+[   8.907] <-- TM apid=0x0A clear len=3
+[   8.958] --> TC apid=0x1D via=usb clear payload=0101
+[   8.999] <-- TM apid=0x1D clear len=4
+[   8.999] --> TC apid=0x11 via=usb clear payload=00
+[   9.457] <-- TM apid=0x11 clear len=9
+[   9.457] --> TC apid=0x15 via=usb clear payload=001005
+[   9.915] <-- TM apid=0x15 clear len=6
+[   9.915] --> TC apid=0x0D via=usb clear payload=01
+[  10.363] <-- TM apid=0x0D clear len=4
+[  10.415] --> TC apid=0x1D via=usb clear payload=03
+[  10.466] <-- TM apid=0x1D clear len=4
+[  10.466] <-- TM apid=0x09 clear len=9
+[  10.507] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.559] <-- TM apid=0x1D clear len=4
+[  10.559] --> TC apid=0x10 via=usb clear payload=00
+[  10.610] <-- TM apid=0x10 clear len=4
+[  10.610] --> TC apid=0x21 via=usb clear payload=00
+[  11.067] <-- TM apid=0x21 clear len=6
+[  11.067] --> TC apid=0x24 via=usb clear payload=0000
+[  11.118] <-- TM apid=0x24 clear len=8
+[  11.118] --> TC apid=0x24 via=usb clear payload=0100
+[  11.160] <-- TM apid=0x24 clear len=8
+[  11.160] --> TC apid=0x24 via=usb clear payload=0200
+[  11.211] <-- TM apid=0x24 clear len=8
+[  11.211] --> TC apid=0x24 via=usb clear payload=0300
+[  11.263] <-- TM apid=0x24 clear len=8
+[  11.263] --> TC apid=0x25 via=usb clear payload=0080
+[  11.314] <-- TM apid=0x25 clear len=4
+[  11.314] --> TC apid=0x1E via=usb clear payload=01
+[  11.823] <-- TM apid=0x1E clear len=5
+[  11.823] --> TC apid=0x1D via=usb clear payload=0b
+[  11.915] <-- TM apid=0x1D clear len=4
+[  11.915] --> TC apid=0x05 via=usb clear payload=12
+[  12.373] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.882] <-- TM apid=0x1F clear len=4
+[  12.882] --> TC apid=0x1F via=usb clear payload=05
+[  13.381] <-- TM apid=0x1F clear len=4
+[  13.381] --> TC apid=0x0A via=usb clear payload=01
+[  13.422] <-- TM apid=0x0A AES len=3
+[  21.524] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.986] <-- TM apid=0x0E AES len=18
+[  29.986] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.068] --> TC apid=0x20 via=radio AES  payload=01
+[  30.528] <-- TM apid=0x20 clear len=4
+[  30.529] --> TC apid=0x01 via=radio AES  payload=-
+[  30.571] <-- TM apid=0x01 AES len=5
+[  30.572] --> TC apid=0x01 via=radio AES  payload=-
+[  30.624] <-- TM apid=0x01 AES len=5
+[  30.625] --> TC apid=0x01 via=radio AES  payload=-
+[  30.677] <-- TM apid=0x01 AES len=5
+[  30.678] --> TC apid=0x01 via=radio AES  payload=-
+[  30.720] <-- TM apid=0x01 AES len=5
+[  30.720] --> TC apid=0x01 via=radio AES  payload=-
+[  30.773] <-- TM apid=0x01 AES len=5
+[  30.774] --> TC apid=0x01 via=radio AES  payload=-
+[  30.827] <-- TM apid=0x01 AES len=5
+[  30.827] --> TC apid=0x01 via=radio AES  payload=-
+[  30.870] <-- TM apid=0x01 AES len=5
+[  30.870] --> TC apid=0x01 via=radio AES  payload=-
+[  30.923] <-- TM apid=0x01 AES len=5
+[  30.924] --> TC apid=0x01 via=radio AES  payload=-
+[  30.977] <-- TM apid=0x01 AES len=5
+[  30.977] --> TC apid=0x01 via=radio AES  payload=-
+[  31.020] <-- TM apid=0x01 AES len=5
+[  31.020] --> TC apid=0x01 via=radio AES  payload=-
+[  31.073] <-- TM apid=0x01 AES len=5
+[  31.073] --> TC apid=0x01 via=radio AES  payload=-
+[  31.127] <-- TM apid=0x01 AES len=5
+[  31.127] --> TC apid=0x01 via=radio AES  payload=-
+[  31.180] <-- TM apid=0x01 AES len=5
+[  31.180] --> TC apid=0x01 via=radio AES  payload=-
+[  31.223] <-- TM apid=0x01 AES len=5
+[  31.223] --> TC apid=0x01 via=radio AES  payload=-
+[  31.277] <-- TM apid=0x01 AES len=5
+[  31.277] --> TC apid=0x01 via=radio AES  payload=-
+[  31.330] <-- TM apid=0x01 AES len=5
+[  31.330] --> TC apid=0x01 via=radio AES  payload=-
+[  31.373] <-- TM apid=0x01 AES len=5
+[  31.373] --> TC apid=0x01 via=radio AES  payload=-
+[  31.426] <-- TM apid=0x01 AES len=5
+[  31.427] --> TC apid=0x01 via=radio AES  payload=-
+[  31.480] <-- TM apid=0x01 AES len=5
+[  31.480] --> TC apid=0x01 via=radio AES  payload=-
+[  31.523] <-- TM apid=0x01 AES len=5
+[  31.523] --> TC apid=0x01 via=radio AES  payload=-
+[  31.576] <-- TM apid=0x01 AES len=5
+[  31.577] --> TC apid=0x01 via=radio AES  payload=-
+[  31.630] <-- TM apid=0x01 AES len=5
+[  31.630] --> TC apid=0x01 via=radio AES  payload=-
+[  31.683] <-- TM apid=0x01 AES len=5
+[  31.683] --> TC apid=0x01 via=radio AES  payload=-
+[  31.726] <-- TM apid=0x01 AES len=5
+[  31.726] --> TC apid=0x01 via=radio AES  payload=-
+[  31.779] <-- TM apid=0x01 AES len=5
+[  31.780] --> TC apid=0x01 via=radio AES  payload=-
+[  31.833] <-- TM apid=0x01 AES len=5
+[  31.833] --> TC apid=0x01 via=radio AES  payload=-
+[  31.876] <-- TM apid=0x01 AES len=5
+[  31.876] --> TC apid=0x01 via=radio AES  payload=-
+[  31.930] <-- TM apid=0x01 AES len=5
+[  31.930] --> TC apid=0x01 via=radio AES  payload=-
+[  31.983] <-- TM apid=0x01 AES len=5
+[  31.983] --> TC apid=0x01 via=radio AES  payload=-
+[  32.026] <-- TM apid=0x01 AES len=5
+[  32.026] --> TC apid=0x01 via=radio AES  payload=-
+[  32.080] <-- TM apid=0x01 AES len=5
+[  32.080] --> TC apid=0x01 via=radio AES  payload=-
+[  32.133] <-- TM apid=0x01 AES len=5
+[  32.133] --> TC apid=0x01 via=radio AES  payload=-
+[  32.186] <-- TM apid=0x01 AES len=5
+[  32.186] --> TC apid=0x01 via=radio AES  payload=-
+[  32.229] <-- TM apid=0x01 AES len=5
+[  32.229] --> TC apid=0x01 via=radio AES  payload=-
+[  32.283] <-- TM apid=0x01 AES len=5
+[  32.283] --> TC apid=0x01 via=radio AES  payload=-
+[  32.336] <-- TM apid=0x01 AES len=5
+[  32.336] --> TC apid=0x01 via=radio AES  payload=-
+[  32.379] <-- TM apid=0x01 AES len=5
+[  32.379] --> TC apid=0x01 via=radio AES  payload=-
+[  32.432] <-- TM apid=0x01 AES len=5
+[  32.433] --> TC apid=0x01 via=radio AES  payload=-
+[  32.486] <-- TM apid=0x01 AES len=5
+[  32.486] --> TC apid=0x01 via=radio AES  payload=-
+[  32.529] <-- TM apid=0x01 AES len=5
+[  32.529] --> TC apid=0x20 via=radio AES  payload=-
+[  32.989] <-- TM apid=0x20 clear len=18
+[  32.989] window: 41 samples  rssi avg=-33 min=-33 max=-33 dBm
+[  32.989] frequency error mean 0 Hz -> crystal calibration fingerprint (identifies THIS craft in a constellation)
+[  32.989] --> TC apid=0x20 via=radio AES  payload=01
+[  33.438] <-- TM apid=0x20 clear len=4
+[  33.438] --> TC apid=0x04 via=radio AES  payload=0001
+[  41.906] --> TC apid=0x04 via=radio AES  payload=0001
+[  50.357] --> TC apid=0x04 via=radio AES  payload=0001
+[  58.791] --> TC apid=0x04 via=radio AES  payload=0001
+[  67.239] --> TC apid=0x04 via=radio AES  payload=0001
+[  75.685] --> TC apid=0x04 via=radio AES  payload=0001
+[  84.138] --> TC apid=0x04 via=radio AES  payload=0001
+[  92.590] --> TC apid=0x04 via=radio AES  payload=0001
+[ 101.024] --> TC apid=0x04 via=radio AES  payload=0001
+[ 109.479] --> TC apid=0x04 via=radio AES  payload=0001
+[ 117.916] --> TC apid=0x04 via=radio AES  payload=0001
+[ 126.364] --> TC apid=0x04 via=radio AES  payload=0001
+[ 134.814] --> TC apid=0x04 via=radio AES  payload=0001
+[ 143.261] --> TC apid=0x04 via=radio AES  payload=0001
+[ 151.706] --> TC apid=0x04 via=radio AES  payload=0001
+[ 160.154] --> TC apid=0x04 via=radio AES  payload=0001
+[ 168.604] --> TC apid=0x04 via=radio AES  payload=0001
+[ 177.052] --> TC apid=0x04 via=radio AES  payload=0001
+[ 185.496] --> TC apid=0x04 via=radio AES  payload=0001
+[ 193.949] --> TC apid=0x04 via=radio AES  payload=0001
+[ 202.392] --> TC apid=0x04 via=radio AES  payload=0001
+[ 210.837] --> TC apid=0x04 via=radio AES  payload=0001
+[ 219.284] --> TC apid=0x04 via=radio AES  payload=0001
+[ 227.731] --> TC apid=0x04 via=radio AES  payload=0001
+[ 236.170] --> TC apid=0x04 via=radio AES  payload=0001
+[ 244.613] --> TC apid=0x04 via=radio AES  payload=0001
+[ 253.061] --> TC apid=0x04 via=radio AES  payload=0001
+[ 261.505] --> TC apid=0x04 via=radio AES  payload=0001
+[ 269.950] --> TC apid=0x04 via=radio AES  payload=0001
+[ 278.396] --> TC apid=0x04 via=radio AES  payload=0001
+[ 286.838] --> TC apid=0x04 via=radio AES  payload=0001
+[ 295.302] --> TC apid=0x04 via=radio AES  payload=0001
+[ 303.737] --> TC apid=0x04 via=radio AES  payload=0001
+[ 312.185] --> TC apid=0x04 via=radio AES  payload=0001
+[ 320.632] --> TC apid=0x04 via=radio AES  payload=0001
+[ 329.086] --> TC apid=0x04 via=radio AES  payload=0001
+[ 337.527] --> TC apid=0x04 via=radio AES  payload=0001
+[ 345.983] --> TC apid=0x04 via=radio AES  payload=0001
+[ 354.417] --> TC apid=0x04 via=radio AES  payload=0001
+[ 362.864] --> TC apid=0x04 via=radio AES  payload=0001
+[ 371.310] --> TC apid=0x04 via=radio AES  payload=0001
+[ 379.756] --> TC apid=0x04 via=radio AES  payload=0001
+[ 388.203] --> TC apid=0x04 via=radio AES  payload=0001
+[ 396.650] --> TC apid=0x04 via=radio AES  payload=0001
+[ 405.097] --> TC apid=0x04 via=radio AES  payload=0001
+[ 413.543] --> TC apid=0x04 via=radio AES  payload=0001
+[ 421.994] --> TC apid=0x04 via=radio AES  payload=0001
+[ 430.443] --> TC apid=0x04 via=radio AES  payload=0001
+[ 438.886] --> TC apid=0x04 via=radio AES  payload=0001
+[ 447.334] --> TC apid=0x04 via=radio AES  payload=0001
+[ 455.783] --> TC apid=0x04 via=radio AES  payload=0001
+[ 464.230] --> TC apid=0x04 via=radio AES  payload=0001
+[ 472.672] --> TC apid=0x04 via=radio AES  payload=0001
+[ 481.119] --> TC apid=0x04 via=radio AES  payload=0001
+[ 489.567] --> TC apid=0x04 via=radio AES  payload=0001
+[ 498.011] --> TC apid=0x04 via=radio AES  payload=0001
+[ 506.457] --> TC apid=0x04 via=radio AES  payload=0001
+[ 514.906] --> TC apid=0x04 via=radio AES  payload=0001
+[ 523.354] --> TC apid=0x04 via=radio AES  payload=0001
+[ 531.797] --> TC apid=0x04 via=radio AES  payload=0001
+[ 540.241] --> TC apid=0x20 via=radio AES  payload=-
+[ 540.681] <-- TM apid=0x20 clear len=18
+[ 540.681] window2 (60 TCs): rssi avg=-33 freq_err mean=0 Hz (drift |dFe|=0 Hz)
+[ 540.681] --> TC apid=0x20 via=radio AES  payload=01
+[ 541.131] <-- TM apid=0x20 clear len=4
+[ 541.131] => export is the exact feature vector for the course LR detector (TinyML, 69.5 us inference on M0+) -- readable raw
+[ 541.133] -- console tail: [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x004 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x004 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x004 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x004 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x004 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x020 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x020 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[ 541.133] ========================================================================
+[ 541.133] POC OK
+[ 541.133] ========================================================================

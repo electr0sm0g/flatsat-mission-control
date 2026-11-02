@@ -1,0 +1,36 @@
+[   0.000] ========================================================================
+[   0.000] V-37 build metadata -> software base
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x03 via=radio AES  payload=-
+[   0.001] <-- TM apid=0x03 AES len=5
+[   0.001] version TM: 1.0.0 (SEND_FW)
+[   0.001] --> TC apid=0x07 via=radio AES  payload=-
+[   0.002] <-- TM apid=0x07 AES len=24
+[   0.003] <-- TM apid=0x07 AES len=24
+[   0.003] <-- TM apid=0x07 AES len=24
+[   0.004] <-- TM apid=0x07 AES len=24
+[   0.004] <-- TM apid=0x07 AES len=24
+[   0.005] <-- TM apid=0x07 AES len=24
+[   0.005] <-- TM apid=0x07 AES len=24
+[   0.006] <-- TM apid=0x07 AES len=24
+[   0.006] <-- TM apid=0x07 AES len=24
+[   0.007] <-- TM apid=0x07 AES len=24
+[   0.007] <-- TM apid=0x07 AES len=24
+[   0.008] <-- TM apid=0x07 AES len=24
+[   0.008] <-- TM apid=0x07 AES len=24
+[   0.008] <-- TM apid=0x07 AES len=24
+[   0.009] <-- TM apid=0x07 AES len=24
+[   0.009] <-- TM apid=0x07 AES len=23
+[   0.009] image bytes dumped: 256
+[   0.009] embedded build strings recovered: [b'2020 Follo', b'Whte Rabit']
+[   0.009] --> advance(31000 ms)
+[   0.010] <-- TM apid=0x08 AES len=20
+[   0.011] <-- TM apid=0x01 AES len=8
+[   0.011] <-- TM apid=0x0E AES len=30
+[   0.011] <-- TM apid=0x08 AES len=20
+[   0.012] <-- TM apid=0x3FF AES len=14
+[   0.012] periodic artifacts: idle TM [b'HackTheWorld!'], sync tag [b'Pwnsat']
+[   0.012] => attacker maps the image to its open-source base and the lab fork, then pulls the matching bug catalogue (this report)
+[   0.012] ========================================================================
+[   0.012] POC OK
+[   0.012] ========================================================================

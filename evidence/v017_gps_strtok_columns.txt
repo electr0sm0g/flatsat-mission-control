@@ -1,0 +1,13 @@
+[   0.000] ========================================================================
+[   0.000] V0-17 NMEA column shift via collapsing split
+[   0.000] ========================================================================
+[   0.000] good sentence  -> lat field = '3606.1699'
+[   0.000] forged sentence -> lat field = 'N'  (shifted!)
+[   0.000] --> TC apid=0x14 via=radio AES  payload=00000000000000000000000000
+[   0.000] <-- TM apid=0x0E clear len=18
+[   0.000] --> TC apid=0x0E via=usb AES  payload=-
+[   0.001] <-- TM apid=0x0E AES len=30
+[   0.001] zeroed/shifted position trusted -- no integrity layer to object
+[   0.001] ========================================================================
+[   0.001] POC OK
+[   0.001] ========================================================================

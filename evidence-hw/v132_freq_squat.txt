@@ -1,0 +1,70 @@
+[   0.000] ========================================================================
+[   0.000] V-32 downlink frequency squat
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.858] --> TC apid=0x0A via=usb AES  payload=00
+[   8.910] <-- TM apid=0x0A clear len=3
+[   8.951] --> TC apid=0x1D via=usb clear payload=0101
+[   9.003] <-- TM apid=0x1D clear len=4
+[   9.003] --> TC apid=0x11 via=usb clear payload=00
+[   9.463] <-- TM apid=0x11 clear len=9
+[   9.463] --> TC apid=0x15 via=usb clear payload=001005
+[   9.914] <-- TM apid=0x15 clear len=6
+[   9.914] --> TC apid=0x0D via=usb clear payload=01
+[  10.375] <-- TM apid=0x0D clear len=4
+[  10.417] --> TC apid=0x1D via=usb clear payload=03
+[  10.468] <-- TM apid=0x1D clear len=4
+[  10.468] <-- TM apid=0x09 clear len=9
+[  10.510] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.562] <-- TM apid=0x1D clear len=4
+[  10.562] --> TC apid=0x10 via=usb clear payload=00
+[  10.613] <-- TM apid=0x10 clear len=4
+[  10.613] --> TC apid=0x21 via=usb clear payload=00
+[  11.074] <-- TM apid=0x21 clear len=6
+[  11.074] --> TC apid=0x24 via=usb clear payload=0000
+[  11.115] <-- TM apid=0x24 clear len=8
+[  11.115] --> TC apid=0x24 via=usb clear payload=0100
+[  11.166] <-- TM apid=0x24 clear len=8
+[  11.166] --> TC apid=0x24 via=usb clear payload=0200
+[  11.218] <-- TM apid=0x24 clear len=8
+[  11.218] --> TC apid=0x24 via=usb clear payload=0300
+[  11.269] <-- TM apid=0x24 clear len=8
+[  11.269] --> TC apid=0x25 via=usb clear payload=0080
+[  11.320] <-- TM apid=0x25 clear len=4
+[  11.320] --> TC apid=0x1E via=usb clear payload=01
+[  11.833] <-- TM apid=0x1E clear len=5
+[  11.833] --> TC apid=0x1D via=usb clear payload=0b
+[  11.925] <-- TM apid=0x1D clear len=4
+[  11.925] --> TC apid=0x05 via=usb clear payload=12
+[  12.386] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.888] <-- TM apid=0x1F clear len=4
+[  12.888] --> TC apid=0x1F via=usb clear payload=05
+[  13.388] <-- TM apid=0x1F clear len=4
+[  13.388] --> TC apid=0x0A via=usb clear payload=01
+[  13.432] <-- TM apid=0x0A AES len=3
+[  21.525] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.003] <-- TM apid=0x0E AES len=18
+[  30.003] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.076] --> TC apid=0x0C via=usb AES  payload=-
+[  30.120] <-- TM apid=0x0C AES len=27
+[  30.120] nominal downlink freq=916 MHz, forward count=0
+[  30.120] --> TC apid=0x06 via=radio AES  payload=04d253515541545445522d5741532d48455245
+[  33.803] <-- TM apid=0x06 AES len=17
+[  33.803] --> TC apid=0x0C via=usb AES  payload=-
+[  33.847] <-- TM apid=0x0C AES len=27
+[  33.847] after squat: last_freq=1234 MHz -> operator must re-tune or lose the pass (no auth on the frequency field)
+[  33.847] --> TC apid=0x25 via=usb AES  payload=0084
+[  33.889] <-- TM apid=0x25 clear len=4
+[  33.889] --> TC apid=0x06 via=radio AES  payload=01b35452592d414741494e
+[  34.351] <-- TM apid=0x09 AES len=10
+[  34.351] --> TC apid=0x0C via=usb AES  payload=-
+[  34.395] <-- TM apid=0x0C AES len=27
+[  34.396] --> TC apid=0x06 via=radio AES  payload=0394484f4d45
+[  34.858] <-- TM apid=0x06 AES len=4
+[  34.858] --> TC apid=0x0C via=usb AES  payload=-
+[  37.665] <-- TM apid=0x0C AES len=27
+[  37.665] allowed frequency (916) accepted: last_freq=916
+[  37.665] -- console tail: [TC - SPP] APID=0x027 SEQ=1 LEN=45 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x006 SEQ=1 LEN=32 FLAGS=1 SEC_HDR=NO | [WARN] Payload relay used outside payload mode | [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x025 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x006 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [WARN] Payload relay used outside payload mode | [ERROR] FREQ LOCK | [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x006 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [WARN] Payload relay used outside payload mode | [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  37.665] ========================================================================
+[  37.665] POC OK
+[  37.665] ========================================================================

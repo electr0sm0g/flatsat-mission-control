@@ -1,0 +1,58 @@
+[   0.000] ========================================================================
+[   0.000] V0-11 ECB: clear header, determinism, block malleability
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.857] --> TC apid=0x0A via=usb AES  payload=00
+[   8.908] <-- TM apid=0x0A clear len=3
+[   8.949] --> TC apid=0x1D via=usb clear payload=0101
+[   9.001] <-- TM apid=0x1D clear len=4
+[   9.001] --> TC apid=0x11 via=usb clear payload=00
+[   9.461] <-- TM apid=0x11 clear len=9
+[   9.461] --> TC apid=0x15 via=usb clear payload=001005
+[   9.912] <-- TM apid=0x15 clear len=6
+[   9.912] --> TC apid=0x0D via=usb clear payload=01
+[  10.372] <-- TM apid=0x0D clear len=4
+[  10.413] --> TC apid=0x1D via=usb clear payload=03
+[  10.464] <-- TM apid=0x1D clear len=4
+[  10.464] <-- TM apid=0x09 clear len=9
+[  10.516] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.567] <-- TM apid=0x1D clear len=4
+[  10.567] --> TC apid=0x10 via=usb clear payload=00
+[  10.609] <-- TM apid=0x10 clear len=4
+[  10.609] --> TC apid=0x21 via=usb clear payload=00
+[  11.069] <-- TM apid=0x21 clear len=6
+[  11.069] --> TC apid=0x24 via=usb clear payload=0000
+[  11.120] <-- TM apid=0x24 clear len=8
+[  11.120] --> TC apid=0x24 via=usb clear payload=0100
+[  11.161] <-- TM apid=0x24 clear len=8
+[  11.161] --> TC apid=0x24 via=usb clear payload=0200
+[  11.212] <-- TM apid=0x24 clear len=8
+[  11.213] --> TC apid=0x24 via=usb clear payload=0300
+[  11.264] <-- TM apid=0x24 clear len=8
+[  11.264] --> TC apid=0x25 via=usb clear payload=0080
+[  11.315] <-- TM apid=0x25 clear len=4
+[  11.315] --> TC apid=0x1E via=usb clear payload=01
+[  11.827] <-- TM apid=0x1E clear len=5
+[  11.827] --> TC apid=0x1D via=usb clear payload=0b
+[  11.920] <-- TM apid=0x1D clear len=4
+[  11.920] --> TC apid=0x05 via=usb clear payload=12
+[  12.380] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.880] <-- TM apid=0x1F clear len=4
+[  12.880] --> TC apid=0x1F via=usb clear payload=05
+[  13.382] <-- TM apid=0x1F clear len=4
+[  13.382] --> TC apid=0x0A via=usb clear payload=01
+[  13.426] <-- TM apid=0x0A AES len=3
+[  21.516] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.996] <-- TM apid=0x0E AES len=18
+[  29.996] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.100] encrypted TC wire header (in clear): 100c4001000f -> apid=10 visible to any SDR
+[  30.100] determinism: C(b'01') == C(b'01') -> True
+[  30.100] --> TC apid=0x0A via=radio clear payload=00
+[  30.152] <-- TM apid=0x0A clear len=3
+[  30.205] opaque block C=78d61fd20dc1167cb4ae74f372a91f2d -> P=42 (byte0=0x42)
+[  30.708] secure link state after opaque block: True
+[  30.709] C(block1) identical when block0 changes: False
+[  30.709] -- console tail: [INFO] Secure link enabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=14 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00A SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] Secure link disabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00A SEQ=3 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] Secure link enabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO
+[  30.709] ========================================================================
+[  30.709] POC OK
+[  30.709] ========================================================================

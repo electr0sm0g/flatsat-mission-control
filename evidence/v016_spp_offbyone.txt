@@ -1,0 +1,15 @@
+[   0.000] ========================================================================
+[   0.000] V0-16 SPP unpack off-by-one / overread
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x0A via=usb clear payload=00
+[   0.000] <-- TM apid=0x0A clear len=3
+[   0.000] declared data bytes = 181, bytes on wire = 180
+[   0.000] parser returns 181 bytes, last byte = 0xFF (read past the frame)
+[   0.000] <-- TM apid=0x06 clear len=179
+[   0.000] device echoed msg of 179 B, tail = 4141414141ff
+[   0.000] --> TC apid=0x0F via=usb clear payload=-
+[   0.000] <-- TM apid=0x0F clear len=10
+[   0.000] payload service forwarded 179 B (frame had 178 B of msg)
+[   0.000] ========================================================================
+[   0.000] POC OK
+[   0.000] ========================================================================

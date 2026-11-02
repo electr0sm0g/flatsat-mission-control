@@ -1,0 +1,29 @@
+[   0.000] ========================================================================
+[   0.000] V0-03 BROADCAST underflow -> permanent crash
+[   0.000] ========================================================================
+[   3.955] --> HARD RESET (bench parity: fresh board per PoC)
+[  16.281] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  19.968] <-- TM apid=0x01 AES len=64
+[  19.969] <-- TM apid=0x0E AES len=18
+[  19.971] <-- TM apid=0x01 AES len=64
+[  23.965] --> TC apid=0x06 via=radio AES  payload=07
+[  26.470] <-- TM apid=0x01 AES len=64
+[  26.471] <-- TM apid=0x27 clear len=4
+[  26.471] response frames: [Tm(apid=0x01 len=64 01426561636f6e00019f0060090000160001dbf404000000...), Tm(apid=0x27 len=4 0101164b)]
+[ 139.300] --> TC apid=0x01 via=radio AES  payload=-
+[ 166.035] --> advance(60000 ms)
+[ 230.253] --> TC apid=0x01 via=radio AES  payload=-
+[ 256.659] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[ 256.666] >> bench recovery: re-flashing the lab image via BOOTSEL
+[ 301.818] >> board dead: awaiting a PHYSICAL power cycle (unplug/replug the USB cable), up to 10 min
+[ 537.303] >> board is back -- power cycle confirmed
+[ 537.303] --> TC apid=0x01 via=radio AES  payload=-
+[ 539.812] <-- TM apid=0x27 clear len=4
+[ 539.812] <-- TM apid=0x01 AES len=5
+[ 539.812] recovered after power cycle
+[ 539.813] -- console tail: [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x006 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] USB Device configured successfully | [INFO] ACC OK | [INFO] BME OK | [INFO] GPS UART configured at 9600 baud | [INFO] Radio 0 Configured Successfully! | [INFO] Radio 1 Configured Successfully! | [WARN] GPS not detected on UART, using zero-coordinate fallback | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[ 539.813] ========================================================================
+[ 539.813] POC OK
+[ 539.813] ========================================================================
+[evidence saved to evidence-hw/v003_broadcast_underflow_crash.txt]
+POC OK

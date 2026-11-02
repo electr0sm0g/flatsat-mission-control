@@ -1,0 +1,136 @@
+[   0.000] ========================================================================
+[   0.000] V-33 ADCS tumble spam / detumble saturation
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.856] --> TC apid=0x0A via=usb AES  payload=00
+[   8.908] <-- TM apid=0x0A clear len=3
+[   8.950] --> TC apid=0x1D via=usb clear payload=0101
+[   9.001] <-- TM apid=0x1D clear len=4
+[   9.001] --> TC apid=0x11 via=usb clear payload=00
+[   9.463] <-- TM apid=0x11 clear len=9
+[   9.463] --> TC apid=0x15 via=usb clear payload=001005
+[   9.913] <-- TM apid=0x15 clear len=6
+[   9.913] --> TC apid=0x0D via=usb clear payload=01
+[  10.364] <-- TM apid=0x0D clear len=4
+[  10.416] --> TC apid=0x1D via=usb clear payload=03
+[  10.458] <-- TM apid=0x1D clear len=4
+[  10.458] <-- TM apid=0x09 clear len=9
+[  10.509] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.561] <-- TM apid=0x1D clear len=4
+[  10.561] --> TC apid=0x10 via=usb clear payload=00
+[  10.613] <-- TM apid=0x10 clear len=4
+[  10.613] --> TC apid=0x21 via=usb clear payload=00
+[  11.073] <-- TM apid=0x21 clear len=6
+[  11.073] --> TC apid=0x24 via=usb clear payload=0000
+[  11.115] <-- TM apid=0x24 clear len=8
+[  11.115] --> TC apid=0x24 via=usb clear payload=0100
+[  11.167] <-- TM apid=0x24 clear len=8
+[  11.167] --> TC apid=0x24 via=usb clear payload=0200
+[  11.218] <-- TM apid=0x24 clear len=8
+[  11.219] --> TC apid=0x24 via=usb clear payload=0300
+[  11.270] <-- TM apid=0x24 clear len=8
+[  11.270] --> TC apid=0x25 via=usb clear payload=0080
+[  11.322] <-- TM apid=0x25 clear len=4
+[  11.322] --> TC apid=0x1E via=usb clear payload=01
+[  11.823] <-- TM apid=0x1E clear len=5
+[  11.823] --> TC apid=0x1D via=usb clear payload=0b
+[  11.925] <-- TM apid=0x1D clear len=4
+[  11.925] --> TC apid=0x05 via=usb clear payload=12
+[  12.376] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.887] <-- TM apid=0x1F clear len=4
+[  12.887] --> TC apid=0x1F via=usb clear payload=05
+[  13.390] <-- TM apid=0x1F clear len=4
+[  13.390] --> TC apid=0x0A via=usb clear payload=01
+[  13.434] <-- TM apid=0x0A AES len=3
+[  21.521] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.998] <-- TM apid=0x0E AES len=18
+[  29.998] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.071] --> TC apid=0x1D via=usb AES  payload=0a0001
+[  30.123] <-- TM apid=0x1D clear len=4
+[  30.123] --> advance(1000 ms)
+[  31.169] <-- TM apid=0x27 clear len=4
+[  31.221] --> TC apid=0x1D via=usb AES  payload=00
+[  31.272] <-- TM apid=0x1D clear len=18
+[  31.272] nominal tilt 0.00 deg/s, FDIR threshold 5.00 deg/s
+[  31.324] --> TC apid=0x04 via=radio AES  payload=00ff
+[  39.802] --> TC apid=0x04 via=radio AES  payload=00ff
+[  48.248] --> TC apid=0x04 via=radio AES  payload=00ff
+[  56.695] --> TC apid=0x04 via=radio AES  payload=00ff
+[  65.140] --> TC apid=0x04 via=radio AES  payload=00ff
+[  73.581] --> TC apid=0x04 via=radio AES  payload=00ff
+[  82.022] --> TC apid=0x04 via=radio AES  payload=00ff
+[  90.479] --> TC apid=0x04 via=radio AES  payload=00ff
+[  98.927] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 107.375] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 115.866] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 124.314] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 132.762] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 141.207] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 149.652] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 158.102] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 166.552] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 175.033] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 183.490] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 191.936] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 200.380] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 208.826] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 217.272] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 225.720] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 234.161] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 242.610] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 251.099] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 259.536] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 267.993] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 276.442] --> TC apid=0x04 via=radio AES  payload=00ff
+[ 284.883] --> advance(1000 ms)
+[ 285.887] <-- TM apid=0x27 clear len=4
+[ 285.887] --> TC apid=0x1D via=usb AES  payload=00
+[ 285.918] <-- TM apid=0x1D clear len=18
+[ 285.918] --> advance(1000 ms)
+[ 286.922] <-- TM apid=0x27 clear len=4
+[ 286.974] --> TC apid=0x1D via=usb AES  payload=00
+[ 287.025] <-- TM apid=0x1D clear len=18
+[ 287.025] --> advance(1000 ms)
+[ 288.045] <-- TM apid=0x27 clear len=4
+[ 288.076] --> TC apid=0x1D via=usb clear payload=00
+[ 288.128] <-- TM apid=0x1D clear len=18
+[ 288.128] after spam: tilt 0.00 -> 9.02 -> 9.03 deg/s, safe=1
+[ 288.179] --> TC apid=0x1D via=usb clear payload=0900
+[ 288.231] <-- TM apid=0x1D clear len=4
+[ 288.231] --> advance(1000 ms)
+[ 289.235] <-- TM apid=0x27 clear len=4
+[ 289.287] --> TC apid=0x1D via=usb clear payload=00
+[ 289.338] <-- TM apid=0x1D clear len=18
+[ 289.338] --> advance(19000 ms)
+[ 308.352] <-- TM apid=0x27 clear len=4
+[ 308.352] <-- TM apid=0x01 clear len=64
+[ 308.352] <-- TM apid=0x08 clear len=20
+[ 308.352] <-- TM apid=0x01 clear len=8
+[ 308.352] <-- TM apid=0x0E clear len=30
+[ 308.352] <-- TM apid=0x01 clear len=64
+[ 308.352] --> advance(1000 ms)
+[ 309.356] <-- TM apid=0x27 clear len=4
+[ 309.398] --> TC apid=0x1D via=usb clear payload=00
+[ 309.449] <-- TM apid=0x1D clear len=18
+[ 309.450] passive damping: 9.02 -> 8.82 deg/s = 0.010 deg/s^2
+[ 309.491] --> TC apid=0x1D via=usb clear payload=0901
+[ 309.543] <-- TM apid=0x1D clear len=4
+[ 309.543] --> advance(1000 ms)
+[ 310.546] <-- TM apid=0x27 clear len=4
+[ 310.598] --> TC apid=0x1D via=usb clear payload=00
+[ 310.650] <-- TM apid=0x1D clear len=18
+[ 310.650] --> advance(9000 ms)
+[ 319.655] <-- TM apid=0x27 clear len=4
+[ 319.655] <-- TM apid=0x08 clear len=20
+[ 319.655] <-- TM apid=0x3FF clear len=14
+[ 319.655] <-- TM apid=0x01 clear len=64
+[ 319.655] --> advance(1000 ms)
+[ 320.659] <-- TM apid=0x27 clear len=4
+[ 320.711] --> TC apid=0x1D via=usb clear payload=00
+[ 320.752] <-- TM apid=0x1D clear len=18
+[ 320.752] detumble B-dot: 8.57 -> 6.07 deg/s = 0.250 deg/s^2 (saturated torque budget)
+[ 320.752] => 30 cheap TCs = minutes of mission time lost to detumble
+[ 320.753] -- console tail: [TC - SPP] APID=0x01D SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=2 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO
+[ 320.753] ========================================================================
+[ 320.753] POC OK
+[ 320.753] ========================================================================

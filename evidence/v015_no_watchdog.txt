@@ -1,0 +1,26 @@
+[   0.000] ========================================================================
+[   0.000] V0-15 no watchdog -> permanent loss on crash
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x06 via=radio AES  payload=07
+[   0.000] --> advance(60000 ms)
+[   0.000] --> TC apid=0x01 via=radio AES  payload=-
+[   0.000] t+1 min: still silent (CRASHED)
+[   0.000] --> advance(60000 ms)
+[   0.000] --> TC apid=0x01 via=radio AES  payload=-
+[   0.000] t+2 min: still silent (CRASHED)
+[   0.000] --> advance(60000 ms)
+[   0.001] --> TC apid=0x01 via=radio AES  payload=-
+[   0.001] t+3 min: still silent (CRASHED)
+[   0.001] --> advance(60000 ms)
+[   0.001] --> TC apid=0x01 via=radio AES  payload=-
+[   0.001] t+4 min: still silent (CRASHED)
+[   0.001] --> advance(60000 ms)
+[   0.001] --> TC apid=0x01 via=radio AES  payload=-
+[   0.001] t+5 min: still silent (CRASHED)
+[   0.001] no watchdog: mission loss confirmed after 5 simulated minutes
+[   0.001] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[   0.001] --> TC apid=0x01 via=radio AES  payload=-
+[   0.001] <-- TM apid=0x01 AES len=5
+[   0.001] ========================================================================
+[   0.001] POC OK
+[   0.001] ========================================================================

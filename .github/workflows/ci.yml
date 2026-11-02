@@ -1,0 +1,131 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+name: Bench parity & integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  # The bench-parity proof: the committed simulator must pass the self-test
+  # and the full 56-PoC sweep with the exact committed PoC code.
+  sim-sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Crypto + protocol self-test (FIPS-197, SP800-38A/B)
+        run: python3 simulator/flatsat_sim.py --selftest
+
+      - name: 56-PoC simulator sweep
+        working-directory: .
+        run: |
+          fail=0
+          for f in poc/v0*.py poc/v1*.py; do
+            echo "::group::$f"
+            if python3 "$f" --quiet --no-save; then
+              echo "PASS $f"
+            else
+              echo "FAIL $f"; fail=1
+            fi
+            echo "::endgroup::"
+          done
+          exit $fail
+
+      - name: Evidence counts (repo deliverable)
+        run: |
+          sim=$(ls evidence/v0*.txt evidence/v1*.txt 2>/dev/null | wc -l)
+          hw=$(ls evidence-hw/v0*.txt evidence-hw/v1*.txt 2>/dev/null | wc -l)
+          echo "simulator transcripts: $sim / 56"
+          echo "hardware transcripts:  $hw / 56"
+          test "$sim" -eq 56 && test "$hw" -eq 56
+
+  # The firmware must build anywhere from the committed sources; publish the
+  # UF2 + its md5 so a flash can be reproduced without PlatformIO.
+  firmware-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install PlatformIO
+        run: pip install --quiet platformio
+
+      - name: Build firmware (RP2040, pico_tinyusb)
+        working-directory: firmware
+        run: pio run
+
+      - name: Record UF2 digest
+        run: |
+          cp firmware/.pio/build/pico_tinyusb/firmware.uf2 firmware.uf2
+          md5sum firmware.uf2 | tee md5sum.txt
+          cat md5sum.txt
+
+      - name: Upload firmware artifact (UF2 + md5)
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware
+          path: |
+            firmware.uf2
+            md5sum.txt
+
+  # Host-side gates: crypto vectors + syntax, and the catalog integrity audit
+  # (56 PoC <-> 56 writeups <-> 56 matrix rows <-> 112 transcripts,
+  # FINDINGS.json drift, README links) -- the permanent pre-push audit.
+  host-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Host crypto vectors + syntax gate
+        run: bash tests/host/run_host_checks.sh
+
+      - name: Catalog integrity (matrix, trees, FINDINGS.json, README)
+        run: python3 tests/host/check_catalog.py
+
+  # The in-browser demo (web/dist): headless Chromium must boot the REAL
+  # simulator under Pyodide, pass real unmodified PoCs, and the UI verdict
+  # must hash-match the committed evidence transcripts (row 10 of
+  # docs/VERIFICATION.md).
+  web-demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build static demo (embeds unmodified sources + evidence digests)
+        run: python3 tools/build_web_demo.py
+
+      - name: Browser verification (Playwright headless Chromium)
+        run: |
+          python3 -m http.server 8931 --directory web/dist --bind 127.0.0.1 &
+          SRV=$!
+          sleep 1
+          cd tests/host
+          npm install --no-save --no-audit --no-fund playwright@1.48.2
+          npx playwright install --with-deps chromium
+          node web_demo_test.mjs
+          kill $SRV 2>/dev/null || true
+
+      - name: Upload screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-demo
+          path: tests/host/web-demo-verify.png

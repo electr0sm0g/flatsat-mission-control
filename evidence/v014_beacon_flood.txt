@@ -1,0 +1,60 @@
+[   0.000] ========================================================================
+[   0.000] V0-14 SET_BEACON_RATE 0 -> beacon flood
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x05 via=usb AES  payload=01
+[   0.000] --> TC apid=0x05 via=usb AES  payload=00
+[   0.001] --> advance(5000 ms)
+[   0.007] <-- TM apid=0x01 AES len=64
+[   0.008] <-- TM apid=0x01 AES len=64
+[   0.009] <-- TM apid=0x01 AES len=64
+[   0.010] <-- TM apid=0x01 AES len=64
+[   0.011] <-- TM apid=0x01 AES len=64
+[   0.012] <-- TM apid=0x01 AES len=64
+[   0.013] <-- TM apid=0x01 AES len=64
+[   0.014] <-- TM apid=0x01 AES len=64
+[   0.015] <-- TM apid=0x01 AES len=64
+[   0.016] <-- TM apid=0x01 AES len=64
+[   0.017] <-- TM apid=0x01 AES len=64
+[   0.018] <-- TM apid=0x01 AES len=64
+[   0.019] <-- TM apid=0x01 AES len=64
+[   0.020] <-- TM apid=0x01 AES len=64
+[   0.021] <-- TM apid=0x01 AES len=64
+[   0.022] <-- TM apid=0x01 AES len=64
+[   0.023] <-- TM apid=0x01 AES len=64
+[   0.024] <-- TM apid=0x01 AES len=64
+[   0.025] <-- TM apid=0x01 AES len=64
+[   0.026] <-- TM apid=0x01 AES len=64
+[   0.027] <-- TM apid=0x01 AES len=64
+[   0.028] <-- TM apid=0x01 AES len=64
+[   0.029] <-- TM apid=0x01 AES len=64
+[   0.030] <-- TM apid=0x01 AES len=64
+[   0.031] <-- TM apid=0x01 AES len=64
+[   0.032] <-- TM apid=0x01 AES len=64
+[   0.033] <-- TM apid=0x01 AES len=64
+[   0.034] <-- TM apid=0x01 AES len=64
+[   0.035] <-- TM apid=0x01 AES len=64
+[   0.036] <-- TM apid=0x01 AES len=64
+[   0.037] <-- TM apid=0x01 AES len=64
+[   0.038] <-- TM apid=0x01 AES len=64
+[   0.039] <-- TM apid=0x01 AES len=64
+[   0.040] <-- TM apid=0x01 AES len=64
+[   0.041] <-- TM apid=0x01 AES len=64
+[   0.042] <-- TM apid=0x01 AES len=64
+[   0.043] <-- TM apid=0x01 AES len=64
+[   0.044] <-- TM apid=0x01 AES len=64
+[   0.045] <-- TM apid=0x01 AES len=64
+[   0.046] <-- TM apid=0x01 AES len=64
+[   0.047] <-- TM apid=0x01 AES len=64
+[   0.048] <-- TM apid=0x01 AES len=64
+[   0.049] <-- TM apid=0x01 AES len=64
+[   0.050] <-- TM apid=0x01 AES len=64
+[   0.051] <-- TM apid=0x01 AES len=64
+[   0.052] <-- TM apid=0x01 AES len=64
+[   0.053] <-- TM apid=0x01 AES len=64
+[   0.054] <-- TM apid=0x01 AES len=64
+[   0.055] <-- TM apid=0x01 AES len=64
+[   0.056] <-- TM apid=0x01 AES len=64
+[   0.056] beacons emitted in 5 s: 50
+[   0.056] ========================================================================
+[   0.056] POC OK
+[   0.056] ========================================================================

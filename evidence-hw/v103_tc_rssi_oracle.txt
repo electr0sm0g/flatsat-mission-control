@@ -1,0 +1,76 @@
+[   0.000] ========================================================================
+[   0.000] V-03 TC RSSI/SNR oracle + APID leak
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.851] --> TC apid=0x0A via=usb AES  payload=00
+[   8.902] <-- TM apid=0x0A clear len=3
+[   8.954] --> TC apid=0x1D via=usb clear payload=0101
+[   9.006] <-- TM apid=0x1D clear len=4
+[   9.006] --> TC apid=0x11 via=usb clear payload=00
+[   9.467] <-- TM apid=0x11 clear len=9
+[   9.467] --> TC apid=0x15 via=usb clear payload=001005
+[   9.917] <-- TM apid=0x15 clear len=6
+[   9.917] --> TC apid=0x0D via=usb clear payload=01
+[  10.368] <-- TM apid=0x0D clear len=4
+[  10.409] --> TC apid=0x1D via=usb clear payload=03
+[  10.461] <-- TM apid=0x1D clear len=4
+[  10.461] <-- TM apid=0x09 clear len=9
+[  10.513] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.565] <-- TM apid=0x1D clear len=4
+[  10.565] --> TC apid=0x10 via=usb clear payload=00
+[  10.617] <-- TM apid=0x10 clear len=4
+[  10.617] --> TC apid=0x21 via=usb clear payload=00
+[  11.078] <-- TM apid=0x21 clear len=6
+[  11.078] --> TC apid=0x24 via=usb clear payload=0000
+[  11.119] <-- TM apid=0x24 clear len=8
+[  11.119] --> TC apid=0x24 via=usb clear payload=0100
+[  11.171] <-- TM apid=0x24 clear len=8
+[  11.171] --> TC apid=0x24 via=usb clear payload=0200
+[  11.213] <-- TM apid=0x24 clear len=8
+[  11.213] --> TC apid=0x24 via=usb clear payload=0300
+[  11.265] <-- TM apid=0x24 clear len=8
+[  11.265] --> TC apid=0x25 via=usb clear payload=0080
+[  11.316] <-- TM apid=0x25 clear len=4
+[  11.316] --> TC apid=0x1E via=usb clear payload=01
+[  11.828] <-- TM apid=0x1E clear len=5
+[  11.828] --> TC apid=0x1D via=usb clear payload=0b
+[  11.921] <-- TM apid=0x1D clear len=4
+[  11.921] --> TC apid=0x05 via=usb clear payload=12
+[  12.379] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.881] <-- TM apid=0x1F clear len=4
+[  12.881] --> TC apid=0x1F via=usb clear payload=05
+[  13.383] <-- TM apid=0x1F clear len=4
+[  13.383] --> TC apid=0x0A via=usb clear payload=01
+[  13.427] <-- TM apid=0x0A AES len=3
+[  21.525] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.005] <-- TM apid=0x0E AES len=18
+[  30.005] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.119] --> TC apid=0x20 via=radio AES  payload=01
+[  30.580] <-- TM apid=0x20 clear len=4
+[  30.580] --> TC apid=0x01 via=radio AES  payload=-
+[  30.623] <-- TM apid=0x01 AES len=5
+[  30.623] --> TC apid=0x01 via=radio AES  payload=-
+[  30.676] <-- TM apid=0x01 AES len=5
+[  30.677] --> TC apid=0x01 via=radio AES  payload=-
+[  30.719] <-- TM apid=0x01 AES len=5
+[  30.720] --> TC apid=0x01 via=radio AES  payload=-
+[  30.773] <-- TM apid=0x01 AES len=5
+[  30.773] --> TC apid=0x01 via=radio AES  payload=-
+[  30.826] <-- TM apid=0x01 AES len=5
+[  30.826] --> TC apid=0x01 via=radio AES  payload=-
+[  30.869] <-- TM apid=0x01 AES len=5
+[  30.869] --> TC apid=0x01 via=radio AES  payload=-
+[  30.922] <-- TM apid=0x01 AES len=5
+[  30.923] --> TC apid=0x01 via=radio AES  payload=-
+[  30.976] <-- TM apid=0x01 AES len=5
+[  30.976] --> TC apid=0x01 via=radio AES  payload=-
+[  31.029] <-- TM apid=0x01 AES len=5
+[  31.029] --> TC apid=0x01 via=radio AES  payload=-
+[  31.072] <-- TM apid=0x01 AES len=5
+[  31.072] --> TC apid=0x20 via=radio AES  payload=-
+[  31.532] <-- TM apid=0x20 clear len=18
+[  31.532] samples=11 rssi avg=-5 [-5..-5] dBm snr=4.0dB freq_err=0Hz crc_on=0 last_apid=0x20
+[  31.533] -- console tail: [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x020 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  31.533] ========================================================================
+[  31.533] POC OK
+[  31.533] ========================================================================

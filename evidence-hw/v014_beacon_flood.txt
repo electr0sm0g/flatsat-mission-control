@@ -1,0 +1,105 @@
+[   0.000] ========================================================================
+[   0.000] V0-14 SET_BEACON_RATE 0 -> beacon flood
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.856] --> TC apid=0x0A via=usb AES  payload=00
+[   8.898] <-- TM apid=0x0A clear len=3
+[   8.949] --> TC apid=0x1D via=usb clear payload=0101
+[   9.001] <-- TM apid=0x1D clear len=4
+[   9.001] --> TC apid=0x11 via=usb clear payload=00
+[   9.462] <-- TM apid=0x11 clear len=9
+[   9.462] --> TC apid=0x15 via=usb clear payload=001005
+[   9.912] <-- TM apid=0x15 clear len=6
+[   9.912] --> TC apid=0x0D via=usb clear payload=01
+[  10.362] <-- TM apid=0x0D clear len=4
+[  10.414] --> TC apid=0x1D via=usb clear payload=03
+[  10.466] <-- TM apid=0x1D clear len=4
+[  10.466] <-- TM apid=0x09 clear len=9
+[  10.507] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.559] <-- TM apid=0x1D clear len=4
+[  10.559] --> TC apid=0x10 via=usb clear payload=00
+[  10.611] <-- TM apid=0x10 clear len=4
+[  10.611] --> TC apid=0x21 via=usb clear payload=00
+[  11.072] <-- TM apid=0x21 clear len=6
+[  11.072] --> TC apid=0x24 via=usb clear payload=0000
+[  11.113] <-- TM apid=0x24 clear len=8
+[  11.113] --> TC apid=0x24 via=usb clear payload=0100
+[  11.165] <-- TM apid=0x24 clear len=8
+[  11.165] --> TC apid=0x24 via=usb clear payload=0200
+[  11.217] <-- TM apid=0x24 clear len=8
+[  11.217] --> TC apid=0x24 via=usb clear payload=0300
+[  11.268] <-- TM apid=0x24 clear len=8
+[  11.268] --> TC apid=0x25 via=usb clear payload=0080
+[  11.320] <-- TM apid=0x25 clear len=4
+[  11.320] --> TC apid=0x1E via=usb clear payload=01
+[  11.822] <-- TM apid=0x1E clear len=5
+[  11.822] --> TC apid=0x1D via=usb clear payload=0b
+[  11.914] <-- TM apid=0x1D clear len=4
+[  11.914] --> TC apid=0x05 via=usb clear payload=12
+[  12.365] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.877] <-- TM apid=0x1F clear len=4
+[  12.877] --> TC apid=0x1F via=usb clear payload=05
+[  13.389] <-- TM apid=0x1F clear len=4
+[  13.389] --> TC apid=0x0A via=usb clear payload=01
+[  13.434] <-- TM apid=0x0A AES len=3
+[  21.521] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.999] <-- TM apid=0x0E AES len=18
+[  30.000] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.072] --> TC apid=0x05 via=usb AES  payload=01
+[  30.523] --> TC apid=0x05 via=usb AES  payload=00
+[  30.974] --> advance(5000 ms)
+[  36.039] <-- TM apid=0x27 clear len=4
+[  36.045] <-- TM apid=0x01 AES len=64
+[  36.047] <-- TM apid=0x01 AES len=64
+[  36.048] <-- TM apid=0x01 AES len=64
+[  36.049] <-- TM apid=0x01 AES len=64
+[  36.050] <-- TM apid=0x01 AES len=64
+[  36.052] <-- TM apid=0x01 AES len=64
+[  36.053] <-- TM apid=0x01 AES len=64
+[  36.054] <-- TM apid=0x01 AES len=64
+[  36.055] <-- TM apid=0x01 AES len=64
+[  36.056] <-- TM apid=0x01 AES len=64
+[  36.057] <-- TM apid=0x01 AES len=64
+[  36.059] <-- TM apid=0x01 AES len=64
+[  36.060] <-- TM apid=0x01 AES len=64
+[  36.061] <-- TM apid=0x01 AES len=64
+[  36.062] <-- TM apid=0x01 AES len=64
+[  36.063] <-- TM apid=0x01 AES len=64
+[  36.064] <-- TM apid=0x01 AES len=64
+[  36.066] <-- TM apid=0x01 AES len=64
+[  36.067] <-- TM apid=0x01 AES len=64
+[  36.068] <-- TM apid=0x01 AES len=64
+[  36.069] <-- TM apid=0x01 AES len=64
+[  36.070] <-- TM apid=0x01 AES len=64
+[  36.071] <-- TM apid=0x01 AES len=64
+[  36.073] <-- TM apid=0x01 AES len=64
+[  36.074] <-- TM apid=0x01 AES len=64
+[  36.075] <-- TM apid=0x01 AES len=64
+[  36.076] <-- TM apid=0x01 AES len=64
+[  36.077] <-- TM apid=0x01 AES len=64
+[  36.078] <-- TM apid=0x01 AES len=64
+[  36.080] <-- TM apid=0x01 AES len=64
+[  36.081] <-- TM apid=0x01 AES len=64
+[  36.082] <-- TM apid=0x01 AES len=64
+[  36.083] <-- TM apid=0x01 AES len=64
+[  36.084] <-- TM apid=0x01 AES len=64
+[  36.086] <-- TM apid=0x01 AES len=64
+[  36.087] <-- TM apid=0x01 AES len=64
+[  36.088] <-- TM apid=0x01 AES len=64
+[  36.089] <-- TM apid=0x01 AES len=64
+[  36.090] <-- TM apid=0x01 AES len=64
+[  36.092] <-- TM apid=0x01 AES len=64
+[  36.093] <-- TM apid=0x01 AES len=64
+[  36.094] <-- TM apid=0x01 AES len=64
+[  36.095] <-- TM apid=0x01 AES len=64
+[  36.096] <-- TM apid=0x01 AES len=64
+[  36.098] <-- TM apid=0x01 AES len=64
+[  36.099] <-- TM apid=0x01 AES len=64
+[  36.100] <-- TM apid=0x01 AES len=64
+[  36.101] <-- TM apid=0x01 AES len=64
+[  36.102] <-- TM apid=0x01 AES len=64
+[  36.102] beacons emitted in 5 s: 49
+[  36.102] -- console tail: [TC - SPP] APID=0x01F SEQ=1 LEN=14 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00A SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] Secure link enabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x005 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x005 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO
+[  36.102] ========================================================================
+[  36.102] POC OK
+[  36.102] ========================================================================

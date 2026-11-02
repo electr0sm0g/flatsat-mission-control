@@ -1,0 +1,75 @@
+# FlatSat electr0sm0g Lab -- hardware pass list (bench parity over USB)
+#
+# 56/56 PoCs pass on the real PwnSat board: python3 poc/<name>.py --usb
+# Evidence: evidence-hw/<name>.txt -- image G (2026-10-31, UF2 335872 B
+# md5 181c603e573ec10c6ddb213f2ca8a6ab) / image H (2026-11-02, UF2
+# 335872 B md5 bfc145c93039177b7393147978cdd432; v117 + spot-checks
+# v106/v119/v130 + v136/v137/v138), except where annotated:
+#   v003/v015 (crash PoCs, V0-03 poisoned broadcast): on image G+H the
+#       wild memcpy deterministically total-wedges the USB stack (3/3 +
+#       1/1, DTR NAK'd, replug-only). Kept evidence-hw/ transcripts are
+#       the image-E/F runs where the operator's replug landed inside the
+#       10-min revival window (v003: POC OK 540 s; v015: POC OK 618 s).
+#       Finding semantics unchanged; impact sharpened (whole board dies).
+#   v135 (beacon/broadcast saturation): the 2026-10-31 22:41 image-G run
+#       (POC OK 107 s) is the kept transcript; the image-H re-run
+#       total-wedged under the flood -- impact-consistent with the
+#       saturation finding (documented, not a regression).
+# Full notes: docs/HARDWARE-USB-TEST.md (item 27) + docs/BUILD.md
+# (sweep passes 8-9).
+v001_send_fw_cpe
+v002_hardcoded_ecb_key
+v003_broadcast_underflow_crash
+v004_set_thruster_noauth
+v005_gps_no_checksum
+v006_gs_auth_xor_static
+v007_no_replay_protection
+v008_resetc_unauth_dos
+v009_flash_read_hardcoded_tag
+v010_cleartext_downgrade
+v011_ecb_bitflip
+v012_usb_debug_bypass
+v013_spacecan_busoff
+v014_beacon_flood
+v015_no_watchdog
+v016_spp_offbyone
+v017_gps_strtok_columns
+v018_gs_status_station_leak
+v101_send_fw_inventory
+v102_chatty_beacon
+v103_tc_rssi_oracle
+v104_leak_padding
+v105_mem_read
+v106_pass_cadence
+v107_arc_replay
+v108_sdls_clear_sas
+v109_spi_oob
+v110_otar_null_key
+v111_key_verify_oracle
+v112_tc_bitflip
+v113_log_name_overflow
+v114_memcpy_rce
+v115_uplink_starvation
+v116_priv_confusion
+v117_sb_forged_mids
+v118_ota_unsigned
+v119_sched_persistence
+v120_fdict_contingency
+v121_watchdog_cookie
+v122_forced_safe_downgrade
+v123_tc_logging_absent
+v124_ewma_ramp_evasion
+v125_spacecan_full_bus
+v126_sensor_bus_injection
+v127_fdir_consumes_forged_mids
+v128_gs_session_hijack
+v129_rf_fingerprint
+v130_stego_padding_channel
+v131_payload_snap_audit
+v132_freq_squat
+v133_adcstumble_saturation
+v134_brownout_drain
+v135_beacon_broadcast_saturation
+v136_gps_spoof_chain
+v137_build_metadata
+v138_arwc_rollback

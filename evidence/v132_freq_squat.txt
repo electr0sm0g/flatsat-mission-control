@@ -1,0 +1,25 @@
+[   0.000] ========================================================================
+[   0.000] V-32 downlink frequency squat
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x0C via=usb AES  payload=-
+[   0.001] <-- TM apid=0x0C AES len=27
+[   0.001] nominal downlink freq=916 MHz, forward count=0
+[   0.001] --> TC apid=0x06 via=radio AES  payload=04d253515541545445522d5741532d48455245
+[   0.002] <-- TM apid=0x06 AES len=17
+[   0.002] --> TC apid=0x0C via=usb AES  payload=-
+[   0.003] <-- TM apid=0x0C AES len=27
+[   0.003] after squat: last_freq=1234 MHz -> operator must re-tune or lose the pass (no auth on the frequency field)
+[   0.003] --> TC apid=0x25 via=usb AES  payload=0084
+[   0.003] <-- TM apid=0x25 clear len=4
+[   0.003] --> TC apid=0x06 via=radio AES  payload=01b35452592d414741494e
+[   0.004] <-- TM apid=0x09 AES len=10
+[   0.004] --> TC apid=0x0C via=usb AES  payload=-
+[   0.005] <-- TM apid=0x0C AES len=27
+[   0.005] --> TC apid=0x06 via=radio AES  payload=0394484f4d45
+[   0.005] <-- TM apid=0x06 AES len=4
+[   0.005] --> TC apid=0x0C via=usb AES  payload=-
+[   0.006] <-- TM apid=0x0C AES len=27
+[   0.006] allowed frequency (916) accepted: last_freq=916
+[   0.006] ========================================================================
+[   0.006] POC OK
+[   0.006] ========================================================================

@@ -1,0 +1,125 @@
+[   0.000] ========================================================================
+[   0.000] V0-01 unauthenticated APID enumeration
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.856] --> TC apid=0x0A via=usb AES  payload=00
+[   8.897] <-- TM apid=0x0A clear len=3
+[   8.949] --> TC apid=0x1D via=usb clear payload=0101
+[   9.001] <-- TM apid=0x1D clear len=4
+[   9.001] --> TC apid=0x11 via=usb clear payload=00
+[   9.461] <-- TM apid=0x11 clear len=9
+[   9.462] --> TC apid=0x15 via=usb clear payload=001005
+[   9.912] <-- TM apid=0x15 clear len=6
+[   9.912] --> TC apid=0x0D via=usb clear payload=01
+[  10.372] <-- TM apid=0x0D clear len=4
+[  10.413] --> TC apid=0x1D via=usb clear payload=03
+[  10.465] <-- TM apid=0x1D clear len=4
+[  10.465] <-- TM apid=0x09 clear len=9
+[  10.506] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.558] <-- TM apid=0x1D clear len=4
+[  10.558] --> TC apid=0x10 via=usb clear payload=00
+[  10.610] <-- TM apid=0x10 clear len=4
+[  10.610] --> TC apid=0x21 via=usb clear payload=00
+[  11.071] <-- TM apid=0x21 clear len=6
+[  11.071] --> TC apid=0x24 via=usb clear payload=0000
+[  11.112] <-- TM apid=0x24 clear len=8
+[  11.112] --> TC apid=0x24 via=usb clear payload=0100
+[  11.164] <-- TM apid=0x24 clear len=8
+[  11.164] --> TC apid=0x24 via=usb clear payload=0200
+[  11.215] <-- TM apid=0x24 clear len=8
+[  11.215] --> TC apid=0x24 via=usb clear payload=0300
+[  11.267] <-- TM apid=0x24 clear len=8
+[  11.267] --> TC apid=0x25 via=usb clear payload=0080
+[  11.319] <-- TM apid=0x25 clear len=4
+[  11.319] --> TC apid=0x1E via=usb clear payload=01
+[  11.831] <-- TM apid=0x1E clear len=5
+[  11.831] --> TC apid=0x1D via=usb clear payload=0b
+[  11.924] <-- TM apid=0x1D clear len=4
+[  11.924] --> TC apid=0x05 via=usb clear payload=12
+[  12.384] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.886] <-- TM apid=0x1F clear len=4
+[  12.886] --> TC apid=0x1F via=usb clear payload=05
+[  13.387] <-- TM apid=0x1F clear len=4
+[  13.387] --> TC apid=0x0A via=usb clear payload=01
+[  13.432] <-- TM apid=0x0A AES len=3
+[  21.521] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.996] <-- TM apid=0x0E AES len=18
+[  29.996] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.059] --> TC apid=0x01 via=radio AES  payload=-
+[  30.112] <-- TM apid=0x01 AES len=5
+[  30.112] probe 0x01 -> TMs ['0x01'] errors=[]
+[  30.113] --> TC apid=0x02 via=radio AES  payload=-
+[  33.791] <-- TM apid=0x02 clear len=4
+[  33.791] probe 0x02 -> TMs ['0x02'] errors=[]
+[  39.648] --> REARM (bench parity: board rebooted mid-session)
+[  39.699] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  48.168] <-- TM apid=0x0E AES len=18
+[  48.230] --> TC apid=0x03 via=radio AES  payload=-
+[  48.692] <-- TM apid=0x03 AES len=5
+[  48.693] probe 0x03 -> TMs ['0x03'] errors=[]
+[  48.693] --> TC apid=0x04 via=radio AES  payload=0000
+[  57.160] probe 0x04 -> TMs [] errors=[]
+[  57.160] --> TC apid=0x05 via=radio AES  payload=02
+[  57.273] probe 0x05 -> TMs [] errors=[]
+[  57.273] --> TC apid=0x06 via=radio AES  payload=039274657374
+[  57.725] <-- TM apid=0x06 AES len=4
+[  57.725] probe 0x06 -> TMs ['0x06'] errors=[]
+[  57.725] --> TC apid=0x07 via=radio AES  payload=-
+[  64.106] <-- TM apid=0x07 AES len=24
+[  64.108] <-- TM apid=0x07 AES len=24
+[  64.109] <-- TM apid=0x07 AES len=24
+[  64.110] <-- TM apid=0x07 AES len=24
+[  64.111] <-- TM apid=0x07 AES len=24
+[  64.111] <-- TM apid=0x07 AES len=24
+[  64.112] <-- TM apid=0x07 AES len=24
+[  64.112] <-- TM apid=0x07 AES len=24
+[  64.113] <-- TM apid=0x07 AES len=24
+[  64.113] <-- TM apid=0x07 AES len=24
+[  64.114] <-- TM apid=0x07 AES len=24
+[  64.114] <-- TM apid=0x07 AES len=24
+[  64.115] <-- TM apid=0x07 AES len=24
+[  64.115] <-- TM apid=0x07 AES len=24
+[  64.116] <-- TM apid=0x07 AES len=24
+[  64.116] <-- TM apid=0x07 AES len=23
+[  64.116] probe 0x07 -> TMs ['0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07'] errors=[]
+[  64.116] --> TC apid=0x08 via=radio AES  payload=-
+[  64.559] <-- TM apid=0x09 AES len=19
+[  64.559] probe 0x08 -> TMs ['0x09'] errors=['Error Unknown APID']
+[  64.559] --> TC apid=0x09 via=radio AES  payload=-
+[  65.012] <-- TM apid=0x09 AES len=19
+[  65.012] probe 0x09 -> TMs ['0x09'] errors=['Error Unknown APID']
+[  65.012] --> TC apid=0x0A via=radio AES  payload=-
+[  65.056] <-- TM apid=0x0A AES len=3
+[  65.057] probe 0x0A -> TMs ['0x0A'] errors=[]
+[  65.098] --> TC apid=0x0B via=radio AES  payload=000000000000
+[  65.560] <-- TM apid=0x09 AES len=20
+[  65.560] probe 0x0B -> TMs ['0x09'] errors=['FLASH WINDOW LOCKED']
+[  65.560] --> TC apid=0x0C via=radio AES  payload=-
+[  65.604] <-- TM apid=0x0C AES len=27
+[  65.604] probe 0x0C -> TMs ['0x0C'] errors=[]
+[  65.604] --> TC apid=0x0D via=radio AES  payload=01
+[  66.067] <-- TM apid=0x0D AES len=4
+[  66.067] probe 0x0D -> TMs ['0x0D'] errors=[]
+[  66.108] --> TC apid=0x0E via=radio AES  payload=-
+[  74.580] <-- TM apid=0x0E AES len=30
+[  74.580] probe 0x0E -> TMs ['0x0E'] errors=[]
+[  74.580] --> TC apid=0x0F via=radio AES  payload=-
+[  75.053] <-- TM apid=0x0F AES len=10
+[  75.053] probe 0x0F -> TMs ['0x0F'] errors=[]
+[  75.053] --> TC apid=0x10 via=radio AES  payload=00
+[  75.494] <-- TM apid=0x09 AES len=15
+[  75.494] probe 0x10 -> TMs ['0x09'] errors=['DEBUG USB ONLY']
+[  76.692] --> TC apid=0x11 via=radio AES  payload=00
+[  77.155] <-- TM apid=0x11 AES len=9
+[  77.155] probe 0x11 -> TMs ['0x11'] errors=[]
+[  77.155] --> TC apid=0x12 via=radio AES  payload=00
+[  77.607] <-- TM apid=0x12 AES len=13
+[  77.607] probe 0x12 -> TMs ['0x12'] errors=[]
+[  77.607] --> TC apid=0x13 via=radio AES  payload=-
+[  78.061] <-- TM apid=0x13 AES len=23
+[  78.061] probe 0x13 -> TMs ['0x13'] errors=[]
+[  78.061] responding APIDs (17): ['0x1', '0x2', '0x3', '0x6', '0x7', '0x8', '0x9', '0xa', '0xb', '0xc', '0xd', '0xe', '0xf', '0x10', '0x11', '0x12', '0x13']
+[  78.061] -- console tail: [TC - SPP] APID=0x00E SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00F SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x010 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x011 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] Ground station communication mode disabled | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x012 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] Ground station challenge issued: 0x3027125A | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x013 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  78.061] ========================================================================
+[  78.061] POC OK
+[  78.061] ========================================================================

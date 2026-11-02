@@ -1,0 +1,13 @@
+[   0.000] ========================================================================
+[   0.000] V0-11 ECB: clear header, determinism, block malleability
+[   0.000] ========================================================================
+[   0.000] encrypted TC wire header (in clear): 100c4001000f -> apid=10 visible to any SDR
+[   0.000] determinism: C(b'01') == C(b'01') -> True
+[   0.000] --> TC apid=0x0A via=radio clear payload=00
+[   0.000] <-- TM apid=0x0A clear len=3
+[   0.001] opaque block C=78d61fd20dc1167cb4ae74f372a91f2d -> P=42 (byte0=0x42)
+[   0.001] secure link state after opaque block: True
+[   0.001] C(block1) identical when block0 changes: False
+[   0.001] ========================================================================
+[   0.001] POC OK
+[   0.001] ========================================================================

@@ -1,0 +1,34 @@
+[   0.000] ========================================================================
+[   0.000] V-19 flash-resident schedule persistence
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1E via=radio AES  payload=000000000200040201ff
+[   0.000] <-- TM apid=0x1E clear len=6
+[   0.000] schedule add ok=1 count=1 persists=1
+[   0.000] --> advance(2500 ms)
+[   0.001] --> TC apid=0x0C via=usb AES  payload=-
+[   0.001] <-- TM apid=0x0C AES len=27
+[   0.001] task executing on schedule (t1=255)
+[   0.001] --> TC apid=0x02 via=usb AES  payload=-
+[   0.002] <-- TM apid=0x02 clear len=4
+[   0.002] --> TC apid=0x0C via=usb AES  payload=-
+[   0.003] <-- TM apid=0x0C AES len=27
+[   0.003] after RESETC: t1=10 (volatile state rewound)
+[   0.003] --> advance(2500 ms)
+[   0.003] --> TC apid=0x0C via=usb AES  payload=-
+[   0.003] <-- TM apid=0x0C AES len=27
+[   0.003] planted task ALIVE after reboot (no image change, no flash write beyond the queue sector)
+[   0.003] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[   0.003] --> advance(2500 ms)
+[   0.004] --> TC apid=0x0C via=usb AES  payload=-
+[   0.004] <-- TM apid=0x0C AES len=27
+[   0.004] --> TC apid=0x1E via=usb AES  payload=02
+[   0.005] <-- TM apid=0x1E clear len=8
+[   0.005] queue dump: entries=1 first_apid=0x0004
+[   0.005] --> TC apid=0x1E via=usb AES  payload=01
+[   0.005] <-- TM apid=0x1E clear len=5
+[   0.005] --> advance(2500 ms)
+[   0.005] --> TC apid=0x0C via=usb clear payload=-
+[   0.005] <-- TM apid=0x0C clear len=27
+[   0.005] ========================================================================
+[   0.005] POC OK
+[   0.005] ========================================================================

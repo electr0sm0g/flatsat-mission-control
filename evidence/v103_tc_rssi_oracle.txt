@@ -1,0 +1,31 @@
+[   0.000] ========================================================================
+[   0.000] V-03 TC RSSI/SNR oracle + APID leak
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x20 via=radio AES  payload=01
+[   0.000] <-- TM apid=0x20 clear len=4
+[   0.000] --> TC apid=0x01 via=radio AES  payload=-
+[   0.001] <-- TM apid=0x01 AES len=5
+[   0.001] --> TC apid=0x01 via=radio AES  payload=-
+[   0.002] <-- TM apid=0x01 AES len=5
+[   0.002] --> TC apid=0x01 via=radio AES  payload=-
+[   0.002] <-- TM apid=0x01 AES len=5
+[   0.002] --> TC apid=0x01 via=radio AES  payload=-
+[   0.003] <-- TM apid=0x01 AES len=5
+[   0.003] --> TC apid=0x01 via=radio AES  payload=-
+[   0.003] <-- TM apid=0x01 AES len=5
+[   0.003] --> TC apid=0x01 via=radio AES  payload=-
+[   0.004] <-- TM apid=0x01 AES len=5
+[   0.004] --> TC apid=0x01 via=radio AES  payload=-
+[   0.004] <-- TM apid=0x01 AES len=5
+[   0.005] --> TC apid=0x01 via=radio AES  payload=-
+[   0.005] <-- TM apid=0x01 AES len=5
+[   0.005] --> TC apid=0x01 via=radio AES  payload=-
+[   0.006] <-- TM apid=0x01 AES len=5
+[   0.006] --> TC apid=0x01 via=radio AES  payload=-
+[   0.006] <-- TM apid=0x01 AES len=5
+[   0.006] --> TC apid=0x20 via=radio AES  payload=-
+[   0.006] <-- TM apid=0x20 clear len=18
+[   0.006] samples=11 rssi avg=-71 [-80..-65] dBm snr=9.8dB freq_err=-80Hz crc_on=0 last_apid=0x20
+[   0.006] ========================================================================
+[   0.006] POC OK
+[   0.006] ========================================================================

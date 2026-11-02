@@ -1,0 +1,293 @@
+[   0.000] ========================================================================
+[   0.000] V-23 TC journal absent / 128-entry cap
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x25 via=usb AES  payload=01
+[   0.000] <-- TM apid=0x25 clear len=6
+[   0.000] defenses=0x80 log_entries=0 -> journal OFF
+[   0.000] --> TC apid=0x0D via=radio AES  payload=02
+[   0.001] <-- TM apid=0x0D AES len=4
+[   0.001] --> TC apid=0x0D via=radio AES  payload=02
+[   0.002] <-- TM apid=0x0D AES len=4
+[   0.002] --> TC apid=0x0D via=radio AES  payload=02
+[   0.002] <-- TM apid=0x0D AES len=4
+[   0.002] --> TC apid=0x0D via=radio AES  payload=02
+[   0.003] <-- TM apid=0x0D AES len=4
+[   0.003] --> TC apid=0x0D via=radio AES  payload=02
+[   0.003] <-- TM apid=0x0D AES len=4
+[   0.003] --> TC apid=0x25 via=usb AES  payload=01
+[   0.004] <-- TM apid=0x25 clear len=6
+[   0.004] 5 mode-change TCs executed, nothing recorded (no attribution)
+[   0.004] --> TC apid=0x25 via=usb AES  payload=00c0
+[   0.004] <-- TM apid=0x25 clear len=4
+[   0.004] --> TC apid=0x01 via=radio AES  payload=01
+[   0.004] <-- TM apid=0x01 AES len=5
+[   0.004] --> TC apid=0x01 via=radio AES  payload=01
+[   0.005] <-- TM apid=0x01 AES len=5
+[   0.005] --> TC apid=0x01 via=radio AES  payload=01
+[   0.006] <-- TM apid=0x01 AES len=5
+[   0.006] --> TC apid=0x01 via=radio AES  payload=01
+[   0.006] <-- TM apid=0x01 AES len=5
+[   0.006] --> TC apid=0x01 via=radio AES  payload=01
+[   0.007] <-- TM apid=0x01 AES len=5
+[   0.007] --> TC apid=0x01 via=radio AES  payload=01
+[   0.007] <-- TM apid=0x01 AES len=5
+[   0.007] --> TC apid=0x01 via=radio AES  payload=01
+[   0.008] <-- TM apid=0x01 AES len=5
+[   0.008] --> TC apid=0x01 via=radio AES  payload=01
+[   0.008] <-- TM apid=0x01 AES len=5
+[   0.008] --> TC apid=0x01 via=radio AES  payload=01
+[   0.008] <-- TM apid=0x01 AES len=5
+[   0.008] --> TC apid=0x01 via=radio AES  payload=01
+[   0.009] <-- TM apid=0x01 AES len=5
+[   0.009] --> TC apid=0x01 via=radio AES  payload=01
+[   0.009] <-- TM apid=0x01 AES len=5
+[   0.009] --> TC apid=0x01 via=radio AES  payload=01
+[   0.010] <-- TM apid=0x01 AES len=5
+[   0.010] --> TC apid=0x01 via=radio AES  payload=01
+[   0.010] <-- TM apid=0x01 AES len=5
+[   0.010] --> TC apid=0x01 via=radio AES  payload=01
+[   0.011] <-- TM apid=0x01 AES len=5
+[   0.011] --> TC apid=0x01 via=radio AES  payload=01
+[   0.011] <-- TM apid=0x01 AES len=5
+[   0.011] --> TC apid=0x01 via=radio AES  payload=01
+[   0.012] <-- TM apid=0x01 AES len=5
+[   0.012] --> TC apid=0x01 via=radio AES  payload=01
+[   0.012] <-- TM apid=0x01 AES len=5
+[   0.012] --> TC apid=0x01 via=radio AES  payload=01
+[   0.013] <-- TM apid=0x01 AES len=5
+[   0.013] --> TC apid=0x01 via=radio AES  payload=01
+[   0.013] <-- TM apid=0x01 AES len=5
+[   0.013] --> TC apid=0x01 via=radio AES  payload=01
+[   0.014] <-- TM apid=0x01 AES len=5
+[   0.014] --> TC apid=0x01 via=radio AES  payload=01
+[   0.014] <-- TM apid=0x01 AES len=5
+[   0.014] --> TC apid=0x01 via=radio AES  payload=01
+[   0.015] <-- TM apid=0x01 AES len=5
+[   0.015] --> TC apid=0x01 via=radio AES  payload=01
+[   0.015] <-- TM apid=0x01 AES len=5
+[   0.015] --> TC apid=0x01 via=radio AES  payload=01
+[   0.016] <-- TM apid=0x01 AES len=5
+[   0.016] --> TC apid=0x01 via=radio AES  payload=01
+[   0.016] <-- TM apid=0x01 AES len=5
+[   0.016] --> TC apid=0x01 via=radio AES  payload=01
+[   0.016] <-- TM apid=0x01 AES len=5
+[   0.016] --> TC apid=0x01 via=radio AES  payload=01
+[   0.017] <-- TM apid=0x01 AES len=5
+[   0.017] --> TC apid=0x01 via=radio AES  payload=01
+[   0.017] <-- TM apid=0x01 AES len=5
+[   0.017] --> TC apid=0x01 via=radio AES  payload=01
+[   0.018] <-- TM apid=0x01 AES len=5
+[   0.018] --> TC apid=0x01 via=radio AES  payload=01
+[   0.018] <-- TM apid=0x01 AES len=5
+[   0.018] --> TC apid=0x01 via=radio AES  payload=01
+[   0.019] <-- TM apid=0x01 AES len=5
+[   0.019] --> TC apid=0x01 via=radio AES  payload=01
+[   0.019] <-- TM apid=0x01 AES len=5
+[   0.019] --> TC apid=0x01 via=radio AES  payload=01
+[   0.020] <-- TM apid=0x01 AES len=5
+[   0.020] --> TC apid=0x01 via=radio AES  payload=01
+[   0.020] <-- TM apid=0x01 AES len=5
+[   0.020] --> TC apid=0x01 via=radio AES  payload=01
+[   0.021] <-- TM apid=0x01 AES len=5
+[   0.021] --> TC apid=0x01 via=radio AES  payload=01
+[   0.021] <-- TM apid=0x01 AES len=5
+[   0.021] --> TC apid=0x01 via=radio AES  payload=01
+[   0.021] <-- TM apid=0x01 AES len=5
+[   0.022] --> TC apid=0x01 via=radio AES  payload=01
+[   0.022] <-- TM apid=0x01 AES len=5
+[   0.022] --> TC apid=0x01 via=radio AES  payload=01
+[   0.022] <-- TM apid=0x01 AES len=5
+[   0.022] --> TC apid=0x01 via=radio AES  payload=01
+[   0.023] <-- TM apid=0x01 AES len=5
+[   0.023] --> TC apid=0x01 via=radio AES  payload=01
+[   0.023] <-- TM apid=0x01 AES len=5
+[   0.023] --> TC apid=0x01 via=radio AES  payload=01
+[   0.024] <-- TM apid=0x01 AES len=5
+[   0.024] --> TC apid=0x01 via=radio AES  payload=01
+[   0.024] <-- TM apid=0x01 AES len=5
+[   0.024] --> TC apid=0x01 via=radio AES  payload=01
+[   0.025] <-- TM apid=0x01 AES len=5
+[   0.025] --> TC apid=0x01 via=radio AES  payload=01
+[   0.025] <-- TM apid=0x01 AES len=5
+[   0.025] --> TC apid=0x01 via=radio AES  payload=01
+[   0.026] <-- TM apid=0x01 AES len=5
+[   0.026] --> TC apid=0x01 via=radio AES  payload=01
+[   0.026] <-- TM apid=0x01 AES len=5
+[   0.026] --> TC apid=0x01 via=radio AES  payload=01
+[   0.027] <-- TM apid=0x01 AES len=5
+[   0.027] --> TC apid=0x01 via=radio AES  payload=01
+[   0.027] <-- TM apid=0x01 AES len=5
+[   0.027] --> TC apid=0x01 via=radio AES  payload=01
+[   0.027] <-- TM apid=0x01 AES len=5
+[   0.027] --> TC apid=0x01 via=radio AES  payload=01
+[   0.028] <-- TM apid=0x01 AES len=5
+[   0.028] --> TC apid=0x01 via=radio AES  payload=01
+[   0.028] <-- TM apid=0x01 AES len=5
+[   0.028] --> TC apid=0x01 via=radio AES  payload=01
+[   0.029] <-- TM apid=0x01 AES len=5
+[   0.029] --> TC apid=0x01 via=radio AES  payload=01
+[   0.029] <-- TM apid=0x01 AES len=5
+[   0.029] --> TC apid=0x01 via=radio AES  payload=01
+[   0.030] <-- TM apid=0x01 AES len=5
+[   0.030] --> TC apid=0x01 via=radio AES  payload=01
+[   0.030] <-- TM apid=0x01 AES len=5
+[   0.030] --> TC apid=0x01 via=radio AES  payload=01
+[   0.031] <-- TM apid=0x01 AES len=5
+[   0.031] --> TC apid=0x01 via=radio AES  payload=01
+[   0.031] <-- TM apid=0x01 AES len=5
+[   0.031] --> TC apid=0x01 via=radio AES  payload=01
+[   0.032] <-- TM apid=0x01 AES len=5
+[   0.032] --> TC apid=0x01 via=radio AES  payload=01
+[   0.032] <-- TM apid=0x01 AES len=5
+[   0.032] --> TC apid=0x01 via=radio AES  payload=01
+[   0.033] <-- TM apid=0x01 AES len=5
+[   0.033] --> TC apid=0x01 via=radio AES  payload=01
+[   0.033] <-- TM apid=0x01 AES len=5
+[   0.033] --> TC apid=0x01 via=radio AES  payload=01
+[   0.033] <-- TM apid=0x01 AES len=5
+[   0.033] --> TC apid=0x01 via=radio AES  payload=01
+[   0.034] <-- TM apid=0x01 AES len=5
+[   0.034] --> TC apid=0x01 via=radio AES  payload=01
+[   0.034] <-- TM apid=0x01 AES len=5
+[   0.034] --> TC apid=0x01 via=radio AES  payload=01
+[   0.035] <-- TM apid=0x01 AES len=5
+[   0.035] --> TC apid=0x01 via=radio AES  payload=01
+[   0.035] <-- TM apid=0x01 AES len=5
+[   0.035] --> TC apid=0x01 via=radio AES  payload=01
+[   0.036] <-- TM apid=0x01 AES len=5
+[   0.036] --> TC apid=0x01 via=radio AES  payload=01
+[   0.036] <-- TM apid=0x01 AES len=5
+[   0.036] --> TC apid=0x01 via=radio AES  payload=01
+[   0.037] <-- TM apid=0x01 AES len=5
+[   0.037] --> TC apid=0x01 via=radio AES  payload=01
+[   0.037] <-- TM apid=0x01 AES len=5
+[   0.037] --> TC apid=0x01 via=radio AES  payload=01
+[   0.038] <-- TM apid=0x01 AES len=5
+[   0.038] --> TC apid=0x01 via=radio AES  payload=01
+[   0.038] <-- TM apid=0x01 AES len=5
+[   0.038] --> TC apid=0x01 via=radio AES  payload=01
+[   0.039] <-- TM apid=0x01 AES len=5
+[   0.039] --> TC apid=0x01 via=radio AES  payload=01
+[   0.039] <-- TM apid=0x01 AES len=5
+[   0.039] --> TC apid=0x01 via=radio AES  payload=01
+[   0.039] <-- TM apid=0x01 AES len=5
+[   0.040] --> TC apid=0x01 via=radio AES  payload=01
+[   0.040] <-- TM apid=0x01 AES len=5
+[   0.040] --> TC apid=0x01 via=radio AES  payload=01
+[   0.040] <-- TM apid=0x01 AES len=5
+[   0.040] --> TC apid=0x01 via=radio AES  payload=01
+[   0.041] <-- TM apid=0x01 AES len=5
+[   0.041] --> TC apid=0x01 via=radio AES  payload=01
+[   0.041] <-- TM apid=0x01 AES len=5
+[   0.041] --> TC apid=0x01 via=radio AES  payload=01
+[   0.042] <-- TM apid=0x01 AES len=5
+[   0.042] --> TC apid=0x01 via=radio AES  payload=01
+[   0.042] <-- TM apid=0x01 AES len=5
+[   0.042] --> TC apid=0x01 via=radio AES  payload=01
+[   0.043] <-- TM apid=0x01 AES len=5
+[   0.043] --> TC apid=0x01 via=radio AES  payload=01
+[   0.043] <-- TM apid=0x01 AES len=5
+[   0.043] --> TC apid=0x01 via=radio AES  payload=01
+[   0.044] <-- TM apid=0x01 AES len=5
+[   0.044] --> TC apid=0x01 via=radio AES  payload=01
+[   0.044] <-- TM apid=0x01 AES len=5
+[   0.044] --> TC apid=0x01 via=radio AES  payload=01
+[   0.045] <-- TM apid=0x01 AES len=5
+[   0.045] --> TC apid=0x01 via=radio AES  payload=01
+[   0.045] <-- TM apid=0x01 AES len=5
+[   0.045] --> TC apid=0x01 via=radio AES  payload=01
+[   0.046] <-- TM apid=0x01 AES len=5
+[   0.046] --> TC apid=0x01 via=radio AES  payload=01
+[   0.046] <-- TM apid=0x01 AES len=5
+[   0.046] --> TC apid=0x01 via=radio AES  payload=01
+[   0.046] <-- TM apid=0x01 AES len=5
+[   0.046] --> TC apid=0x01 via=radio AES  payload=01
+[   0.047] <-- TM apid=0x01 AES len=5
+[   0.047] --> TC apid=0x01 via=radio AES  payload=01
+[   0.047] <-- TM apid=0x01 AES len=5
+[   0.047] --> TC apid=0x01 via=radio AES  payload=01
+[   0.048] <-- TM apid=0x01 AES len=5
+[   0.048] --> TC apid=0x01 via=radio AES  payload=01
+[   0.048] <-- TM apid=0x01 AES len=5
+[   0.048] --> TC apid=0x01 via=radio AES  payload=01
+[   0.049] <-- TM apid=0x01 AES len=5
+[   0.049] --> TC apid=0x01 via=radio AES  payload=01
+[   0.049] <-- TM apid=0x01 AES len=5
+[   0.049] --> TC apid=0x01 via=radio AES  payload=01
+[   0.050] <-- TM apid=0x01 AES len=5
+[   0.050] --> TC apid=0x01 via=radio AES  payload=01
+[   0.050] <-- TM apid=0x01 AES len=5
+[   0.050] --> TC apid=0x01 via=radio AES  payload=01
+[   0.051] <-- TM apid=0x01 AES len=5
+[   0.051] --> TC apid=0x01 via=radio AES  payload=01
+[   0.051] <-- TM apid=0x01 AES len=5
+[   0.051] --> TC apid=0x01 via=radio AES  payload=01
+[   0.051] <-- TM apid=0x01 AES len=5
+[   0.052] --> TC apid=0x01 via=radio AES  payload=01
+[   0.052] <-- TM apid=0x01 AES len=5
+[   0.052] --> TC apid=0x01 via=radio AES  payload=01
+[   0.052] <-- TM apid=0x01 AES len=5
+[   0.052] --> TC apid=0x01 via=radio AES  payload=01
+[   0.053] <-- TM apid=0x01 AES len=5
+[   0.053] --> TC apid=0x01 via=radio AES  payload=01
+[   0.053] <-- TM apid=0x01 AES len=5
+[   0.053] --> TC apid=0x01 via=radio AES  payload=01
+[   0.054] <-- TM apid=0x01 AES len=5
+[   0.054] --> TC apid=0x01 via=radio AES  payload=01
+[   0.054] <-- TM apid=0x01 AES len=5
+[   0.054] --> TC apid=0x01 via=radio AES  payload=01
+[   0.055] <-- TM apid=0x01 AES len=5
+[   0.055] --> TC apid=0x01 via=radio AES  payload=01
+[   0.055] <-- TM apid=0x01 AES len=5
+[   0.055] --> TC apid=0x01 via=radio AES  payload=01
+[   0.056] <-- TM apid=0x01 AES len=5
+[   0.056] --> TC apid=0x01 via=radio AES  payload=01
+[   0.056] <-- TM apid=0x01 AES len=5
+[   0.056] --> TC apid=0x01 via=radio AES  payload=01
+[   0.057] <-- TM apid=0x01 AES len=5
+[   0.057] --> TC apid=0x01 via=radio AES  payload=01
+[   0.057] <-- TM apid=0x01 AES len=5
+[   0.057] --> TC apid=0x01 via=radio AES  payload=01
+[   0.058] <-- TM apid=0x01 AES len=5
+[   0.058] --> TC apid=0x01 via=radio AES  payload=01
+[   0.058] <-- TM apid=0x01 AES len=5
+[   0.058] --> TC apid=0x01 via=radio AES  payload=01
+[   0.059] <-- TM apid=0x01 AES len=5
+[   0.059] --> TC apid=0x01 via=radio AES  payload=01
+[   0.059] <-- TM apid=0x01 AES len=5
+[   0.059] --> TC apid=0x01 via=radio AES  payload=01
+[   0.059] <-- TM apid=0x01 AES len=5
+[   0.059] --> TC apid=0x01 via=radio AES  payload=01
+[   0.060] <-- TM apid=0x01 AES len=5
+[   0.060] --> TC apid=0x01 via=radio AES  payload=01
+[   0.060] <-- TM apid=0x01 AES len=5
+[   0.060] --> TC apid=0x01 via=radio AES  payload=01
+[   0.061] <-- TM apid=0x01 AES len=5
+[   0.061] --> TC apid=0x01 via=radio AES  payload=01
+[   0.061] <-- TM apid=0x01 AES len=5
+[   0.061] --> TC apid=0x01 via=radio AES  payload=01
+[   0.062] <-- TM apid=0x01 AES len=5
+[   0.062] --> TC apid=0x01 via=radio AES  payload=01
+[   0.062] <-- TM apid=0x01 AES len=5
+[   0.062] --> TC apid=0x01 via=radio AES  payload=01
+[   0.063] <-- TM apid=0x01 AES len=5
+[   0.063] --> TC apid=0x01 via=radio AES  payload=01
+[   0.063] <-- TM apid=0x01 AES len=5
+[   0.063] --> TC apid=0x01 via=radio AES  payload=01
+[   0.064] <-- TM apid=0x01 AES len=5
+[   0.064] --> TC apid=0x01 via=radio AES  payload=01
+[   0.064] <-- TM apid=0x01 AES len=5
+[   0.064] --> TC apid=0x01 via=radio AES  payload=01
+[   0.065] <-- TM apid=0x01 AES len=5
+[   0.065] --> TC apid=0x25 via=usb AES  payload=01
+[   0.065] <-- TM apid=0x25 clear len=6
+[   0.065] after 130 TCs: entries=128 evicted=3
+[   0.065] --> TC apid=0x25 via=usb AES  payload=02000003
+[   0.065] <-- TM apid=0x25 clear len=34
+[   0.065] entry 0: t=5000 ms apid=0x0001 seq=13 payload=01
+[   0.065] entry 1: t=5000 ms apid=0x0001 seq=14 payload=01
+[   0.065] entry 2: t=5000 ms apid=0x0001 seq=15 payload=01
+[   0.065] => forensics possible ONLY when the optional journal is on, and even then a flood evicts the evidence within minutes
+[   0.065] ========================================================================
+[   0.065] POC OK
+[   0.065] ========================================================================

@@ -1,0 +1,67 @@
+[   0.000] ========================================================================
+[   0.000] V-05 arbitrary MEM_READ
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.859] --> TC apid=0x0A via=usb AES  payload=00
+[   8.900] <-- TM apid=0x0A clear len=3
+[   8.951] --> TC apid=0x1D via=usb clear payload=0101
+[   9.003] <-- TM apid=0x1D clear len=4
+[   9.003] --> TC apid=0x11 via=usb clear payload=00
+[   9.463] <-- TM apid=0x11 clear len=9
+[   9.463] --> TC apid=0x15 via=usb clear payload=001005
+[   9.914] <-- TM apid=0x15 clear len=6
+[   9.914] --> TC apid=0x0D via=usb clear payload=01
+[  10.365] <-- TM apid=0x0D clear len=4
+[  10.416] --> TC apid=0x1D via=usb clear payload=03
+[  10.467] <-- TM apid=0x1D clear len=4
+[  10.467] <-- TM apid=0x09 clear len=9
+[  10.509] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.561] <-- TM apid=0x1D clear len=4
+[  10.561] --> TC apid=0x10 via=usb clear payload=00
+[  10.612] <-- TM apid=0x10 clear len=4
+[  10.612] --> TC apid=0x21 via=usb clear payload=00
+[  11.074] <-- TM apid=0x21 clear len=6
+[  11.074] --> TC apid=0x24 via=usb clear payload=0000
+[  11.115] <-- TM apid=0x24 clear len=8
+[  11.115] --> TC apid=0x24 via=usb clear payload=0100
+[  11.167] <-- TM apid=0x24 clear len=8
+[  11.167] --> TC apid=0x24 via=usb clear payload=0200
+[  11.219] <-- TM apid=0x24 clear len=8
+[  11.219] --> TC apid=0x24 via=usb clear payload=0300
+[  11.270] <-- TM apid=0x24 clear len=8
+[  11.270] --> TC apid=0x25 via=usb clear payload=0080
+[  11.322] <-- TM apid=0x25 clear len=4
+[  11.322] --> TC apid=0x1E via=usb clear payload=01
+[  11.824] <-- TM apid=0x1E clear len=5
+[  11.824] --> TC apid=0x1D via=usb clear payload=0b
+[  11.917] <-- TM apid=0x1D clear len=4
+[  11.917] --> TC apid=0x05 via=usb clear payload=12
+[  12.367] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.879] <-- TM apid=0x1F clear len=4
+[  12.879] --> TC apid=0x1F via=usb clear payload=05
+[  13.380] <-- TM apid=0x1F clear len=4
+[  13.380] --> TC apid=0x0A via=usb clear payload=01
+[  13.435] <-- TM apid=0x0A AES len=3
+[  21.525] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.003] <-- TM apid=0x0E AES len=18
+[  30.003] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.116] --> TC apid=0x12 via=radio AES  payload=00
+[  30.578] <-- TM apid=0x12 AES len=13
+[  30.579] --> TC apid=0x19 via=radio AES  payload=002100200400
+[  31.029] <-- TM apid=0x19 clear len=11
+[  31.029] MEM_READ 0x20002100 -> challenge 0x012685B6
+[  31.029] --> TC apid=0x19 via=radio AES  payload=002200201000
+[  31.478] <-- TM apid=0x19 clear len=23
+[  31.478] MEM_READ sa0_key -> 50574e7361744c61624b657931323334 == link key: True
+[  31.478] --> TC apid=0x19 via=radio AES  payload=003000201000
+[  31.939] <-- TM apid=0x19 clear len=23
+[  31.939] master key table base 0x20003000: all-zero master keys confirmed
+[  31.939] --> TC apid=0x19 via=radio AES  payload=002200202c01
+[  32.392] <-- TM apid=0x09 AES len=15
+[  32.393] --> TC apid=0x19 via=radio AES  payload=000000000800
+[  32.845] <-- TM apid=0x09 AES len=15
+[  32.845] => crypto material inventory complete from the raw radio
+[  32.846] -- console tail: [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x012 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] Ground station challenge issued: 0x012685B6 | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x019 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x019 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x019 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x019 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x019 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  32.846] ========================================================================
+[  32.846] POC OK
+[  32.846] ========================================================================

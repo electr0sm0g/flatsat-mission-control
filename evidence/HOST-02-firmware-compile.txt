@@ -1,0 +1,28 @@
+# HOST-02 - firmware syntax check (g++ -fsyntax-only -std=gnu++17, Arduino shim)
+# v2 modules + patched worker compile against the host shim; upstream
+# radio/USB/sensor drivers (RadioLib, NeoPixelBus, TinyUSB, SparkFun)
+# are not host-compilable here -- they ARE covered by the real RP2040
+# build: cd firmware && pio run  (verified SUCCESS, see BUILD.md).
+
+OK   firmware/anomaly.cpp
+OK   firmware/cmac.cpp
+OK   firmware/covert.cpp
+OK   firmware/extcmds.cpp
+OK   firmware/fdir.cpp
+OK   firmware/flashstore.cpp
+N/A  firmware/led.cpp  (upstream v1.0.3 based; per-file patches: docs/LICENSING.md; needs vendor lib headers)
+OK   firmware/memserv.cpp
+OK   firmware/mission_model.cpp
+N/A  firmware/rdownlink.cpp  (upstream v1.0.3 based; per-file patches: docs/LICENSING.md; needs vendor lib headers)
+N/A  firmware/ruplink.cpp  (upstream v1.0.3 based; per-file patches: docs/LICENSING.md; needs vendor lib headers)
+OK   firmware/sb.cpp
+OK   firmware/sdls_sim.cpp
+OK   firmware/secure_link.cpp
+N/A  firmware/sensors.cpp  (upstream v1.0.3 based; per-file patches: docs/LICENSING.md; needs vendor lib headers)
+OK   firmware/spacecan.cpp
+OK   firmware/spp.cpp
+OK   firmware/thruster.cpp
+N/A  firmware/usbCDC.cpp  (upstream v1.0.3 based; per-file patches: docs/LICENSING.md; needs vendor lib headers)
+OK   firmware/worker.cpp
+
+RESULT: all v2 firmware sources syntax-clean on host

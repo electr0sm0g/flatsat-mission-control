@@ -1,0 +1,40 @@
+[   0.000] ========================================================================
+[   0.000] V0-15 no watchdog -> permanent loss on crash
+[   0.000] ========================================================================
+[   9.990] --> HARD RESET (bench parity: fresh board per PoC)
+[  26.872] --> TC apid=0x14 via=usb clear payload=406c841500e055bb801a060008
+[  35.619] --> TC apid=0x06 via=radio clear payload=07
+[  39.624] --> advance(60000 ms)
+[  42.039] <-- TM apid=0x0E clear len=30
+[  42.039] <-- TM apid=0x01 clear len=64
+[  42.039] <-- TM apid=0x01 clear len=8
+[  42.039] <-- TM apid=0x3FF clear len=14
+[  42.039] <-- TM apid=0x27 clear len=4
+[  42.039] --> TC apid=0x01 via=radio clear payload=-
+[  46.043] t+1 min: still silent (NO RESPONSE)
+[  46.043] --> advance(60000 ms)
+[ 110.259] --> TC apid=0x01 via=radio clear payload=-
+[ 136.631] t+2 min: still silent (NO RESPONSE)
+[ 136.631] --> advance(60000 ms)
+[ 200.850] --> TC apid=0x01 via=radio clear payload=-
+[ 227.256] t+3 min: still silent (NO RESPONSE)
+[ 227.256] --> advance(60000 ms)
+[ 291.478] --> TC apid=0x01 via=radio clear payload=-
+[ 317.879] t+4 min: still silent (NO RESPONSE)
+[ 317.879] --> advance(60000 ms)
+[ 382.098] --> TC apid=0x01 via=radio clear payload=-
+[ 408.502] t+5 min: still silent (NO RESPONSE)
+[ 408.502] no watchdog: mission loss confirmed after 5 simulated minutes
+[ 408.502] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[ 408.510] >> bench recovery: re-flashing the lab image via BOOTSEL
+[ 453.661] >> board dead: awaiting a PHYSICAL power cycle (unplug/replug the USB cable), up to 10 min
+[ 615.469] >> board is back -- power cycle confirmed
+[ 615.471] --> TC apid=0x01 via=radio AES  payload=-
+[ 617.980] <-- TM apid=0x27 clear len=4
+[ 617.981] <-- TM apid=0x01 AES len=5
+[ 617.981] -- console tail: [ERROR] Unpacking SPP: -1 | [TC - SPP] APID=0x027 SEQ=1 LEN=14 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x006 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] USB Device configured successfully | [INFO] ACC OK | [INFO] BME OK | [INFO] GPS UART configured at 9600 baud | [INFO] Radio 0 Configured Successfully! | [INFO] Radio 1 Configured Successfully! | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [WARN] GPS not detected on UART, using zero-coordinate fallback | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x001 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[ 617.981] ========================================================================
+[ 617.981] POC OK
+[ 617.981] ========================================================================
+[evidence saved to evidence-hw/v015_no_watchdog.txt]
+POC OK

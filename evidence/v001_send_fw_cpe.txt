@@ -1,0 +1,77 @@
+[   0.000] ========================================================================
+[   0.000] V0-01 unauthenticated APID enumeration
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x01 via=radio AES  payload=-
+[   0.001] <-- TM apid=0x01 AES len=5
+[   0.001] probe 0x01 -> TMs ['0x01'] errors=[]
+[   0.001] --> TC apid=0x02 via=radio AES  payload=-
+[   0.001] <-- TM apid=0x02 clear len=4
+[   0.001] probe 0x02 -> TMs ['0x02'] errors=[]
+[   0.001] --> TC apid=0x03 via=radio AES  payload=-
+[   0.002] <-- TM apid=0x03 AES len=5
+[   0.002] probe 0x03 -> TMs ['0x03'] errors=[]
+[   0.002] --> TC apid=0x04 via=radio AES  payload=0000
+[   0.002] probe 0x04 -> TMs [] errors=[]
+[   0.002] --> TC apid=0x05 via=radio AES  payload=02
+[   0.002] probe 0x05 -> TMs [] errors=[]
+[   0.002] --> TC apid=0x06 via=radio AES  payload=039274657374
+[   0.003] <-- TM apid=0x06 AES len=4
+[   0.003] probe 0x06 -> TMs ['0x06'] errors=[]
+[   0.003] --> TC apid=0x07 via=radio AES  payload=-
+[   0.004] <-- TM apid=0x07 AES len=24
+[   0.005] <-- TM apid=0x07 AES len=24
+[   0.005] <-- TM apid=0x07 AES len=24
+[   0.006] <-- TM apid=0x07 AES len=24
+[   0.006] <-- TM apid=0x07 AES len=24
+[   0.007] <-- TM apid=0x07 AES len=24
+[   0.007] <-- TM apid=0x07 AES len=24
+[   0.007] <-- TM apid=0x07 AES len=24
+[   0.008] <-- TM apid=0x07 AES len=24
+[   0.008] <-- TM apid=0x07 AES len=24
+[   0.009] <-- TM apid=0x07 AES len=24
+[   0.009] <-- TM apid=0x07 AES len=24
+[   0.009] <-- TM apid=0x07 AES len=24
+[   0.010] <-- TM apid=0x07 AES len=24
+[   0.010] <-- TM apid=0x07 AES len=24
+[   0.011] <-- TM apid=0x07 AES len=23
+[   0.011] probe 0x07 -> TMs ['0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07', '0x07'] errors=[]
+[   0.011] --> TC apid=0x08 via=radio AES  payload=-
+[   0.011] <-- TM apid=0x09 AES len=19
+[   0.011] probe 0x08 -> TMs ['0x09'] errors=['Error Unknown APID']
+[   0.011] --> TC apid=0x09 via=radio AES  payload=-
+[   0.012] <-- TM apid=0x09 AES len=19
+[   0.012] probe 0x09 -> TMs ['0x09'] errors=['Error Unknown APID']
+[   0.012] --> TC apid=0x0A via=radio AES  payload=-
+[   0.013] <-- TM apid=0x0A AES len=3
+[   0.013] probe 0x0A -> TMs ['0x0A'] errors=[]
+[   0.013] --> TC apid=0x0B via=radio AES  payload=000000000000
+[   0.013] <-- TM apid=0x09 AES len=20
+[   0.013] probe 0x0B -> TMs ['0x09'] errors=['FLASH WINDOW LOCKED']
+[   0.013] --> TC apid=0x0C via=radio AES  payload=-
+[   0.014] <-- TM apid=0x0C AES len=27
+[   0.014] probe 0x0C -> TMs ['0x0C'] errors=[]
+[   0.014] --> TC apid=0x0D via=radio AES  payload=01
+[   0.014] <-- TM apid=0x0D AES len=4
+[   0.014] probe 0x0D -> TMs ['0x0D'] errors=[]
+[   0.014] --> TC apid=0x0E via=radio AES  payload=-
+[   0.015] <-- TM apid=0x0E AES len=30
+[   0.015] probe 0x0E -> TMs ['0x0E'] errors=[]
+[   0.015] --> TC apid=0x0F via=radio AES  payload=-
+[   0.016] <-- TM apid=0x0F AES len=10
+[   0.016] probe 0x0F -> TMs ['0x0F'] errors=[]
+[   0.016] --> TC apid=0x10 via=radio AES  payload=00
+[   0.016] <-- TM apid=0x09 AES len=15
+[   0.016] probe 0x10 -> TMs ['0x09'] errors=['DEBUG USB ONLY']
+[   0.016] --> TC apid=0x11 via=radio AES  payload=00
+[   0.017] <-- TM apid=0x11 AES len=9
+[   0.017] probe 0x11 -> TMs ['0x11'] errors=[]
+[   0.017] --> TC apid=0x12 via=radio AES  payload=00
+[   0.017] <-- TM apid=0x12 AES len=13
+[   0.017] probe 0x12 -> TMs ['0x12'] errors=[]
+[   0.017] --> TC apid=0x13 via=radio AES  payload=-
+[   0.018] <-- TM apid=0x13 AES len=23
+[   0.018] probe 0x13 -> TMs ['0x13'] errors=[]
+[   0.018] responding APIDs (17): ['0x1', '0x2', '0x3', '0x6', '0x7', '0x8', '0x9', '0xa', '0xb', '0xc', '0xd', '0xe', '0xf', '0x10', '0x11', '0x12', '0x13']
+[   0.018] ========================================================================
+[   0.018] POC OK
+[   0.018] ========================================================================

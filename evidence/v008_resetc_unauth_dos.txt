@@ -1,0 +1,27 @@
+[   0.000] ========================================================================
+[   0.000] V-08 RESETC unauthenticated reboot-DoS
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x02 via=radio AES  payload=-
+[   0.000] <-- TM apid=0x02 clear len=4
+[   0.000] --> advance(1000 ms)
+[   0.001] --> TC apid=0x01 via=radio AES  payload=-
+[   0.001] <-- TM apid=0x01 AES len=5
+[   0.001] reset #1 issued from raw radio; craft back: True (boot count was 0)
+[   0.001] --> TC apid=0x02 via=radio AES  payload=-
+[   0.001] <-- TM apid=0x02 clear len=4
+[   0.001] --> advance(1000 ms)
+[   0.001] --> TC apid=0x01 via=radio AES  payload=-
+[   0.002] <-- TM apid=0x01 AES len=5
+[   0.002] reset #2 issued from raw radio; craft back: True (boot count was 1)
+[   0.002] --> TC apid=0x02 via=radio AES  payload=-
+[   0.002] <-- TM apid=0x02 clear len=4
+[   0.002] --> advance(1000 ms)
+[   0.002] --> TC apid=0x01 via=radio AES  payload=-
+[   0.003] <-- TM apid=0x01 AES len=5
+[   0.003] reset #3 issued from raw radio; craft back: True (boot count was 2)
+[   0.003] --> TC apid=0x0C via=usb AES  payload=-
+[   0.004] <-- TM apid=0x0C AES len=27
+[   0.004] mode after resets: 0x01 (NOMINAL again, state lost)
+[   0.004] ========================================================================
+[   0.004] POC OK
+[   0.004] ========================================================================

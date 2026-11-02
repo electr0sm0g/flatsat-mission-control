@@ -1,0 +1,142 @@
+[   0.000] ========================================================================
+[   0.000] V-08 43/64 SDLS SAs default to Clear
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x15 via=usb AES  payload=011005
+[   0.000] <-- TM apid=0x15 clear len=6
+[   0.000] --> TC apid=0x16 via=usb AES  payload=0200
+[   0.001] <-- TM apid=0x16 clear len=24
+[   0.001] --> TC apid=0x16 via=usb AES  payload=0201
+[   0.001] <-- TM apid=0x16 clear len=24
+[   0.001] --> TC apid=0x16 via=usb AES  payload=0202
+[   0.001] <-- TM apid=0x16 clear len=24
+[   0.001] --> TC apid=0x16 via=usb AES  payload=0203
+[   0.002] <-- TM apid=0x16 clear len=24
+[   0.002] --> TC apid=0x16 via=usb AES  payload=0204
+[   0.002] <-- TM apid=0x16 clear len=24
+[   0.002] --> TC apid=0x16 via=usb AES  payload=0205
+[   0.002] <-- TM apid=0x16 clear len=24
+[   0.002] --> TC apid=0x16 via=usb AES  payload=0206
+[   0.002] <-- TM apid=0x16 clear len=24
+[   0.003] --> TC apid=0x16 via=usb AES  payload=0207
+[   0.003] <-- TM apid=0x16 clear len=24
+[   0.003] --> TC apid=0x16 via=usb AES  payload=0208
+[   0.003] <-- TM apid=0x16 clear len=24
+[   0.003] --> TC apid=0x16 via=usb AES  payload=0209
+[   0.003] <-- TM apid=0x16 clear len=24
+[   0.003] --> TC apid=0x16 via=usb AES  payload=020a
+[   0.004] <-- TM apid=0x16 clear len=24
+[   0.004] --> TC apid=0x16 via=usb AES  payload=020b
+[   0.004] <-- TM apid=0x16 clear len=24
+[   0.004] --> TC apid=0x16 via=usb AES  payload=020c
+[   0.004] <-- TM apid=0x16 clear len=24
+[   0.004] --> TC apid=0x16 via=usb AES  payload=020d
+[   0.005] <-- TM apid=0x16 clear len=24
+[   0.005] --> TC apid=0x16 via=usb AES  payload=020e
+[   0.005] <-- TM apid=0x16 clear len=24
+[   0.005] --> TC apid=0x16 via=usb AES  payload=020f
+[   0.005] <-- TM apid=0x16 clear len=24
+[   0.005] --> TC apid=0x16 via=usb AES  payload=0210
+[   0.005] <-- TM apid=0x16 clear len=24
+[   0.005] --> TC apid=0x16 via=usb AES  payload=0211
+[   0.006] <-- TM apid=0x16 clear len=24
+[   0.006] --> TC apid=0x16 via=usb AES  payload=0212
+[   0.006] <-- TM apid=0x16 clear len=24
+[   0.006] --> TC apid=0x16 via=usb AES  payload=0213
+[   0.006] <-- TM apid=0x16 clear len=24
+[   0.007] --> TC apid=0x16 via=usb AES  payload=0214
+[   0.007] <-- TM apid=0x16 clear len=24
+[   0.007] --> TC apid=0x16 via=usb AES  payload=0215
+[   0.007] <-- TM apid=0x16 clear len=24
+[   0.007] --> TC apid=0x16 via=usb AES  payload=0216
+[   0.007] <-- TM apid=0x16 clear len=24
+[   0.007] --> TC apid=0x16 via=usb AES  payload=0217
+[   0.008] <-- TM apid=0x16 clear len=24
+[   0.008] --> TC apid=0x16 via=usb AES  payload=0218
+[   0.008] <-- TM apid=0x16 clear len=24
+[   0.008] --> TC apid=0x16 via=usb AES  payload=0219
+[   0.008] <-- TM apid=0x16 clear len=24
+[   0.008] --> TC apid=0x16 via=usb AES  payload=021a
+[   0.008] <-- TM apid=0x16 clear len=24
+[   0.008] --> TC apid=0x16 via=usb AES  payload=021b
+[   0.009] <-- TM apid=0x16 clear len=24
+[   0.009] --> TC apid=0x16 via=usb AES  payload=021c
+[   0.009] <-- TM apid=0x16 clear len=24
+[   0.009] --> TC apid=0x16 via=usb AES  payload=021d
+[   0.009] <-- TM apid=0x16 clear len=24
+[   0.009] --> TC apid=0x16 via=usb AES  payload=021e
+[   0.009] <-- TM apid=0x16 clear len=24
+[   0.009] --> TC apid=0x16 via=usb AES  payload=021f
+[   0.010] <-- TM apid=0x16 clear len=24
+[   0.010] --> TC apid=0x16 via=usb AES  payload=0220
+[   0.010] <-- TM apid=0x16 clear len=24
+[   0.010] --> TC apid=0x16 via=usb AES  payload=0221
+[   0.010] <-- TM apid=0x16 clear len=24
+[   0.010] --> TC apid=0x16 via=usb AES  payload=0222
+[   0.010] <-- TM apid=0x16 clear len=24
+[   0.010] --> TC apid=0x16 via=usb AES  payload=0223
+[   0.011] <-- TM apid=0x16 clear len=24
+[   0.011] --> TC apid=0x16 via=usb AES  payload=0224
+[   0.011] <-- TM apid=0x16 clear len=24
+[   0.011] --> TC apid=0x16 via=usb AES  payload=0225
+[   0.011] <-- TM apid=0x16 clear len=24
+[   0.011] --> TC apid=0x16 via=usb AES  payload=0226
+[   0.011] <-- TM apid=0x16 clear len=24
+[   0.011] --> TC apid=0x16 via=usb AES  payload=0227
+[   0.012] <-- TM apid=0x16 clear len=24
+[   0.012] --> TC apid=0x16 via=usb AES  payload=0228
+[   0.012] <-- TM apid=0x16 clear len=24
+[   0.012] --> TC apid=0x16 via=usb AES  payload=0229
+[   0.012] <-- TM apid=0x16 clear len=24
+[   0.012] --> TC apid=0x16 via=usb AES  payload=022a
+[   0.012] <-- TM apid=0x16 clear len=24
+[   0.012] --> TC apid=0x16 via=usb AES  payload=022b
+[   0.013] <-- TM apid=0x16 clear len=24
+[   0.013] --> TC apid=0x16 via=usb AES  payload=022c
+[   0.013] <-- TM apid=0x16 clear len=24
+[   0.013] --> TC apid=0x16 via=usb AES  payload=022d
+[   0.013] <-- TM apid=0x16 clear len=24
+[   0.013] --> TC apid=0x16 via=usb AES  payload=022e
+[   0.013] <-- TM apid=0x16 clear len=24
+[   0.013] --> TC apid=0x16 via=usb AES  payload=022f
+[   0.014] <-- TM apid=0x16 clear len=24
+[   0.014] --> TC apid=0x16 via=usb AES  payload=0230
+[   0.014] <-- TM apid=0x16 clear len=24
+[   0.014] --> TC apid=0x16 via=usb AES  payload=0231
+[   0.014] <-- TM apid=0x16 clear len=24
+[   0.014] --> TC apid=0x16 via=usb AES  payload=0232
+[   0.014] <-- TM apid=0x16 clear len=24
+[   0.014] --> TC apid=0x16 via=usb AES  payload=0233
+[   0.015] <-- TM apid=0x16 clear len=24
+[   0.015] --> TC apid=0x16 via=usb AES  payload=0234
+[   0.015] <-- TM apid=0x16 clear len=24
+[   0.015] --> TC apid=0x16 via=usb AES  payload=0235
+[   0.015] <-- TM apid=0x16 clear len=24
+[   0.015] --> TC apid=0x16 via=usb AES  payload=0236
+[   0.015] <-- TM apid=0x16 clear len=24
+[   0.015] --> TC apid=0x16 via=usb AES  payload=0237
+[   0.016] <-- TM apid=0x16 clear len=24
+[   0.016] --> TC apid=0x16 via=usb AES  payload=0238
+[   0.016] <-- TM apid=0x16 clear len=24
+[   0.016] --> TC apid=0x16 via=usb AES  payload=0239
+[   0.016] <-- TM apid=0x16 clear len=24
+[   0.016] --> TC apid=0x16 via=usb AES  payload=023a
+[   0.016] <-- TM apid=0x16 clear len=24
+[   0.016] --> TC apid=0x16 via=usb AES  payload=023b
+[   0.017] <-- TM apid=0x16 clear len=24
+[   0.017] --> TC apid=0x16 via=usb AES  payload=023c
+[   0.017] <-- TM apid=0x16 clear len=24
+[   0.017] --> TC apid=0x16 via=usb AES  payload=023d
+[   0.017] <-- TM apid=0x16 clear len=24
+[   0.017] --> TC apid=0x16 via=usb AES  payload=023e
+[   0.018] <-- TM apid=0x16 clear len=24
+[   0.018] --> TC apid=0x16 via=usb AES  payload=023f
+[   0.018] <-- TM apid=0x16 clear len=24
+[   0.018] SA table: 21 secured, 43 Clear (incl. default SPI 44)
+[   0.018] <-- TM apid=0x01 AES len=5
+[   0.018] frames without security header are treated as default-Clear
+[   0.018] --> TC apid=0x15 via=usb AES  payload=001005
+[   0.019] <-- TM apid=0x15 clear len=6
+[   0.019] attackers route ALL traffic through Clear SAs: SDLS on, auth zero
+[   0.019] ========================================================================
+[   0.019] POC OK
+[   0.019] ========================================================================

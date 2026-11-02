@@ -1,0 +1,59 @@
+[   0.000] ========================================================================
+[   0.000] V0-06 GS auth: leaked challenge + static XOR key
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.856] --> TC apid=0x0A via=usb AES  payload=00
+[   8.898] <-- TM apid=0x0A clear len=3
+[   8.949] --> TC apid=0x1D via=usb clear payload=0101
+[   9.001] <-- TM apid=0x1D clear len=4
+[   9.001] --> TC apid=0x11 via=usb clear payload=00
+[   9.462] <-- TM apid=0x11 clear len=9
+[   9.462] --> TC apid=0x15 via=usb clear payload=001005
+[   9.913] <-- TM apid=0x15 clear len=6
+[   9.913] --> TC apid=0x0D via=usb clear payload=01
+[  10.363] <-- TM apid=0x0D clear len=4
+[  10.414] --> TC apid=0x1D via=usb clear payload=03
+[  10.466] <-- TM apid=0x1D clear len=4
+[  10.466] <-- TM apid=0x09 clear len=9
+[  10.507] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.559] <-- TM apid=0x1D clear len=4
+[  10.559] --> TC apid=0x10 via=usb clear payload=00
+[  10.611] <-- TM apid=0x10 clear len=4
+[  10.611] --> TC apid=0x21 via=usb clear payload=00
+[  11.071] <-- TM apid=0x21 clear len=6
+[  11.071] --> TC apid=0x24 via=usb clear payload=0000
+[  11.112] <-- TM apid=0x24 clear len=8
+[  11.112] --> TC apid=0x24 via=usb clear payload=0100
+[  11.163] <-- TM apid=0x24 clear len=8
+[  11.163] --> TC apid=0x24 via=usb clear payload=0200
+[  11.215] <-- TM apid=0x24 clear len=8
+[  11.215] --> TC apid=0x24 via=usb clear payload=0300
+[  11.267] <-- TM apid=0x24 clear len=8
+[  11.267] --> TC apid=0x25 via=usb clear payload=0080
+[  11.318] <-- TM apid=0x25 clear len=4
+[  11.318] --> TC apid=0x1E via=usb clear payload=01
+[  11.830] <-- TM apid=0x1E clear len=5
+[  11.830] --> TC apid=0x1D via=usb clear payload=0b
+[  11.923] <-- TM apid=0x1D clear len=4
+[  11.923] --> TC apid=0x05 via=usb clear payload=12
+[  12.384] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.886] <-- TM apid=0x1F clear len=4
+[  12.886] --> TC apid=0x1F via=usb clear payload=05
+[  13.387] <-- TM apid=0x1F clear len=4
+[  13.387] --> TC apid=0x0A via=usb clear payload=01
+[  13.432] <-- TM apid=0x0A AES len=3
+[  21.522] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.002] <-- TM apid=0x0E AES len=18
+[  30.002] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.075] --> TC apid=0x11 via=radio AES  payload=01
+[  30.527] <-- TM apid=0x11 AES len=9
+[  30.527] --> TC apid=0x12 via=radio AES  payload=00
+[  30.989] <-- TM apid=0x12 AES len=13
+[  30.990] challenge LEAKED in telemetry: 0x01268664
+[  30.990] --> TC apid=0x12 via=radio AES  payload=01c1f87caa
+[  31.432] <-- TM apid=0x12 AES len=13
+[  31.432] phase1 auth_state=1 (0x01=session established)
+[  31.484] -- console tail: [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x011 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] Ground station communication mode enabled | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x012 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] Ground station challenge issued: 0x01268664 | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x012 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] Ground station handshake accepted | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO
+[  31.484] ========================================================================
+[  31.484] POC OK
+[  31.484] ========================================================================

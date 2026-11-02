@@ -1,0 +1,13 @@
+[   0.000] ========================================================================
+[   0.000] V0-02 static AES key 'PWNsatLabKey1234'
+[   0.000] ========================================================================
+[   0.000] key recovered from firmware image: b'PWNsatLabKey1234'
+[   0.000] --> TC apid=0x0C via=radio AES  payload=-
+[   0.001] <-- TM apid=0x0C AES len=27
+[   0.001] decrypted GET_STATUS payload: 01011f1f120a0a0800009403050000000000050101ea0700000100
+[   0.001] --> TC apid=0x03 via=radio AES  payload=-
+[   0.002] <-- TM apid=0x03 AES len=5
+[   0.002] attacker holding the firmware image speaks the link natively
+[   0.002] ========================================================================
+[   0.002] POC OK
+[   0.002] ========================================================================

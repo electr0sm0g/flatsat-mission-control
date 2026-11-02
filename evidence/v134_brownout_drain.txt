@@ -1,0 +1,170 @@
+[   0.000] ========================================================================
+[   0.000] V-34 heater/eclipse brownout reset
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1A via=radio AES  payload=5045525300000000000000000000000000000000000000000000000000000000
+[   0.001] <-- TM apid=0x1A clear len=8
+[   0.001] --> TC apid=0x18 via=radio AES  payload=00200020488005400400
+[   0.001] <-- TM apid=0x18 clear len=12
+[   0.001] --> TC apid=0x02 via=usb AES  payload=-
+[   0.002] <-- TM apid=0x02 clear len=4
+[   0.002] --> TC apid=0x0C via=usb clear payload=-
+[   0.002] <-- TM apid=0x0C clear len=27
+[   0.002] --> TC apid=0x1D via=usb clear payload=0a1999
+[   0.002] <-- TM apid=0x1D clear len=4
+[   0.002] --> TC apid=0x24 via=radio clear payload=0001
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0101
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0201
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0301
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x1D via=usb clear payload=00
+[   0.002] <-- TM apid=0x1D clear len=18
+[   0.002] load now 0.8 W (panels 3 W peak, eclipse 0 W)
+[   0.002] --> TC apid=0x24 via=radio clear payload=0001
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0101
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0201
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0301
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> advance(2000 ms)
+[   0.002] --> TC apid=0x1D via=usb clear payload=00
+[   0.002] <-- TM apid=0x1D clear len=18
+[   0.002] t+2 s: bus=23.70 V power=12.8 W safe=0
+[   0.002] --> TC apid=0x24 via=radio clear payload=0001
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0101
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0201
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0301
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> advance(2000 ms)
+[   0.002] --> TC apid=0x1D via=usb clear payload=00
+[   0.002] <-- TM apid=0x1D clear len=18
+[   0.002] --> TC apid=0x24 via=radio clear payload=0001
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0101
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0201
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0301
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> advance(2000 ms)
+[   0.002] --> TC apid=0x1D via=usb clear payload=00
+[   0.002] <-- TM apid=0x1D clear len=18
+[   0.002] --> TC apid=0x24 via=radio clear payload=0001
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0101
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0201
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0301
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> advance(2000 ms)
+[   0.002] --> TC apid=0x1D via=usb clear payload=00
+[   0.002] <-- TM apid=0x1D clear len=18
+[   0.002] --> TC apid=0x24 via=radio clear payload=0001
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0101
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0201
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0301
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> advance(2000 ms)
+[   0.002] <-- TM apid=0x08 clear len=20
+[   0.002] --> TC apid=0x1D via=usb clear payload=00
+[   0.002] <-- TM apid=0x1D clear len=18
+[   0.002] --> TC apid=0x24 via=radio clear payload=0001
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0101
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0201
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0301
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> advance(2000 ms)
+[   0.002] --> TC apid=0x1D via=usb clear payload=00
+[   0.002] <-- TM apid=0x1D clear len=18
+[   0.002] --> TC apid=0x24 via=radio clear payload=0001
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0101
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0201
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> TC apid=0x24 via=radio clear payload=0301
+[   0.002] <-- TM apid=0x24 clear len=11
+[   0.002] --> advance(2000 ms)
+[   0.002] <-- TM apid=0x01 clear len=64
+[   0.002] --> TC apid=0x1D via=usb clear payload=00
+[   0.002] <-- TM apid=0x1D clear len=18
+[   0.002] --> TC apid=0x24 via=radio clear payload=0001
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0101
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0201
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0301
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> advance(2000 ms)
+[   0.003] <-- TM apid=0x01 clear len=8
+[   0.003] --> TC apid=0x1D via=usb clear payload=00
+[   0.003] <-- TM apid=0x1D clear len=18
+[   0.003] --> TC apid=0x24 via=radio clear payload=0001
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0101
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0201
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0301
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> advance(2000 ms)
+[   0.003] <-- TM apid=0x0E clear len=30
+[   0.003] --> TC apid=0x1D via=usb clear payload=00
+[   0.003] <-- TM apid=0x1D clear len=18
+[   0.003] t+18 s: bus=21.46 V power=10.4 W safe=1
+[   0.003] --> TC apid=0x24 via=radio clear payload=0001
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0101
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0201
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0301
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> advance(2000 ms)
+[   0.003] --> TC apid=0x1D via=usb clear payload=00
+[   0.003] <-- TM apid=0x1D clear len=18
+[   0.003] --> TC apid=0x24 via=radio clear payload=0001
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0101
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0201
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0301
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> advance(2000 ms)
+[   0.003] --> TC apid=0x1D via=usb clear payload=00
+[   0.003] <-- TM apid=0x1D clear len=18
+[   0.003] --> TC apid=0x24 via=radio clear payload=0001
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0101
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0201
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> TC apid=0x24 via=radio clear payload=0301
+[   0.003] <-- TM apid=0x24 clear len=11
+[   0.003] --> advance(2000 ms)
+[   0.003] <-- TM apid=0x02 clear len=4
+[   0.003] <-- TM apid=0x02 clear len=4
+[   0.003] BROWNOUT RESET ('B' boot-reason ack) at +24 s
+[   0.003] --> TC apid=0x0C via=usb AES  payload=-
+[   0.004] <-- TM apid=0x0C AES len=27
+[   0.004] post-reset: secure=True flags2=0x00 PERSIST=False boot_count=0
+[   0.004] => power drain is also a STATE-RESET weapon: it rewinds ARC replay counters and erases forensic boot markers
+[   0.004] ========================================================================
+[   0.004] POC OK
+[   0.004] ========================================================================

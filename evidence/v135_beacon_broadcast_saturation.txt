@@ -1,0 +1,255 @@
+[   0.000] ========================================================================
+[   0.000] V-35 beacon/broadcast downlink saturation
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x05 via=usb AES  payload=01
+[   0.000] --> TC apid=0x05 via=usb AES  payload=00
+[   0.001] --> advance(20000 ms)
+[   0.024] <-- TM apid=0x01 AES len=64
+[   0.025] <-- TM apid=0x01 AES len=64
+[   0.026] <-- TM apid=0x01 AES len=64
+[   0.027] <-- TM apid=0x01 AES len=64
+[   0.028] <-- TM apid=0x01 AES len=64
+[   0.029] <-- TM apid=0x01 AES len=64
+[   0.030] <-- TM apid=0x01 AES len=64
+[   0.031] <-- TM apid=0x01 AES len=64
+[   0.032] <-- TM apid=0x01 AES len=64
+[   0.033] <-- TM apid=0x01 AES len=64
+[   0.034] <-- TM apid=0x01 AES len=64
+[   0.035] <-- TM apid=0x01 AES len=64
+[   0.036] <-- TM apid=0x01 AES len=64
+[   0.037] <-- TM apid=0x01 AES len=64
+[   0.038] <-- TM apid=0x01 AES len=64
+[   0.039] <-- TM apid=0x01 AES len=64
+[   0.040] <-- TM apid=0x01 AES len=64
+[   0.041] <-- TM apid=0x01 AES len=64
+[   0.042] <-- TM apid=0x01 AES len=64
+[   0.043] <-- TM apid=0x01 AES len=64
+[   0.044] <-- TM apid=0x01 AES len=64
+[   0.045] <-- TM apid=0x01 AES len=64
+[   0.046] <-- TM apid=0x01 AES len=64
+[   0.047] <-- TM apid=0x01 AES len=64
+[   0.048] <-- TM apid=0x01 AES len=64
+[   0.049] <-- TM apid=0x01 AES len=64
+[   0.050] <-- TM apid=0x01 AES len=64
+[   0.051] <-- TM apid=0x01 AES len=64
+[   0.052] <-- TM apid=0x01 AES len=64
+[   0.053] <-- TM apid=0x01 AES len=64
+[   0.054] <-- TM apid=0x01 AES len=64
+[   0.055] <-- TM apid=0x01 AES len=64
+[   0.056] <-- TM apid=0x01 AES len=64
+[   0.057] <-- TM apid=0x01 AES len=64
+[   0.058] <-- TM apid=0x01 AES len=64
+[   0.059] <-- TM apid=0x01 AES len=64
+[   0.060] <-- TM apid=0x01 AES len=64
+[   0.061] <-- TM apid=0x01 AES len=64
+[   0.062] <-- TM apid=0x01 AES len=64
+[   0.063] <-- TM apid=0x01 AES len=64
+[   0.064] <-- TM apid=0x01 AES len=64
+[   0.065] <-- TM apid=0x01 AES len=64
+[   0.066] <-- TM apid=0x01 AES len=64
+[   0.067] <-- TM apid=0x01 AES len=64
+[   0.068] <-- TM apid=0x01 AES len=64
+[   0.069] <-- TM apid=0x01 AES len=64
+[   0.070] <-- TM apid=0x01 AES len=64
+[   0.071] <-- TM apid=0x01 AES len=64
+[   0.072] <-- TM apid=0x01 AES len=64
+[   0.072] <-- TM apid=0x01 AES len=64
+[   0.073] <-- TM apid=0x01 AES len=64
+[   0.074] <-- TM apid=0x01 AES len=64
+[   0.075] <-- TM apid=0x01 AES len=64
+[   0.076] <-- TM apid=0x01 AES len=64
+[   0.078] <-- TM apid=0x01 AES len=64
+[   0.079] <-- TM apid=0x01 AES len=64
+[   0.080] <-- TM apid=0x01 AES len=64
+[   0.081] <-- TM apid=0x01 AES len=64
+[   0.082] <-- TM apid=0x01 AES len=64
+[   0.082] <-- TM apid=0x01 AES len=64
+[   0.083] <-- TM apid=0x01 AES len=64
+[   0.084] <-- TM apid=0x01 AES len=64
+[   0.085] <-- TM apid=0x01 AES len=64
+[   0.086] <-- TM apid=0x01 AES len=64
+[   0.087] <-- TM apid=0x01 AES len=64
+[   0.088] <-- TM apid=0x01 AES len=64
+[   0.089] <-- TM apid=0x01 AES len=64
+[   0.090] <-- TM apid=0x01 AES len=64
+[   0.091] <-- TM apid=0x01 AES len=64
+[   0.092] <-- TM apid=0x01 AES len=64
+[   0.093] <-- TM apid=0x01 AES len=64
+[   0.094] <-- TM apid=0x01 AES len=64
+[   0.095] <-- TM apid=0x01 AES len=64
+[   0.096] <-- TM apid=0x01 AES len=64
+[   0.097] <-- TM apid=0x01 AES len=64
+[   0.098] <-- TM apid=0x01 AES len=64
+[   0.099] <-- TM apid=0x01 AES len=64
+[   0.100] <-- TM apid=0x01 AES len=64
+[   0.101] <-- TM apid=0x01 AES len=64
+[   0.102] <-- TM apid=0x01 AES len=64
+[   0.103] <-- TM apid=0x01 AES len=64
+[   0.104] <-- TM apid=0x01 AES len=64
+[   0.105] <-- TM apid=0x01 AES len=64
+[   0.106] <-- TM apid=0x01 AES len=64
+[   0.107] <-- TM apid=0x01 AES len=64
+[   0.108] <-- TM apid=0x01 AES len=64
+[   0.109] <-- TM apid=0x01 AES len=64
+[   0.110] <-- TM apid=0x01 AES len=64
+[   0.111] <-- TM apid=0x01 AES len=64
+[   0.112] <-- TM apid=0x01 AES len=64
+[   0.113] <-- TM apid=0x08 AES len=20
+[   0.114] <-- TM apid=0x01 AES len=64
+[   0.115] <-- TM apid=0x01 AES len=64
+[   0.116] <-- TM apid=0x01 AES len=64
+[   0.117] <-- TM apid=0x01 AES len=64
+[   0.118] <-- TM apid=0x01 AES len=64
+[   0.119] <-- TM apid=0x01 AES len=64
+[   0.120] <-- TM apid=0x01 AES len=64
+[   0.121] <-- TM apid=0x01 AES len=64
+[   0.122] <-- TM apid=0x01 AES len=64
+[   0.123] <-- TM apid=0x01 AES len=64
+[   0.124] <-- TM apid=0x01 AES len=64
+[   0.125] <-- TM apid=0x01 AES len=64
+[   0.126] <-- TM apid=0x01 AES len=64
+[   0.127] <-- TM apid=0x01 AES len=64
+[   0.128] <-- TM apid=0x01 AES len=64
+[   0.129] <-- TM apid=0x01 AES len=64
+[   0.130] <-- TM apid=0x01 AES len=64
+[   0.131] <-- TM apid=0x01 AES len=64
+[   0.132] <-- TM apid=0x01 AES len=64
+[   0.133] <-- TM apid=0x01 AES len=64
+[   0.134] <-- TM apid=0x01 AES len=64
+[   0.135] <-- TM apid=0x01 AES len=64
+[   0.136] <-- TM apid=0x01 AES len=64
+[   0.137] <-- TM apid=0x01 AES len=64
+[   0.138] <-- TM apid=0x01 AES len=64
+[   0.139] <-- TM apid=0x01 AES len=64
+[   0.139] <-- TM apid=0x01 AES len=64
+[   0.140] <-- TM apid=0x01 AES len=64
+[   0.141] <-- TM apid=0x01 AES len=64
+[   0.142] <-- TM apid=0x01 AES len=64
+[   0.143] <-- TM apid=0x01 AES len=64
+[   0.144] <-- TM apid=0x01 AES len=64
+[   0.145] <-- TM apid=0x01 AES len=64
+[   0.146] <-- TM apid=0x01 AES len=64
+[   0.147] <-- TM apid=0x01 AES len=64
+[   0.148] <-- TM apid=0x01 AES len=64
+[   0.149] <-- TM apid=0x01 AES len=64
+[   0.150] <-- TM apid=0x01 AES len=64
+[   0.151] <-- TM apid=0x01 AES len=64
+[   0.152] <-- TM apid=0x01 AES len=64
+[   0.153] <-- TM apid=0x01 AES len=64
+[   0.154] <-- TM apid=0x01 AES len=64
+[   0.155] <-- TM apid=0x01 AES len=64
+[   0.156] <-- TM apid=0x01 AES len=64
+[   0.157] <-- TM apid=0x01 AES len=64
+[   0.158] <-- TM apid=0x01 AES len=64
+[   0.159] <-- TM apid=0x01 AES len=64
+[   0.160] <-- TM apid=0x01 AES len=64
+[   0.161] <-- TM apid=0x01 AES len=64
+[   0.162] <-- TM apid=0x01 AES len=64
+[   0.163] <-- TM apid=0x01 AES len=64
+[   0.164] <-- TM apid=0x01 AES len=64
+[   0.165] <-- TM apid=0x01 AES len=64
+[   0.166] <-- TM apid=0x01 AES len=64
+[   0.167] <-- TM apid=0x01 AES len=64
+[   0.168] <-- TM apid=0x01 AES len=64
+[   0.169] <-- TM apid=0x01 AES len=64
+[   0.170] <-- TM apid=0x01 AES len=64
+[   0.171] <-- TM apid=0x01 AES len=64
+[   0.172] <-- TM apid=0x01 AES len=64
+[   0.173] <-- TM apid=0x01 AES len=64
+[   0.173] <-- TM apid=0x01 AES len=8
+[   0.174] <-- TM apid=0x01 AES len=64
+[   0.175] <-- TM apid=0x01 AES len=64
+[   0.176] <-- TM apid=0x01 AES len=64
+[   0.177] <-- TM apid=0x01 AES len=64
+[   0.178] <-- TM apid=0x01 AES len=64
+[   0.179] <-- TM apid=0x01 AES len=64
+[   0.180] <-- TM apid=0x01 AES len=64
+[   0.181] <-- TM apid=0x01 AES len=64
+[   0.182] <-- TM apid=0x01 AES len=64
+[   0.183] <-- TM apid=0x01 AES len=64
+[   0.184] <-- TM apid=0x01 AES len=64
+[   0.185] <-- TM apid=0x01 AES len=64
+[   0.186] <-- TM apid=0x01 AES len=64
+[   0.187] <-- TM apid=0x01 AES len=64
+[   0.188] <-- TM apid=0x01 AES len=64
+[   0.189] <-- TM apid=0x01 AES len=64
+[   0.190] <-- TM apid=0x01 AES len=64
+[   0.191] <-- TM apid=0x01 AES len=64
+[   0.192] <-- TM apid=0x01 AES len=64
+[   0.192] <-- TM apid=0x0E AES len=30
+[   0.193] <-- TM apid=0x01 AES len=64
+[   0.194] <-- TM apid=0x01 AES len=64
+[   0.195] <-- TM apid=0x01 AES len=64
+[   0.196] <-- TM apid=0x01 AES len=64
+[   0.197] <-- TM apid=0x01 AES len=64
+[   0.198] <-- TM apid=0x01 AES len=64
+[   0.199] <-- TM apid=0x01 AES len=64
+[   0.200] <-- TM apid=0x01 AES len=64
+[   0.201] <-- TM apid=0x01 AES len=64
+[   0.202] <-- TM apid=0x01 AES len=64
+[   0.203] <-- TM apid=0x01 AES len=64
+[   0.204] <-- TM apid=0x01 AES len=64
+[   0.205] <-- TM apid=0x01 AES len=64
+[   0.206] <-- TM apid=0x01 AES len=64
+[   0.207] <-- TM apid=0x01 AES len=64
+[   0.208] <-- TM apid=0x01 AES len=64
+[   0.209] <-- TM apid=0x01 AES len=64
+[   0.210] <-- TM apid=0x01 AES len=64
+[   0.211] <-- TM apid=0x01 AES len=64
+[   0.212] <-- TM apid=0x01 AES len=64
+[   0.213] <-- TM apid=0x01 AES len=64
+[   0.214] <-- TM apid=0x01 AES len=64
+[   0.215] <-- TM apid=0x01 AES len=64
+[   0.216] <-- TM apid=0x01 AES len=64
+[   0.217] <-- TM apid=0x01 AES len=64
+[   0.218] <-- TM apid=0x01 AES len=64
+[   0.219] <-- TM apid=0x01 AES len=64
+[   0.220] <-- TM apid=0x01 AES len=64
+[   0.221] <-- TM apid=0x01 AES len=64
+[   0.222] <-- TM apid=0x01 AES len=64
+[   0.222] 20 s window: beacons=200 mission-TM=1 ratio=200:1
+[   0.222] mission TM byte share: 0.2% of the downlink
+[   0.222] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.224] <-- TM apid=0x06 AES len=62
+[   0.224] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.226] <-- TM apid=0x06 AES len=62
+[   0.226] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.228] <-- TM apid=0x06 AES len=62
+[   0.228] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.229] <-- TM apid=0x06 AES len=62
+[   0.230] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.232] <-- TM apid=0x06 AES len=62
+[   0.232] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.234] <-- TM apid=0x06 AES len=62
+[   0.234] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.236] <-- TM apid=0x06 AES len=62
+[   0.236] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.238] <-- TM apid=0x06 AES len=62
+[   0.238] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.240] <-- TM apid=0x06 AES len=62
+[   0.240] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.242] <-- TM apid=0x06 AES len=62
+[   0.242] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.244] <-- TM apid=0x06 AES len=62
+[   0.244] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.246] <-- TM apid=0x06 AES len=62
+[   0.246] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.248] <-- TM apid=0x06 AES len=62
+[   0.248] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.250] <-- TM apid=0x06 AES len=62
+[   0.250] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.252] <-- TM apid=0x06 AES len=62
+[   0.252] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.254] <-- TM apid=0x06 AES len=62
+[   0.254] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.256] <-- TM apid=0x06 AES len=62
+[   0.256] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.258] <-- TM apid=0x06 AES len=62
+[   0.258] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.260] <-- TM apid=0x06 AES len=62
+[   0.260] --> TC apid=0x06 via=radio AES  payload=03945858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+[   0.261] <-- TM apid=0x06 AES len=62
+[   0.261] +20 broadcast echoes (20 x 70 B) queued behind the flood
+[   0.261] ========================================================================
+[   0.261] POC OK
+[   0.261] ========================================================================

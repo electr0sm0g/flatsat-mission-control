@@ -1,0 +1,83 @@
+[   0.000] ========================================================================
+[   0.000] V-33 ADCS tumble spam / detumble saturation
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x1D via=usb AES  payload=0a0001
+[   0.000] <-- TM apid=0x1D clear len=4
+[   0.000] --> advance(1000 ms)
+[   0.000] --> TC apid=0x1D via=usb AES  payload=00
+[   0.001] <-- TM apid=0x1D clear len=18
+[   0.001] nominal tilt 0.00 deg/s, FDIR threshold 5.00 deg/s
+[   0.001] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.001] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.001] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.002] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.002] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.002] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.003] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.003] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.003] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.003] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.004] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.004] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.004] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.005] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.005] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.005] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.005] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.006] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.006] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.006] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.007] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.007] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.007] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.007] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.007] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.008] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.008] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.008] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.008] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.009] --> TC apid=0x04 via=radio AES  payload=00ff
+[   0.009] --> advance(1000 ms)
+[   0.009] --> TC apid=0x1D via=usb AES  payload=00
+[   0.009] <-- TM apid=0x1D clear len=18
+[   0.009] --> advance(1000 ms)
+[   0.009] --> TC apid=0x1D via=usb AES  payload=00
+[   0.009] <-- TM apid=0x1D clear len=18
+[   0.009] --> advance(1000 ms)
+[   0.009] --> TC apid=0x1D via=usb clear payload=00
+[   0.009] <-- TM apid=0x1D clear len=18
+[   0.009] after spam: tilt 0.00 -> 9.02 -> 9.03 deg/s, safe=1
+[   0.009] --> TC apid=0x1D via=usb clear payload=0900
+[   0.009] <-- TM apid=0x1D clear len=4
+[   0.009] --> advance(1000 ms)
+[   0.009] --> TC apid=0x1D via=usb clear payload=00
+[   0.009] <-- TM apid=0x1D clear len=18
+[   0.009] --> advance(19000 ms)
+[   0.010] <-- TM apid=0x01 clear len=64
+[   0.010] <-- TM apid=0x08 clear len=20
+[   0.010] <-- TM apid=0x01 clear len=8
+[   0.010] <-- TM apid=0x01 clear len=64
+[   0.010] <-- TM apid=0x0E clear len=30
+[   0.010] <-- TM apid=0x08 clear len=20
+[   0.010] --> advance(1000 ms)
+[   0.010] --> TC apid=0x1D via=usb clear payload=00
+[   0.010] <-- TM apid=0x1D clear len=18
+[   0.010] passive damping: 9.02 -> 8.82 deg/s = 0.010 deg/s^2
+[   0.010] --> TC apid=0x1D via=usb clear payload=0901
+[   0.010] <-- TM apid=0x1D clear len=4
+[   0.010] --> advance(1000 ms)
+[   0.010] <-- TM apid=0x3FF clear len=14
+[   0.010] <-- TM apid=0x01 clear len=64
+[   0.010] --> TC apid=0x1D via=usb clear payload=00
+[   0.010] <-- TM apid=0x1D clear len=18
+[   0.010] --> advance(9000 ms)
+[   0.010] --> advance(1000 ms)
+[   0.010] <-- TM apid=0x01 clear len=8
+[   0.010] <-- TM apid=0x01 clear len=64
+[   0.010] --> TC apid=0x1D via=usb clear payload=00
+[   0.010] <-- TM apid=0x1D clear len=18
+[   0.010] detumble B-dot: 8.57 -> 6.07 deg/s = 0.250 deg/s^2 (saturated torque budget)
+[   0.010] => 30 cheap TCs = minutes of mission time lost to detumble
+[   0.010] ========================================================================
+[   0.010] POC OK
+[   0.010] ========================================================================

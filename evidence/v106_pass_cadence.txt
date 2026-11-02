@@ -1,0 +1,159 @@
+[   0.000] ========================================================================
+[   0.000] V-06 pass metadata from TM cadence
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x05 via=usb AES  payload=01
+[   0.000] --> advance(1000 ms)
+[   0.002] <-- TM apid=0x01 AES len=64
+[   0.002] --> advance(1000 ms)
+[   0.003] <-- TM apid=0x01 AES len=64
+[   0.003] --> advance(1000 ms)
+[   0.005] <-- TM apid=0x01 AES len=64
+[   0.005] --> advance(1000 ms)
+[   0.006] <-- TM apid=0x01 AES len=64
+[   0.006] --> advance(1000 ms)
+[   0.007] <-- TM apid=0x01 AES len=64
+[   0.007] --> advance(1000 ms)
+[   0.008] <-- TM apid=0x01 AES len=64
+[   0.008] --> advance(1000 ms)
+[   0.009] <-- TM apid=0x01 AES len=64
+[   0.009] --> advance(1000 ms)
+[   0.010] <-- TM apid=0x01 AES len=64
+[   0.010] --> advance(1000 ms)
+[   0.012] <-- TM apid=0x01 AES len=64
+[   0.012] --> advance(1000 ms)
+[   0.012] <-- TM apid=0x08 AES len=20
+[   0.013] <-- TM apid=0x01 AES len=64
+[   0.013] --> advance(1000 ms)
+[   0.013] --> advance(1000 ms)
+[   0.014] <-- TM apid=0x01 AES len=64
+[   0.014] --> advance(1000 ms)
+[   0.015] <-- TM apid=0x01 AES len=64
+[   0.015] --> advance(1000 ms)
+[   0.016] <-- TM apid=0x01 AES len=64
+[   0.016] --> advance(1000 ms)
+[   0.017] <-- TM apid=0x01 AES len=64
+[   0.017] --> advance(1000 ms)
+[   0.018] <-- TM apid=0x01 AES len=8
+[   0.019] <-- TM apid=0x01 AES len=64
+[   0.019] --> advance(1000 ms)
+[   0.020] <-- TM apid=0x01 AES len=64
+[   0.020] --> advance(1000 ms)
+[   0.020] <-- TM apid=0x0E AES len=30
+[   0.021] <-- TM apid=0x01 AES len=64
+[   0.021] --> advance(1000 ms)
+[   0.022] <-- TM apid=0x01 AES len=64
+[   0.022] --> advance(1000 ms)
+[   0.023] <-- TM apid=0x01 AES len=64
+[   0.023] --> advance(1000 ms)
+[   0.024] <-- TM apid=0x01 AES len=64
+[   0.024] --> advance(1000 ms)
+[   0.024] --> advance(1000 ms)
+[   0.025] <-- TM apid=0x01 AES len=64
+[   0.025] --> advance(1000 ms)
+[   0.026] <-- TM apid=0x08 AES len=20
+[   0.027] <-- TM apid=0x01 AES len=64
+[   0.027] --> advance(1000 ms)
+[   0.028] <-- TM apid=0x01 AES len=64
+[   0.028] --> advance(1000 ms)
+[   0.028] <-- TM apid=0x3FF AES len=14
+[   0.029] <-- TM apid=0x01 AES len=64
+[   0.029] --> advance(1000 ms)
+[   0.030] <-- TM apid=0x01 AES len=64
+[   0.030] --> advance(1000 ms)
+[   0.032] <-- TM apid=0x01 AES len=64
+[   0.032] --> advance(1000 ms)
+[   0.033] <-- TM apid=0x01 AES len=64
+[   0.033] --> advance(1000 ms)
+[   0.034] <-- TM apid=0x01 AES len=64
+[   0.034] --> advance(1000 ms)
+[   0.035] <-- TM apid=0x01 AES len=64
+[   0.035] --> advance(1000 ms)
+[   0.036] <-- TM apid=0x01 AES len=64
+[   0.036] --> advance(1000 ms)
+[   0.036] --> advance(1000 ms)
+[   0.037] <-- TM apid=0x01 AES len=64
+[   0.037] --> advance(1000 ms)
+[   0.038] <-- TM apid=0x01 AES len=64
+[   0.038] --> advance(1000 ms)
+[   0.039] <-- TM apid=0x01 AES len=8
+[   0.040] <-- TM apid=0x01 AES len=64
+[   0.040] --> advance(1000 ms)
+[   0.041] <-- TM apid=0x01 AES len=64
+[   0.041] --> advance(1000 ms)
+[   0.041] <-- TM apid=0x08 AES len=20
+[   0.042] <-- TM apid=0x01 AES len=64
+[   0.042] --> advance(1000 ms)
+[   0.043] <-- TM apid=0x01 AES len=64
+[   0.043] --> advance(1000 ms)
+[   0.044] <-- TM apid=0x0E AES len=30
+[   0.045] <-- TM apid=0x01 AES len=64
+[   0.045] --> advance(1000 ms)
+[   0.046] <-- TM apid=0x01 AES len=64
+[   0.046] --> advance(1000 ms)
+[   0.047] <-- TM apid=0x01 AES len=64
+[   0.047] --> advance(1000 ms)
+[   0.048] <-- TM apid=0x01 AES len=64
+[   0.048] --> advance(1000 ms)
+[   0.048] --> advance(1000 ms)
+[   0.049] <-- TM apid=0x01 AES len=64
+[   0.049] --> advance(1000 ms)
+[   0.050] <-- TM apid=0x01 AES len=64
+[   0.050] --> advance(1000 ms)
+[   0.051] <-- TM apid=0x01 AES len=64
+[   0.051] --> advance(1000 ms)
+[   0.052] <-- TM apid=0x01 AES len=64
+[   0.052] --> advance(1000 ms)
+[   0.053] <-- TM apid=0x01 AES len=64
+[   0.053] --> advance(1000 ms)
+[   0.054] <-- TM apid=0x01 AES len=64
+[   0.054] --> advance(1000 ms)
+[   0.055] <-- TM apid=0x01 AES len=64
+[   0.055] --> advance(1000 ms)
+[   0.056] <-- TM apid=0x08 AES len=20
+[   0.057] <-- TM apid=0x01 AES len=64
+[   0.057] --> advance(1000 ms)
+[   0.058] <-- TM apid=0x01 AES len=64
+[   0.058] --> advance(1000 ms)
+[   0.059] <-- TM apid=0x01 AES len=64
+[   0.059] --> advance(1000 ms)
+[   0.059] --> advance(1000 ms)
+[   0.060] <-- TM apid=0x01 AES len=64
+[   0.060] <-- TM apid=0x3FF AES len=14
+[   0.061] <-- TM apid=0x01 AES len=8
+[   0.061] --> advance(1000 ms)
+[   0.062] <-- TM apid=0x01 AES len=64
+[   0.062] --> advance(1000 ms)
+[   0.063] <-- TM apid=0x01 AES len=64
+[   0.063] --> advance(1000 ms)
+[   0.064] <-- TM apid=0x01 AES len=64
+[   0.064] --> advance(1000 ms)
+[   0.065] <-- TM apid=0x01 AES len=64
+[   0.065] --> advance(1000 ms)
+[   0.066] <-- TM apid=0x01 AES len=64
+[   0.066] --> advance(1000 ms)
+[   0.067] <-- TM apid=0x0E AES len=30
+[   0.068] <-- TM apid=0x01 AES len=64
+[   0.068] --> advance(1000 ms)
+[   0.069] <-- TM apid=0x01 AES len=64
+[   0.069] --> advance(1000 ms)
+[   0.070] <-- TM apid=0x01 AES len=64
+[   0.070] --> advance(1000 ms)
+[   0.071] <-- TM apid=0x01 AES len=64
+[   0.071] --> advance(1000 ms)
+[   0.071] <-- TM apid=0x08 AES len=20
+[   0.071] --> advance(1000 ms)
+[   0.072] <-- TM apid=0x01 AES len=64
+[   0.072] --> advance(1000 ms)
+[   0.074] <-- TM apid=0x01 AES len=64
+[   0.074] --> advance(1000 ms)
+[   0.075] <-- TM apid=0x01 AES len=64
+[   0.075] --> advance(1000 ms)
+[   0.076] <-- TM apid=0x01 AES len=64
+[   0.076] mission TM: interval=14 s (mean 14.0 s, observed 5 frames)
+[   0.076] sync TM: interval=20 s (mean 20.0 s, observed 3 frames)
+[   0.076] nav TM: interval=22 s (mean 22.0 s, observed 3 frames)
+[   0.076] idle TM: interval=30 s (mean 30.0 s, observed 2 frames)
+[   0.076] operator cadence + contact plan reconstructed passively; eclipse bit in the beacon adds orbit phase
+[   0.076] ========================================================================
+[   0.076] POC OK
+[   0.076] ========================================================================

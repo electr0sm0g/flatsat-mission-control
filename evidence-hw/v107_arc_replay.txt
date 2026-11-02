@@ -1,0 +1,107 @@
+[   0.000] ========================================================================
+[   0.000] V-07 replay window analysis
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.858] --> TC apid=0x0A via=usb AES  payload=00
+[   8.899] <-- TM apid=0x0A clear len=3
+[   8.951] --> TC apid=0x1D via=usb clear payload=0101
+[   9.003] <-- TM apid=0x1D clear len=4
+[   9.003] --> TC apid=0x11 via=usb clear payload=00
+[   9.463] <-- TM apid=0x11 clear len=9
+[   9.463] --> TC apid=0x15 via=usb clear payload=001005
+[   9.913] <-- TM apid=0x15 clear len=6
+[   9.914] --> TC apid=0x0D via=usb clear payload=01
+[  10.364] <-- TM apid=0x0D clear len=4
+[  10.416] --> TC apid=0x1D via=usb clear payload=03
+[  10.457] <-- TM apid=0x1D clear len=4
+[  10.457] <-- TM apid=0x09 clear len=9
+[  10.509] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.560] <-- TM apid=0x1D clear len=4
+[  10.560] --> TC apid=0x10 via=usb clear payload=00
+[  10.612] <-- TM apid=0x10 clear len=4
+[  10.612] --> TC apid=0x21 via=usb clear payload=00
+[  11.073] <-- TM apid=0x21 clear len=6
+[  11.073] --> TC apid=0x24 via=usb clear payload=0000
+[  11.114] <-- TM apid=0x24 clear len=8
+[  11.114] --> TC apid=0x24 via=usb clear payload=0100
+[  11.166] <-- TM apid=0x24 clear len=8
+[  11.166] --> TC apid=0x24 via=usb clear payload=0200
+[  11.217] <-- TM apid=0x24 clear len=8
+[  11.217] --> TC apid=0x24 via=usb clear payload=0300
+[  11.269] <-- TM apid=0x24 clear len=8
+[  11.269] --> TC apid=0x25 via=usb clear payload=0080
+[  11.311] <-- TM apid=0x25 clear len=4
+[  11.311] --> TC apid=0x1E via=usb clear payload=01
+[  11.822] <-- TM apid=0x1E clear len=5
+[  11.822] --> TC apid=0x1D via=usb clear payload=0b
+[  11.914] <-- TM apid=0x1D clear len=4
+[  11.914] --> TC apid=0x05 via=usb clear payload=12
+[  12.365] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.877] <-- TM apid=0x1F clear len=4
+[  12.877] --> TC apid=0x1F via=usb clear payload=05
+[  13.379] <-- TM apid=0x1F clear len=4
+[  13.379] --> TC apid=0x0A via=usb clear payload=01
+[  13.421] <-- TM apid=0x0A AES len=3
+[  21.508] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.978] <-- TM apid=0x0E AES len=18
+[  29.978] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.092] --> TC apid=0x15 via=usb AES  payload=011005
+[  30.543] <-- TM apid=0x15 clear len=6
+[  30.594] --> TC apid=0x16 via=usb AES  payload=03
+[  31.044] <-- TM apid=0x16 clear len=3
+[  31.045] --> TC apid=0x16 via=usb AES  payload=03
+[  31.506] <-- TM apid=0x16 clear len=3
+[  35.967] <-- TM apid=0x09 AES len=14
+[  35.967] ARC delta  0: reject (SDLS ARC FAIL)
+[  35.967] --> TC apid=0x16 via=usb AES  payload=03
+[  37.574] <-- TM apid=0x16 clear len=3
+[  42.046] <-- TM apid=0x0C AES len=27
+[  42.046] ARC delta  1: ACCEPT
+[  42.046] --> TC apid=0x16 via=usb AES  payload=03
+[  42.496] <-- TM apid=0x16 clear len=3
+[  46.959] <-- TM apid=0x0C AES len=27
+[  46.959] ARC delta  2: ACCEPT
+[  46.959] --> TC apid=0x16 via=usb AES  payload=03
+[  47.409] <-- TM apid=0x16 clear len=3
+[  51.879] <-- TM apid=0x0C AES len=27
+[  51.879] ARC delta  3: ACCEPT
+[  51.879] --> TC apid=0x16 via=usb AES  payload=03
+[  52.329] <-- TM apid=0x16 clear len=3
+[  56.803] <-- TM apid=0x0C AES len=27
+[  56.803] ARC delta  4: ACCEPT
+[  56.803] --> TC apid=0x16 via=usb AES  payload=03
+[  57.253] <-- TM apid=0x16 clear len=3
+[  61.727] <-- TM apid=0x0C AES len=27
+[  61.727] ARC delta  5: ACCEPT
+[  61.728] --> TC apid=0x16 via=usb AES  payload=03
+[  62.168] <-- TM apid=0x16 clear len=3
+[  66.640] <-- TM apid=0x09 AES len=14
+[  66.640] ARC delta  6: reject (SDLS ARC FAIL)
+[  66.640] --> TC apid=0x16 via=usb AES  payload=03
+[  68.248] <-- TM apid=0x16 clear len=3
+[  72.717] <-- TM apid=0x09 AES len=14
+[  72.717] ARC delta  7: reject (SDLS ARC FAIL)
+[  72.717] --> TC apid=0x16 via=usb AES  payload=03
+[  74.324] <-- TM apid=0x16 clear len=3
+[  78.793] <-- TM apid=0x09 AES len=14
+[  78.793] ARC delta  8: reject (SDLS ARC FAIL)
+[  78.793] --> TC apid=0x16 via=usb AES  payload=03
+[  80.399] <-- TM apid=0x16 clear len=3
+[  84.868] <-- TM apid=0x09 AES len=14
+[  84.868] ARC delta  9: reject (SDLS ARC FAIL)
+[  84.868] --> TC apid=0x16 via=usb AES  payload=03
+[  86.464] <-- TM apid=0x16 clear len=3
+[  90.936] <-- TM apid=0x0C AES len=27
+[  95.409] <-- TM apid=0x09 AES len=14
+[  95.409] accept probability for a random ARC = W/2^16 = 7.629e-05; 16-bit counter wraps every 65536 commands (~32768 s at 2 cmd/s) and is VOLATILE: RESETC rewinds it -> a captured valid frame becomes replayable again after a reboot
+[  95.409] --> POWER CYCLE (scratch + SRAM die, flash survives)
+[  98.773] --> REARM (bench parity: post-POWERCYCLE)
+[  98.916] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[ 107.394] <-- TM apid=0x0E AES len=18
+[ 107.394] --> TC apid=0x15 via=usb AES  payload=011005
+[ 107.865] <-- TM apid=0x15 clear len=6
+[ 108.361] <-- TM apid=0x0C AES len=27
+[ 108.362] -- console tail: [INFO] USB Device configured successfully | [INFO] ACC OK | [INFO] BME OK | [INFO] GPS UART configured at 9600 baud | [INFO] Radio 0 Configured Successfully! | [INFO] Radio 1 Configured Successfully! | [TC - SPP] APID=0x027 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x014 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [WARN] GPS not detected on UART, using zero-coordinate fallback | [TC - SPP] APID=0x015 SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=51 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00C SEQ=1 LEN=38 FLAGS=1 SEC_HDR=YES
+[ 108.362] ========================================================================
+[ 108.362] POC OK
+[ 108.362] ========================================================================

